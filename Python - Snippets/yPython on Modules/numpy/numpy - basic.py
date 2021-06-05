@@ -1,0 +1,14 @@
+"""
+y, numpy - basic.py, 2018.12.16
+"""
+
+import numpy as np
+
+a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(a)
+print(a[:, [0, 2]])
+print(a[:-1])
+
+b = np.array([1, 2, 3, 4])
+b[:-2] = b[2:]
+print(b)

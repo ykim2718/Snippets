@@ -1,0 +1,15 @@
+{
+    "document_id": {
+        "name": "spec sample",
+        "version": "0.0.0",
+        "date": "2017-8-18"
+    },
+    "process_group": "smiling home",
+    "process_id": "The tree is not felled by the first blow",
+    "product_id": "smiler",
+    "spec_owner": "y",
+    "spec_table": null,
+    "excel_file": null,
+    "excel_sheet": null,
+    "excel_columns": null
+}

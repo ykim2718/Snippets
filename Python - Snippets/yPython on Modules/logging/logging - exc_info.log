@@ -1,0 +1,35 @@
+2017-09-05 23:06:03,798, INFO, logging - exc_info.py, 19, <module>(), MainProcess, D:/Wolf/Homo academicus/yStudy on code - Python/Python - Y/yPython on 3rd party modules/logging/logging - exc_info.py
+2017-09-05 23:06:03,798, INFO, logging - exc_info.py, 24, <module>(), MainProcess, assertion error ....
+Traceback (most recent call last):
+  File "D:/Wolf/Homo academicus/yStudy on code - Python/Python - Y/yPython on 3rd party modules/logging/logging - exc_info.py", line 22, in <module>
+    assert False
+AssertionError
+2017-09-08 20:32:19,622, INFO, logging - exc_info.py, 19, <module>(), MainProcess, D:/Wolf/Homo academicus/yStudy on code - Python/Python - Y/yPython on 3rd party modules/logging/logging - exc_info.py
+2017-09-08 20:33:20,137, INFO, logging - exc_info.py, 19, <module>(), MainProcess, D:/Wolf/Homo academicus/yStudy on code - Python/Python - Y/yPython on 3rd party modules/logging/logging - exc_info.py
+2017-09-08 20:33:20,138, INFO, logging - exc_info.py, 24, <module>(), MainProcess, assertion error ....
+Traceback (most recent call last):
+  File "D:/Wolf/Homo academicus/yStudy on code - Python/Python - Y/yPython on 3rd party modules/logging/logging - exc_info.py", line 22, in <module>
+    assert False
+AssertionError
+2017-09-09 14:02:01,762, INFO, logging - exc_info.py, 19, <module>(), MainProcess, D:/Wolf/Homo academicus/yStudy on code - Python/Python - Y/yPython on 3rd party modules/logging/logging - exc_info.py
+2017-09-09 14:02:01,763, INFO, logging - exc_info.py, 24, <module>(), MainProcess, assertion error ....
+Traceback (most recent call last):
+  File "D:/Wolf/Homo academicus/yStudy on code - Python/Python - Y/yPython on 3rd party modules/logging/logging - exc_info.py", line 22, in <module>
+    assert False
+AssertionError
+2017-09-09 14:02:01,764, INFO, logging - exc_info.py, 29, <module>(), MainProcess, exxception error ....
+Traceback (most recent call last):
+  File "D:/Wolf/Homo academicus/yStudy on code - Python/Python - Y/yPython on 3rd party modules/logging/logging - exc_info.py", line 27, in <module>
+    raise Exception('user exception')
+Exception: user exception
+2017-09-09 14:41:54,621, INFO, logging - exc_info.py, 19, <module>(), MainProcess, D:/Wolf/Homo academicus/yStudy on code - Python/Python - Y/yPython on 3rd party modules/logging/logging - exc_info.py
+2017-09-09 14:41:54,621, INFO, logging - exc_info.py, 24, <module>(), MainProcess, assertion error ....
+Traceback (most recent call last):
+  File "D:/Wolf/Homo academicus/yStudy on code - Python/Python - Y/yPython on 3rd party modules/logging/logging - exc_info.py", line 22, in <module>
+    assert False
+AssertionError
+2017-09-09 14:41:54,622, INFO, logging - exc_info.py, 30, <module>(), MainProcess, exxception error ....
+Traceback (most recent call last):
+  File "D:/Wolf/Homo academicus/yStudy on code - Python/Python - Y/yPython on 3rd party modules/logging/logging - exc_info.py", line 27, in <module>
+    raise Exception('user exception')
+Exception: user exception

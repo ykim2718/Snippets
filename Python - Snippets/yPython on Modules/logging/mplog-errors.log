@@ -1,0 +1,7 @@
+2019-05-27 18:46:37,617 foo.bar.baz     CRITICAL worker 4   <Process(worker 4, started)>: Message no. 0
+2019-05-27 18:46:37,642 foo.bar.baz     CRITICAL worker 4   <Process(worker 4, started)>: Message no. 2
+2019-05-27 18:46:37,655 spam.ham        CRITICAL worker 3   <Process(worker 3, started)>: Message no. 3
+2019-05-27 18:46:37,646 foo.bar.baz     CRITICAL worker 5   <Process(worker 5, started)>: Message no. 0
+2019-05-27 18:46:37,657 foo.bar         ERROR    worker 5   <Process(worker 5, started)>: Message no. 1
+2019-05-27 18:46:37,674 foo.bar.baz     ERROR    worker 2   <Process(worker 2, started)>: Message no. 3
+2019-05-27 18:46:37,674 spam            ERROR    worker 2   <Process(worker 2, started)>: Message no. 4

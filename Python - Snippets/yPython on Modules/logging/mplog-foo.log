@@ -1,0 +1,17 @@
+2019-05-27 18:46:37,604 foo             DEBUG    worker 1   <Process(worker 1, started)>: Message no. 0
+2019-05-27 18:46:37,625 foo.bar.baz     WARNING  worker 1   <Process(worker 1, started)>: Message no. 2
+2019-05-27 18:46:37,625 foo             DEBUG    worker 1   <Process(worker 1, started)>: Message no. 3
+2019-05-27 18:46:37,617 foo.bar.baz     CRITICAL worker 4   <Process(worker 4, started)>: Message no. 0
+2019-05-27 18:46:37,642 foo.bar.baz     CRITICAL worker 4   <Process(worker 4, started)>: Message no. 2
+2019-05-27 18:46:37,642 foo.bar         INFO     worker 4   <Process(worker 4, started)>: Message no. 3
+2019-05-27 18:46:37,642 foo.bar         WARNING  worker 4   <Process(worker 4, started)>: Message no. 4
+2019-05-27 18:46:37,655 foo.bar.baz     INFO     worker 3   <Process(worker 3, started)>: Message no. 1
+2019-05-27 18:46:37,646 foo.bar.baz     CRITICAL worker 5   <Process(worker 5, started)>: Message no. 0
+2019-05-27 18:46:37,657 foo.bar         ERROR    worker 5   <Process(worker 5, started)>: Message no. 1
+2019-05-27 18:46:37,658 foo.bar.baz     INFO     worker 5   <Process(worker 5, started)>: Message no. 2
+2019-05-27 18:46:37,658 foo             INFO     worker 5   <Process(worker 5, started)>: Message no. 3
+2019-05-27 18:46:37,658 foo.bar         INFO     worker 5   <Process(worker 5, started)>: Message no. 4
+2019-05-27 18:46:37,657 foo.bar.baz     DEBUG    worker 2   <Process(worker 2, started)>: Message no. 0
+2019-05-27 18:46:37,673 foo.bar         WARNING  worker 2   <Process(worker 2, started)>: Message no. 1
+2019-05-27 18:46:37,673 foo.bar         DEBUG    worker 2   <Process(worker 2, started)>: Message no. 2
+2019-05-27 18:46:37,674 foo.bar.baz     ERROR    worker 2   <Process(worker 2, started)>: Message no. 3

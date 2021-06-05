@@ -1,0 +1,17 @@
+{
+  "code": "12345",
+  "json_dt_formats": {
+    "10": "%Y-%m-%d",
+    "19": "%Y-%m-%dT%H:%M:%S",
+    "else": "%Y-%m-%dT%H:%M:%S.%f"
+  },
+  "line_count": 0,
+  "local_db_end_date": "2016-05-31",
+  "local_db_start_date": "2016-05-30T18:33:00",
+  "query_db_end_date": null,
+  "query_db_start_date": null,
+  "remote_db_end_date": null,
+  "remote_db_start_date": null,
+  "update_count": 0,
+  "update_date": "2016-06-01T19:40:20.194643"
+}

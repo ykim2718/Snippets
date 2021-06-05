@@ -1,0 +1,11 @@
+<mail date="2018-09-20 20:04:58">
+  <to>to...here</to>
+  <from>from...here</from>
+  <subject>subject...here</subject>
+  <body>body...here</body>
+  <attachment>
+    <pptx>pptx..here</pptx>
+    <xlsx>xlsx..here</xlsx>
+  </attachment>
+  <number>7.89</number>
+</mail>
