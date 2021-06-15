@@ -27,7 +27,7 @@ import datetime as dt
 import zlib
 
 
-class YMongoManager:
+class MongoManager:
     """ y, 2020.5.21 - 22 """
 
     index_format = "LLL"  # size, sequence, total
@@ -171,7 +171,7 @@ if __name__ == '__main__':
         args.collection = None
 
     start_time = dt.datetime.now()
-    mm = YMongoManager(args.host)
+    mm = MongoManager(args.host)
     a_path = pathlib.Path(args.a_path)
     if args.run == 'dump':
         mm.dump(args.database, args.collection, a_path)

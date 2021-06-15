@@ -9,7 +9,7 @@ import pymongo
 import sys
 
 
-class YMongoHandler(logging.StreamHandler):
+class MongoHandler(logging.StreamHandler):
     """ y, 2018.8.4 """
 
     collection = None
@@ -79,7 +79,7 @@ if __name__ == '__main__':
     logger = logging.getLogger('y_logger')
     logger.setLevel(logging.DEBUG)
 
-    mh = YMongoHandler('test_database', 'log', command=__file__)
+    mh = MongoHandler('test_database', 'log', command=__file__)
     formatter = logging.Formatter('%(asctime)s, %(levelname)s, %(filename)s, %(lineno)d, %(message)s')
     mh.setFormatter(formatter)
     logger.addHandler(mh)
