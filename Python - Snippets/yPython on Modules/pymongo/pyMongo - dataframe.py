@@ -7,7 +7,7 @@ import pandas as pd
 import sys
 
 
-def yReadDataFrameFromXlsx(file_path, index_names=[], sortby_columns=[], select_columns=[]):
+def yDfReadDataFromXlsx(file_path, index_names=[], sortby_columns=[], select_columns=[]):
     """ y, 2017.6.7, 6.22 """
 
     df = pd.read_excel(file_path)
@@ -33,7 +33,7 @@ if __name___ == '__main__':
     file_path = 'sample.xlsx'
     sheet_name = 'sheet1'
     select_columns = ['date', 'A', 'C']
-    df = yReadDataFrameFromXlsx(file_path, sheet_name=sheet_name, select_columns=select_columns)
+    df = yDfReadDataFromXlsx(file_path, sheet_name=sheet_name, select_columns=select_columns)
     print(df.head(1))
     print(df.shape)
     print(df.dtypes)
