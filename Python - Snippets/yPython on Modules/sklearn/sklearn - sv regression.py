@@ -1,5 +1,6 @@
 """
-y, sklearn - sv regression.py, 2018.12.7
+y, sklearn - sv regression.py,
+2018.12.7; 2021.6.25
 https://archive.ics.uci.edu/ml/datasets/wine << Machine Learning Data Repository
 """
 
@@ -7,6 +8,7 @@ from sklearn.svm import SVR
 from sklearn.metrics import r2_score
 import numpy as np
 import pandas as pd
+import pathlib
 
 # set parameter
 model_name = SVR
@@ -16,9 +18,12 @@ d_value = 3  # [1, 2, 3, 4, 5]  # only for poly kernel
 c_value = 100
 
 # get data
+data_folder = pathlib.Path(f"d:\HA\yStudy on code - Python\Python - Snippets\yPython on Machine Learing\Data")
 # raw_data = np.genfromtxt(r'..\data\bike_sharing.csv', delimiter=',', skip_header=1)
-frame = pd.read_csv(r'..\data\UC Irvine Machine Learning Repository - Bike Sharing\hour.csv',
-                    usecols=['temp', 'atemp', 'hum', 'windspeed', 'cnt'])
+frame = pd.read_csv(
+    data_folder / 'UC Irvine Machine Learning Repository - Bike Sharing\hour.csv',
+    usecols=['temp', 'atemp', 'hum', 'windspeed', 'cnt']
+)
 raw_data = frame.values
 n_data, n_column = raw_data.shape
 
