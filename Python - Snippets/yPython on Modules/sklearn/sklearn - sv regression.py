@@ -18,10 +18,10 @@ d_value = 3  # [1, 2, 3, 4, 5]  # only for poly kernel
 c_value = 100
 
 # get data
-data_folder = pathlib.Path(f"d:\HA\yStudy on code - Python\Python - Snippets\yPython on Machine Learing\Data")
+data_folder = pathlib.Path(f"d:\HA\yStudy on code - Python\Python - Snippets\yPython on Machine Learning\Data")
 # raw_data = np.genfromtxt(r'..\data\bike_sharing.csv', delimiter=',', skip_header=1)
 frame = pd.read_csv(
-    data_folder / 'UC Irvine Machine Learning Repository - Bike Sharing\hour.csv',
+    data_folder / 'UC Irvine Machine Learning Repository - Bike Sharing/hour.csv',
     usecols=['temp', 'atemp', 'hum', 'windspeed', 'cnt']
 )
 raw_data = frame.values
