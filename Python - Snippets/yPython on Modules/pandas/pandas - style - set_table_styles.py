@@ -1,7 +1,8 @@
 """
-y, 2021.8.15
+y, 2021.8.15 - 16
 pandas - style - set_table_styles.py
 https://pandas.pydata.org/docs/reference/api/pandas.io.formats.style.Styler.set_table_styles.html
+https://stackoverflow.com/questions/58335791/increase-width-of-a-specific-column-while-converting-pandas-dataframes-to-pdf
 """
 
 import pandas as pd
@@ -13,7 +14,8 @@ a = pd.DataFrame(dict(a=[1, 2], b=[3, 4], c=[pd.Timestamp.now()] * 2))
 
 a = a.style\
     .set_table_styles([{'selector': 'tr', 'props': 'background-color: yellow; font-size: 1em;'}])\
-    .format(({'c': "{:%y-%m-%d}"}))
+    .format(({'c': "{:%y-%m-%d}"}))\
+    .set_properties(subset=['c'], **{'width': '10em'})
 html = a.render()
 
 pathlib.Path(__file__).with_suffix('.html').write_text(html)
