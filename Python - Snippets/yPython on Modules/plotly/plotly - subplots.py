@@ -20,4 +20,8 @@ fig.add_trace(
 )
 
 fig.update_layout(height=600, width=800, title_text="Side By Side Subplots")
-fig.show()
+if False:
+    fig.show()
+else:
+    import pathlib
+    fig.write_html(str(pathlib.Path(__file__).with_suffix('.html')), auto_open=True)
