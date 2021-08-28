@@ -8,9 +8,9 @@ https://community.plotly.com/t/plotly-subplots-with-individual-legends/1754/16
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 
-fig = make_subplots(rows=3, cols=1,
-                    shared_xaxes=True,
-                    vertical_spacing=0.02)
+fig = make_subplots(
+    rows=3, cols=1, shared_xaxes=True, vertical_spacing=0.02, row_heights=[0.5, 0.3, 0.2]
+)
 
 fig.add_trace(go.Scatter(x=[0, 1, 2], y=[10, 11, 12]),
               row=3, col=1)
