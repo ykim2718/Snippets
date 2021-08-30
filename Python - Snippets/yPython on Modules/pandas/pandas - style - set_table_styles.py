@@ -10,8 +10,6 @@ import pathlib
 
 a = pd.DataFrame(dict(a=[1, 2], b=[3, 4], c=[pd.Timestamp.now()] * 2))
 
-# FIXME !!! # html = self.styler.set_td_classes(classes=["table-bordered", "table-striped", "table-hover"]).render()
-
 a = a.style\
     .set_table_styles([{'selector': 'tr', 'props': 'background-color: yellow; font-size: 1em;'}])\
     .format(({'c': "{:%y-%m-%d}"}))\
