@@ -10,9 +10,16 @@ import pandas as pd
 from pandas.io.formats.style import Styler
 import pathlib
 
-frame = pd.DataFrame(dict(a=[1, 2], b=[333, 4], c=[pd.Timestamp.now()] * 2))
+now = pd.Timestamp.now()
+if False:
+    frame = pd.DataFrame(dict(a=[1, 2], b=[333, 4], c=[now] * 2))
+else:
+    frame = pd.DataFrame([[1, 333, now], [2, 4, now]],
+                         columns=pd.MultiIndex.from_tuples([('A', 'a'), ('A', 'b'), ('B', 'c')]))
 print(f"frame.shape={frame.shape}")
-css = pd.DataFrame(dict(a=['A-class'] * 2, b=['B-class'] * 2, c=['C-class'] * 2))
+
+# css = pd.DataFrame(dict(a=['A-class'] * 2, b=['B-class'] * 2, c=['C-class'] * 2))
+css = pd.DataFrame('Z-class', index=frame.index, columns=frame.columns)
 print(f"css.shape={css.shape}")
 
 html = Styler(frame, uuid="_", cell_ids=False) \
