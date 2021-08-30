@@ -10,13 +10,13 @@ import pandas as pd
 from pandas.io.formats.style import Styler
 import pathlib
 
-frame = pd.DataFrame(dict(a=[1, 2], b=[3, 4], c=[pd.Timestamp.now()] * 2))
+frame = pd.DataFrame(dict(a=[1, 2], b=[333, 4], c=[pd.Timestamp.now()] * 2))
 print(f"frame.shape={frame.shape}")
 css = pd.DataFrame(dict(a=['A-class'] * 2, b=['B-class'] * 2, c=['C-class'] * 2))
 print(f"css.shape={css.shape}")
 
 html = Styler(frame, uuid="_", cell_ids=False) \
-    .set_table_attributes('class="table table-hover"') \
+    .set_table_attributes('class="table table-hover table-sm text-right" style="font-size: 2em;"') \
     .set_td_classes(css) \
     .render() \
     .replace('<thead>', '<thead class="thead-light">', 1)
@@ -30,7 +30,6 @@ html = f"""
 }}
 </style>
 <div class="d-inline-flex p-2" style="padding-left: 1em;">
-</script>
 {html}
 </div>
 """
