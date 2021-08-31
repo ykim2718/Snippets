@@ -1,5 +1,5 @@
 """
-y, 2021.8.30
+y, 2021.8.30 - 31
 pandas - style - bootstrap.py
 https://pandas.pydata.org/docs/reference/api/pandas.io.formats.style.Styler.html
 https://stackoverflow.com/questions/61740225/bootstrap-css-and-pandas-dataframe-to-html-how-to-add-class-to-thead
@@ -16,6 +16,7 @@ if False:
 else:
     frame = pd.DataFrame([[1, 333, now], [2, 4, now]],
                          columns=pd.MultiIndex.from_tuples([('A', 'a'), ('A', 'b'), ('B', 'c')]))
+frame.index.name = 'index'
 print(f"frame.shape={frame.shape}")
 
 # css = pd.DataFrame(dict(a=['A-class'] * 2, b=['B-class'] * 2, c=['C-class'] * 2))
@@ -24,6 +25,7 @@ print(f"css.shape={css.shape}")
 
 html = Styler(frame, uuid="_", cell_ids=False) \
     .set_table_attributes('class="table table-hover table-sm text-right" style="font-size: 2em;"') \
+    .set_properties(subset=[('A', 'a')], width='10em') \
     .set_td_classes(css) \
     .render() \
     .replace('<thead>', '<thead class="thead-light">', 1)
