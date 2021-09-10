@@ -3,7 +3,7 @@ y, 20201.9.10
 pyqt5 - catch exception.py
 https://stackoverflow.com/questions/55819330/catching-exceptions-raised-in-application
 https://wikidocs.net/21866  >> menubar
-https://wikidocs.net/90850
+https://wikidocs.net/90850  >> QEventLoop
 """
 
 
@@ -12,6 +12,7 @@ import traceback
 from PyQt5.QtWidgets import (
     QApplication, QSizePolicy, QFileDialog, QMainWindow, QAction, QMessageBox, QTableWidgetItem)
 from PyQt5.QtGui import (QIcon)
+from PyQt5.QtCore import QEventLoop, QTimer
 import pathlib
 import datetime as dt
 
@@ -26,9 +27,13 @@ class MyApp(QMainWindow):
         self.setWindowTitle(pathlib.Path(__file__).name)
         self.setGeometry(300, 300, 400, 100)
 
-        raiseError = QAction(QIcon(''), 'Raise', self)
-        raiseError.setStatusTip('Raise error intetionally')
+        raiseError = QAction(QIcon(''), 'Raise error', self)
+        raiseError.setStatusTip('Raise error intentionally')
         raiseError.triggered.connect(self.raise_error)
+
+        loopError = QAction(QIcon(''), 'Loop error', self)
+        loopError.setStatusTip('Loop error intenktionally')
+        loopError.triggered.connect(self.loop_error)
 
         exitAction = QAction(QIcon('exit.png'), 'Exit', self)
         exitAction.setShortcut(('Ctrl+Q'))
@@ -41,6 +46,7 @@ class MyApp(QMainWindow):
         menuBar.setNativeMenuBar(False)
         fileMenu = menuBar.addMenu('&File')
         fileMenu.addAction(raiseError)
+        fileMenu.addAction(loopError)
         fileMenu.addAction(exitAction)
 
         self.show()
@@ -52,12 +58,18 @@ class MyApp(QMainWindow):
         print('raise error ...', dt.datetime.now())
         1/0
 
+    def loop_error(self):
+        loop = QEventLoop()
+        timer = QTimer(self)
+        timer.singleShot(1000, self.raise_error)
+        loop.exec()
+
 
 def excepthook(exc_type, exc_value, exc_tb):
     tb = ''.join(traceback.format_exception(exc_type, exc_value, exc_tb))
     print('error catched:')
     print('error message:\n', tb)
-    QApplication.quit()
+    # QApplication.quit()
     # or QApplication.exit(0)
 
 
