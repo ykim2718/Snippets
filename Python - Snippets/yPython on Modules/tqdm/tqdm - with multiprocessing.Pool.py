@@ -1,7 +1,8 @@
 """
 y, 2021.9.19
-tqdm - with multiprocessing.py
+tqdm - with multiprocessing.Pool.py
 https://github.com/tqdm/tqdm/issues/484
+https://stackoverflow.com/questions/41920124/multiprocessing-use-tqdm-to-display-a-progress-bar
 """
 
 import time

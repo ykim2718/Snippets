@@ -11,7 +11,7 @@ rm = np.convolve(a, np.ones((n,))/n, mode='valid')
 print(rm)
 
 
-def yRollingMean(a, n=1, keep_dim=True):
+def rolling_mean(a, n=1, keep_dim=True):
     """ y, 2018.7.21 """
 
     if n <= len(a):
@@ -24,9 +24,9 @@ def yRollingMean(a, n=1, keep_dim=True):
 
 
 print('a=', a)
-print('n=1', yRollingMean(a, 1))
-print('n=2', yRollingMean(a, 2))
-print('n=3', yRollingMean(a, 3))
-print('n=4', yRollingMean(a, 4))
-print('n=4', yRollingMean(a, 4, False))
-print('n=5', yRollingMean(a, 5))
+print('n=1', rolling_mean(a, 1))
+print('n=2', rolling_mean(a, 2))
+print('n=3', rolling_mean(a, 3))
+print('n=4', rolling_mean(a, 4))
+print('n=4', rolling_mean(a, 4, False))
+print('n=5', rolling_mean(a, 5))
