@@ -29,12 +29,20 @@ if __name__ == '__main__':
     if False:
         for _ in tqdm(pool.imap_unordered(myfunc, range(100)), total=100):
             pass
+        # tqdm.write('scheduled')
+        pool.close()
+        pool.join()
 
     else:
+        aync_results = []
         pbar = tqdm(total=100)
         for i in range(pbar.total):
-            pool.apply_async(myfunc, args=(i,), callback=update)
+            r = pool.apply_async(myfunc, args=(i,), callback=update)
+            aync_results.append(r)
+        # tqdm.write('scheduled')
+        pool.close()
+        pool.join()
+        results = [p.get() for p in aync_results]
+        print(f"results={results}")
+        print(f"len(results)={len(results)}")
 
-    # tqdm.write('scheduled')
-    pool.close()
-    pool.join()
