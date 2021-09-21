@@ -39,7 +39,7 @@ if __name__ == '__main__':
         for i in range(pbar.total):
             r = pool.apply_async(myfunc, args=(i,), callback=update)
             aync_results.append(r)
-        # tqdm.write('scheduled')
+        tqdm.write('scheduled')
         pool.close()
         pool.join()
         results = [p.get() for p in aync_results]
