@@ -1,5 +1,5 @@
 """
-y, python class - singleton.py, 2019.1.25
+y, python class - singleton.py, 2019.1.25: 2021.10.17
 https://github.com/ksu3101/TIL/blob/master/PythonDjango/170227.md
 """
 
@@ -22,4 +22,6 @@ class MainClass(BaseClass, metaclass=Singleton):
 
 
 instance = MainClass()
-print(instance)
+print(instance, id(instance))
+instance = MainClass()
+print(instance, id(instance))
