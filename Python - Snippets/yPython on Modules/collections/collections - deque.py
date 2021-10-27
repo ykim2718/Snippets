@@ -25,6 +25,6 @@ for j in list('abcde'):
     circular_queue.append(j)
     print(circular_queue)
 print(circular_queue[-1])
-# print(circular_queue[2:])  # TypeError: sequence index must be integer, not 'slice'
+# print(circular_queue[:2])  # TypeError: sequence index must be integer, not 'slice'
 print(min(circular_queue), max(circular_queue))
 print(circular_queue > 'b')
