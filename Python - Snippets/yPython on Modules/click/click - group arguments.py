@@ -11,6 +11,7 @@ import click
 @click.pass_context
 def greet(ctx):
     ctx.ensure_object(str)
+    ctx.invoke(goodbye)
 
 
 @greet.command()
