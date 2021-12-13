@@ -11,7 +11,6 @@ import click
 @click.pass_context
 def greet(ctx):
     ctx.ensure_object(str)
-    ctx.invoke(goodbye)
 
 
 @greet.command()
@@ -20,6 +19,7 @@ def greet(ctx):
 def hello(ctx, to):
     print(f"hello .. {to}")
     print(f"ctx.obj= {ctx.obj}")
+    ctx.invoke(goodbye)
 
 
 @greet.command()
