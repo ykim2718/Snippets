@@ -1,8 +1,8 @@
 """
 y, 2021.12.13
-numpy - r or r2
+numpy - r or r2.py
 https://www.kite.com/python/answers/how-to-calculate-r-squared-with-numpy-in-python
-https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html  >> Pearson product-moment correlation cofficients
+https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html  >> Pearson product-moment correlation cofficients.
 """
 
 import numpy as np
