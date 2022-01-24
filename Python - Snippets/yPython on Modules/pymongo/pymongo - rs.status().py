@@ -9,6 +9,7 @@ import time
 from bson.codec_options import DEFAULT_CODEC_OPTIONS
 
 codec_options = DEFAULT_CODEC_OPTIONS.with_options(unicode_decode_error_handler='ignore')
+
 servers = dict(
     S1='10.227.253.174',
     S2='10.227.253.148',
