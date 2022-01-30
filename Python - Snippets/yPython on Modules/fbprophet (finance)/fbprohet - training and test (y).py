@@ -48,7 +48,7 @@ class YSuppressStdoutAndStderr(object):
 
 
 # copied to yTime.py, 2018.4.22
-def show_axis_legend(ax1, axt=None, loc='upper left', fontsize='small'):
+def set_axis_legend(ax1, axt=None, loc='upper left', fontsize='small'):
     """
     y,  2016,
         2017.1.6
@@ -360,12 +360,12 @@ ax1.set_ylabel('eoc')
 ax1.set_title(results.index[-1].date(), loc='right', size='small')
 ax1.set_xlim(start_date, stop_date)
 ax1.ticklabel_format(axis='y', style='sci', scilimits=(-2, 2))
-show_axis_legend(ax1)
+set_axis_legend(ax1)
 
 ax2.plot(results['rr'], ls='-', c='g')
 ax2.set_ylabel('rr')
 ax2.axhline(y=1.0, color='k', ls='-', alpha=0.2)
-show_axis_legend(ax2)
+set_axis_legend(ax2)
 
 ax3.plot(results['dyhat'], 'r-', alpha=0.5)
 ax3.plot(results['dyhat_y'], 'g-', alpha=0.5)
@@ -376,14 +376,14 @@ ax3t = ax3.twinx()
 ax3t.plot(results['eor'], 'b-', alpha=0.5)
 ax3t.set_ylabel('eor')
 
-show_axis_legend(ax3, ax3t)
+set_axis_legend(ax3, ax3t)
 
 ax4.plot(results['r_pe'], 'r-', alpha=0.5)
 ax4.plot(results['r_ke'], 'g-', alpha=0.5)
 ax4.plot(results['r_sp'], 'b-', alpha=0.5)
 ax4.axhline(y=0.0, color='k', ls='-', alpha=0.2)
 ax4.set_ylabel('correlation, r')
-show_axis_legend(ax4)
+set_axis_legend(ax4)
 
 fig.tight_layout()
 fig.subplots_adjust(wspace=0, hspace=0)
