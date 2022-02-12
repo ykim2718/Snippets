@@ -6,7 +6,7 @@ logging - subclass.py
 import logging
 
 
-class YLogStdout:
+class LogStdout:
 
     def debug(self, *args, **kwargs):
         print('\33[33m', *args, '\33[0m', **kwargs)  # yellow
@@ -35,7 +35,7 @@ class YLogStdout2:
 
 if __name__ == '__main__':
 
-    logger = YLogStdout()
+    logger = LogStdout()
     logger.debug('No sweat, no sweet.')
     logger.info('No pain, no gain.')
     logger.warning('Easy come, easy go.')
