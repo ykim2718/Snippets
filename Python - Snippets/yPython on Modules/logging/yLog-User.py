@@ -3,11 +3,11 @@ yLog-User.py
 y (copyRight) 2016.4.30
 """
 
-from y.yLog import ySetLogger, yGetLogger
+from y.yLog import ySetLogger, GetLogger
 
 
 def testLogInfo():
-    yGetLogger().info("hello")
+    GetLogger().info("hello")
 
 
 def testFunctionArgument(arg_int):
@@ -18,10 +18,10 @@ def testFunctionArgument(arg_int):
     if isinstance(arg_int, int) is False:
         log = "argument {} must be {}, not {}"
         log = log.format(0, type(int()), not arg_int)
-        yGetLogger().critical(log)
+        GetLogger().critical(log)
         raise AssertionError(log)
 
-    yGetLogger().info("argument %s passed" % arg_int)
+    GetLogger().info("argument %s passed" % arg_int)
 
 
 def testLogCriticalWithTryExcept():
@@ -29,14 +29,14 @@ def testLogCriticalWithTryExcept():
         1 / 0
     except Exception as ex:
         log = "%s, %s" % (type(ex).__name__, ex)
-        yGetLogger().critical(log)
+        GetLogger().critical(log)
         raise RuntimeError(log)
 
 
 if __name__ == '__main__':
     file = __file__[:-3] + '.log'
     ySetLogger(log_file=file, log_to_where='Both')
-    yLogger = yGetLogger()
+    yLogger = GetLogger()
     yLogger.info("User starts here")
     testLogInfo()
     testFunctionArgument(1.)
