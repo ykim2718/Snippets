@@ -25,7 +25,7 @@ if pid:
         print(c.status, c.laddr, c.raddr)
 
 
-def yGetNetworkIoSpeeds():
+def get_network_io_speeds():
     """
     y,  2018.8.7
 
@@ -52,7 +52,7 @@ def yGetNetworkIoSpeeds():
 
     return upload_mpbs, download_mbps
 
-upload_mps, download_mps = yGetNetworkIoSpeeds()
+upload_mps, download_mps = get_network_io_speeds()
 
 print('upload: {} Mbps'.format(upload_mps))
 print('download: {} Mbps'.format(download_mps))
