@@ -5,7 +5,7 @@ https://medium.com/dreamcatcher-its-blog/5-simple-tips-for-improving-automated-w
 
 from selenium import webdriver
 
-_driver_path = r'c:\Y\ChromeDriver win32\chromedriver.exe'
+_driver_path = r'c:\Y\Chrome driver\chromedriver.exe'
 
 chromeOptions = webdriver.ChromeOptions()
 prefs = {'profile.managed_default_content_settings.images': 2}  # , 'disk-cache-size': 4096}

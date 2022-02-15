@@ -3,7 +3,7 @@ y, selenium - open web in new tab.py, 2018.8.19
 https://stackoverflow.com/questions/28431765/open-web-in-new-tab-selenium-python
 """
 
-driver_path = r'c:\Y\ChromeDriver win32\chromedriver.exe'
+driver_path = r'c:\Y\Chrome driver\chromedriver.exe'
 
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait

@@ -7,7 +7,7 @@ https://chromedriver.chromium.org/downloads
 from selenium import webdriver
 import pprint
 
-driver = webdriver.Chrome('c:\Y\ChromeDriver win32\chromedriver.exe')
+driver = webdriver.Chrome('c:\Y\Chrome driver\chromedriver.exe')
 print(f"driver.capabilities=\n{pprint.pformat(driver.capabilities, indent=2, width=80, compact=True)}")
 if 'browserVersion' in driver.capabilities:
     version = driver.capabilities['browserVersion']
