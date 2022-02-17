@@ -69,7 +69,7 @@ class YObjectEncoder(json.JSONEncoder):
 class YObject:
     """ y, 2017.6.21 """
 
-    def dump_dict(self):
+    def dump_to_dict(self):
         """ y, 2017.6.21 """
 
         jdumps = json.dumps(attributes, cls=YObjectEncoder, indent=2, sort_keys=False, ensure_ascii=False)
@@ -104,7 +104,7 @@ class Glsss(YObject):
 if __name__ == "__main__":
 
     g = Glass()
-    doc = g.dump_dict()
+    doc = g.dump_to_dict()
 
     host = "pymongo://localhost"
     deposit = False
@@ -135,7 +135,7 @@ if __name__ == "__main__":
 
         k = YObject()
         k.load_dict(doc)
-        print('widthdrawn .. \n', k.dump_dict())
+        print('widthdrawn .. \n', k.dump_to_dict())
 
     db_server.close()
 
