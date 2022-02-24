@@ -8,32 +8,39 @@ import click
 import os
 
 
-class Repo:
+class Klass:
     def __init__(self, home=None):
         self.home = os.path.abspath(home or ".")
-        self.db = None
+        print(f"{self.home=}")
 
     def __enter__(self):
-        path = os.path.join(self.home, "repo.db")
-        self.db = open_database(path)
+        print('enter')
+        return self
 
     def __exit__(self, exc_type, exc_value, tb):
-        self.db.close()
+        print('exit')
 
 
 @click.group()
-@click.option("--repo-home", default=".repo")
+@click.option("--home", default=".home")
 @click.pass_context
-def cli(ctx, repo_home):
-    ctx.obj = ctx.with_resource(Repo(repo_home))
+def cli(ctx, home):
+    ctx.obj = ctx.with_resource(Klass(home))
 
 
 @cli.command()
 @click.pass_obj
 def log(obj):
-    # obj is the repo opened in the cli group
-    for entry in obj.db.query(...):
-        click.echo(entry)
+
+    click.echo(obj.home)
 
 
 cli()
+
+
+r"""
+self.home='D:\\Wolf\\Homo academicus\\yStudy on code - Python\\Python - Snippets\\yPython on Modules\\click\\.home'
+enter
+D:\Wolf\Homo academicus\yStudy on code - Python\Python - Snippets\yPython on Modules\click\.home
+exit
+"""
