@@ -6,9 +6,9 @@ https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.itertuples.html
 
 import pandas as pd
 
-df = df = pd.DataFrame({'num_legs': [4, 2], 'num_wings': [0, 2]}, index=['dog', 'hawk'])
+df = pd.DataFrame({'num_legs': [4, 2], 'num_wings': [0, 2]}, index=['dog', 'hawk'])
 
-for row in df.itertuples():
+for row in df.itertuples(index=False):
     print(row, row.Index, row.num_legs, row.num_wings)
 
 for row in df.itertuples(name='Animal'):
