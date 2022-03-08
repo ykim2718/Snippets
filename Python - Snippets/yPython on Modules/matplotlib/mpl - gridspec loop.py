@@ -14,7 +14,7 @@ fig.set_dpi(100)
 fig.subplots_adjust(hspace=0, wspace=0)
 title = f"{pathlib.Path(__file__).stem}"
 window_title = f"{title}.py ... {pd.Timestamp.now()}"
-fig.canvas.set_window_title(window_title)
+fig.canvas.manager.set_window_title(window_title)
 title += '\nGridSpec(4,6)'
 fig.suptitle(title, fontsize='medium')
 gs = mpl.gridspec.GridSpec(4, 6)
