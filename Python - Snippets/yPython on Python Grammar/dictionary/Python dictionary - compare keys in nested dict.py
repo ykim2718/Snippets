@@ -1,17 +1,20 @@
 """
-y, Python - dict compare keys in nested dict.py, 2017.8.14
-
+y, 2017.8.14; 2022.3.10
+Python - dict compare keys in nested dict.py
 """
 
+
 def get_listed_keys_in_a_nested_dictionary(a_dict):
-    """ y, 2017.8.14 """
+    """
+    y,  2017.8.14
+        2022.3.10*
+    """
 
     def recursive_key_levels(a_dict, key_level=[]):
         """ y, 2017.8.14 """
 
         for key, value in a_dict.items():
             if type(value) is dict:
-                yield key_level
                 yield from recursive_key_levels(value, key_level + [key])
             else:
                 yield key_level + [key]
@@ -39,9 +42,9 @@ a = {'a': {1: {2: 3, 4: 5}, 6: 7}, 8: {9: 0}}
 b = {'a': {1: {2: 3,     }, 6: 7}, 8: {9: 0}}
 c = {'a': {1: {2: 3,     }, 6: 7}, 8: {9: 0}, 0: 0}
 
-print(compare_dictionary_by_nested_keys(a, a))
-print(compare_dictionary_by_nested_keys(a, b))
-print(compare_dictionary_by_nested_keys(b, a))
-print(compare_dictionary_by_nested_keys(a, c))
+print(compare_dictionary_by_nested_keys(a, a))  # 0
+print(compare_dictionary_by_nested_keys(a, b))  # 1
+print(compare_dictionary_by_nested_keys(b, a))  # -1
+print(compare_dictionary_by_nested_keys(a, c))  # nan
 
 
