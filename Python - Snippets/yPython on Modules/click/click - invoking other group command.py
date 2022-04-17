@@ -1,5 +1,5 @@
 """
-y, 2021.3.26, 12.18
+y, 2021.3.26, 12.18; 2022.4.17
 click - invoking other group command.py
 https://click.palletsprojects.com/en/6.x/advanced/#invoking-other-commands
 """
@@ -40,7 +40,5 @@ def func3(ctx, bonus, count):
 
 if __name__ == '__main__':
 
-    import sys
-
-    sys.argv += ['func3', '--count', 9]
-    group2()
+    args = ['func3', '--count', 9]
+    group2(args=args)
