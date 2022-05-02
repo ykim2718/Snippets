@@ -13,6 +13,7 @@ heappush(h, (7, 'release product'))
 heappush(h, (1, 'write spec'))
 heappush(h, (3, 'create tests'))
 print(f"{h=}")  # h=[(1, 'write spec'), (3, 'create tests'), (5, 'write code'), (7, 'release product')]
+print(f"{h[0]=}")  # h[0]=(1, 'write spec')
 
 print(f"{heappop(h)=}")  # heappop(h)=(1, 'write spec')
 
