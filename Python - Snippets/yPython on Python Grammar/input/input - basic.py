@@ -1,5 +1,5 @@
 """
-y, 2022.5.2
+y, 2022.5.2 - 3
 input - basic.py
 """
 
@@ -8,8 +8,9 @@ import sys
 if True:
     input_file = 'input.txt'
     sys.stdin = open('input.txt')
-else:
     input = sys.stdin.readline
+else:
+    input = input
 
 q = int(input())
 for _ in range(q):
