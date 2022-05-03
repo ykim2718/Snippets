@@ -8,9 +8,13 @@ from collections import Counter
 
 c = Counter()                           # a new, empty counter
 c = Counter('gallahad')                 # a new counter from an iterable
-print(c)  # Counter({'a': 3, 'l': 2, 'g': 1, 'h': 1, 'd': 1})
-print(c['a'])  # 3
-print(sorted(c.elements()))  # ['a', 'a', 'a', 'd', 'g', 'h', 'l', 'l']
+print(f"{c=}")  # c=Counter({'a': 3, 'l': 2, 'g': 1, 'h': 1, 'd': 1})
+print(f"{c['a']=}")  # c['a']=3
+print(f"{sorted(c.elements())=}")  # sorted(c.elements())=['a', 'a', 'a', 'd', 'g', 'h', 'l', 'l']
+print(f"{dict(c)=}")  # dict(c)={'g': 1, 'a': 3, 'l': 2, 'h': 1, 'd': 1}
+print(f"{set(c)=}")  # set(c)={'l', 'h', 'g', 'a', 'd'}
+print(f"{list(c)=}")  # list(c)=['g', 'a', 'l', 'h', 'd']
+print(f"{c.items()=}")  # c.items()=dict_items([('g', 1), ('a', 3), ('l', 2), ('h', 1), ('d', 1)])
 
 
 c = Counter({'red': 4, 'blue': 2})      # a new counter from a mapping
@@ -35,3 +39,6 @@ c += d
 print(c)  # Counter({'a': 4, 'b': 2})
 c -= d
 print(c)  # Counter({'a': 3})
+
+c.clear()
+print(c)  # Counter()

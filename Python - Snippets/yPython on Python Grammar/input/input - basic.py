@@ -7,7 +7,7 @@ import sys
 
 if True:
     input_file = 'input.txt'
-    sys.stdin = open('input.txt')
+    sys.stdin = open(input_file)
     input = sys.stdin.readline
 else:
     input = input
