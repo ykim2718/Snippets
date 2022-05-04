@@ -25,4 +25,5 @@ print(f"{a=}")  # a=[1, 3, 9, 8, 10, 16]
 heappush(a, 4)
 print(f"{a=}")  # a=[1, 3, 4, 8, 10, 16, 9]
 
+# # Pop and return the smallest item from the heap, maintaining the heap invariant.
 print(f"{heappop(a)=}")  # heappop(a)=1
