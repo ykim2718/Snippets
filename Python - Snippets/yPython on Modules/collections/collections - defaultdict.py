@@ -25,3 +25,16 @@ print(f"{d[2].values()=}")  # d[2].values()=dict_values([3])
 print(f"{d[3]=}")  # d[3]=defaultdict(None, {})
 
 
+class Klass:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+
+d = defaultdict(dict)
+print(f"{d.values()=}")  # d.values()=dict_values([])
+d[1] = Klass(1, 2)
+d[2] = 2
+d[3] |= dict(a=3)
+print(f"{d=}")  # d=defaultdict(<class 'dict'>, {1: <__main__.Klass object at 0x000001B3D50B3F70>, 2: 2, 3: {'a': 3}})
+
