@@ -12,9 +12,9 @@ def f(_flags=[0]*3):
         _flags[2] = 'one'
 
 
-f()
-f()
-f()
+f()  # _flags=[0, 0, 0]
+f()  # _flags=[1, 0, 0]
+f()  # _flags=[2, 1, 'one']
 
 
 def g():
@@ -23,5 +23,7 @@ def g():
     else:
         setattr(g, '_counter', 0)
     print(f"{g._counter=}")
+
+
 g()  # g._counter=0
 g()  # g._counter=1
