@@ -1,5 +1,5 @@
 """
-y, 2022.5.4
+y, 2022.5.4, 5.12
 collections - deque (2).py
 https://docs.python.org/3/library/index.html
 https://docs.python.org/3/library/collections.html#collections.deque
@@ -37,3 +37,11 @@ a.insert(4, 4)
 print(a)  # deque([0, 1, 2, 4], maxlen=4)
 a.reverse()
 print(a)  # deque([4, 2, 1, 0], maxlen=4)
+
+a.append(0)
+print(a)  # deque([2, 1, 0, 0], maxlen=4)
+a.append(0)
+print(a)  # deque([1, 0, 0, 0], maxlen=4)
+a.append(0)
+print(a)  # deque([0, 0, 0, 0], maxlen=4)
+
