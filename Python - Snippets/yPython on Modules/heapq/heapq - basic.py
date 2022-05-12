@@ -1,5 +1,5 @@
 """
-y, 2022.5.2, 5.4
+y, 2022.5.2, 5.4, 5.11
 heapq - basic.py
 https://docs.python.org/3.7/library/heapq.html
 """
@@ -22,7 +22,5 @@ a = [4, 1, 7, 3, 8, 5]
 h = heapify(a)
 print(f"{h=}")  # h=None
 print(a, type(a))  # [1, 3, 5, 4, 8, 7] <class 'list'>
-print(nlargest(3, a))  # [8, 7, 5]
-print(nsmallest(3, a))  # [1, 3, 4]
 
 
