@@ -1,6 +1,6 @@
 """
 y, 2022.5.13
-click - direct function call.py
+click - call click command.py
 https://localcoder.org/call-a-click-command-from-code
 """
 
