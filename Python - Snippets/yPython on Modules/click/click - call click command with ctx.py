@@ -1,11 +1,13 @@
 """
-y, 2022.5.15
+y, 2022.5.15 - 16$
 click - call click command with ctx.py
 https://localcoder.org/call-a-click-command-from-code
 https://stackoverflow.com/questions/50077553/click-use-another-function-in-chained-commands-with-context-object
 """
 
 import click
+import functools
+import sys
 
 
 @click.group()
@@ -15,97 +17,98 @@ def my_group():
 
 @my_group.command()
 @click.pass_context
+@click.argument('arg', default=0, type=int)
 @click.option('-opt1', default=1)
-@click.option('-opt2', default=10)
-def func(ctx, opt1, opt2) -> int:
+@click.option('-opt2', default=2)
+def func(ctx, opt1, opt2, arg) -> int:
     if ctx.obj:
-        print(f"{ctx.obj=}")
-        my_value = ctx.obj['my_value']
-    else:
-        my_value = 0
-    return opt1 + opt2 + my_value
+        print(f"{ctx.obj=}, {ctx.obj['callback']()=}")
+    return arg + opt1 + opt2
 
 
 def call_click_command(cmd, *args, **kwargs):
-    """ Wrapper to call a click command
-    y,  2022.5.13
+    """
+    y,  2022.5.13, 5.16$
 
     References
     ----------
     [1] https://localcoder.org/call-a-click-command-from-code
     """
 
-    # Get positional arguments from args
-    arg_values = {c.name: a for a, c in zip(args, cmd.params)}
-    args_needed = {c.name: c for c in cmd.params if c.name not in arg_values}
+    options = {c.name: c for c in cmd.params}
 
-    # build and check opts list from kwargs
-    opts = {a.name: a for a in cmd.params if isinstance(a, click.Option)}
-    for name in kwargs:
-        if name in opts:
-            arg_values[name] = kwargs[name]
-        else:
-            if name in args_needed:
-                arg_values[name] = kwargs[name]
-                del args_needed[name]
-            else:
-                raise click.BadParameter("Unknown keyword argument '{}'".format(name))
+    if args and isinstance(args[0], click.Context):
+        my_context = args[0]
+        args = tuple(args[1:])
+    else:
+        my_context = None
 
-    # check positional arguments list
-    for arg in (a for a in cmd.params if isinstance(a, click.Argument)):
-        if arg.name not in arg_values:
-            raise click.BadParameter("Missing required positional parameter '{}'".format(arg.name))
+    f_name = sys._getframe(0).f_code.co_name
+    if len(args) > len(options):
+        raise click.BadParameter(f"{f_name}() takes {len(options)} but {len(args)} were given")
+    if set(kwargs) > set(options):
+        unknowns = set(kwargs) - set(options)
+        raise click.BadParameter(f"{f_name}() got an unexpected keyword argument: {unknowns.pop()}")
 
-    # build parameter lists
-    opts_list = sum([[o.opts[0], str(arg_values[n])] for n, o in opts.items()], [])
-    args_list = [str(v) for n, v in arg_values.items() if n not in opts]
+    arguments = dict()
+    for o, a in zip(options, args):
+        arguments[o] = str(a)
+    for k, v in kwargs.items():
+        arguments[k] = str(v)
+    for k, v in options.items():
+        if k not in arguments:
+            arguments[k] = str(v.default)
 
-    # call the command
-    result = cmd(opts_list + args_list, standalone_mode=False)
-
-    # return
-    return result
-
-
-def call_click_command_with_ctx(cmd, ctx, *args, **kwargs):
-    """ Wrapper to call a click command with a Context object
-
-    :param cmd: click cli command function to call
-    :param ctx: click context
-    :param args: arguments to pass to the function
-    :param kwargs: keyword arguments to pass to the function
-    :return: None
-    """
-
-    # monkey patch make_context
-    def make_context(*some_args, **some_kwargs):
-        child_ctx = click.Context(cmd, parent=ctx)
+    def my_make_context(context, *args, **__):
+        child_ctx = click.Context(cmd, parent=context)
         with child_ctx.scope(cleanup=False):
-            # cmd.parse_args(child_ctx, list(args))
-            cmd.parse_args(child_ctx, some_args[-1])
-            # cmd.parse_args(child_ctx, [])
+            cmd.parse_args(child_ctx, args[-1])
         return child_ctx
 
-    cmd.make_context = make_context
-    prev_make_context = cmd.make_context
+    arg_list = []
+    kwarg_list = []
+    for key, value in options.items():
+        if isinstance(value, click.Argument):
+            arg_list.append(arguments[key])
+        elif isinstance(value, click.Option):
+            kwarg_list.extend([value.opts[0], arguments[key]])
 
-    # call the command
-    result = call_click_command(cmd, *args, **kwargs)
-
-    # restore make_context
-    cmd.make_context = prev_make_context
-
+    if my_context:
+        saved = cmd.make_context
+        cmd.make_context = functools.partial(my_make_context, my_context, **arguments)
+        result = cmd(arg_list + kwarg_list, standalone_mode=False)
+        cmd.make_context = saved
+    else:
+        result = cmd(arg_list + kwarg_list, standalone_mode=False)
     return result
 
 
 if __name__ == '__main__':
 
-    print(f"{func.params=}")  # [<Option opt1>, <Option opt2>]
-    print(f"{func(['-opt1', '1'], standalone_mode=False)=}")  # 11
-    print(f"{func(['-opt1', '2', '-opt2', '20'], standalone_mode=False)=}")  # 22
-    print(f"{call_click_command(func, 3, opt2=30)=}")  # 33
+    print(f"{func.params=}")  # [<Argument arg>, <Option opt1>, <Option opt2>]
+    print(f"{func(standalone_mode=False)=}")  # 3
+    print(f"{func(['-opt2', '20'], standalone_mode=False)=}")  # 21
+    print(f"{func(['10', '-opt2', '20'], standalone_mode=False)=}")  # 31
+    print(f"{call_click_command(func)=}")  # 3
+    print(f"{call_click_command(func, opt2=20)=}")  # 21
+    print(f"{call_click_command(func, 10, opt2=20)=}")  # 31
+    ctx = click.Context(func, parent=None, obj=dict(hello='click context', callback=lambda: 'my_callback'))
+    print(f"{call_click_command(func, ctx)=}")  # 3
+    print(f"{call_click_command(func, ctx, opt2=20)=}")  # 21
+    print(f"{call_click_command(func, ctx, 10, opt2=20)=}")  # 31
 
-    ctx = click.Context(func, parent=None, obj=dict(my_value=100, hello='click'))
-    print(f"{call_click_command_with_ctx(func, ctx, 3, opt2=30)=}")  # 133
-    print(f"{call_click_command_with_ctx(func, ctx, opt1=2, opt2=20)=}")  # 122
-    print(f"{call_click_command_with_ctx(func, ctx)=}")  # KeyError: 'opt1'
+    """
+    func.params=[<Argument arg>, <Option opt1>, <Option opt2>]
+    func(standalone_mode=False)=3
+    func(['-opt2', '20'], standalone_mode=False)=21
+    func(['10', '-opt2', '20'], standalone_mode=False)=31
+    call_click_command(func)=3
+    call_click_command(func, opt2=20)=21
+    call_click_command(func, 10, opt2=20)=31
+    ctx.obj={'hello': 'click context', 'callback': <function <lambda> at 0x000001BD18ADC430>}, ctx.obj['callback']()='my_callback'
+    call_click_command(func, ctx)=3
+    ctx.obj={'hello': 'click context', 'callback': <function <lambda> at 0x000001BD18ADC430>}, ctx.obj['callback']()='my_callback'
+    call_click_command(func, ctx, opt2=20)=21
+    ctx.obj={'hello': 'click context', 'callback': <function <lambda> at 0x000001BD18ADC430>}, ctx.obj['callback']()='my_callback'
+    call_click_command(func, ctx, 10, opt2=20)=31
+    """
