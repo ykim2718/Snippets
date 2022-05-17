@@ -1,5 +1,5 @@
 """
-y, 2022.5.15 - 16$
+y, 2022.5.15 - 16$ - 17$
 click - call click command with ctx.py
 https://localcoder.org/call-a-click-command-from-code
 https://stackoverflow.com/questions/50077553/click-use-another-function-in-chained-commands-with-context-object
@@ -20,20 +20,25 @@ def my_group():
 @click.argument('arg', default=0, type=int)
 @click.option('-opt1', default=1)
 @click.option('-opt2', default=2)
-def func(ctx, opt1, opt2, arg) -> int:
+@click.option('-opt3', default=[0, 0], type=int, multiple=True)
+def func(ctx, opt1, opt2, opt3, arg) -> int:
     if ctx.obj:
         print(f"{ctx.obj=}, {ctx.obj['callback']()=}")
-    return arg + opt1 + opt2
+    if sum(opt3):
+        print(f"{opt3=}")
+    return arg + opt1 + opt2 + sum(opt3)
 
 
 def call_click_command(cmd, *args, **kwargs):
     """
-    y,  2022.5.13, 5.16$
+    y,  2022.5.13, 5.16$, 5.17$
 
     References
     ----------
     [1] https://localcoder.org/call-a-click-command-from-code
     """
+
+    assert cmd.params, f"expected click command function but got {cmd=}"
 
     options = {c.name: c for c in cmd.params}
 
@@ -46,7 +51,7 @@ def call_click_command(cmd, *args, **kwargs):
     f_name = sys._getframe(0).f_code.co_name
     if len(args) > len(options):
         raise click.BadParameter(f"{f_name}() takes {len(options)} but {len(args)} were given")
-    if set(kwargs) > set(options):
+    if set(kwargs) - set(options):
         unknowns = set(kwargs) - set(options)
         raise click.BadParameter(f"{f_name}() got an unexpected keyword argument: {unknowns.pop()}")
 
@@ -54,10 +59,16 @@ def call_click_command(cmd, *args, **kwargs):
     for o, a in zip(options, args):
         arguments[o] = str(a)
     for k, v in kwargs.items():
-        arguments[k] = str(v)
+        if isinstance(v, (list, tuple)):
+            arguments[k] = [str(x) for x in v]
+        else:
+            arguments[k] = str(v)
     for k, v in options.items():
         if k not in arguments:
-            arguments[k] = str(v.default)
+            if v.multiple:
+                arguments[k] = list(map(str, v.default))
+            else:
+                arguments[k] = str(v.default)
 
     def my_make_context(context, *args, **__):
         child_ctx = click.Context(cmd, parent=context)
@@ -71,7 +82,11 @@ def call_click_command(cmd, *args, **kwargs):
         if isinstance(value, click.Argument):
             arg_list.append(arguments[key])
         elif isinstance(value, click.Option):
-            kwarg_list.extend([value.opts[0], arguments[key]])
+            if isinstance(arguments[key], list):
+                a = sum([[value.opts[0], arg] for arg in arguments[key]], [])
+            else:
+                a = [value.opts[0], arguments[key]]
+            kwarg_list.extend(a)
 
     if my_context:
         saved = cmd.make_context
@@ -96,6 +111,7 @@ if __name__ == '__main__':
     print(f"{call_click_command(func, ctx)=}")  # 3
     print(f"{call_click_command(func, ctx, opt2=20)=}")  # 21
     print(f"{call_click_command(func, ctx, 10, opt2=20)=}")  # 31
+    print(f"{call_click_command(func, ctx, 10, opt3=(10, 20))=}")  # 33
 
     """
     func.params=[<Argument arg>, <Option opt1>, <Option opt2>]
