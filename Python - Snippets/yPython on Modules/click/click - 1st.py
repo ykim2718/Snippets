@@ -1,8 +1,6 @@
 """
 y, click - 1st.py, 2017.8.9
-
 http://click.pocoo.org/5/
-
 """
 
 import click

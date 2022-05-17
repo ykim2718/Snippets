@@ -9,8 +9,8 @@ import sys
 
 @click.command()
 @click.option('-opt', required=True, help='opt')
-@click.argument('-arg')
-@click.argument('-arg2')
+@click.argument('arg')
+@click.argument('arg2')
 def hello(arg, opt, arg2, **kwargs):
     click.echo(f"{arg=}")
     click.echo(f"{opt=}")
