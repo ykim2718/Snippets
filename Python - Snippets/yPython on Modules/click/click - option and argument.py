@@ -29,10 +29,10 @@ if __name__ == '__main__':
     print(f"{click.__version__=}")  # '8.0.3'
     print(f"{hello.params=}")  # [<Option opt>, <Argument _arg>, <Argument _arg2>]
     if False:
-        sys.argv[1:] = ['arg.', '-opt', 'opt.', 'arg2.']
+        sys.argv[1:] = ['arg_', '-opt', 'opt_', 'arg2_']
         hello()
     else:
         # hello()  # error
-        # hello(['arg', '-opt', 'opt.', 'arg2.'])
-        # hello(['-opt', 'opt.', 'arg.', 'arg2.'])
-        hello(['-opt', 'opt.', 'arg.', 'arg2', '-opt2', 'a', '-opt2', 'b'])
+        # hello(['arg_', '-opt', 'opt_', 'arg2_'])
+        # hello(['-opt', 'opt_', 'arg_', 'arg2_'])
+        hello(['-opt', 'opt_', 'arg_', 'arg2_', '-opt2', 'a', '-opt2', 'b'])
