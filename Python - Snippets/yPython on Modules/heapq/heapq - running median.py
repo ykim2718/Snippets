@@ -23,10 +23,10 @@ class RunningMedian:
         self._median = float('nan')
 
     def add_value(self, a):
-        if a > self._median:
+        if a < self._median:
             hq.heappush(self.stm, HeapNode(a, False))
         else:
-            hq.heappush(self.stm, HeapNode(a))
+            hq.heappush(self.btm, HeapNode(a))
         diff = len(self.btm) - len(self.stm)
         if diff > 1:
             hq.heappush(self.stm, HeapNode(hq.heappop(self.btm).value, False))
@@ -57,22 +57,22 @@ if True:
             rm.add_value(j)
             print([n.value for n in rm.stm], [n.value for n in rm.btm])
         print(f"{rm.median=}")
-        """
-        [5] []
-        rm.median=5
-        [5] [1]
-        [2, 5] [1]
-        rm.median=2
-        [2, 5] [1, 7]
-        [4, 5, 2] [1, 7]
-        rm.median=4
-        [4, 5, 2] [1, 7, 6]
-        [4, 5, 2, 3] [1, 7, 6]
-        rm.median=4
-        [4, 3, 2, 5] [1, 7, 6, 9]
-        [9, 4, 2, 5, 3] [1, 7, 6, 9]
-        rm.median=9
-        """
+    """
+    [] [5]
+    rm.median=5
+    [1] [5]
+    [2, 1] [5]
+    rm.median=2
+    [2, 1] [5, 7]
+    [2, 1] [4, 7, 5]
+    rm.median=4
+    [4, 1, 2] [5, 6, 7]
+    [4, 3, 2, 1] [5, 6, 7]
+    rm.median=4
+    [4, 3, 2, 1] [5, 6, 7, 9]
+    [4, 3, 2, 1] [5, 6, 7, 9, 9]
+    rm.median=5
+    """
 else:
     import sys
     # sys.stdin = open('q17.input')
