@@ -5,12 +5,13 @@ https://blog.hannal.com/2015/03/keyword-only-arguments_and_annotations_for_pytho
 
 print(__doc__)
 
+
 def check_argument_type(func):
     def wrapper(*args):
         annotations = func.__annotations__
         if (
-            not isinstance(annotations, dict) or
-            len(annotations) == 0
+                not isinstance(annotations, dict) or
+                len(annotations) == 0
         ):
             return func(*args)
 
@@ -31,6 +32,7 @@ def check_argument_type(func):
                 )
             )
         return func(*args)
+
     return wrapper
 
 
