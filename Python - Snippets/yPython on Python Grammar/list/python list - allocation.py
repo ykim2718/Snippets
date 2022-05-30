@@ -30,7 +30,7 @@ a[1][1] = 1
 print(a)  # [[0, 0], [0, 1]]
 
 print('- ' * 16)
-a = [0 for _ in range(2)] * 2
+a = [[0] for _ in range(2)] * 2
 print(a, np.array(a).shape)  # [[0], [0], [0], [0]] (4, 1)
 
 print('- ' * 16)
