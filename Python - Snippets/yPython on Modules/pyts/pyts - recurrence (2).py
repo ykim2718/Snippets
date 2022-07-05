@@ -46,7 +46,7 @@ ax1 = fig.add_subplot(gs[0, 0])
 ax2 = fig.add_subplot(gs[0, 1])
 
 title = file_name
-fig.canvas.set_window_title(title)
+fig.canvas.manager.set_window_title(title)
 plt.suptitle(title)
 ax1.imshow(X_rp[0], cmap='binary', origin='lower')
 ax1.set_title('Recurrence Plot')

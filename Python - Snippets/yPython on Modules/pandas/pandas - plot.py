@@ -15,7 +15,7 @@ frame = pd.DataFrame(np.random.randint(0, 99, size=(5, 2)), columns=['one', 'two
 print(frame)
 
 fig = plt.figure()
-fig.canvas.set_window_title(pathlib.Path(__file__).name)
+fig.canvas.manager.set_window_title(pathlib.Path(__file__).name)
 title = 'pd.DataFrame.plot()'
 fig.suptitle(title)
 gs = mpl.gridspec.GridSpec(2, 1)

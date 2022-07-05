@@ -34,7 +34,7 @@ import os
 fig, ax = plt.subplots(2, 1)
 title = os.path.basename(__file__)
 fig.suptitle(title, fontsize='large')
-fig.canvas.set_window_title(title)
+fig.canvas.manager.set_window_title(title)
 
 ax[0].plot(x, y)
 ax[0].set_xlabel('time')

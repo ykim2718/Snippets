@@ -31,7 +31,7 @@ fig.subplots_adjust(wspace=0, hspace=0)
 file_path = __file__
 file_name = os.path.basename(file_path)
 fig.suptitle(file_name, fontsize='large')
-fig.canvas.set_window_title(file_path)
+fig.canvas.manager.set_window_title(file_path)
 
 ax1.plot(frame[_open], 'r-', label='open', alpha=0.5)
 ax1.plot(frame[_high], 'g-', label='high', alpha=0.5)

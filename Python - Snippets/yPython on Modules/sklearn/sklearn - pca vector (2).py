@@ -48,7 +48,7 @@ def arrow(ax1, start, end):
 
 title = pathlib.Path(__file__).name
 fig, ax1 = plt.subplots()
-fig.canvas.set_window_title(title)
+fig.canvas.manager.set_window_title(title)
 fig.suptitle(title)
 ax1.scatter(x, y)
 for pc, s in zip(eigenvectors, sigma):

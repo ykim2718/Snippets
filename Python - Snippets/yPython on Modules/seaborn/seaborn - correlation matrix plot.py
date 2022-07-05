@@ -50,7 +50,7 @@ chart_aspect_ratio = 1.4  # aspect ratio: the ratio of the width to the height o
 chart_count = len(iris.columns)
 
 g = sns.PairGrid(iris, height=chart_height, aspect=chart_aspect_ratio, diag_sharey=False)
-g.fig.canvas.set_window_title(pathlib.Path(__file__).name)
+g.fig.canvas.manager.set_window_title(pathlib.Path(__file__).name)
 g.fig.set_size_inches(chart_height * chart_count * chart_aspect_ratio, chart_height * chart_count)
 g.fig.subplots_adjust(wspace=0, hspace=0)  # , left=0.1, bottom=0.1)
 print(f"g.fig={type(g.fig)}, isinstance(g.fig, mpl.Figure)={isinstance(g.fig, mpl.figure.Figure)}")

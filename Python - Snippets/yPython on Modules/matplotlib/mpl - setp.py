@@ -9,7 +9,7 @@ import pathlib
 
 fig = plt.figure()
 title = pathlib.Path(__file__).stem
-fig.canvas.set_window_title(title)
+fig.canvas.manager.set_window_title(title)
 fig.suptitle(title)
 ax1 = fig.add_subplot()
 plt.setp(ax1, xscale='linear', yscale='log', xlabel='last_price', ylabel='target_price', title='adj_price')

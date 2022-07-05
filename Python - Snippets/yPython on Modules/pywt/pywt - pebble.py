@@ -34,7 +34,7 @@ x = x/x.max()
 cA = cA/cA.max()
 
 fig = plt.figure(figsize=(9, 6))
-fig.canvas.set_window_title(pathlib.Path(__file__).name)
+fig.canvas.manager.set_window_title(pathlib.Path(__file__).name)
 fig.subplots_adjust(hspace=0)
 gs = mpl.gridspec.GridSpec(2, 1)
 ax1 = fig.add_subplot(gs[0, 0])

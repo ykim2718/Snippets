@@ -345,7 +345,7 @@ print(rr_of_pebble_trend)
 fig_title = os.path.basename(__file__)
 fig, (ax1, ax2, ax3, ax4) = plt.subplots(
     facecolor='w', nrows=4, gridspec_kw={'height_ratios': [2, 1, 1, 1]}, sharex=True)
-fig.canvas.set_window_title(fig_title)
+fig.canvas.manager.set_window_title(fig_title)
 fig.suptitle(fig_title, fontsize='large')
 
 # m.plot(forecast)

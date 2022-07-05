@@ -12,7 +12,7 @@ fig.subplots_adjust(wspace=0, hspace=0)
 
 title = os.path.basename(__file__)
 fig.suptitle(title, fontsize='large')
-fig.canvas.set_window_title(title)
+fig.canvas.manager.set_window_title(title)
 
 mu, sigma = 0, 500
 

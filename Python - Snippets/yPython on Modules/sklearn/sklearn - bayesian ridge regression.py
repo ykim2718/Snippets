@@ -37,7 +37,7 @@ X_test = np.vander(x_test, n_order + 1, increasing=True)
 # Plot the true and predicted curves with log marginal likelihood (L)
 reg = BayesianRidge(tol=1e-6, fit_intercept=False, compute_score=True)
 fig, axes = plt.subplots(2, 2, figsize=(8, 8))
-fig.canvas.set_window_title(pathlib.Path(__file__).name)
+fig.canvas.manager.set_window_title(pathlib.Path(__file__).name)
 for j, ax in enumerate(axes.ravel()):
     # Bayesian ridge regression with different initial value pairs
     init = ([1 / np.var(y_train), 1.],  # Default values

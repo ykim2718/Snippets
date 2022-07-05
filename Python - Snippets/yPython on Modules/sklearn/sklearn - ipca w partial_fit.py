@@ -88,7 +88,7 @@ import matplotlib.pyplot as plt
 fig, ax1 = plt.subplots(nrows=1, sharex=True)
 title = os.path.basename(__file__)
 fig.suptitle(title, fontsize='large')
-fig.canvas.set_window_title(title)
+fig.canvas.manager.set_window_title(title)
 
 ax1.scatter(a, inverse_transformed)
 ax1.set_xlabel('original array')

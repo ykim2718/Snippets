@@ -25,7 +25,7 @@ import matplotlib as mpl
 import pathlib
 
 fig = plt.figure()
-fig.canvas.set_window_title(pathlib.Path(__file__).name)
+fig.canvas.manager.set_window_title(pathlib.Path(__file__).name)
 fig.suptitle('sklearn.manifold.TSNE()\nt-distributed Stochastic Neighbor Embedding', fontsize='medium')
 fig.set_size_inches(7, 7)
 fig.subplots_adjust(wspace=0.3)
