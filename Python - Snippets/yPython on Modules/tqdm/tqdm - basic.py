@@ -19,7 +19,7 @@ for i in tqdm.tqdm(range(10), desc='disable=True', disable=True):
     time.sleep(0.1)
 
 
-pbar = tqdm.tqdm(range(10), desc='trange()')
+pbar = tqdm.trange(10, desc='trange()')
 for i in pbar:
     pbar.set_description(f"{pbar.n=}")
     time.sleep(0.1)
