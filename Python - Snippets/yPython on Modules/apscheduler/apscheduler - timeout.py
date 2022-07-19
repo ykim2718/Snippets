@@ -1,5 +1,5 @@
 """
-y, 2022.5.9
+y, 2022.5.9, 7.19
 apscheduler - timeout.py
 https://apscheduler.readthedocs.io/en/3.x/userguide.html
 https://github.com/agronholm/apscheduler/blob/3.x/examples/schedulers/blocking.py
@@ -18,7 +18,7 @@ def block_schedule():
         print('Tick! The time is: %s' % dt.datetime.now())
 
     scheduler = BlockingScheduler(timezone=pytz.timezone('Asia/Seoul'))
-    scheduler.add_job(tick, 'interval', seconds=2)
+    scheduler.add_job(tick, 'interval', seconds=1)
     scheduler.start()
 
 
