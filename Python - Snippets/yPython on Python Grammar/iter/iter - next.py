@@ -1,5 +1,6 @@
 """
-y, iter - next.py, 2019.1.29
+y, 2019.1.29; 2022.7.28
+iter - next.py
 https://www.geeksforgeeks.org/python-difference-iterable-iterator/
 """
 
@@ -10,5 +11,5 @@ cities = ["Berlin", "Vienna", "Zurich"]
 iterator_obj = iter(cities)
 
 print(next(iterator_obj))
-print(next(iterator_obj))
-print(next(iterator_obj))
+for n in iterator_obj:
+    print(f"{n=}")
