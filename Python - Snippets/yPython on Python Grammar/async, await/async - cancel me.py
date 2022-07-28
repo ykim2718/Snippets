@@ -26,8 +26,8 @@ async def main():
 
     # Wait for 1 second
     await asyncio.sleep(1)
-
     task.cancel()
+
     try:
         await task
     except asyncio.CancelledError:
