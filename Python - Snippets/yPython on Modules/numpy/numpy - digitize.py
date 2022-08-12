@@ -6,7 +6,7 @@ https://numpy.org/doc/stable/reference/generated/numpy.digitize.html
 
 import numpy as np
 
-x = np.array([-30, -10, -5, 0, 5, 10 ,30])
+x = np.array([-30, -10, -5, 0, 5, 10, 30])
 print(f"{x=}")
 bins = np.array([-10, -5, 5, 10])
 right = np.digitize(x, bins, right=True)
