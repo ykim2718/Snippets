@@ -1,6 +1,6 @@
 """
 y, 2020.1.20
-numpy - apply function.py
+numpy - apply_along_axis.py
 https://docs.scipy.org/doc/numpy/reference/generated/numpy.apply_along_axis.html
 """
 
