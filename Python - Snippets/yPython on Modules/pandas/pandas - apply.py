@@ -1,5 +1,5 @@
 """
-y, 2016.9.21, Pandas - apply.py
+y, 2016.9.21, pandas - apply.py
 """
 import pandas as pd
 
