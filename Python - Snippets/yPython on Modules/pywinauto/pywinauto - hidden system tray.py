@@ -1,12 +1,15 @@
 """
-y, 2021.1.26, ~2.19
+y, 2021.1.26, ~2.19; 2022.10.16
 pywinauto - hidden system tray.py.py
 """
+
+# import sys
+# sys.coinit_flags = 2  # COINIT_APARTMENTTHREADED
 
 import pywinauto as pwa
 import time
 
-case = 3
+case = 4
 
 if case == 1:  # NOT WORKING
     # https://pywinauto.readthedocs.io/en/latest/HowTo.html#how-to-access-the-system-tray-aka-systray-aka-notification-area
@@ -21,7 +24,7 @@ elif case == 2:  # WORKING
     d = pwa.Desktop(backend='uia')
     # d['작업 표시줄'].dump_tree()  # << working
     d['작업 표시줄'].child_window(title='알림 펼침').click()
-elif case == 3:  # WORKING
+elif case == 3:  # WORKING >> NOT WORKING 2022.10.16
     # https://stackoverflow.com/questions/62190055/handling-context-menu-of-the-taskbar-icon-with-pywinauto
     app = pwa.Application(backend="uia").connect(path="explorer.exe")
     st = app.window(class_name="Shell_TrayWnd")
@@ -53,4 +56,16 @@ elif case == 3:  # WORKING
         # app['Menu'].print_control_identifiers()  # << working
         # app['Menu'].dump_tree()  # << working
         app['Menu']['사운드 관리자'].click_input()  # .click() is not working
+elif case == 4:  # ???
+    # https://stackoverflow.com/questions/50464576/how-to-get-specific-system-tray-icon-using-pywinauto
+    # https://pywinauto.readthedocs.io/en/latest/HowTo.html?highlight=context%20menu#how-to-access-the-system-tray-aka-systray-aka-notification-area
+    if False:
+        app = pwa.Application(backend="uia").connect(path="explorer.exe")
+        st = app.ShellTrayWnd.NotificationAreaToolbar
+    else:
+        st = pwa.Desktop(backend="uia").window(class_name="Shell_TrayWnd")
+    st.print_control_identifiers()
+    t = st.child_window(title="Notification Chevron").wrapper_object()
+    t.click()
+    time.sleep(0.25)
 
