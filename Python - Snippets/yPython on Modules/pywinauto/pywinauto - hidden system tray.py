@@ -3,6 +3,12 @@ y, 2021.1.26, ~2.19; 2022.10.16 - 18
 pywinauto - hidden system tray.py.py
 https://stackoverflow.com/questions/50464576/how-to-get-specific-system-tray-icon-using-pywinauto
 https://pywinauto.readthedocs.io/en/latest/HowTo.html?highlight=context%20menu#how-to-access-the-system-tray-aka-systray-aka-notification-area
+https://stackoverflow.com/questions/67657837/cant-send-keys-to-the-background-window-error-atttributeerror-neither-gui-el
+    form.keyboard.send_keys('{a down}')
+    form.keyboard.send_keys('{a up}')
+https://github.com/pywinauto/pywinauto/issues/247
+    Do not use TypeKeys, ClickInput and derived functions which require active desktop.
+    Other methods just send window messages that work without active desktop and often for a minimized window.
 """
 
 # import sys
@@ -14,7 +20,7 @@ import time
 
 print(f"{pwa.__version__=}")
 
-case = 4
+case = 5
 
 if case == 1:  # NOT WORKING
     # https://pywinauto.readthedocs.io/en/latest/HowTo.html#how-to-access-the-system-tray-aka-systray-aka-notification-area
@@ -136,3 +142,23 @@ elif case == 4:  # SHOULD BE WORKING !!!!
     # app_icon = app_icons.button  # working at home, 2022.10.18
     app_icon = app_icons.child_window(title='Java Update 사용 가능')  # workin at home, 2022.10.18
     app_icon.double_click_input(button='left')  # working only in headful mode, 2022.10.17
+elif case == 5:
+    # https://techinch.com/blog/access-your-windows-system-tray-from-your-keyboard
+    # https://stackoverflow.com/questions/57563945/how-to-press-windows-key-r-pywinauto-send-keys-function
+    pwa.keyboard.send_keys("{VK_LWIN down}b{VK_LWIN up}")
+    pwa.keyboard.send_keys("{ENTER}")
+    sub_case = 1
+    if sub_case == 1:  # headful mode working
+        app = pwa.Application(backend='uia').connect(path='explorer.exe')
+        app_icons = app.window(class_name='NotifyIconOverflowWindow')
+        app_icon = app_icons.child_window(title='Java Update 사용 가능')  # working at home, 2022.10.18
+        app_icon.double_click_input(button='left')  # working only in headful mode, 2022.10.17
+    elif sub_case == 2:  # headful mode working ???
+        pwa.keyboard.send_keys("{VK_LWIN down}b{VK_LWIN up}")
+        pwa.keyboard.send_keys("{VK_RIGHT}")
+        pwa.keyboard.send_keys("{ENTER}")
+    elif sub_case == 3:  # ???
+        pass
+        # TODO 2022.10.18, How to send mouse click event to window ???
+        #   win32gui.PostMessage(window, win32con.MOUSEEVENTF_LEFTDOWN, 0, 0)
+        #   win32gui.PostMessage(window, win32con.MOUSEEVENTF_LEFTUP, 0, 0)
