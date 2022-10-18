@@ -11,9 +11,6 @@ https://github.com/pywinauto/pywinauto/issues/247
     Other methods just send window messages that work without active desktop and often for a minimized window.
 """
 
-# import sys
-# sys.coinit_flags = 2  # COINIT_APARTMENTTHREADED
-
 import pywinauto as pwa
 from pywinauto import taskbar
 import time
