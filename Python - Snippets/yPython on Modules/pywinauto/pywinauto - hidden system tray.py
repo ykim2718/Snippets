@@ -139,6 +139,7 @@ elif case == 4:  # SHOULD BE WORKING !!!!
     # app_icon = app_icons.button  # working at home, 2022.10.18
     # app_icon = app_icons.child_window(title='Java Update 사용 가능')  # workin at home, 2022.10.18
     app_icon.double_click_input(button='right')  # working only in headful mode, 2022.10.17
+    #   >> RuntimeError: There is no active desktop required for moving mouse cursor!
 elif case == 5:
     # https://techinch.com/blog/access-your-windows-system-tray-from-your-keyboard
     # https://stackoverflow.com/questions/57563945/how-to-press-windows-key-r-pywinauto-send-keys-function
