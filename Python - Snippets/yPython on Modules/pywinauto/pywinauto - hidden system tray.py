@@ -20,7 +20,7 @@ import time
 
 print(f"{pwa.__version__=}")
 
-case = 5
+case = 4
 
 if case == 1:  # NOT WORKING
     # https://pywinauto.readthedocs.io/en/latest/HowTo.html#how-to-access-the-system-tray-aka-systray-aka-notification-area
@@ -138,22 +138,22 @@ elif case == 4:  # SHOULD BE WORKING !!!!
        |    | child_window(title="2022.6.56 버전으로 업그레이드 할 수 있습니다.", control_type="Button"
     """
     print('CreonPlus Start'.ljust(32, '-'))
-    # app_icon = app_icons.child_window(title='CreonPlus Start')
+    app_icon = app_icons.child_window(title='CreonPlus Start')  # working at home, 2022.10.18
     # app_icon = app_icons.button  # working at home, 2022.10.18
-    app_icon = app_icons.child_window(title='Java Update 사용 가능')  # workin at home, 2022.10.18
-    app_icon.double_click_input(button='left')  # working only in headful mode, 2022.10.17
+    # app_icon = app_icons.child_window(title='Java Update 사용 가능')  # workin at home, 2022.10.18
+    app_icon.double_click_input(button='right')  # working only in headful mode, 2022.10.17
 elif case == 5:
     # https://techinch.com/blog/access-your-windows-system-tray-from-your-keyboard
     # https://stackoverflow.com/questions/57563945/how-to-press-windows-key-r-pywinauto-send-keys-function
     pwa.keyboard.send_keys("{VK_LWIN down}b{VK_LWIN up}")
     pwa.keyboard.send_keys("{ENTER}")
-    sub_case = 1
-    if sub_case == 1:  # headful mode working
+    sub_case = 2
+    if sub_case == 1:  # working in headful mode, not headless mode, 2022.10.18
         app = pwa.Application(backend='uia').connect(path='explorer.exe')
         app_icons = app.window(class_name='NotifyIconOverflowWindow')
         app_icon = app_icons.child_window(title='Java Update 사용 가능')  # working at home, 2022.10.18
         app_icon.double_click_input(button='left')  # working only in headful mode, 2022.10.17
-    elif sub_case == 2:  # headful mode working ???
+    elif sub_case == 2:  # working in headful mode, not headless mode, 2022.10.18
         pwa.keyboard.send_keys("{VK_LWIN down}b{VK_LWIN up}")
         pwa.keyboard.send_keys("{VK_RIGHT}")
         pwa.keyboard.send_keys("{ENTER}")
