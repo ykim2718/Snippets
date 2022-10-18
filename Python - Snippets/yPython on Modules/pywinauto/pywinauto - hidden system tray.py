@@ -1,5 +1,5 @@
 """
-y, 2021.1.26, ~2.19; 2022.10.16 - 18
+y, 2021.1.26, ~2.19; 2022.10.16 - 19
 pywinauto - hidden system tray.py.py
 https://stackoverflow.com/questions/50464576/how-to-get-specific-system-tray-icon-using-pywinauto
 https://pywinauto.readthedocs.io/en/latest/HowTo.html?highlight=context%20menu#how-to-access-the-system-tray-aka-systray-aka-notification-area
@@ -9,6 +9,12 @@ https://stackoverflow.com/questions/67657837/cant-send-keys-to-the-background-wi
 https://github.com/pywinauto/pywinauto/issues/247
     Do not use TypeKeys, ClickInput and derived functions which require active desktop.
     Other methods just send window messages that work without active desktop and often for a minimized window.
+https://pywinauto.readthedocs.io/en/latest/remote_execution.html
+    First it’s worth listing methods that don’t work on a locked machine:
+        . click_input and all other mouse click and press methods ending with _input.
+        . set_focus as it uses SetCursorPos and SetForegroundWindow.
+        . type_keys for native keyboard input.
+        . Direct usage of modules mouse and keyboard.
 """
 
 import pywinauto as pwa
