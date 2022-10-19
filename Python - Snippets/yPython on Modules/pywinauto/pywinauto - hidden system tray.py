@@ -3,12 +3,13 @@ y, 2021.1.26, ~2.19; 2022.10.16 - 19
 pywinauto - hidden system tray.py.py
 https://stackoverflow.com/questions/50464576/how-to-get-specific-system-tray-icon-using-pywinauto
 https://pywinauto.readthedocs.io/en/latest/HowTo.html?highlight=context%20menu#how-to-access-the-system-tray-aka-systray-aka-notification-area
-https://stackoverflow.com/questions/67657837/cant-send-keys-to-the-background-window-error-atttributeerror-neither-gui-el
+https://stackoverflow.com/questions/67657837/cant-send-keys-to-the-background-window-error-attributeerror-neither-gui-el
     form.keyboard.send_keys('{a down}')
     form.keyboard.send_keys('{a up}')
 https://github.com/pywinauto/pywinauto/issues/247
-    Do not use TypeKeys, ClickInput and derived functions which require active desktop.
-    Other methods just send window messages that work without active desktop and often for a minimized window.
+    Is there any way to run pywinauto in remote desktop session?
+        Do not use TypeKeys, ClickInput and derived functions which require active desktop.
+        Other methods just send window messages that work without active desktop and often for a minimized window.
 https://pywinauto.readthedocs.io/en/latest/remote_execution.html
     First it’s worth listing methods that don’t work on a locked machine:
         . click_input and all other mouse click and press methods ending with _input.
@@ -56,7 +57,7 @@ elif case == 3:  # WORKING at office >> NOT at home 2022.10.16
     app_icons = app.window(class_name="NotifyIconOverflowWindow")
     app_icons.wait('visible', timeout=30, retry_interval=3)
     # app_icons.dump_tree()  # << working
-    app_icon = app_icons.child_window(title='Realtek HD 오디오 관리자')
+    app_icon = app_icons.child_window(title='Realtek HD 오디오 관리자', top_level_only=False, visible_only=False)
     if False:  # working in headful model, not in headless mode
         app_icon.click_input(button='right')
         app = pwa.Application(backend='uia').connect(path=r'C:\Program Files\Realtek\Audio\HDA\RAVCpl64.exe')
@@ -76,7 +77,7 @@ elif case == 3:  # WORKING at office >> NOT at home 2022.10.16
         app['Menu'].print_control_identifiers()  # << working
         app['Menu'].dump_tree()  # << working
         app['Menu']['사운드 관리자'].click_input()  # .click() is not working
-elif case == 4:  # SHOULD BE WORKING !!!!
+elif case == 4:
     app = pwa.Application(backend="uia").connect(path="explorer.exe")
     for window in app.windows():
         print(f"{window.window_text()=}")

@@ -1,6 +1,7 @@
 """
 y, 2022.10.18
 pywinauto - find_elements.py
+https://purplechip.tistory.com/m/42
 """
 
 import pywinauto as pwa
