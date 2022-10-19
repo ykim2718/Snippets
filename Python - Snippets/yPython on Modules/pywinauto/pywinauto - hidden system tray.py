@@ -79,21 +79,21 @@ elif case == 3:  # WORKING at office >> NOT at home 2022.10.16
         app['Menu']['사운드 관리자'].click_input()  # .click() is not working
 elif case == 4:
     app = pwa.Application(backend="uia").connect(path="explorer.exe")
-    for window in app.windows():
-        print(f"{window.window_text()=}")
     if False:  # working
-        app.window(title='작업 표시줄', top_level_only=False, visible_only=False).child_window(title='알림 펼침').click()
         for window in app.windows():
             print(f"{window.window_text()=}")
+            if (text := window.window_text()) == '작업 표시줄':
+                sti = app.window(title=text, top_level_only=False, visible_only=False).child_window(title='알림 펼침')
     else:  # stable working
         w = app.window(title='작업 표시줄', top_level_only=False, visible_only=False).child_window(title='알림 펼침')
-        w.click()
-        w.wait('visible', timeout=30, retry_interval=3)
+    print('clicking ..')
+    sti.click()
+    print('clicked')
+    sti.wait('visible', timeout=30, retry_interval=3)
     print('NotifyIconOverflowWindow'.ljust(32, '-'))
     app = pwa.Application(backend="uia").connect(class_name="NotifyIconOverflowWindow")  # 오버플로 알림 영역
     app_icons = app.window(class_name="NotifyIconOverflowWindow")
     app_icons.wait('visible', timeout=30, retry_interval=3)
-    print(81)
     app_icons.dump_tree()  # << working; informative to get hovering text
     """
     Control Identifiers:
@@ -144,7 +144,7 @@ elif case == 4:
     print('CreonPlus Start'.ljust(32, '-'))
     app_icon = app_icons.child_window(title='CreonPlus Start')  # working at home, 2022.10.18
     # app_icon = app_icons.button  # working at home, 2022.10.18
-    # app_icon = app_icons.child_window(title='Java Update 사용 가능')  # workin at home, 2022.10.18
+    # app_icon = app_icons.child_window(title='Java Update 사용 가능')  # working at home, 2022.10.18
     app_icon.double_click_input(button='right')  # working only in headful mode, 2022.10.17
     #   >> RuntimeError: There is no active desktop required for moving mouse cursor!
 elif case == 5:
