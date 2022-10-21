@@ -1,7 +1,7 @@
 """
 y, 2022.10.19
 ctypes - messagebox.py
-https://docs.python.org/ko/3/library/ctypes.htmll
+https://docs.python.org/ko/3/library/ctypes.html
 """
 
 from ctypes import c_int, WINFUNCTYPE, windll

@@ -84,8 +84,8 @@ elif case == 4:
             print(f"{window.window_text()=}")
             if (text := window.window_text()) == '작업 표시줄':
                 sti = app.window(title=text, top_level_only=False, visible_only=False).child_window(title='알림 펼침')
-    else:  # stable working
-        w = app.window(title='작업 표시줄', top_level_only=False, visible_only=False).child_window(title='알림 펼침')
+    else:  # working
+        sti = app.window(title='작업 표시줄', top_level_only=False, visible_only=False).child_window(title='알림 펼침')
     print('clicking ..')
     sti.click()
     print('clicked')
