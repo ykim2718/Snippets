@@ -23,17 +23,23 @@ from ctypes.wintypes import HWND, LPCWSTR, UINT, BOOL
 def c_str(string, encode='utf-8'):
     return ctypes.c_char_p(string.encode(encode))
 
-un = 'un'
-p1 = 'p1'
-p2 = 'p2'
-un = 'ykimebes'
-p1 = 'yk!me6es'
-p2 = 'y0n9sh1kk!m'
+
+if False:
+    un = 'un'
+    p1 = 'p1'
+    p2 = 'p2'
+else:
+    from y.db import yMongo
+    from finance.define import yMyKey
+    y = yMongo.MongoEx(uri='mongodb://localhost:27017/yFDefine')
+    keys = yMyKey.keys(y, 'ebest', 'measure1')
+    keys = [yMyKey.decrypt(key) for key in keys]
+    print(keys)
+    un, p1, p2, *_ = keys
 
 if True:
     login = my_dll['ETK_Login']
-    print(f"{login(None, un, p1, p2, 0, True)=}")
-    raise NotImplemented
+    print(f"{login(None, un, p1, p2, 0, True)=}")  # not working
 else:
     prototype = WINFUNCTYPE(HWND, c_char_p, c_char_p, c_char_p, c_int, c_bool)
     # paramflags = (1, 'hWnd', 0), (1, 'pszID', 'un'), (1, 'pszPwd', 'p1'), (1, 'pszCertPwd', 'p2'), (1, 'nType', 0), \
