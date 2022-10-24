@@ -2,6 +2,12 @@
 y, 2022.10.19
 ctypes - messagebox.py
 https://docs.python.org/ko/3/library/ctypes.html
+    WINUSERAPI int WINAPI
+    MessageBoxW(
+        HWND hWnd,
+        LPCWSTR lpText,
+        LPCWSTR lpCaption,
+        UINT uType);
 """
 
 from ctypes import c_int, WINFUNCTYPE, windll
