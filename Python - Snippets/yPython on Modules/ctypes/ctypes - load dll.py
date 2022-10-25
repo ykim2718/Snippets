@@ -1,5 +1,5 @@
 """
-y, 2022.10.18 - 24
+y, 2022.10.18 - 25
 ctypes - load dll.py
 https://ryanclaire.blogspot.com/2020/08/python-ctypes-loadlibrary-windows-dll.html
 https://docs.python.org/ko/3/library/ctypes.html
@@ -28,18 +28,19 @@ else:  # office
 print(f"{ip_address=}")
 print(f"{db_uri=}")
 
-server_name = 'hts.ebestsec.co.kr'
+server_ip = 'hts.ebestsec.co.kr'
 server_port = 20001
 
 xingAPI_folder = pathlib.Path(dll_path).parent
 os.chdir(str(xingAPI_folder))
 print(f"{pathlib.Path.cwd()=}")
 
-my_dll = ctypes.windll.LoadLibrary(dll_path)
-# my_dll = ctypes.oledll.LoadLibrary(dll_path)
+# my_dll = ctypes.cdll.LoadLibrary(dll_path)  # cdecl
+my_dll = ctypes.windll.LoadLibrary(dll_path)  # stdcall
+# my_dll = ctypes.oledll.LoadLibrary(dll_path)  # stdcall
 
 from ctypes import WINFUNCTYPE, CFUNCTYPE, PYFUNCTYPE, c_bool, c_int, c_int32, c_double, c_char_p, c_wchar_p
-from ctypes.wintypes import HWND, PCHAR, LPSTR, LPCWSTR, INT, UINT, BOOL
+from ctypes.wintypes import HWND, PCHAR, LPSTR, LPCSTR, LPCWSTR, INT, UINT, BOOL
 
 
 def c_str(string, encode='utf-8'):
@@ -59,6 +60,7 @@ else:
     print(f"{keys=}")
     un, p1, p2, *_ = keys
 
+# connect
 evaluation = 3
 print(f"{evaluation=} to connect ".ljust(32, '-'))
 if evaluation == 1:
@@ -68,23 +70,25 @@ elif evaluation == 2:
     connect = my_dll['ETK_Connect']
     print(f"{connect()=}")
     get_server_name = my_dll['ETK_GetServerName']
-    get_server_name.restype = ctypes.c_char_p
-    print(f"{get_server_name()=}")
-    # FIXME !!! OSError: exception: access violation reading 0x00000034
+    # get_server_name.restype = ctypes.c_wchar_p
+    print(f"{get_server_name()=}")  # FIXME !!! OSError: exception: access violation reading 0x00000034
     #   OSError: exception: access violation writing 0x613FE60F
 elif evaluation == 3:
     prototype = WINFUNCTYPE(c_int, HWND, LPCWSTR, INT, INT, INT, INT)
-    paramflags = (1, 'hWnd', 0), (1, 'pszSvrIP', server_name), (1, 'nPort', server_port), (1, 'nStartMsgID', 0), \
+    paramflags = (1, 'hWnd', 0), (1, 'pszSvrIP', server_ip), (1, 'nPort', server_port), (1, 'nStartMsgID', 0), \
                  (1, 'nTimeOut', 100), (1, 'nSendMaxPacketSize', 999)
     connect = prototype(('ETK_Connect', my_dll), paramflags)
     print(f"{connect()=}")
-    # prototype = CFUNCTYPE(ctypes.POINTER(LPCWSTR * 256),)
-    prototype = CFUNCTYPE(ctypes.c_char_p,)
-    # prototype = CFUNCTYPE(LPCWSTR,)
+    # prototype = WINFUNCTYPE(ctypes.POINTER(LPCWSTR * 256),)
+    prototype = WINFUNCTYPE(ctypes.c_wchar_p,)
+    # prototype = WINFUNCTYPE(ctypes.c_void_p,)
+    # prototype = WINFUNCTYPE(LPCWSTR,)
     paramflags = ()
     get_server_name = prototype(('ETK_GetServerName', my_dll), paramflags)
+    # get_server_name.restype = LPCWSTR
     print(f"{get_server_name()=}")  # FIXME !!! OSError: exception: access violation reading 0x00656C68
 
+# login
 evaluation = 3
 print(f"{evaluation=} to login ".ljust(32, '-'))
 if evaluation == 1:
@@ -101,12 +105,13 @@ elif evaluation == 2:
     print(f"{login()=}")  # 0 로그인요청 전송실패, 1 요청성공
     print(f"{login(*[p[-1] for p in paramflags])=}")  # not working
 elif evaluation == 3:
-    prototype = WINFUNCTYPE(c_int, HWND, LPCWSTR, LPCWSTR, LPCWSTR, INT, BOOL)
+    prototype = WINFUNCTYPE(BOOL, HWND, LPCWSTR, LPCWSTR, LPCWSTR, INT, BOOL)
     paramflags = (1, 'hWnd', 0), (1, 'pszID', un), (1, 'pszPwd', p1), (1, 'pszCertPwd', p2), (1, 'nType', 0), \
                  (1, 'bShowCertErrDlg', True)
     login = prototype(('ETK_Login', my_dll), paramflags)
-    print(f"{login(pszID=un, pszCertPwd=p1)=}")  # 0
+    print(f"{login(pszID=un, pszPwd=p1, pszCertPwd=p2)=}")  # 0
 
+# confirm
 is_connected = my_dll['ETK_IsConnected']
 print(f"{is_connected()=}")
 
