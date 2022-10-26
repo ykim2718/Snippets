@@ -91,7 +91,7 @@ elif evaluation == 4:
     connect = my_dll.ETK_Connect
     connect.argtypes = [HWND, LPCSTR, INT, INT, INT, INT]
     connect.restype = ctypes.c_int
-    print(f"{connect(0, c_str(server_ip), server_port, 0, 100, 999)=}")
+    print(f"{connect(0, c_str(server_ip), server_port, 0, 100, 32)=}")
     get_server_name = my_dll.ETK_GetServerName
     get_server_name.argtypes = []
     get_server_name.restype = ctypes.c_char_p
