@@ -1,6 +1,6 @@
 """
-y, 2022.10.18 - 25
-ctypes - load dll.py
+y, 2022.10.18 - 26
+xingapi - login with dll.py
 https://ryanclaire.blogspot.com/2020/08/python-ctypes-loadlibrary-windows-dll.html
 https://docs.python.org/ko/3/library/ctypes.html
 https://www.programcreek.com/python/example/1243/ctypes.c_char_p
@@ -61,7 +61,7 @@ else:
     un, p1, p2, *_ = keys
 
 # connect
-evaluation = 3
+evaluation = 4
 print(f"{evaluation=} to connect ".ljust(32, '-'))
 if evaluation == 1:
     connect = my_dll['ETK_Connect']
@@ -87,6 +87,16 @@ elif evaluation == 3:
     get_server_name = prototype(('ETK_GetServerName', my_dll), paramflags)
     # get_server_name.restype = LPCWSTR
     print(f"{get_server_name()=}")  # FIXME !!! OSError: exception: access violation reading 0x00656C68
+elif evaluation == 4:
+    connect = my_dll.ETK_Connect
+    connect.argtypes = [HWND, LPCSTR, INT, INT, INT, INT]
+    connect.restype = ctypes.c_int
+    print(f"{connect(0, c_str(server_ip), server_port, 0, 100, 999)=}")
+    get_server_name = my_dll.ETK_GetServerName
+    get_server_name.argtypes = []
+    get_server_name.restype = ctypes.c_char_p
+    server_name = get_server_name()  # FIXME !!! OSError: exception: access violation reading 0x00000016
+    print(f"{server_name=}")
 
 # login
 evaluation = 3
