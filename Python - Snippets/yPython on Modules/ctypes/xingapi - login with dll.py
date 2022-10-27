@@ -41,6 +41,7 @@ else:  # office
     dll_path = r"c:\y\eBEST\xingAPI\xingAPI.dll"
     db_uri = 'mongodb://10.163.130.184:27117'
 print(f"{ip_address=}")
+print(f"{dll_path=}")
 print(f"{db_uri=}")
 
 server_ip = 'hts.ebestsec.co.kr'
@@ -59,7 +60,8 @@ from ctypes.wintypes import HWND, PCHAR, LPSTR, LPCSTR, LPCWSTR, INT, UINT, BOOL
 
 
 def c_str(string, encode='utf-8'):
-    return ctypes.c_char_p(string.encode(encode))
+    # return ctypes.c_wchar_p(string.encode(encode))
+    return string.encode(encode)
 
 
 if False:
@@ -104,7 +106,8 @@ elif evaluation == 3:
     print(f"{get_server_name()=}")  # FIXME !!! OSError: exception: access violation reading 0x00656C68
 elif evaluation == 4:
     connect = my_dll.ETK_Connect
-    connect.argtypes = [HWND, LPCSTR, INT, INT, INT, INT]
+    # connect.argtypes = [HWND, LPCSTR, INT, INT, INT, INT]
+    connect.argtypes = [HWND, ctypes.c_wchar_p, ctypes.c_int, ctypes.c_int, ctypes.c_int, ctypes.c_int]
     connect.restype = ctypes.c_int
     print(f"{connect(0, c_str(server_ip), server_port, 1024, 1000, -1)=}")
     if False:
