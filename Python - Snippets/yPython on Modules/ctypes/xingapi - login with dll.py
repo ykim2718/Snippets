@@ -60,8 +60,8 @@ from ctypes.wintypes import HWND, PCHAR, LPSTR, LPCSTR, LPCWSTR, INT, UINT, BOOL
 
 
 def c_str(string, encode='utf-8'):
-    # return ctypes.c_wchar_p(string.encode(encode))
-    return string.encode(encode)
+    return ctypes.c_char_p(string.encode(encode))
+    # return string.encode(encode)
 
 
 if False:
