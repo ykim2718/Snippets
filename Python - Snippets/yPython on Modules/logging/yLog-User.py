@@ -3,7 +3,7 @@ yLog-User.py
 y (copyRight) 2016.4.30
 """
 
-from y.yLog import ySetLogger, GetLogger
+from y.core.yLog import ySetLogger, GetLogger
 
 
 def testLogInfo():
