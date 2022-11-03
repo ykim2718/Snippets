@@ -1,5 +1,5 @@
 """
-y, 2021.12.10
+y, 2021.12.10; 2022.11.3
 click - group arguments.py
 https://click.palletsprojects.com/en/8.0.x/commands/
 """
@@ -32,5 +32,8 @@ if __name__ == '__main__':
 
     import sys
 
-    sys.argv += ['hello', '--to', 'Johaquin Rodrigo']
-    greet(obj='^___^;;')
+    if False:
+        sys.argv += ['hello', '--to', 'Johaquin Rodrigo']
+        greet(obj='^___^;;')
+    else:
+        greet(['hello', '--to', 'Johaquin Rodrigo'], obj='^____^;;')
