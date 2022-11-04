@@ -63,19 +63,6 @@ def set_axis_legend(ax1, axt=None, loc='upper left', fontsize='small'):
         ax1.legend(numpoints=1, ncol=1, bbox_to_anchor=(0, 1), loc=loc, fontsize=fontsize)
 
 
-# copied to yTime.py, 2018.4.22
-def timedelta_str(timedelta, decimal_point_format="%05.2f"):
-    """ y, 2018.4.22 - 23 """
-
-    if decimal_point_format:
-        *hm, sec = str(timedelta).split(':')
-        hm = ':'.join(hm)
-        sec = decimal_point_format % float(sec)
-        return hm + ':' + sec
-    else:
-        return str(timedelta).split('.', 2)[0]
-
-
 _ds = 'ds'
 _y, _yhat, _yhat_lower, _yhat_upper = 'y', 'yhat', 'yhat_lower', 'yhat_upper'
 
@@ -388,7 +375,7 @@ set_axis_legend(ax4)
 fig.tight_layout()
 fig.subplots_adjust(wspace=0, hspace=0)
 
-print("end at {}, running for {}".format(dt.datetime.now(), timedelta_str(dt.datetime.now() - start_time)))
+print("end at {}, running for {}".format(dt.datetime.now(), time_delta_to_string(dt.datetime.now() - start_time)))
 plt.show()
 
 
