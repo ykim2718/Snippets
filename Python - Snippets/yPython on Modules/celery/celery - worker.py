@@ -1,7 +1,7 @@
 """
 y, 2022.11.20
 celery - worker.py
-https://docs.celery.dev/en/stable/
+https://docs.celeryq.dev/en/stable/
 """
 
 from celery import Celery

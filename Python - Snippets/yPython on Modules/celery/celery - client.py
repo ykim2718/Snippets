@@ -1,7 +1,7 @@
 """
 y, 2022.11.20
 celery - client.py
-https://docs.celery.dev/en/stable/
+https://docs.celeryq.dev/en/stable/
 """
 
 import importlib
@@ -14,7 +14,7 @@ worker = task.background.delay('celery!')
 print(f"{worker.id=}")
 
 if False:
-    while not worker.read():
+    while not worker.ready():
         time.sleep(1)
         print(f"{worker.status=}")
     print(f"{worker.get(timeout=1)=}")
