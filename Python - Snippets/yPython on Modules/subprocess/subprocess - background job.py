@@ -1,13 +1,16 @@
 """
-y, 2022.9.12
+y, 2022.9.12, 12.20
 subprocess - background job.py
 """
 
 import subprocess
+import sys
+import time
 
-print('before Popen')
-proc = subprocess.Popen(["c:\y\Anaconda3\python.exe", "child.py"], shell=True)
+print(__name__, 'before Popen')
+p = subprocess.Popen([sys.executable, "child.py"], shell=True)
 if False:
-    out = proc.communicate()
+    out = p.communicate()
     print(f"{out=}")
-print('after Popen')
+time.sleep(5)  # subprocess killed when manin process is terminated !!! 2022.12.20
+print(__name__, 'after Popen')
