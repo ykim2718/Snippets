@@ -16,7 +16,7 @@ import time
 from warnings import warn
 
 
-def yGetFilesInAFolder(folder_path, recursive=False):
+def get_files_in_a_folder(folder_path, recursive=False):
     """ y (copyRight) 2016.7.25, 9.21 """
 
     all_files = []
@@ -29,7 +29,7 @@ def yGetFilesInAFolder(folder_path, recursive=False):
     return all_files
 
 
-def yGetFilesAtAGivenTimeRange(file_pattern, folder_path, time_range=(), time_for='modification'):
+def get_files_at_a_given_time_range(file_pattern, folder_path, time_range=(), time_for='modification'):
     """ y, 2017.7.30 """
 
     assert os.path.isdir(folder_path)
@@ -44,7 +44,7 @@ def yGetFilesAtAGivenTimeRange(file_pattern, folder_path, time_range=(), time_fo
         'modification': os.path.getmtime,
     }[time_for]
 
-    files = yGetFilesInAFolder(folder_path)
+    files = get_files_in_a_folder(folder_path)
     matched_files = []
     for a_file in files:
         if re.match(file_pattern, os.path.basename(a_file)):
@@ -90,7 +90,7 @@ else:
     start_time = dt.datetime.now()
     stop_time = start_time + dt.timedelta(seconds=30)
     while dt.datetime.now() < stop_time:
-        files = yGetFilesAtAGivenTimeRange(
+        files = get_files_at_a_given_time_range(
             'data\s*(\(\d+\))*.xls[x]*', chrome_download_folder_path, time_range=(start_time, stop_time))
         if len(files):
             if len(files) == 1:
