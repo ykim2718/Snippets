@@ -4,7 +4,7 @@ y, Python - namespace.py, 2017.12.27
 
 import numpy as np
 
-class YNamespace:
+class Namespace:
 
     none = np.nan
 
@@ -20,7 +20,7 @@ class YNamespace:
             return self.none
 
 
-ns = YNamespace()
+ns = Namespace()
 ns.a = 1
 print(ns.a)
 print(ns.b)
