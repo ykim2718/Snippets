@@ -3,7 +3,9 @@ y, 2023.3.2 - 3$
 pandas - calendar - korea event.py
 """
 
-from pandas.tseries.holiday import AbstractHolidayCalendar, Holiday, nearest_workday, previous_workday, Easter, Day
+from pandas.tseries.holiday import (
+    AbstractHolidayCalendar, Holiday, nearest_workday, previous_workday, weekend_to_monday
+)
 from pandas.tseries.offsets import DateOffset, YearBegin, YearEnd
 from dateutil.relativedelta import MO, TU, WE, TH, FR, SA, SU
 import pandas as pd
@@ -31,7 +33,7 @@ class KoreaEventCalendar0(AbstractHolidayCalendar):
 
 
 rules = [
-    Holiday('수출통계발표', month=j, day=1, observance=nearest_workday) for j in range(1, 13)
+    Holiday('수출통계발표', month=j, day=1, observance=weekend_to_monday) for j in range(1, 13)
 ] + [
     Holiday('네마녀의날', month=j, day=1, offset=DateOffset(weekday=TH(2))) for j in [3, 6, 9, 12]
 ] + [
@@ -87,7 +89,7 @@ class KoreaEventCalendar1(AbstractHolidayCalendar):
                 else:
                     raise AssertionError(f"invalid offset={p}")
             if p := event_param.get('observance', None):
-                if p in ['nearest_workday']:
+                if p in ['weekend_to_monday']:
                     event_param['observance'] = eval(p, globals())
                 else:
                     raise AssertionError(f"invalid observance={p}")
@@ -108,7 +110,7 @@ d = {
     "수출통계발표": {
         "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         "day": 1,
-        "observance": "nearest_workday"
+        "observance": "weekend_to_monday"
     },
     "네마녀의날": {
         "month": [3, 6, 9, 12],
