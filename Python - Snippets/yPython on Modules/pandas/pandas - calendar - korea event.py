@@ -6,9 +6,12 @@ pandas - calendar - korea event.py
 from pandas.tseries.holiday import (
     AbstractHolidayCalendar, Holiday, nearest_workday, previous_workday, weekend_to_monday
 )
-from pandas.tseries.offsets import DateOffset, YearBegin, YearEnd
+from pandas.tseries.offsets import DateOffset, YearBegin, YearEnd, QuarterBegin, QuarterEnd, MonthBegin, MonthEnd
 from dateutil.relativedelta import MO, TU, WE, TH, FR, SA, SU
 import pandas as pd
+import datetime
+import functools
+
 
 now = pd.Timestamp.now()
 year_first = now - pd.offsets.YearBegin()
@@ -70,6 +73,9 @@ dtype: object
 
 print(' KoreaEventCalendar1 '.center(64, '-'))
 
+offset_methods = ['MonthEnd()', 'YearEnd()']
+observance_methods = ['weekend_to_monday', 'two_previous_workday', 'three_previous_workday']
+
 
 class KoreaEventCalendar1(AbstractHolidayCalendar):
 
@@ -90,12 +96,12 @@ class KoreaEventCalendar1(AbstractHolidayCalendar):
         name = _id['event']
         description = event.pop('description', '')
         if p := event.get('offset', None):
-            if p in ['YearFirst()', 'YearEnd()'] or p.startswith('DateOffset'):
+            if p in offset_methods or p.startswith('DateOffset'):
                 event['offset'] = eval(p, globals())
             else:
                 raise AssertionError(f"invalid offset={p}")
         if p := event.get('observance', None):
-            if p in ['weekend_to_monday']:
+            if p in observance_methods:
                 event['observance'] = eval(p, globals())
             else:
                 raise AssertionError(f"invalid observance={p}")
@@ -117,6 +123,26 @@ class KoreaEventCalendar1(AbstractHolidayCalendar):
         return a
 
 
+def find_previous_workday(dt: datetime, offset_days=1) -> datetime:
+    """ y, 2023.3.5 """
+
+    assert isinstance(offset_days, int) and offset_days >= 1
+
+    def _skip_weekend(dt):
+        while dt.weekday() > 4:  # Mon-Fri are 0-4
+            dt -= datetime.timedelta(days=1)
+        return dt
+
+    dt = _skip_weekend(dt)
+    dt -= datetime.timedelta(days=offset_days)
+    dt = _skip_weekend(dt)
+    return dt
+
+
+two_previous_workday = functools.partial(find_previous_workday, offset_days=2)
+three_previous_workday = functools.partial(find_previous_workday, offset_days=3)
+
+
 a = [
     {
         "_id": {"country": "Korea", "event": "수출통계발표"},
@@ -131,6 +157,20 @@ a = [
         "month": [3, 6, 9, 12],
         "day": 1,
         "offset": "DateOffset(weekday=TH(2))"
+    },
+    {
+        "_id": {"country": "Korea", "event": "대주주기준일"},
+        "description": "대주주 양도차익 과세기준일",
+        "month": 12,
+        "day": 31,
+        "observance": "three_previous_workday"
+    },
+    {
+        "_id": {"country": "Korea", "event": "배당락일"},
+        "description": "배당기준일 다음날 (하락예상)",
+        "month": 12,
+        "day": 31,
+        "observance": "two_previous_workday"
     }
 ]
 
