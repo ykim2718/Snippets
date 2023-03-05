@@ -1,5 +1,5 @@
 """
-y, 2023.3.2 - 3$
+y, 2023.3.2 - 3$ - 5
 pandas - calendar - korea event.py
 """
 
@@ -73,58 +73,67 @@ print(' KoreaEventCalendar1 '.center(64, '-'))
 
 class KoreaEventCalendar1(AbstractHolidayCalendar):
 
-    def __init__(self, rules):
-        assert isinstance(rules, dict) and rules
-        a = []
-        for event_name, event_para in self.event_generator(rules):
-            a.append(Holiday(event_name, **event_para))
-        super().__init__(rules=a)
+    def __init__(self, events):
+        assert isinstance(events, list) and events
+        self.descriptions = dict()
+        rules = []
+        for event in events:
+            for name, description, parameters in self.event_generator(event):
+                rules.append(Holiday(name, **parameters))
+                self.descriptions[name] = description
+        super().__init__(rules=rules)
 
     @staticmethod
-    def event_generator(event_dict):
-        for event_name, event_param in event_dict.items():
-            if p := event_param.get('offset', None):
-                if p in ['YearFirst()', 'YearEnd()'] or p.startswith('DateOffset'):
-                    event_param['offset'] = eval(p, globals())
-                else:
-                    raise AssertionError(f"invalid offset={p}")
-            if p := event_param.get('observance', None):
-                if p in ['weekend_to_monday']:
-                    event_param['observance'] = eval(p, globals())
-                else:
-                    raise AssertionError(f"invalid observance={p}")
-            for key, value in event_param.items():
-                if isinstance(value, list):
-                    for v in value:
-                        yield event_name, event_param | {key: v}
-                    break
+    def event_generator(event):
+        assert isinstance(event, dict)
+        _id = event.pop('_id')
+        name = _id['event']
+        description = event.pop('description', '')
+        if p := event.get('offset', None):
+            if p in ['YearFirst()', 'YearEnd()'] or p.startswith('DateOffset'):
+                event['offset'] = eval(p, globals())
             else:
-                yield event_name, event_param
+                raise AssertionError(f"invalid offset={p}")
+        if p := event.get('observance', None):
+            if p in ['weekend_to_monday']:
+                event['observance'] = eval(p, globals())
+            else:
+                raise AssertionError(f"invalid observance={p}")
+        for key, value in event.items():
+            if isinstance(value, list):
+                for v in value:
+                    yield name, description, event | {key: v}
+                break
+        else:
+            yield name, description, event
 
-    def events(self, start=None, stop=None) -> pd.Series:
-        return self.holidays(start=start, end=stop, return_name=True)
+    def events(self, start=None, stop=None) -> pd.DataFrame:
+        names = self.holidays(start=start, end=stop, return_name=True)
+        assert isinstance(names, pd.Series), f"expected pd.Series but got {names=}"
+        names.name = 'name'
+        descriptions = names.apply(lambda name: self.descriptions[name])
+        descriptions.name = 'description'
+        a = pd.concat([names, descriptions], axis=1)
+        return a
 
 
-d = {
-    "_id": "Korea",
-    "수출통계발표": {
+a = [
+    {
+        "_id": {"country": "Korea", "event": "수출통계발표"},
+        "description": "산업통상자원부 수출입동향 발표 (매달 1일)",
         "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         "day": 1,
-        "observance": "weekend_to_monday"
+        # "observance": "weekend_to_monday"
     },
-    "네마녀의날": {
+    {
+        "_id": {"country": "Korea", "event": "네마녀의날"},
+        "description": "주가지수 선물과 옵션 그리고 개별주식 선물과 옵션의 만기일",
         "month": [3, 6, 9, 12],
         "day": 1,
         "offset": "DateOffset(weekday=TH(2))"
-    },
-    "연말휴장일": {
-        "month": 1,
-        "day": 1,
-        "offset": "YearEnd()"
     }
-}
-d.pop('_id')
+]
 
-cal = KoreaEventCalendar1(d)
+cal = KoreaEventCalendar1(a)
 events = cal.events(year_first, year_last)
 print(f"{type(events)=}, events=\n{events}")
