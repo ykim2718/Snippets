@@ -1,10 +1,10 @@
 """
-y, 2023.3.2 - 3$ - 5
+y, 2023.3.2 - 3$ - 6
 pandas - calendar - korea event.py
 """
 
 from pandas.tseries.holiday import (
-    AbstractHolidayCalendar, Holiday, nearest_workday, previous_workday, weekend_to_monday
+    AbstractHolidayCalendar, Holiday, next_workday, previous_workday, weekend_to_monday
 )
 from pandas.tseries.offsets import DateOffset, YearBegin, YearEnd, QuarterBegin, QuarterEnd, MonthBegin, MonthEnd
 from dateutil.relativedelta import MO, TU, WE, TH, FR, SA, SU
@@ -40,8 +40,7 @@ rules = [
 ] + [
     Holiday('네마녀의날', month=j, day=1, offset=DateOffset(weekday=TH(2))) for j in [3, 6, 9, 12]
 ] + [
-    # Holiday('연말휴장일', month=1, day=1, observance=previous_workday)
-    Holiday('연말휴장일', month=12, day=1, observance=YearEnd())
+    Holiday('연말휴장일', month=1, day=1, observance=previous_workday)
 ]
 
 
@@ -66,7 +65,7 @@ events=2023-01-02    수출통계발표
 2023-11-01    수출통계발표
 2023-12-01    수출통계발표
 2023-12-14     네마녀의날
-2023-12-31     연말휴장일
+2023-12-29     연말휴장일
 dtype: object
 """
 
