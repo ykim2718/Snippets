@@ -23,7 +23,7 @@ else:
     host_and_port = dict(host='localhost', port=27017)
     client = pymongo.MongoClient(**host_and_port, tz_aware=True)
     database = client['yMeasureKorea']
-    collection = database['stock_pb_day']  # stock_pb_day, stock_short_selling, stock_pb_minute
+    collection = database['stock_pb_day__daishin']  # stock_pb_day, stock_short_selling, stock_pb_minute
     target_key = 'date'
     temporary_collection_name = '_naive_time'
     if database[temporary_collection_name].count_documents({}):
