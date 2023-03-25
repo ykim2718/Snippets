@@ -1,6 +1,6 @@
 """
 y, 2020.1.9
-sklearn - minmax scaler (3).py
+sklearn - min_max scaler (3).py
 """
 
 from sklearn.preprocessing import MinMaxScaler

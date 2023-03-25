@@ -1,5 +1,5 @@
 """
-y, sklearn - scaler - minmax.py, 2019.12.26
+y, sklearn - scaler - min_max.py, 2019.12.26
 http://benalexkeen.com/feature-scaling-with-scikit-learn/
 """
 
