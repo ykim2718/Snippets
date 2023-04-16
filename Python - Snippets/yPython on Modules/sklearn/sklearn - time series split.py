@@ -6,6 +6,7 @@ https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSe
 
 import numpy as np
 from sklearn.model_selection import TimeSeriesSplit
+
 X = np.array([[1, 2], [3, 4], [1, 2], [3, 4], [1, 2], [3, 4]])
 y = np.array([1, 2, 3, 4, 5, 6])
 print(f"X.shape={X.shape}, y.shape={y.shape}")
@@ -15,3 +16,11 @@ for train_index, test_index in tscv.split(X):
     print("TRAIN:", train_index, "TEST:", test_index)
     X_train, X_test = X[train_index], X[test_index]
     y_train, y_test = y[train_index], y[test_index]
+
+"""
+X.shape=(6, 2), y.shape=(6,)
+TimeSeriesSplit(gap=0, max_train_size=None, n_splits=3, test_size=None)
+TRAIN: [0 1 2] TEST: [3]
+TRAIN: [0 1 2 3] TEST: [4]
+TRAIN: [0 1 2 3 4] TEST: [5]
+"""
