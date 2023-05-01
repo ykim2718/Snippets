@@ -1,13 +1,27 @@
 """
-y, python class - namespace.py, 2018.9.4
+y, Python - namespace.py, 2017.12.27
 """
 
+import numpy as np
+
+
 class Namespace:
-    pass
+    none = np.nan
+
+    def __init__(self, none=np.nan):
+
+        self.none = none
+
+    def __getattribute__(self, item):
+
+        try:
+            return super().__getattribute__(item)
+        except:
+            return self.none
+
 
 ns = Namespace()
 ns.a = 1
-print(vars(ns))
-
-ns.__dict__.update(dict(a=2, b=3))
+print(ns.a)
+print(ns.b)
 print(vars(ns))
