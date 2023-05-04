@@ -1,7 +1,7 @@
 """
 y, 2023.4.30
 numpy - unique.py
-https://stackoverflow.com/questions/28663856/how-do-i-count-the-occurence-of-a-certain-item-in-an-ndarray
+https://stackoverflow.com/questions/28663856/how-do-i-count-the-occurrence-of-a-certain-item-in-an-ndarray
 """
 
 import numpy as np

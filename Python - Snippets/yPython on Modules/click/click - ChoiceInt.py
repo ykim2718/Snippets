@@ -37,7 +37,7 @@ class CliChoiceInt(click.ParamType):
 @click.option('-choice', default=0, type=CliChoiceInt([0, 1, 2]))
 # @click.option('-choice', default=0, type=CliChoiceInt(['0', '1', '2']))
 def hello(choice):
-    click.echo(f"{choice=} in hellow()")
+    click.echo(f"{choice=} in hello()")
 
 
 if __name__ == '__main__':
