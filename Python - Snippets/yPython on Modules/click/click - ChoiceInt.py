@@ -6,7 +6,7 @@ click - ChoiceInt.py
 import click
 
 
-class CliChoiceInt(click.ParamType):
+class ChoiceInt(click.ParamType):
     """ y, 2023.5.1 """
 
     def __init__(self, choices=[]):
@@ -21,7 +21,7 @@ class CliChoiceInt(click.ParamType):
     def __repr__(self) -> str:
         """ y, 2023.5.1 """
 
-        return f"CliChoiceInt({list(self.choices)})"
+        return f"ChoiceInt({list(self.choices)})"
 
     def convert(self, value, param, ctx):
         """ y, 2023.5.1 """
@@ -34,8 +34,8 @@ class CliChoiceInt(click.ParamType):
 
 
 @click.command()
-@click.option('-choice', default=0, type=CliChoiceInt([0, 1, 2]))
-# @click.option('-choice', default=0, type=CliChoiceInt(['0', '1', '2']))
+@click.option('-choice', default=0, type=ChoiceInt([0, 1, 2]))
+# @click.option('-choice', default=0, type=ChoiceInt(['0', '1', '2']))
 def hello(choice):
     click.echo(f"{choice=} in hello()")
 
