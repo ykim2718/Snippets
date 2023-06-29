@@ -1,5 +1,5 @@
 """
-y, 2023.3.2 - 3$ - 6
+y, 2023.3.2 - 3$ - 6, 6.29
 pandas - calendar - korea event.py
 """
 
@@ -73,7 +73,7 @@ dtype: object
 print(' KoreaEventCalendar1 '.center(64, '-'))
 
 offset_methods = ['MonthEnd()', 'YearEnd()']
-observance_methods = ['weekend_to_monday', 'two_previous_workday', 'three_previous_workday']
+observance_methods = ['weekend_to_monday', 'previous_workday', 'two_previous_workday', 'three_previous_workday']
 
 
 class KoreaEventCalendar1(AbstractHolidayCalendar):
@@ -94,6 +94,10 @@ class KoreaEventCalendar1(AbstractHolidayCalendar):
         _id = event.pop('_id')
         name = _id['event']
         description = event.pop('description', '')
+        if p := event.get('day', None):
+            if isinstance(p, list):
+                print(p)
+                pass
         if p := event.get('offset', None):
             if p in offset_methods or p.startswith('DateOffset'):
                 event['offset'] = eval(p, globals())
@@ -170,6 +174,14 @@ a = [
         "month": 12,
         "day": 31,
         "observance": "two_previous_workday"
+    },
+    {
+        "_id": {"country": "Korea", "event": "developing"},
+        "description": "every thursday event",
+        "month": [1, 2],
+        "day": [1],  # FIXME 2023.6.29 !!! NOT WORKING >> TypeError: an integer is required (got type list)
+        "offset": "DateOffset(weekday=3)",
+        # "observance": "previous_workday"
     }
 ]
 
