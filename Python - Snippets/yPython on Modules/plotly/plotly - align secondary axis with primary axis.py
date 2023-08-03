@@ -1,5 +1,5 @@
 """
-y, 2023.8.1
+y, 2023.8.1, 8.3
 plotly - align secondary axis with primary axis.py
 https://www.appsloveworld.com/python/717/align-secondary-percentage-y-axis-with-primary-y-axis-in-plotly
 https://plotly.com/python/axes/
@@ -34,7 +34,7 @@ fig.add_trace(
     secondary_y=True,
 )
 
-if False:
+if True:
     fig.add_trace(
         go.Scatter(x=[1.5, 2.5, 3.5], y=[4, 3, 2], name="y3"),
         secondary_y=True,
@@ -157,7 +157,7 @@ if approach == 'set_tick_values':
 if approach == 'set_tickmode_sync':
     assert plotly.__version__ >= '5.15.0', 'not certain of version but need recent one :<'
     fig.update_layout(
-        yaxis=dict(
+        yaxis2=dict(
             # title=dict(text="Right Axis"),
             # side="right",
             tickmode="sync",
