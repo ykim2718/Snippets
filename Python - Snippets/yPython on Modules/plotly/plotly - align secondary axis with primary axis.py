@@ -34,10 +34,11 @@ fig.add_trace(
     secondary_y=True,
 )
 
-fig.add_trace(
-    go.Scatter(x=[1.5, 2.5, 3.5], y=[4, 3, 2], name="y3"),
-    secondary_y=True,
-)
+if False:
+    fig.add_trace(
+        go.Scatter(x=[1.5, 2.5, 3.5], y=[4, 3, 2], name="y3"),
+        secondary_y=True,
+    )
 
 # Add figure title
 fig.update_layout(
