@@ -1,5 +1,5 @@
 """
-y, pyMongo - dataframe.py, 2017.6.22 - 23
+y, pymongo - dataframe.py, 2017.6.22 - 23
 """
 
 import pymongo
@@ -28,7 +28,7 @@ def yDfReadDataFromXlsx(file_path, index_names=[], sortby_columns=[], select_col
     return df
 
 
-if __name___ == '__main__':
+if __name__ == '__main__':
 
     file_path = 'sample.xlsx'
     sheet_name = 'sheet1'
