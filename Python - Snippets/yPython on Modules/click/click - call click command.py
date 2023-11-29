@@ -8,11 +8,11 @@ import click
 
 
 @click.group()
-def my_group():
+def click_group():
     pass
 
 
-@my_group.command()
+@click_group.command()
 @click.pass_context
 @click.option('-opt1', default=1)
 @click.option('-opt2', default=2)

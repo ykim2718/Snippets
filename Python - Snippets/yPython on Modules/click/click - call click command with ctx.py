@@ -11,11 +11,11 @@ import sys
 
 
 @click.group()
-def my_group():
+def click_group():
     pass
 
 
-@my_group.command()
+@click_group.command()
 @click.pass_context
 @click.argument('arg', default=0, type=int)
 @click.option('-opt1', default=1)

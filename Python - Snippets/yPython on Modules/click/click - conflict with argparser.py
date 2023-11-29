@@ -14,11 +14,11 @@ if __name__ == '__main__':
         args = parser.parse_args()
 
     @click.group()
-    def my_group():
+    def click_group():
         pass
 
-    @my_group.command()
+    @click_group.command()
     def test():
         print('test() .. circument conflict between argparse and click')
 
-    my_group()
+    click_group()
