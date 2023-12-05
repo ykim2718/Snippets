@@ -1,5 +1,5 @@
 """
-y, 2020.4.9
+y, 2020.4.9; 2023.12.5
 weakref - finalizer, py
 https://docs.python.org/3.6/library/weakref.html#finalizer-objects
 """
@@ -17,10 +17,10 @@ if False:
     del kenny
 
 else:
-    def test():
+    def func():
         kenny = Object()
         weakref.finalize(kenny, print, "You killed Kenny!")
         return kenny
-    kenny = test()
+    kenny = func()
 
 print('end...')
