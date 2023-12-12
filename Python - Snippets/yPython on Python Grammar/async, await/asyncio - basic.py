@@ -1,6 +1,6 @@
 """
 y, 2020.3.8 - 9
-async - basic.py
+asyncio - basic.py
 [1] https://docs.python.org/ko/3.7/library/asyncio-task.html
 [2] https://soooprmx.com/archives/6882
 """

@@ -1,15 +1,17 @@
 """
 y, 2022.5.28
-async - asyncio.run.py
+asyncio - asyncio.run.py
 https://ryanking13.github.io/2018/07/12/python-37-whats-new.html
 """
 
 import asyncio
 import requests
 
+
 async def arequest(url):
     response = requests.get(url)
     return response
+
 
 urls = [
     'https://www.google.com',
