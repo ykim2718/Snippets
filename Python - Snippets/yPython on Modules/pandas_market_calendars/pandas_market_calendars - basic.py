@@ -37,7 +37,7 @@ print(f"{xkrx.regular_market_times=}")
 extended = xkrx.schedule(start_date='2024-1-1', end_date='2024-01-05')
 print(f"xkrx {extended=}")
 # FIXME !!! 2024/1/2 개장일의 개장시간이 10시였음에도 market_open=2024-01-02 00:00:00+00:00 임. 틀림 !!!!
-#   TradingHours.com에서는 irregular scheudle open 10:00am - 3:30pm 이라고 정확히 알고 있음.
+#   그러나 TradingHours.com에서는 irregular schedule open 10:00am - 3:30pm 이라고 정확히 알고 있음.
 """
 xkrx extended=                         market_open               break_start  \
 2024-01-02 2024-01-02 00:00:00+00:00 2024-01-02 03:00:00+00:00   
