@@ -3,14 +3,10 @@ y, 2024.1.11 - 12
 pandas_market_calendars - basic.py
 https://pandas-market-calendars.readthedocs.io/en/latest/index.html
     pip install pandas_market_calendars
-https://pandas-market-calendars.readthedocs.io/en/latest/usage.html
 """
 
-# import sys
-# sys.path.append("../")
-from datetime import time
 import pandas as pd
-import pandas_market_calendars as mcal
+import pandas_market_calendars as mcal  # pip install pandas_market_calendars
 
 # https://stackoverflow.com/questions/49188960/how-to-show-all-columns-names-on-a-large-pandas-dataframe
 pd.options.display.max_columns = None
