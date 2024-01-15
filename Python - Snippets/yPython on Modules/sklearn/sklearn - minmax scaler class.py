@@ -1,5 +1,5 @@
 """
-y, sklearn - min_max scaler Ex.py, 2018.12.12
+y, sklearn - min_max scaler class.py, 2018.12.12; 2024.1.15
 https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html
 """
 
@@ -7,8 +7,17 @@ import sklearn.preprocessing as skl_preprocessing
 import numpy as np
 
 
-class YMinMaxScalerEx(skl_preprocessing.MinMaxScaler):
+class MinMaxScalerEx(skl_preprocessing.MinMaxScaler):
     """ y, 2018.12.12 """
+
+    def __init__(self, keep_sign=False, **kwargs):
+        """
+        y,  2019.11.17
+            2024.1.15
+        """
+
+        self.keep_sign = bool(keep_sign)
+        super().__init__(**kwargs)
 
     def transform_y(self, y, y_anchor_location):  # y_anchor_location: y loc in x columns
         """ y, 2018.12.12 """
@@ -29,7 +38,7 @@ class YMinMaxScalerEx(skl_preprocessing.MinMaxScaler):
 
 X = [[-1, 2], [-0.5, 6], [0, 10], [1, 18]]
 Y = [1, 2, 3, 4]
-scaler = YMinMaxScalerEx()
+scaler = MinMaxScalerEx()
 scaler.fit(X)
 X_t = scaler.transform(X)
 Y_t = scaler.transform_y(Y, 0)
