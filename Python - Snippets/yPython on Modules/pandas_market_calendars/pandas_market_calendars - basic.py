@@ -17,6 +17,7 @@ print(f"{calendar_names=}")
 
 
 nyse = mcal.get_calendar('NYSE')
+print(f"{nyse.name=}")
 print(f"{nyse.tz.zone=}")
 print(f"{nyse.regular_market_times=}")
 extended = nyse.schedule(start_date='2023-11-03', end_date='2023-11-06', start="pre", end="post")
