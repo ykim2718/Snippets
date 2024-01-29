@@ -36,15 +36,15 @@ nyse extended=                                 pre               market_open  \
 """
 
 
-xkrx = mcal.get_calendar('XKRX')  # KOREA
-print(f"{xkrx.tz.zone=}")
-print(f"{xkrx.regular_market_times=}")
-extended = xkrx.schedule(start_date='2024-1-1', end_date='2024-01-03', tz='Asia/Seoul')
-print(f"xkrx {extended=}")
+krx = mcal.get_calendar('XKRX')  # KOREA
+print(f"{krx.tz.zone=}")
+print(f"{krx.regular_market_times=}")
+extended = krx.schedule(start_date='2024-1-1', end_date='2024-01-03', tz='Asia/Seoul')
+print(f"krx {extended=}")
 # FIXME !!! 2024/1/2 개장일의 개장시간이 10시였음에도 market_open=2024-01-02 00:00:00+00:00 임. 틀림 !!!!
 #   그러나 TradingHours.com에서는 irregular schedule open 10:00am - 3:30pm 이라고 정확히 알고 있음.
 """
-xkrx extended=                         market_open               break_start  \
+krx extended=                         market_open               break_start  \
 2024-01-02 2024-01-02 00:00:00+09:00 2024-01-02 03:00:00+09:00   
 2024-01-03 2024-01-03 00:00:00+09:00 2024-01-03 03:00:00+09:00   
 """
