@@ -28,7 +28,7 @@ e=<win32_element_info.HwndElementInfo - '', DummyDWMListenerWindow, 66464>
 e=<win32_element_info.HwndElementInfo - '', DummyDWMListenerWindow, 66414>
 e=<win32_element_info.HwndElementInfo - '', DummyDWMListenerWindow, 66412>
 e=<win32_element_info.HwndElementInfo - '관리자:  control_daily_op.bat : daily-operation', ConsoleWindowClass, 789618>
-e=<win32_element_info.HwndElementInfo - '관리자:  measure_korea_on_weekdays_with_ebest.bat : update_consensus_price_from_ebest  ~2h50m', ConsoleWindowClass, 10947754>
+e=<win32_element_info.HwndElementInfo - '관리자:  measure_korea_on_weekdays_with_ebest.bat : update_stock_price_consensus_from_ebest  ~2h50m', ConsoleWindowClass, 10947754>
 e=<win32_element_info.HwndElementInfo - 'Program Manager', Progman, 131840>
 """
 
