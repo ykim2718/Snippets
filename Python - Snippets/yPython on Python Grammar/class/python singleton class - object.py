@@ -1,5 +1,5 @@
 """
-y, 2023.12.22; 2024.1.18
+y, 2023.12.22; 2024.1.18, 5.12
 python singleton class - new.py
 https://www.geeksforgeeks.org/singleton-pattern-in-python-a-complete-guide/
 """
@@ -15,10 +15,13 @@ class SingletonClass(object):
 
 class Klass(SingletonClass):
 
+    _instantiated = False
     _args = []
     _kwargs = dict()
 
     def __init__(self, *args, **kwargs):
+        print(f"{self.__class__.__name__}.__init__({args=}, {kwargs=}): {id(self.instance)=}, {self._instantiated=}")
+        self._instantiated = True
         self._args += list(args)
         self._kwargs |= kwargs
 
