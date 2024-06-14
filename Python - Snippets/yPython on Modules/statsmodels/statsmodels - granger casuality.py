@@ -14,7 +14,7 @@ from statsmodels.tsa.stattools import grangercausalitytests
 import numpy as np
 
 data = sm.datasets.macrodata.load_pandas()
-frame = data.data[["realgdp", "realcons"]].pct_change().dropna()
+frame = data.data[["realgdp", "realcons"]].pct_change(fill_method=None).dropna()
 print(frame.shape)
 
 gc_res = grangercausalitytests(frame, 4, verbose=True)  # all lags up to 4
