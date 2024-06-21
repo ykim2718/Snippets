@@ -30,7 +30,7 @@ if trend == 'savgol_trend':
 elif trend == 'seasonal_decomposed_trend':
     from statsmodels.tsa.seasonal import seasonal_decompose
     result = seasonal_decompose(y, model='multiplicative', freq=seaonsal_decomposition_freq)
-    y2 = pd.Series(result.trend).ffill().fillna(method='bfill').values  # brutal extrapolation, y
+    y2 = pd.Series(result.trend).ffill().bfill().values  # brutal extrapolation, y
     y3 = y - y2
 
 # single-sided amplitude spectrum
