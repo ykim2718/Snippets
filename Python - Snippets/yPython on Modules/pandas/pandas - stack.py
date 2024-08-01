@@ -22,8 +22,7 @@ index
 102  8  9  10  11
 """
 
-f = f.stack(level=0)
-print(f)
+print(f"{f.stack(level=0)=}")
 """
 2nd         a   b
 index 1st        
@@ -33,4 +32,22 @@ index 1st
       B     6   7
 102   A     8   9
       B    10  11
+"""
+
+print(f"{f.stack(level=[0, 1])=}")
+"""
+f.stack(level=[0, 1])=index  1st  2nd
+100    A    a       0
+            b       1
+       B    a       2
+            b       3
+101    A    a       4
+            b       5
+       B    a       6
+            b       7
+102    A    a       8
+            b       9
+       B    a      10
+            b      11
+dtype: int32
 """
