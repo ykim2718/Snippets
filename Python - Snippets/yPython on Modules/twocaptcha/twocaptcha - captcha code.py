@@ -1,0 +1,54 @@
+"""
+y, 2024.8.4
+twocaptcha - captcha code.py
+https://www.youtube.com/watch?v=hrBCG0ERoTo
+https://www.youtube.com/watch?v=R6QddZzCOwM
+https://2captcha.com/blog/captcha-bypass-in-selenium?utm_source=youtube&utm_medium=en
+"""
+
+import ctypes
+assert ctypes.sizeof(ctypes.c_voidp) * 8 == 32
+
+from selenium.webdriver.common.by import By
+from twocaptcha import TwoCaptcha  # pip install 2captcha-python
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium import webdriver
+import my_api
+
+
+# TRASS 무역통계 잠정치조회
+api_key = my_api.api_key
+captcha_page_url = 'https://www.bandtrass.or.kr/customs/total.do?command=CUS001View&viewCode=CUS00401'
+captcha_page_site_key = '6LcYC5YoAAAAAHKm7P482kG9YFEjr-igs23SkZPr'
+
+
+# Instantiate the WebDriver
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+
+# Load the target page
+# captcha_page_url = "https://recaptcha-demo.appspot.com/recaptcha-v2-checkbox.php"
+driver.get(captcha_page_url)
+
+# Solve the Captcha
+print("Solving Captcha")
+solver = TwoCaptcha(api_key)
+response = solver.recaptcha(sitekey=captcha_page_site_key, url=captcha_page_url)
+code = response['code']
+print(f"Successfully solved the Captcha. The solve code is {code}")
+"""
+03AFcWeA4KZviVQEaEwb7pNvME-LH2s7tiyCJW-jn8icG79lw2om_pRwYoUm9-zT0A1L0n0T2F5ybFbtMahTqK5ioWxS3cZDTXEWkZxosfXcXoQxz-TiMCelu1z6BRf6Qrfmk8AcN67JGhBVN9p5LYBc8gKIPMwcWpkRjRc7t3tlgFJ4TvBVjObeXY_kBhul9F_PsToJpJikmcmiIIVbspimjV2YvAn-D5Lfy-dWf-ER6pA2h7I5UdXFyBoyEk-xR24TGGuawMpCNX0OkTloKvrl6x7xgpEhZ5fmsN6GSqGFpZjhc3GB874gzMyBFkiYWsJb4mfgfdNNRWBLdKuOjc9OBkkP8q6-l4kd5DgYp8JyoESyQZFBoBdCQNrhIrVj8Q0fRIMuUI3cQxSaw1v16XVeR03AYV8CyM5s0U8KDrGpSBhi-qQY2A-2YrRYA2139Ky5PTwwo52EsYmKAncLFPDhO7ZIgKC8byhm6L2ERxCx3EDnzEdbJmGmMmOymJrjfuuVm-gyzVOZUaLp2_ZL0E_vIL1HamPT7UQNEbWBa-erxlRlTPhrle6h61zPXxHldvoXN_NE-Q4bvr123Di_6FHbG9L1Mg2m6zz7IBQkSPOyuBdwF7xHfxOIAi4yW1DqcV3_hhR4iDMEz_eVRZlOjARNPL211QBbhIcv7bAkGYgZrCAAxnXfHJ50fgN5ncBJcuXmje9jxrx0_n730qLPPbuLDUCqmw_4jB0fVKemjgYp5x8ssGnp_lhvLh0EgFZ6Cp5Cm_qJpyNrpK_VeFToE3GKe8_StcxzgRvDlFdsYAzRagj1hD5dbMg3kiaq7zjR4Q2b0dqP4In72mJt4A6Nb0vGEssNGSZf8Q5kKaQ_ChCRxAqzV6lY25feAT4wdLh5mWXh0nr5TK8meOUbP5PVQfafs1_sbL5zDdvTMD-BrjK-cDll9yzgRmDKbrWak7-BvMbloVV-IJypvlgCEua7_XRklLOE2haa3png8-fW88ZyEobXIp0BSXsoQ1Px0wEIt2tgUkPRjbcBE6nKh0Y8IlMBGuLBP5jentOhV8dDQxMsMMqS1mrTrHTV-ZQnjBadIVBRoQFdlDRFbK3-kPsP7WWmC3C2ZAhPAPJdY-okxVIZTD9uD4GHeHUv_1tBjQfevtUau7_mW2ncdO973-DV-acTSa-0ktmG1V9ETZAraFbItzYZaXGzSgY4CsM7Tr8Q76_8SFb8KRPcW2qN2i72S_5NfrVMPiQRACig22LQKYdZDEDr00BA3WAg-aylYLD4mtgf-yodnSFKvxK4RCEibTofZ8aVIuyx4GMY0xsfPxfwCRWa2vrfFZeLcn0wdeWAuA3-yqWE2Q_PWJNU2WWrUdT7136cBwzPhQ98xbXlYGxs4eUfivPn7GYklULqtqMGMXm95PYcFSM71vd3wyFDJYA9fV9g5j2JeKcoD28Jkg2dsrd4Ph7k-MViiY7s1qN8-vNw8Hrn2wuQdcDHCIG2-OZziuwtuz-aRljH20rh1Yc1Axqah_3Ymy6yAFSIeD2Vwz729xkWvtBfWgoPDqiXs93cSp_-9JmmNFt_UuVjjkthiE24SJq7sG6hZ8NVpv9KtnB4x16_OsOkpycQRhjPrGOnYro6tZhFfoptLL4unfBpn8dH1xOThtZfR1jRkNYJe3SaHrrNl7YMMbJ2SYBbonNQ5HbmBNbFVNkfiAEirPhmOMVsT1rcCUv_94FRrBHdEEbYixnbSXXiuHacrOl8Q2saw4nuAHidlgIOPBPBq33ZfhQWI7nV1nV9LIyW3QFEXhoyWOmr2pWQSKZ5dxkadBaSEERmu3XvqlDnmYgMvAXk2fOdfQhmHOjnQFEOGgACCXXJoUI4qOkK-VCfzJ1Ftqq_jvSZdq6Q9Gdr_XQ1tKVuUJDj0sFj3BN9Qjmr6XKq_P5D22lBfnTP3hAugLPbAww-_sSaEjuNPKsju7fYVdWvVgnvFRIb0V5i0zmWOZX1GBXd6dWLkZNQBg783wKnwlp0nTB84wPRGt5r2AEhBSE8Lu5EWkSrXjvfH2AomVNPJBSSs3Itp16g2TDfG9BcTvEQ_8eJZH393SdkPLkYc5F5ELrX_xlqFtaFpGmfe0EaRLZN58l-dF3irbkdnJ37YA9WDO95oXymuFCDlz-JzM8SKr25li1lSCPTQwiWQtnvzXfY1OY8XqY1K3NZqBRoMwyR3PobUMnZeRu5ddpXbXZ_E3TCQMtYcuzHC3V5rf27dFvFXmOlDfUGegt-MFoiaqsVtD3gchZpfK-Q
+"""
+
+# Set the solved Captcha
+recaptcha_response_element = driver.find_element(By.ID, 'g-recaptcha-response')
+driver.execute_script(f'arguments[0].value = "{code}";', recaptcha_response_element)
+
+# Submit the form
+submit_btn = driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]')
+submit_btn.click()
+
+# Pause the execution so you can see the screen after submission before closing the driver
+input("Press enter to continue")
+driver.close()
+
