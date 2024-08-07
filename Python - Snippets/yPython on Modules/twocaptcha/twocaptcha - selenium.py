@@ -31,6 +31,7 @@ driver = webdriver.Chrome(service=service, options=options)
 
 # Load the target page
 driver.get(captcha_page_url)
+print(f"{driver.current_url=}")
 
 # Solve the Captcha
 print("Solving Captcha")
