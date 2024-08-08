@@ -42,7 +42,7 @@ class MultipleRequestsSession(SingletonClass):
 
         print(f"{session_count=}")
 
-        self.my_ip = self.get_session_ip()  # 118.220.52.143
+        self.my_ip = self.get_session_ip_address()  # 118.220.52.143
         self.my_sessions = self.generate_sessions(
             session_count=session_count, max_session_count=max_session_count, skip_my_ip=skip_my_ip)
         
@@ -59,7 +59,7 @@ class MultipleRequestsSession(SingletonClass):
                 'http': f"socks5://127.0.0.1:{port}",
                 'https': f"socks5://127.0.0.1:{port}"
             }
-            ip_address = self.get_session_ip(session)
+            ip_address = self.get_session_ip_address(session)
             if not re.match(self._ip_address_pattern, ip_address):
                 session = ''
             return session, ip_address
@@ -95,7 +95,7 @@ class MultipleRequestsSession(SingletonClass):
         text += ")"
         return text
 
-    def get_session_ip(self, session=None) -> str:
+    def get_session_ip_address(self, session=None) -> str:
         """
         y,  2023.12.21 - 22
             2024.1.11
