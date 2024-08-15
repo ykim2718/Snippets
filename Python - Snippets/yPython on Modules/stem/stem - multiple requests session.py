@@ -43,7 +43,7 @@ class MultipleRequestsSession(SingletonClass):
         print(f"{session_count=}")
 
         self.my_ip = self.get_session_ip_address()  # 118.220.52.143
-        self.my_sessions = self.generate_sessions(
+        self.generated_sessions = self.generate_sessions(
             session_count=session_count, max_session_count=max_session_count, skip_my_ip=skip_my_ip)
         
     def generate_sessions(self, session_count=5, max_session_count=100, skip_my_ip=True):
@@ -91,7 +91,7 @@ class MultipleRequestsSession(SingletonClass):
 
         text = f"{self.__class__.__name__}("
         text += f"my_ip={self.my_ip}, "
-        text += f"count={len(self.my_sessions)}, ip={tuple(self.my_sessions)}"
+        text += f"count={len(self.generated_sessions)}, ip={tuple(self.generated_sessions)}"
         text += ")"
         return text
 
