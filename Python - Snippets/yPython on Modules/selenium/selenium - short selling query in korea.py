@@ -29,7 +29,7 @@ def get_files_in_a_folder(folder_path, recursive=False):
     return all_files
 
 
-def get_files_at_a_given_time_range(file_pattern, folder_path, time_range=(), time_for='modification'):
+def get_files_at_a_given_time_range(folder_path, file_pattern, time_range=(), time_for='modification'):
     """ y, 2017.7.30 """
 
     assert os.path.isdir(folder_path)
@@ -91,7 +91,7 @@ else:
     stop_time = start_time + dt.timedelta(seconds=30)
     while dt.datetime.now() < stop_time:
         files = get_files_at_a_given_time_range(
-            'data\s*(\(\d+\))*.xls[x]*', chrome_download_folder_path, time_range=(start_time, stop_time))
+            chrome_download_folder_path, 'data\s*(\(\d+\))*.xls[x]*', time_range=(start_time, stop_time))
         if len(files):
             if len(files) == 1:
                 print(files)

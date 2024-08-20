@@ -28,7 +28,7 @@ class SingletonClass(object):
         return cls.instance
 
 
-class MultipleRequestsSession(SingletonClass):
+class TorRequestsSession(SingletonClass):
     """ y, 2023.12.21 - 22 """
 
     _ip_address_pattern = \
@@ -42,8 +42,8 @@ class MultipleRequestsSession(SingletonClass):
 
         print(f"{session_count=}")
 
-        self.my_ip = self.get_session_ip_address()  # 118.220.52.143
-        self.generated_sessions = self.generate_sessions(
+        self.my_addr = self.get_session_ip_address()  # 118.220.52.143
+        self.sessions = self.generate_sessions(
             session_count=session_count, max_session_count=max_session_count, skip_my_ip=skip_my_ip)
         
     def generate_sessions(self, session_count=5, max_session_count=100, skip_my_ip=True):
@@ -76,7 +76,7 @@ class MultipleRequestsSession(SingletonClass):
         for j in range(max_session_count):
             session, ip_address = _get_session_and_ip(port1)
             if session:
-                if skip_my_ip and ip_address == self.my_ip:
+                if skip_my_ip and ip_address == self.my_addr:
                     continue
                 sessions[ip_address] = session
                 if len(sessions) == session_count:
@@ -90,8 +90,8 @@ class MultipleRequestsSession(SingletonClass):
         """ y, 2024.1.11 """
 
         text = f"{self.__class__.__name__}("
-        text += f"my_ip={self.my_ip}, "
-        text += f"count={len(self.generated_sessions)}, ip={tuple(self.generated_sessions)}"
+        text += f"my_addr={self.my_addr}, "
+        text += f"count={len(self.sessions)}, addr={tuple(self.sessions)}"
         text += ")"
         return text
 
@@ -114,5 +114,5 @@ class MultipleRequestsSession(SingletonClass):
         return r.text
 
 
-mrs = MultipleRequestsSession(session_count=5)
-print(f"{mrs=}")
+trs = TorRequestsSession(session_count=5)
+print(f"{trs=}")
