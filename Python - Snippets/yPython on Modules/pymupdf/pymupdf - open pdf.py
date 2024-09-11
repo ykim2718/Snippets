@@ -7,7 +7,7 @@ https://pypi.org/project/PyMuPDF/
 import pymupdf   # pip install PyMuPDF
 
 
-def read_pdf(file_path, key_pattern, use_re=False):
+def read_pdf_page(file_path, key_pattern, use_re=False):
 
     assert isinstance(file_path, (str, pathlib.Path))
     assert isinstance(key_pattern, str)
@@ -183,7 +183,7 @@ if __name__ == '__main__':
             key_text = key_text.replace('(', '\(').replace(')', '\)')
             use_re = True
         print(f"{key_text=}")
-        text = read_pdf(file_path, key_text, use_re=use_re)
+        text = read_pdf_page(file_path, key_text, use_re=use_re)
         # print(text)
         if text:
             f = extract_korea_top_15_exports_table(text)
