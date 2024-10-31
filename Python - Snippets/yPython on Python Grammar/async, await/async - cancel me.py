@@ -21,7 +21,7 @@ async def cancel_me():
 
 
 async def main():
-    # Create a "cancel_me" MachineLearningTask
+    # Create a "cancel_me" ModelTask
     task = asyncio.create_task(cancel_me())
 
     # Wait for 1 second
