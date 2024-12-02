@@ -72,7 +72,7 @@ else:
     from y.db import yMongo
     from finance.define import yMyKey
     y = yMongo.MongoEx(uri=db_uri)
-    keys = yMyKey.get_keys(server='ebest', field='user.measure1.keys')
+    keys = yMyKey.get_keys(server='ebest', field='user.xing_api.keys')
     keys = yMyKey.decrypt(keys)
     print(f"{keys=}")
     un, p1, p2, *_ = keys
