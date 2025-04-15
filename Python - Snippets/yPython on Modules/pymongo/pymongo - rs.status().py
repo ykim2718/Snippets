@@ -24,11 +24,11 @@ replicas = dict(
 
 server = servers['S1']
 for key, value in replicas.items():
-    # uri = f"mongodb://{server}:{value}/?replicaSet={key}"
-    uri = f"mongodb://{server}:{value}"
+    # url = f"mongodb://{server}:{value}/?replicaSet={key}"
+    url = f"mongodb://{server}:{value}"
     print(f"replica={key}")
-    print(f"uri={uri}")
-    client = pymongo.MongoClient(uri, replicaset=key)
+    print(f"url={url}")
+    client = pymongo.MongoClient(url, replicaset=key)
     time.sleep(0.1)
     print(f"client.nodes={client.nodes}")
     status = client.admin.command('replSetGetStatus', codec_options=codec_options)

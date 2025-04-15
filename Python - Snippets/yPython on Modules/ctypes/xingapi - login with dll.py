@@ -71,7 +71,7 @@ if False:
 else:
     from y.db import yMongo
     from finance.define import yMyKey
-    y = yMongo.MongoEx(uri=db_uri)
+    y = yMongo.MongoEx(url=db_uri)
     keys = yMyKey.get_server_keys(mongo=y, server='ebest', field='user.xing_api.keys')
     keys = yMyKey.decrypt(keys)
     print(f"{keys=}")
