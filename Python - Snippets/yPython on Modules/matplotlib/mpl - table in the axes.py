@@ -2,6 +2,9 @@
 y, 2022.3.5
 mpl - table in the axes.py
 https://www.delftstack.com/ko/howto/matplotlib/plot-table-using-matplotlib/
+https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.table.html
+    Note: Line breaks in the strings are currently not accounted for and will result in the text
+    exceeding the cell boundaries.
 """
 
 import matplotlib.pyplot as plt
