@@ -88,10 +88,10 @@ except Exception as ex:
 else:
     driver.quit()
     start_time = dt.datetime.now()
-    stop_time = start_time + dt.timedelta(seconds=30)
-    while dt.datetime.now() < stop_time:
+    end_time = start_time + dt.timedelta(seconds=30)
+    while dt.datetime.now() < end_time:
         files = get_files_at_a_given_time_range(
-            chrome_download_folder_path, 'data\s*(\(\d+\))*.xls[x]*', time_range=(start_time, stop_time))
+            chrome_download_folder_path, 'data\s*(\(\d+\))*.xls[x]*', time_range=(start_time, end_time))
         if len(files):
             if len(files) == 1:
                 print(files)

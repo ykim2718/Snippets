@@ -9,11 +9,11 @@ import pandas as pd
 
 query_days = 10
 start_date = pd.Timestamp('2020-1-1', tz='Asia/Seoul')
-stop_date = pd.Timestamp('2020-3-31', tz='Asia/Seoul')
+end_date = pd.Timestamp('2020-3-31', tz='Asia/Seoul')
 
-intervals = pd.interval_range(start=start_date, end=stop_date, freq=f"{query_days}B")
-if intervals[-1].right < stop_date:
-    end_interval = pd.IntervalIndex.from_breaks([intervals[-1].right, stop_date])
+intervals = pd.interval_range(start=start_date, end=end_date, freq=f"{query_days}B")
+if intervals[-1].right < end_date:
+    end_interval = pd.IntervalIndex.from_breaks([intervals[-1].right, end_date])
     intervals = intervals.append(end_interval)
 for j, interval in enumerate(intervals, start=1):
     print(j, interval)

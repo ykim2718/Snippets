@@ -275,9 +275,9 @@ if False:
     col_y = 'aclose'
     max_training_size = 52 * 5 * 2  # 52 weeks/year x 5 days/week x 2 year
     start_date = pd.Timestamp('2017-1-1')
-    stop_date = pd.Timestamp('2017-12-31')
-    # stop_date = pd.Timestamp('2017-1-5')
-    mask = (start_date <= frame.index) & (frame.index <= stop_date)
+    end_date = pd.Timestamp('2017-12-31')
+    # end_date = pd.Timestamp('2017-1-5')
+    mask = (start_date <= frame.index) & (frame.index <= end_date)
     total = mask.sum()
     results = pd.DataFrame()
     results.index.name = 'test_date'  # last date of test
@@ -314,12 +314,12 @@ else:
     test = pd.read_csv('./sample/test.csv', index_col=0, parse_dates=True)
     results = pd.read_csv('./sample/results.csv', index_col=0, parse_dates=True)
     obs, obs_ref = test[_y], training[_y][-1]
-    # start_date, stop_date = results['training_date'][0], results.index[-1]
+    # start_date, end_date = results['training_date'][0], results.index[-1]
     start_date = pd.Timestamp('2017-1-1')
-    stop_date = pd.Timestamp('2017-12-31')
+    end_date = pd.Timestamp('2017-12-31')
 
 
-scenario = frame.loc[start_date:stop_date].copy()
+scenario = frame.loc[start_date:end_date].copy()
 add_swing_paths_to_scenario(scenario, results, keep=10)
 scenario.to_csv('./sample/scenario.csv')
 rr_of_swing_paths = calculate_rr_of_swing_paths(scenario)
@@ -345,7 +345,7 @@ ax1.fill_between(test.index, test[_yhat_lower], test[_yhat_upper], color='r', al
 ax1.plot(test[_yhat], ls='-', c='r', label='yhat_test')
 ax1.set_ylabel('eoc')
 ax1.set_title(results.index[-1].date(), loc='right', size='small')
-ax1.set_xlim(start_date, stop_date)
+ax1.set_xlim(start_date, end_date)
 ax1.ticklabel_format(axis='y', style='sci', scilimits=(-2, 2))
 set_axis_legend(ax1)
 

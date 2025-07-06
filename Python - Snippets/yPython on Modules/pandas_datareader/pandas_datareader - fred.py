@@ -9,8 +9,8 @@ import datetime as dt
 
 
 start_date = dt.datetime(2020, 1, 1)
-stop_date = dt.datetime(2022, 12, 31)
-a = pdr.data.DataReader('GDP', 'fred', start_date, stop_date)
+end_date = dt.datetime(2022, 12, 31)
+a = pdr.data.DataReader('GDP', 'fred', start_date, end_date)
 print(a.tail())
 
 """

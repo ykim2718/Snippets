@@ -5,9 +5,9 @@ y, numpy - fft on pebble.py, 2018.11.27
 import pandas as pd
 import numpy as np
 
-start_time, stop_time = '2017-11-1', '2017-12-31'
-start_time, stop_time = '2017-10-15', '2017-12-15'
-# start_time, stop_time = '2017-10-1', '2017-11-30'
+start_time, end_time = '2017-11-1', '2017-12-31'
+start_time, end_time = '2017-10-15', '2017-12-15'
+# start_time, end_time = '2017-10-1', '2017-11-30'
 csv_file_path = r'..\_data\a000030-day.csv'
 n_sigma_cut = 0
 trend = 'seasonal_decomposed_trend'
@@ -15,7 +15,7 @@ polyorder_of_filter = 4
 seaonsal_decomposition_freq = 5
 
 frame = pd.read_csv(csv_file_path, index_col=0, parse_dates=True, dtype=np.float32)
-y = frame.loc[start_time:stop_time, 'close'].values
+y = frame.loc[start_time:end_time, 'close'].values
 n = len(y)
 x = range(n)
 

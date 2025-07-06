@@ -7,8 +7,8 @@ import datetime as dt
 import operator
 
 
-def get_biz_date_list(start_date, stop_date):
-    dates = pd.date_range(start_date, stop_date, freq='D')
+def get_biz_date_list(start_date, end_date):
+    dates = pd.date_range(start_date, end_date, freq='D')
     if len(dates) == 0: return []
     print(dates, type(dates), len(dates))
     dates = dates[dates.dayofweek < 5]
