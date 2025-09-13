@@ -1,6 +1,6 @@
 """
 y, 2025.9.11
-dataclass - key-aware queue.py
+dataclass - one key queue.py
 copilot
 """
 
@@ -9,18 +9,18 @@ from dataclasses import dataclass
 
 
 @dataclass
-class KeyAwareNode:
+class OneKeyNode:
     id: int
     key: str
     value: str
 
 
-class KeyAwareQueue:
+class OneKeyQueue:
     def __init__(self):
         self.q = queue.Queue()
         self.last_key = None
 
-    def add(self, obj: KeyAwareNode):
+    def add(self, obj: OneKeyNode):
         if self.last_key is not None and obj.key != self.last_key:
             self.flush()
         self.q.put(obj)
@@ -47,14 +47,14 @@ class KeyAwareQueue:
 
 if __name__ == "__main__":
     stream = [
-        KeyAwareNode(1, "2023-09-10", "A"),
-        KeyAwareNode(2, "2023-09-10", "B"),
-        KeyAwareNode(3, "2023-09-11", "C"),
-        KeyAwareNode(4, "2023-09-11", "D"),
-        KeyAwareNode(5, "2023-09-12", "E"),
+        OneKeyNode(1, "2023-09-10", "A"),
+        OneKeyNode(2, "2023-09-10", "B"),
+        OneKeyNode(3, "2023-09-11", "C"),
+        OneKeyNode(4, "2023-09-11", "D"),
+        OneKeyNode(5, "2023-09-12", "E"),
     ]
 
-    processor = KeyAwareQueue()
+    processor = OneKeyQueue()
     for node in stream:
         processor.add(node)
     processor.finalize()
