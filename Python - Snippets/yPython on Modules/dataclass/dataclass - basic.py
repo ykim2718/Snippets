@@ -1,5 +1,5 @@
 """
-y, 2025.9.16
+y, 2025.9.16, 10.1
 dataclass - basic.py
 """
 
@@ -14,7 +14,10 @@ class Parameter:
     quantity: Union[int, float]
 
 
-p = Parameter(quantity=1.0, price=2.0)
+p = Parameter(quantity=0, price=0)
+print(p)
+p.price += 1
+p.quantity += 2
 print(p)
 print(f"{p.price=}, {p.quantity=}")
 print(f"{vars(p)=}")
