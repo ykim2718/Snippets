@@ -41,5 +41,5 @@ try:
 except KeyError as ex:
     print('KeyError')
 else:
-    print('else')
+    print('else')  # NOT REACHED HERE BEFORE ZeroDivisionError, 2025.10.19
 
