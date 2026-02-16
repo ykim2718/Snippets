@@ -12,7 +12,7 @@ import pandas as pd
 import datetime as dt
 
 
-class YObjectEncoder(json.JSONEncoder):
+class MyObjectEncoder(json.JSONEncoder):
     """ y (copyRight)
         2016.5.15, 10.25 - 26, 11.10
         2017.3.18, 5.11, 6.6, 6.21
@@ -66,13 +66,13 @@ class YObjectEncoder(json.JSONEncoder):
         return obj
 
 
-class YObject:
+class MyObject:
     """ y, 2017.6.21 """
 
     def dump_to_dict(self):
         """ y, 2017.6.21 """
 
-        jdumps = json.dumps(attributes, cls=YObjectEncoder, indent=2, sort_keys=False, ensure_ascii=False)
+        jdumps = json.dumps(attributes, cls=MyObjectEncoder, indent=2, sort_keys=False, ensure_ascii=False)
         return json.loads(jdumps)
 
     def load_dict(self, a_dict):
@@ -85,7 +85,7 @@ def function_outside():
     pass
 
 
-class Glsss(YObject):
+class Glsss(MyObject):
 
     tricky = {1: print, 2: function_outside}
     time = dt.datetime.now()
@@ -133,7 +133,7 @@ if __name__ == "__main__":
         doc = docs[0]  # for simple demonstration
         doc_id = doc.pop('_id', None)  # prevent from 'circular reference' error during converting to json
 
-        k = YObject()
+        k = MyObject()
         k.load_dict(doc)
         print('widthdrawn .. \n', k.dump_to_dict())
 
