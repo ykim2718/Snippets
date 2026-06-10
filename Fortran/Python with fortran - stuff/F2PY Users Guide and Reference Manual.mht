@@ -1,0 +1,3494 @@
+From: =?ks_c_5601-1987?B?SW50ZXJuZXQgRXhwbG9yZXIgMTG/obytIMD6wOW1yg==?=
+Subject: F2PY Users Guide and Reference Manual
+Date: Sun, 31 Jan 2016 21:21:07 +0900
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01D15C6D.4CBA8D60"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7601.17609
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01D15C6D.4CBA8D60
+Content-Type: text/html;
+	charset="ks_c_5601-1987"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://sysbio.ioc.ee/projects/f2py2e/usersguide/
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!--?xml version=3D"1.0" encoding=3D"latin-1" ?--><!DOCTYPE html PUBLIC =
+"-//W3C//DTD XHTML 1.0 Transitional//EN" =
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML=20
+lang=3D"en" lang=3D"en" xml:lang=3D"en"=20
+xmlns=3D"http://www.w3.org/1999/xhtml"><HEAD><META =
+content=3D"IE=3D11.0000"=20
+http-equiv=3D"X-UA-Compatible">
+=20
+<META http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dks_c_5601-1987">=20
+<META name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.18163"> =
+<TITLE>F2PY Users=20
+Guide and Reference Manual</TITLE>=20
+<META name=3D"author" content=3D"Pearu Peterson">=20
+<META name=3D"date" content=3D"2005-01-30"> <LINK =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/default.css"=20
+rel=3D"stylesheet" type=3D"text/css"> </HEAD>=20
+<BODY>
+<DIV class=3D"document" id=3D"f2py-users-guide-and-reference-manual">
+<H1 class=3D"title">F2PY Users Guide and Reference Manual</H1>
+<TABLE class=3D"docinfo" rules=3D"none" frame=3D"void">
+  <COLGROUP>
+  <COL class=3D"docinfo-name">
+  <COL class=3D"docinfo-content">
+  <TBODY valign=3D"top">
+  <TR>
+    <TH class=3D"docinfo-name">Author:</TH>
+    <TD>Pearu Peterson</TD></TR>
+  <TR>
+    <TH class=3D"docinfo-name">Contact:</TH>
+    <TD><A class=3D"first last reference"=20
+      href=3D"mailto:pearu@cens.ioc.ee">pearu@cens.ioc.ee</A></TD></TR>
+  <TR class=3D"field">
+    <TH class=3D"docinfo-name">Web site:</TH>
+    <TD class=3D"field-body"><A class=3D"reference" =
+href=3D"http://cens.ioc.ee/projects/f2py2e/">http://cens.ioc.ee/projects/=
+f2py2e/</A></TD></TR>
+  <TR>
+    <TH class=3D"docinfo-name">Date:</TH>
+    <TD>2005-01-30</TD></TR>
+  <TR>
+    <TH class=3D"docinfo-name">Revision:</TH>
+    <TD>1.25</TD></TR></TBODY></TABLE><!-- -*- rest -*- -->=20
+<DIV class=3D"contents topic" id=3D"contents">
+<P class=3D"topic-title"><A name=3D"contents">Contents</A></P>
+<UL class=3D"auto-toc simple">
+  <LI><A name=3D"id17" class=3D"reference" id=3D"id17" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#introduction">1=
+=A0=A0=A0Introduction</A></LI>
+  <LI><A name=3D"id18" class=3D"reference" id=3D"id18" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#three-ways-to-w=
+rap-getting-started">2=A0=A0=A0Three=20
+  ways to wrap - getting started</A>
+  <UL class=3D"auto-toc">=20
+    <LI><A name=3D"id19" class=3D"reference" id=3D"id19" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#the-quick-way">=
+2.1=A0=A0=A0The=20
+    quick way</A></LI>
+    <LI><A name=3D"id20" class=3D"reference" id=3D"id20" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#the-smart-way">=
+2.2=A0=A0=A0The=20
+    smart way</A></LI>
+    <LI><A name=3D"id21" class=3D"reference" id=3D"id21" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#the-quick-and-s=
+mart-way">2.3=A0=A0=A0The=20
+    quick and smart way</A></LI></UL></LI>
+  <LI><A name=3D"id22" class=3D"reference" id=3D"id22" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#signature-file"=
+>3=A0=A0=A0Signature=20
+  file</A>
+  <UL class=3D"auto-toc">=20
+    <LI><A name=3D"id23" class=3D"reference" id=3D"id23" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#python-module-b=
+lock">3.1=A0=A0=A0Python=20
+    module block</A></LI>
+    <LI><A name=3D"id24" class=3D"reference" id=3D"id24" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#fortran-c-routi=
+ne-signatures">3.2=A0=A0=A0Fortran/C=20
+    routine signatures</A>
+    <UL class=3D"auto-toc">=20
+      <LI><A name=3D"id25" class=3D"reference" id=3D"id25" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#type-declaratio=
+ns">3.2.1=A0=A0=A0Type=20
+      declarations</A></LI>
+      <LI><A name=3D"id26" class=3D"reference" id=3D"id26" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#statements">3.2=
+.2=A0=A0=A0Statements</A></LI>
+      <LI><A name=3D"id27" class=3D"reference" id=3D"id27" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#attributes">3.2=
+.3=A0=A0=A0Attributes</A></LI></UL></LI>
+    <LI><A name=3D"id28" class=3D"reference" id=3D"id28" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#extensions">3.3=
+=A0=A0=A0Extensions</A>
+    <UL class=3D"auto-toc">=20
+      <LI><A name=3D"id29" class=3D"reference" id=3D"id29" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#f2py-directives=
+">3.3.1=A0=A0=A0F2PY=20
+      directives</A></LI>
+      <LI><A name=3D"id30" class=3D"reference" id=3D"id30" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#c-expressions">=
+3.3.2=A0=A0=A0C=20
+      expressions</A></LI>
+      <LI><A name=3D"id31" class=3D"reference" id=3D"id31" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#multi-line-bloc=
+ks">3.3.3=A0=A0=A0Multi-line=20
+      blocks</A></LI></UL></LI></UL></LI>
+  <LI><A name=3D"id32" class=3D"reference" id=3D"id32" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#using-f2py-bind=
+ings-in-python">4=A0=A0=A0Using=20
+  F2PY bindings in Python</A>
+  <UL class=3D"auto-toc">=20
+    <LI><A name=3D"id33" class=3D"reference" id=3D"id33" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#scalar-argument=
+s">4.1=A0=A0=A0Scalar=20
+    arguments</A></LI>
+    <LI><A name=3D"id34" class=3D"reference" id=3D"id34" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#string-argument=
+s">4.2=A0=A0=A0String=20
+    arguments</A></LI>
+    <LI><A name=3D"id35" class=3D"reference" id=3D"id35" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#array-arguments=
+">4.3=A0=A0=A0Array=20
+    arguments</A></LI>
+    <LI><A name=3D"id36" class=3D"reference" id=3D"id36" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#call-back-argum=
+ents">4.4=A0=A0=A0Call-back=20
+    arguments</A></LI>
+    <LI><A name=3D"id37" class=3D"reference" id=3D"id37" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#common-blocks">=
+4.5=A0=A0=A0Common=20
+    blocks</A></LI>
+    <LI><A name=3D"id38" class=3D"reference" id=3D"id38" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#fortran-90-modu=
+le-data">4.6=A0=A0=A0Fortran=20
+    90 module data</A>
+    <UL class=3D"auto-toc">=20
+      <LI><A name=3D"id39" class=3D"reference" id=3D"id39" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#allocatable-arr=
+ays">4.6.1=A0=A0=A0Allocatable=20
+      arrays</A></LI></UL></LI></UL></LI>
+  <LI><A name=3D"id40" class=3D"reference" id=3D"id40" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#using-f2py">5=A0=
+=A0=A0Using=20
+  F2PY</A>
+  <UL class=3D"auto-toc">=20
+    <LI><A name=3D"id41" class=3D"reference" id=3D"id41" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#command-f2py">5=
+.1=A0=A0=A0Command=20
+    <TT class=3D"literal"><SPAN class=3D"pre">f2py</SPAN></TT></A></LI>
+    <LI><A name=3D"id42" class=3D"reference" id=3D"id42" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#python-module-f=
+2py2e">5.2=A0=A0=A0Python=20
+    module <TT class=3D"literal"><SPAN=20
+  class=3D"pre">f2py2e</SPAN></TT></A></LI></UL></LI>
+  <LI><A name=3D"id43" class=3D"reference" id=3D"id43" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#using-scipy-dis=
+tutils">6=A0=A0=A0Using=20
+  <TT class=3D"literal"><SPAN =
+class=3D"pre">scipy_distutils</SPAN></TT></A>
+  <UL class=3D"auto-toc">=20
+    <LI><A name=3D"id44" class=3D"reference" id=3D"id44" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#scipy-distutils=
+-0-2-2-and-up">6.1=A0=A0&#65533;<TT=20
+    class=3D"literal"><SPAN class=3D"pre">scipy_distutils</SPAN></TT> =
+0.2.2 and=20
+    up</A></LI>
+    <LI><A name=3D"id45" class=3D"reference" id=3D"id45" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#scipy-distutils=
+-pre-0-2-2">6.2=A0=A0&#65533;<TT=20
+    class=3D"literal"><SPAN class=3D"pre">scipy_distutils</SPAN></TT> =
+pre=20
+    0.2.2</A></LI></UL></LI>
+  <LI><A name=3D"id46" class=3D"reference" id=3D"id46" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#extended-f2py-u=
+sages">7=A0=A0=A0Extended=20
+  F2PY usages</A>
+  <UL class=3D"auto-toc">=20
+    <LI><A name=3D"id47" class=3D"reference" id=3D"id47" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#adding-self-wri=
+tten-functions-to-f2py-generated-modules">7.1=A0=A0=A0Adding=20
+    self-written functions to F2PY generated modules</A></LI>
+    <LI><A name=3D"id48" class=3D"reference" id=3D"id48" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#modifying-the-d=
+ictionary-of-a-f2py-generated-module">7.2=A0=A0=A0Modifying=20
+    the dictionary of a F2PY generated =
+module</A></LI></UL></LI></UL></DIV>
+<DIV class=3D"section" id=3D"introduction">
+<H1><A name=3D"introduction" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id17">1=A0=A0=A0=
+Introduction</A></H1>
+<P>The purpose of the <A class=3D"reference" =
+href=3D"http://cens.ioc.ee/projects/f2py2e/">F2PY</A>=20
+--<EM>Fortran to Python interface generator</EM>-- project is to provide =
+a=20
+connection between Python and Fortran languages.  F2PY is a <A =
+class=3D"reference"=20
+href=3D"http://www.python.org/">Python</A> package (with a command line =
+tool <TT=20
+class=3D"literal"><SPAN class=3D"pre">f2py</SPAN></TT> and a module <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">f2py2e</SPAN></TT>) that facilitates creating/building =
+Python C/API=20
+extension modules that make it possible</P>
+<UL class=3D"simple">
+  <LI>to call Fortran 77/90/95 external subroutines and Fortran 90/95 =
+module=20
+  subroutines as well as C functions;</LI>
+  <LI>to access Fortran 77 <TT class=3D"literal"><SPAN=20
+  class=3D"pre">COMMON</SPAN></TT> blocks and Fortran 90/95 module data, =
+including=20
+  allocatable arrays</LI></UL>
+<P>from Python. See <A class=3D"reference" =
+href=3D"http://cens.ioc.ee/projects/f2py2e/">F2PY</A>=20
+web site for more information and installation instructions.</P></DIV>
+<DIV class=3D"section" id=3D"three-ways-to-wrap-getting-started">
+<H1><A name=3D"three-ways-to-wrap-getting-started" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id18">2=A0=A0=A0=
+Three=20
+ways to wrap - getting started</A></H1>
+<P>Wrapping Fortran or C functions to Python using F2PY consists of the
+ following steps:</P>
+<UL class=3D"simple">
+  <LI>Creating the so-called signature file that contains descriptions =
+of
+   wrappers to Fortran or C functions, also called as signatures of the
+   functions. In the case of Fortran routines, F2PY can create initial =
+signature=20
+  file by scanning Fortran source codes and catching all relevant =
+information=20
+  needed to create wrapper functions.</LI>
+  <LI>Optionally, F2PY created signature files can be edited to optimize
+   wrappers functions, make them "smarter" and more "Pythonic".</LI>
+  <LI>F2PY reads a signature file and writes a Python C/API module =
+containing
+   Fortran/C/Python bindings.</LI>
+  <LI>F2PY compiles all sources and builds an extension module =
+containing the=20
+  wrappers. In building extension modules, F2PY uses <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">scipy_distutils</SPAN></TT> that supports a number of =
+Fortran=20
+  77/90/95 compilers, including Gnu, Intel, Sun Fortre, SGI MIPSpro, =
+Absoft,=20
+  NAG, Compaq etc. compilers.</LI></UL>
+<P>Depending on a particular situation, these steps can be carried out =
+either by=20
+just in one command or step-by-step, some steps can be ommited or =
+combined with=20
+others.</P>
+<P>Below I'll describe three typical approaches of using F2PY. The =
+following <A=20
+class=3D"reference"=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/fib1.f">example =
+Fortran=20
+77 code</A> will be used for illustration:</P>
+<PRE class=3D"literal-block">C FILE: FIB1.F=0A=
+      SUBROUTINE FIB(A,N)=0A=
+C=0A=
+C     CALCULATE FIRST N FIBONACCI NUMBERS=0A=
+C=0A=
+      INTEGER N=0A=
+      REAL*8 A(N)=0A=
+      DO I=3D1,N=0A=
+         IF (I.EQ.1) THEN=0A=
+            A(I) =3D 0.0D0=0A=
+         ELSEIF (I.EQ.2) THEN=0A=
+            A(I) =3D 1.0D0=0A=
+         ELSE =0A=
+            A(I) =3D A(I-1) + A(I-2)=0A=
+         ENDIF=0A=
+      ENDDO=0A=
+      END=0A=
+C END FILE FIB1.F=0A=
+=0A=
+</PRE>
+<DIV class=3D"section" id=3D"the-quick-way">
+<H2><A name=3D"the-quick-way" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id19">2.1=A0=A0=
+=A0The=20
+quick way</A></H2>
+<P>The quickest way to wrap the Fortran subroutine <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">FIB</SPAN></TT> to Python is to run</P>
+<PRE class=3D"literal-block">f2py -c fib1.f -m fib1=0A=
+</PRE>
+<P>This command builds (see <TT class=3D"literal"><SPAN =
+class=3D"pre">-c</SPAN></TT>=20
+flag, execute <TT class=3D"literal"><SPAN class=3D"pre">f2py</SPAN></TT> =
+without
+ arguments to see the explanation of command line options) an extension =
+module=20
+<TT class=3D"literal"><SPAN class=3D"pre">fib1.so</SPAN></TT> (see <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">-m</SPAN></TT> flag) to the current directory. Now, in =
+Python the=20
+Fortran subroutine <TT class=3D"literal"><SPAN =
+class=3D"pre">FIB</SPAN></TT> is=20
+accessible via <TT class=3D"literal"><SPAN =
+class=3D"pre">fib1.fib</SPAN></TT>:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import Numeric=0A=
+&gt;&gt;&gt; import fib1=0A=
+&gt;&gt;&gt; print fib1.fib.__doc__=0A=
+fib - Function signature:=0A=
+  fib(a,[n])=0A=
+Required arguments:=0A=
+  a : input rank-1 array('d') with bounds (n)=0A=
+Optional arguments:=0A=
+  n :=3D len(a) input int=0A=
+=0A=
+&gt;&gt;&gt; a=3DNumeric.zeros(8,'d')=0A=
+&gt;&gt;&gt; fib1.fib(a)=0A=
+&gt;&gt;&gt; print a=0A=
+[  0.   1.   1.   2.   3.   5.   8.  13.]=0A=
+</PRE>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Comments</P>
+<UL>
+  <LI>
+  <P class=3D"first">Note that F2PY found that the second argument <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">n</SPAN></TT> is the dimension of the first array =
+argument <TT=20
+  class=3D"literal"><SPAN class=3D"pre">a</SPAN></TT>. Since by default =
+all
+   arguments are input-only arguments, F2PY concludes that <TT=20
+  class=3D"literal"><SPAN class=3D"pre">n</SPAN></TT> can be optional =
+with the=20
+  default value <TT class=3D"literal"><SPAN=20
+  class=3D"pre">len(a)</SPAN></TT>.</P></LI>
+  <LI>
+  <P class=3D"first">One can use different values for optional <TT=20
+  class=3D"literal"><SPAN class=3D"pre">n</SPAN></TT>:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; a1=3DNumeric.zeros(8,'d')=0A=
+&gt;&gt;&gt; fib1.fib(a1,6)=0A=
+&gt;&gt;&gt; print a1=0A=
+[ 0.  1.  1.  2.  3.  5.  0.  0.]=0A=
+</PRE>
+  <P>but an exception is raised when it is incompatible with the input =
+array <TT=20
+  class=3D"literal"><SPAN class=3D"pre">a</SPAN></TT>:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; fib1.fib(a,10)=0A=
+fib:n=3D10=0A=
+Traceback (most recent call last):=0A=
+  File "&lt;stdin&gt;", line 1, in ?=0A=
+fib.error: (len(a)&gt;=3Dn) failed for 1st keyword n=0A=
+&gt;&gt;&gt; =0A=
+</PRE>
+  <P>This demonstrates one of the useful features in F2PY, that it, F2PY =
+
+  implements basic compatibility checks between related arguments in =
+order to=20
+  avoid any unexpected crashes.</P></LI>
+  <LI>
+  <P class=3D"first">When a Numeric array, that is Fortran contiguous =
+and has a=20
+  typecode corresponding to presumed Fortran type, is used as an input =
+array
+   argument, then its C pointer is directly passed to Fortran.</P>
+  <P>Otherwise F2PY makes a contiguous copy (with a proper typecode) of =
+the=20
+  input array and passes C pointer of the copy to Fortran subroutine. As =
+a=20
+  result, any possible changes to the (copy of) input array have no =
+effect to=20
+  the original argument, as demonstrated below:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; a=3DNumeric.ones(8,'i')=0A=
+&gt;&gt;&gt; fib1.fib(a)=0A=
+&gt;&gt;&gt; print a=0A=
+[1 1 1 1 1 1 1 1]=0A=
+</PRE>
+  <P>Clearly, this is not an expected behaviour. The fact that the above =
+example=20
+  worked with <TT class=3D"literal"><SPAN =
+class=3D"pre">typecode=3D'd'</SPAN></TT> is=20
+  considered accidental.</P>
+  <P>F2PY provides <TT class=3D"literal"><SPAN=20
+  class=3D"pre">intent(inplace)</SPAN></TT> attribute that would modify =
+the=20
+  attributes of an input array so that any changes made by Fortran =
+routine will=20
+  be effective also in input argument. For example, if one specifies <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">intent(inplace)</SPAN> <SPAN class=3D"pre">a</SPAN></TT> =
+(see below,=20
+  how), then the example above would read:</P>
+  <BLOCKQUOTE>
+<PRE class=3D"doctest-block">&gt;&gt;&gt; a=3DNumeric.ones(8,'i')=0A=
+&gt;&gt;&gt; fib1.fib(a)=0A=
+&gt;&gt;&gt; print a=0A=
+[  0.   1.   1.   2.   3.   5.   8.  13.]=0A=
+</PRE></BLOCKQUOTE>
+  <P>However, the recommended way to get changes made by Fortran =
+subroutine back=20
+  to python is to use <TT class=3D"literal"><SPAN=20
+  class=3D"pre">intent(out)</SPAN></TT> attribute. It is more efficient =
+and a=20
+  cleaner solution.</P></LI>
+  <LI>
+  <P class=3D"first">The usage of <TT class=3D"literal"><SPAN=20
+  class=3D"pre">fib1.fib</SPAN></TT> in Python is very similar to using =
+<TT class=3D"literal"><SPAN=20
+  class=3D"pre">FIB</SPAN></TT> in Fortran. However, using <EM>in =
+situ</EM> output=20
+  arguments in Python indicates a poor style as there is no safety =
+mechanism in=20
+  Python with respect to wrong argument types. When using Fortran or C,=20
+  compilers naturally discover any type mismatches during compile time =
+but in=20
+  Python the types must be checked in runtime. So, using <EM>in =
+situ</EM> output=20
+  arguments in Python may cause difficult to find bugs, not to mention =
+that the=20
+  codes will be less readable when all required type checks are=20
+  implemented.</P></LI></UL>
+<P>Though the demonstrated way of wrapping Fortran routines to Python is =
+very=20
+straightforward, it has several drawbacks (see the comments above).  =
+These=20
+drawbacks are due to the fact that there is no way that F2PY can =
+determine what=20
+is the acctual intention of one or the other argument, is it input or =
+output=20
+argument, or both, or something else. So, F2PY conservatively assumes =
+that all=20
+arguments are input arguments by default.</P>
+<P>However, there are ways (see below) how to "teach" F2PY about the =
+true=20
+intentions (among other things) of function arguments; and then F2PY is =
+able to=20
+generate more Pythonic (more explicit, easier to use, and less error =
+prone)=20
+wrappers to Fortran functions.</P></DIV></DIV>
+<DIV class=3D"section" id=3D"the-smart-way">
+<H2><A name=3D"the-smart-way" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id20">2.2=A0=A0=
+=A0The=20
+smart way</A></H2>
+<P>Let's apply the steps of wrapping Fortran functions to Python one by =
+one.</P>
+<UL>
+  <LI>
+  <P class=3D"first">First, we create a signature file from <TT=20
+  class=3D"literal"><SPAN class=3D"pre">fib1.f</SPAN></TT> by =
+running</P>
+<PRE class=3D"literal-block">f2py fib1.f -m fib2 -h fib1.pyf=0A=
+</PRE>
+  <P>The signature file is saved to <TT class=3D"literal"><SPAN=20
+  class=3D"pre">fib1.pyf</SPAN></TT> (see <TT class=3D"literal"><SPAN=20
+  class=3D"pre">-h</SPAN></TT> flag) and its contents is shown =
+below.</P>
+<PRE class=3D"literal-block">!    -*- f90 -*-=0A=
+python module fib2 ! in =0A=
+    interface  ! in :fib2=0A=
+        subroutine fib(a,n) ! in :fib2:fib1.f=0A=
+            real*8 dimension(n) :: a=0A=
+            integer optional,check(len(a)&gt;=3Dn),depend(a) :: =
+n=3Dlen(a)=0A=
+        end subroutine fib=0A=
+    end interface =0A=
+end python module fib2=0A=
+=0A=
+! This file was auto-generated with f2py (version:2.28.198-1366).=0A=
+! See http://cens.ioc.ee/projects/f2py2e/=0A=
+=0A=
+</PRE></LI>
+  <LI>
+  <P class=3D"first">Next, we'll teach F2PY that the argument <TT=20
+  class=3D"literal"><SPAN class=3D"pre">n</SPAN></TT> is a input =
+argument (use <TT=20
+  class=3D"literal"><SPAN class=3D"pre">intent(in)</SPAN></TT> =
+attribute) and that=20
+  the result, i.e. the contents of <TT class=3D"literal"><SPAN=20
+  class=3D"pre">a</SPAN></TT> after calling Fortran function <TT=20
+  class=3D"literal"><SPAN class=3D"pre">FIB</SPAN></TT>, should be =
+returned to=20
+  Python (use <TT class=3D"literal"><SPAN =
+class=3D"pre">intent(out)</SPAN></TT>=20
+  attribute). In addition, an array <TT class=3D"literal"><SPAN=20
+  class=3D"pre">a</SPAN></TT> should be created dynamically using the =
+size given=20
+  by the input argument <TT class=3D"literal"><SPAN =
+class=3D"pre">n</SPAN></TT> (use=20
+  <TT class=3D"literal"><SPAN class=3D"pre">depend(n)</SPAN></TT> =
+attribute to=20
+  indicate dependence relation).</P>
+  <P>The content of a modified version of <TT class=3D"literal"><SPAN=20
+  class=3D"pre">fib1.pyf</SPAN></TT> (saved as <TT =
+class=3D"literal"><SPAN class=3D"pre">fib2.pyf</SPAN></TT>)=20
+  is as follows:</P>
+<PRE class=3D"literal-block">!    -*- f90 -*-=0A=
+python module fib2 =0A=
+    interface=0A=
+        subroutine fib(a,n)=0A=
+            real*8 dimension(n),intent(out),depend(n) :: a=0A=
+            integer intent(in) :: n=0A=
+        end subroutine fib=0A=
+    end interface =0A=
+end python module fib2=0A=
+=0A=
+</PRE></LI>
+  <LI>
+  <P class=3D"first">And finally, we build the extension module by =
+running</P>
+<PRE class=3D"literal-block">f2py -c fib2.pyf fib1.f=0A=
+</PRE></LI></UL>
+<P>In Python:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import fib2=0A=
+&gt;&gt;&gt; print fib2.fib.__doc__=0A=
+fib - Function signature:=0A=
+  a =3D fib(n)=0A=
+Required arguments:=0A=
+  n : input int=0A=
+Return objects:=0A=
+  a : rank-1 array('d') with bounds (n)=0A=
+=0A=
+&gt;&gt;&gt; print fib2.fib(8)     =0A=
+[  0.   1.   1.   2.   3.   5.   8.  13.]=0A=
+</PRE>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Comments</P>
+<UL class=3D"simple">
+  <LI>Clearly, the signature of <TT class=3D"literal"><SPAN=20
+  class=3D"pre">fib2.fib</SPAN></TT> now corresponds to the intention of =
+Fortran=20
+  subroutine <TT class=3D"literal"><SPAN class=3D"pre">FIB</SPAN></TT> =
+more closely:=20
+  given the number <TT class=3D"literal"><SPAN =
+class=3D"pre">n</SPAN></TT>, <TT=20
+  class=3D"literal"><SPAN class=3D"pre">fib2.fib</SPAN></TT> returns the =
+first <TT=20
+  class=3D"literal"><SPAN class=3D"pre">n</SPAN></TT> Fibonacci numbers =
+as a Numeric=20
+  array. Also, the new Python signature <TT class=3D"literal"><SPAN=20
+  class=3D"pre">fib2.fib</SPAN></TT> rules out any surprises that we =
+experienced=20
+  with <TT class=3D"literal"><SPAN =
+class=3D"pre">fib1.fib</SPAN></TT>.</LI>
+  <LI>Note that by default using single <TT class=3D"literal"><SPAN=20
+  class=3D"pre">intent(out)</SPAN></TT> also implies <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">intent(hide)</SPAN></TT>. Argument that has <TT=20
+  class=3D"literal"><SPAN class=3D"pre">intent(hide)</SPAN></TT> =
+attribute
+   specified, will not be listed in the argument list of a wrapper
+ function.</LI></UL></DIV></DIV>
+<DIV class=3D"section" id=3D"the-quick-and-smart-way">
+<H2><A name=3D"the-quick-and-smart-way" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id21">2.3=A0=A0=
+=A0The=20
+quick and smart way</A></H2>
+<P>The "smart way" of wrapping Fortran functions, as explained above, is
+ suitable for wrapping (e.g. third party) Fortran codes for which =
+modifications=20
+to their source codes are not desirable nor even possible.</P>
+<P>However, if editing Fortran codes is acceptable, then the generation =
+of an=20
+intermediate signature file can be skipped in most cases. Namely, F2PY =
+specific=20
+attributes can be inserted directly to Fortran source codes using the =
+so-called=20
+F2PY directive. A F2PY directive defines special comment lines (starting =
+with=20
+<TT class=3D"literal"><SPAN class=3D"pre">Cf2py</SPAN></TT>, for =
+example) which are=20
+ignored by Fortran compilers but F2PY interprets them as normal =
+lines.</P>
+<P>Here is shown a <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/fib3.f">modified=
+=20
+version of the example Fortran code</A>, saved as <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">fib3.f</SPAN></TT>:</P>
+<PRE class=3D"literal-block">C FILE: FIB3.F=0A=
+      SUBROUTINE FIB(A,N)=0A=
+C=0A=
+C     CALCULATE FIRST N FIBONACCI NUMBERS=0A=
+C=0A=
+      INTEGER N=0A=
+      REAL*8 A(N)=0A=
+Cf2py intent(in) n=0A=
+Cf2py intent(out) a=0A=
+Cf2py depend(n) a=0A=
+      DO I=3D1,N=0A=
+         IF (I.EQ.1) THEN=0A=
+            A(I) =3D 0.0D0=0A=
+         ELSEIF (I.EQ.2) THEN=0A=
+            A(I) =3D 1.0D0=0A=
+         ELSE =0A=
+            A(I) =3D A(I-1) + A(I-2)=0A=
+         ENDIF=0A=
+      ENDDO=0A=
+      END=0A=
+C END FILE FIB3.F=0A=
+=0A=
+</PRE>
+<P>Building the extension module can be now carried out in one =
+command:</P>
+<PRE class=3D"literal-block">f2py -c -m fib3 fib3.f=0A=
+</PRE>
+<P>Notice that the resulting wrapper to <TT class=3D"literal"><SPAN=20
+class=3D"pre">FIB</SPAN></TT> is as "smart" as in previous case:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import fib3=0A=
+&gt;&gt;&gt; print fib3.fib.__doc__=0A=
+fib - Function signature:=0A=
+  a =3D fib(n)=0A=
+Required arguments:=0A=
+  n : input int=0A=
+Return objects:=0A=
+  a : rank-1 array('d') with bounds (n)=0A=
+=0A=
+&gt;&gt;&gt; print fib3.fib(8)     =0A=
+[  0.   1.   1.   2.   3.   5.   8.  13.]=0A=
+</PRE></DIV></DIV>
+<DIV class=3D"section" id=3D"signature-file">
+<H1><A name=3D"signature-file" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id22">3=A0=A0=A0=
+Signature=20
+file</A></H1>
+<P>The syntax specification for signature files (.pyf files) is borrowed =
+from=20
+the Fortran 90/95 language specification. Almost all Fortran 90/95 =
+standard=20
+constructs are understood, both in free and fixed format (recall that =
+Fortran 77=20
+is a subset of Fortran 90/95). F2PY introduces also some extensions to =
+Fortran=20
+90/95 language specification that help designing Fortran to Python =
+interface,=20
+make it more "Pythonic".</P>
+<P>Signature files may contain arbitrary Fortran code (so that Fortran =
+codes can=20
+be considered as signature files). F2PY silently ignores Fortran =
+constructs that=20
+are irrelevant for creating the interface. However, this includes also =
+syntax=20
+errors. So, be careful not making ones;-).</P>
+<P>In general, the contents of signature files is case-sensitive.  When =
+scanning=20
+Fortran codes and writing a signature file, F2PY lowers all cases =
+automatically=20
+except in multi-line blocks or when <TT class=3D"literal"><SPAN=20
+class=3D"pre">--no-lower</SPAN></TT> option is used.</P>
+<P>The syntax of signature files is overvied below.</P>
+<DIV class=3D"section" id=3D"python-module-block">
+<H2><A name=3D"python-module-block" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id23">3.1=A0=A0=
+=A0Python=20
+module block</A></H2>
+<P>A signature file may contain one (recommended) or more <TT=20
+class=3D"literal"><SPAN class=3D"pre">python</SPAN> <SPAN=20
+class=3D"pre">module</SPAN></TT> blocks.  <TT class=3D"literal"><SPAN=20
+class=3D"pre">python</SPAN> <SPAN class=3D"pre">module</SPAN></TT> block =
+describes=20
+the contents of a Python/C extension module <TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;modulename&gt;module.c</SPAN></TT>=20
+that F2PY generates.</P>
+<P>Exception: if <TT class=3D"literal"><SPAN=20
+class=3D"pre">&lt;modulename&gt;</SPAN></TT> contains a substring <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">__user__</SPAN></TT>, then the corresponding <TT=20
+class=3D"literal"><SPAN class=3D"pre">python</SPAN> <SPAN=20
+class=3D"pre">module</SPAN></TT> block describes the signatures of =
+so-called=20
+call-back functions (see <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#call-back-argum=
+ents">Call-back=20
+arguments</A>).</P>
+<P>A <TT class=3D"literal"><SPAN class=3D"pre">python</SPAN> <SPAN=20
+class=3D"pre">module</SPAN></TT> block has the following structure:</P>
+<PRE class=3D"literal-block">python module &lt;modulename&gt;=0A=
+  [&lt;usercode statement&gt;]...=0A=
+  [=0A=
+  interface=0A=
+    &lt;usercode statement&gt;=0A=
+    &lt;Fortran block data signatures&gt;=0A=
+    &lt;Fortran/C routine signatures&gt;=0A=
+  end [interface]=0A=
+  ]...=0A=
+  [=0A=
+  interface=0A=
+    module &lt;F90 modulename&gt;=0A=
+      [&lt;F90 module data type declarations&gt;]=0A=
+      [&lt;F90 module routine signatures&gt;]=0A=
+    end [module [&lt;F90 modulename&gt;]]=0A=
+  end [interface]=0A=
+  ]...=0A=
+end [python module [&lt;modulename&gt;]]=0A=
+</PRE>
+<P>Here brackets <TT class=3D"literal"><SPAN =
+class=3D"pre">[]</SPAN></TT> indicate a=20
+optional part, dots <TT class=3D"literal"><SPAN =
+class=3D"pre">...</SPAN></TT>=20
+indicate one or more of a previous part. So, <TT class=3D"literal"><SPAN =
+class=3D"pre">[]...</SPAN></TT>=20
+reads zero or more of a previous part.</P></DIV>
+<DIV class=3D"section" id=3D"fortran-c-routine-signatures">
+<H2><A name=3D"fortran-c-routine-signatures" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id24">3.2=A0=A0=
+=A0Fortran/C=20
+routine signatures</A></H2>
+<P>The signature of a Fortran routine has the following structure:</P>
+<PRE class=3D"literal-block">[&lt;typespec&gt;] function | subroutine =
+&lt;routine name&gt; \=0A=
+              [ ( [&lt;arguments&gt;] ) ] [ result ( &lt;entityname&gt; =
+) ]=0A=
+  [&lt;argument/variable type declarations&gt;]=0A=
+  [&lt;argument/variable attribute statements&gt;]=0A=
+  [&lt;use statements&gt;]=0A=
+  [&lt;common block statements&gt;]=0A=
+  [&lt;other statements&gt;]=0A=
+end [ function | subroutine [&lt;routine name&gt;] ]=0A=
+</PRE>
+<P>From a Fortran routine signature F2PY generates a Python/C extension =
+function=20
+that has the following signature:</P>
+<PRE class=3D"literal-block">def &lt;routine name&gt;(&lt;required =
+arguments&gt;[,&lt;optional arguments&gt;]):=0A=
+     ...=0A=
+     return &lt;return variables&gt;=0A=
+</PRE>
+<P>The signature of a Fortran block data has the following =
+structure:</P>
+<PRE class=3D"literal-block">block data [ &lt;block data name&gt; ]=0A=
+  [&lt;variable type declarations&gt;]=0A=
+  [&lt;variable attribute statements&gt;]=0A=
+  [&lt;use statements&gt;]=0A=
+  [&lt;common block statements&gt;]=0A=
+  [&lt;include statements&gt;]=0A=
+end [ block data [&lt;block data name&gt;] ]=0A=
+</PRE>
+<DIV class=3D"section" id=3D"type-declarations">
+<H3><A name=3D"type-declarations" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id25">3.2.1=A0=A0=
+=A0Type=20
+declarations</A></H3>
+<BLOCKQUOTE>
+  <P>The definition of the <TT class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;argument/variable</SPAN> <SPAN =
+class=3D"pre">type</SPAN> <SPAN=20
+  class=3D"pre">declaration&gt;</SPAN></TT> part is</P>
+<PRE class=3D"literal-block">&lt;typespec&gt; [ [&lt;attrspec&gt;] :: ] =
+&lt;entitydecl&gt;=0A=
+</PRE>
+  <P>where</P>
+<PRE class=3D"literal-block">&lt;typespec&gt; :=3D byte | character =
+[&lt;charselector&gt;] =0A=
+           | complex [&lt;kindselector&gt;] | real [&lt;kindselector&gt;]=0A=
+           | double complex | double precision =0A=
+           | integer [&lt;kindselector&gt;] | logical =
+[&lt;kindselector&gt;]=0A=
+=0A=
+&lt;charselector&gt; :=3D * &lt;charlen&gt; =0A=
+               | ( [len=3D] &lt;len&gt; [ , [kind=3D] &lt;kind&gt;] )=0A=
+               | ( kind=3D &lt;kind&gt; [ , len=3D &lt;len&gt; ] )=0A=
+&lt;kindselector&gt; :=3D * &lt;intlen&gt; | ( [kind=3D] &lt;kind&gt; )=0A=
+=0A=
+&lt;entitydecl&gt; :=3D &lt;name&gt; [ [ * &lt;charlen&gt; ] [ ( =
+&lt;arrayspec&gt; ) ] =0A=
+                      | [ ( &lt;arrayspec&gt; ) ] * &lt;charlen&gt; ]=0A=
+                     | [ / &lt;init_expr&gt; / | =3D &lt;init_expr&gt; ] =
+\=0A=
+                       [ , &lt;entitydecl&gt; ]=0A=
+</PRE>
+  <P>and</P>
+  <UL class=3D"simple">
+    <LI><TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;attrspec&gt;</SPAN></TT> is a=20
+    comma separated list of <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#attributes">att=
+ributes</A>;</LI>
+    <LI><TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;arrayspec&gt;</SPAN></TT> is a=20
+    comma separated list of dimension bounds;</LI>
+    <LI><TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;init_expr&gt;</SPAN></TT> is a=20
+    <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#c-expressions">=
+C=20
+    expression</A>.</LI>
+    <LI><TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;intlen&gt;</SPAN></TT> may be=20
+    negative integer for <TT class=3D"literal"><SPAN=20
+    class=3D"pre">integer</SPAN></TT> type specifications. In such cases =
+<TT=20
+    class=3D"literal"><SPAN =
+class=3D"pre">integer*&lt;negintlen&gt;</SPAN></TT>=20
+    represents unsigned C integers.</LI></UL></BLOCKQUOTE>
+<BLOCKQUOTE>If an argument has no <TT class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;argument</SPAN> <SPAN class=3D"pre">type</SPAN> =
+<SPAN class=3D"pre">declaration&gt;</SPAN></TT>,=20
+  its type is determined by applying <TT class=3D"literal"><SPAN=20
+  class=3D"pre">implicit</SPAN></TT> rules to its =
+name.</BLOCKQUOTE></DIV>
+<DIV class=3D"section" id=3D"statements">
+<H3><A name=3D"statements" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id26">3.2.2=A0=A0=
+=A0Statements</A></H3>
+<P>Attribute statements:</P>
+<BLOCKQUOTE>The <TT class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;argument/variable</SPAN> <SPAN =
+class=3D"pre">attribute</SPAN>=20
+  <SPAN class=3D"pre">statement&gt;</SPAN></TT> is <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;argument/variable</SPAN> <SPAN =
+class=3D"pre">type</SPAN> <SPAN=20
+  class=3D"pre">declaration&gt;</SPAN></TT> without <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;typespec&gt;</SPAN></TT>. In addition, in an =
+attribute=20
+  statement one cannot use other attributes, also <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;entitydecl&gt;</SPAN></TT> can be only a list of=20
+names.</BLOCKQUOTE>
+<P>Use statements:</P>
+<BLOCKQUOTE>
+  <P>The definition of the <TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;use</SPAN>=20
+  <SPAN class=3D"pre">statement&gt;</SPAN></TT> part is</P>
+<PRE class=3D"literal-block">use &lt;modulename&gt; [ , =
+&lt;rename_list&gt; | , ONLY : &lt;only_list&gt; ]=0A=
+</PRE>
+  <P>where</P>
+<PRE class=3D"literal-block">&lt;rename_list&gt; :=3D &lt;local_name&gt; =
+=3D&gt; &lt;use_name&gt; [ , &lt;rename_list&gt; ]=0A=
+</PRE>
+  <P>Currently F2PY uses <TT class=3D"literal"><SPAN =
+class=3D"pre">use</SPAN></TT>=20
+  statement only for linking call-back modules and <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">external</SPAN></TT> arguments (call-back functions), =
+see  <A=20
+  class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#call-back-argum=
+ents">Call-back=20
+  arguments</A>.</P></BLOCKQUOTE>
+<P>Common block statements:</P>
+<BLOCKQUOTE>
+  <P>The definition of the <TT class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;common</SPAN> <SPAN class=3D"pre">block</SPAN> <SPAN =
+
+  class=3D"pre">statement&gt;</SPAN></TT> part is</P>
+<PRE class=3D"literal-block">common / &lt;common name&gt; / =
+&lt;shortentitydecl&gt;=0A=
+</PRE>
+  <P>where</P>
+<PRE class=3D"literal-block">&lt;shortentitydecl&gt; :=3D &lt;name&gt; [ =
+( &lt;arrayspec&gt; ) ] [ , &lt;shortentitydecl&gt; ]=0A=
+</PRE>
+  <P>One <TT class=3D"literal"><SPAN class=3D"pre">python</SPAN> <SPAN=20
+  class=3D"pre">module</SPAN></TT> block should not contain two or more =
+<TT class=3D"literal"><SPAN=20
+  class=3D"pre">common</SPAN></TT> blocks with the same name. Otherwise, =
+the=20
+  latter ones are ignored. The types of variables in <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;shortentitydecl&gt;</SPAN></TT> are defined using =
+<TT class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;argument</SPAN> <SPAN class=3D"pre">type</SPAN> =
+<SPAN class=3D"pre">declarations&gt;</SPAN></TT>.=20
+  Note that the corresponding <TT class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;argument</SPAN> <SPAN class=3D"pre">type</SPAN> =
+<SPAN class=3D"pre">declarations&gt;</SPAN></TT>=20
+  may contain array specifications; then you don't need to specify these =
+in <TT=20
+  class=3D"literal"><SPAN=20
+class=3D"pre">&lt;shortentitydecl&gt;</SPAN></TT>.</P></BLOCKQUOTE>
+<P>Other statements:</P>
+<BLOCKQUOTE>
+  <P>The <TT class=3D"literal"><SPAN class=3D"pre">&lt;other</SPAN> =
+<SPAN class=3D"pre">statement&gt;</SPAN></TT>=20
+  part refers to any other Fortran language constructs that are not =
+described=20
+  above. F2PY ignores most of them except</P>
+  <UL class=3D"simple">
+    <LI><TT class=3D"literal"><SPAN class=3D"pre">call</SPAN></TT> =
+statements and=20
+    function calls of <TT class=3D"literal"><SPAN =
+class=3D"pre">external</SPAN></TT>=20
+    arguments (<A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#external">more =
+
+    details</A>?);</LI></UL></BLOCKQUOTE>
+<BLOCKQUOTE>
+  <UL>
+    <LI>
+    <P class=3D"first"><TT class=3D"literal"><SPAN =
+class=3D"pre">include</SPAN></TT>=20
+    statements</P>
+    <BLOCKQUOTE>
+<PRE class=3D"literal-block">include '&lt;filename&gt;'=0A=
+include "&lt;filename&gt;"=0A=
+</PRE>
+      <P>If a file <TT class=3D"literal"><SPAN=20
+      class=3D"pre">&lt;filename&gt;</SPAN></TT> does not exist, the <TT =
+class=3D"literal"><SPAN=20
+      class=3D"pre">include</SPAN></TT> statement is ignored. Otherwise, =
+the file=20
+      <TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;filename&gt;</SPAN></TT> is
+       included to a signature file.  <TT class=3D"literal"><SPAN=20
+      class=3D"pre">include</SPAN></TT> statements can be used in any =
+part of a=20
+      signature file, also outside the Fortran/C routine signature=20
+    blocks.</P></BLOCKQUOTE></LI>
+    <LI>
+    <P class=3D"first"><TT class=3D"literal"><SPAN =
+class=3D"pre">implicit</SPAN></TT>=20
+    statements</P>
+    <BLOCKQUOTE>
+<PRE class=3D"literal-block">implicit none=0A=
+implicit &lt;list of implicit maps&gt;=0A=
+</PRE>
+      <P>where</P>
+<PRE class=3D"literal-block">&lt;implicit map&gt; :=3D &lt;typespec&gt; =
+( &lt;list of letters or range of letters&gt; )=0A=
+</PRE>
+      <P>Implicit rules are used to deterimine the type specification of =
+a=20
+      variable (from the first-letter of its name) if the variable is =
+not=20
+      defined using <TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;variable</SPAN>=20
+      <SPAN class=3D"pre">type</SPAN> <SPAN=20
+      class=3D"pre">declaration&gt;</SPAN></TT>.  Default implicit rule =
+is given=20
+      by</P>
+<PRE class=3D"literal-block">implicit real (a-h,o-z,$_), integer (i-m)=0A=
+</PRE></BLOCKQUOTE></LI>
+    <LI>
+    <P class=3D"first"><TT class=3D"literal"><SPAN =
+class=3D"pre">entry</SPAN></TT>=20
+    statements</P>
+    <BLOCKQUOTE>
+<PRE class=3D"literal-block">entry &lt;entry name&gt; =
+[([&lt;arguments&gt;])]=0A=
+</PRE>
+      <P>F2PY generates wrappers to all entry names using the signature =
+of the=20
+      routine block.</P>
+      <P>Tip: <TT class=3D"literal"><SPAN =
+class=3D"pre">entry</SPAN></TT> statement=20
+      can be used to describe the signature of an arbitrary routine =
+allowing=20
+      F2PY to generate a number of wrappers from only one routine block=20
+      signature. There are few restrictions while doing this: <TT =
+class=3D"literal"><SPAN=20
+      class=3D"pre">fortranname</SPAN></TT> cannot be used, <TT=20
+      class=3D"literal"><SPAN class=3D"pre">callstatement</SPAN></TT> =
+and <TT class=3D"literal"><SPAN=20
+      class=3D"pre">callprotoargument</SPAN></TT> can be used only if =
+they are=20
+      valid for all entry routines, etc.</P></BLOCKQUOTE></LI></UL>
+  <P>In addition, F2PY introduces the following statements:</P>
+  <UL>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">threadsafe</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first last">Use <TT class=3D"literal"><SPAN=20
+      class=3D"pre">Py_BEGIN_ALLOW_THREADS</SPAN> <SPAN =
+class=3D"pre">..</SPAN>=20
+      <SPAN class=3D"pre">Py_END_ALLOW_THREADS</SPAN></TT> block around =
+the call=20
+      to Fortran/C function.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN class=3D"pre">callstatement</SPAN> =
+<SPAN=20
+      class=3D"pre">&lt;C-expr|multi-line</SPAN> <SPAN=20
+      class=3D"pre">block&gt;</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first last">Replace F2PY generated call statement to =
+Fortran/C=20
+      function with <TT class=3D"literal"><SPAN=20
+      class=3D"pre">&lt;C-expr|multi-line</SPAN> <SPAN=20
+      class=3D"pre">block&gt;</SPAN></TT>. The wrapped Fortran/C =
+function is=20
+      available as <TT class=3D"literal"><SPAN=20
+      class=3D"pre">(*f2py_func)</SPAN></TT>. To raise an exception, set =
+<TT=20
+      class=3D"literal"><SPAN class=3D"pre">f2py_success</SPAN> <SPAN=20
+      class=3D"pre">=3D</SPAN> <SPAN class=3D"pre">0</SPAN></TT> in <TT =
+class=3D"literal"><SPAN=20
+      class=3D"pre">&lt;C-expr|multi-line</SPAN> <SPAN=20
+      class=3D"pre">block&gt;</SPAN></TT>.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">callprotoargument</SPAN> <SPAN=20
+      class=3D"pre">&lt;C-typespecs&gt;</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first">When <TT class=3D"literal"><SPAN=20
+      class=3D"pre">callstatement</SPAN></TT> statement is used then =
+F2PY may not
+       generate proper prototypes for Fortran/C functions (because <TT =
+class=3D"literal"><SPAN=20
+      class=3D"pre">&lt;C-expr&gt;</SPAN></TT> may contain any function =
+calls and=20
+      F2PY has no way to determine what should be the proper prototype). =
+With=20
+      this statement you can explicitely specify the arguments of the
+       corresponding prototype:</P>
+<PRE class=3D"last literal-block">extern &lt;return type&gt; =
+FUNC_F(&lt;routine name&gt;,&lt;ROUTINE =
+NAME&gt;)(&lt;callprotoargument&gt;);=0A=
+</PRE></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN class=3D"pre">fortranname</SPAN> =
+<SPAN class=3D"pre">[&lt;acctual</SPAN>=20
+      <SPAN class=3D"pre">Fortran/C</SPAN> <SPAN =
+class=3D"pre">routine</SPAN> <SPAN=20
+      class=3D"pre">name&gt;]</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first">You can use arbitrary <TT =
+class=3D"literal"><SPAN class=3D"pre">&lt;routine</SPAN>=20
+      <SPAN class=3D"pre">name&gt;</SPAN></TT> for a given Fortran/C =
+function.=20
+      Then you have to specify  <TT class=3D"literal"><SPAN=20
+      class=3D"pre">&lt;acctual</SPAN> <SPAN =
+class=3D"pre">Fortran/C</SPAN> <SPAN=20
+      class=3D"pre">routine</SPAN> <SPAN =
+class=3D"pre">name&gt;</SPAN></TT> with=20
+      this statement.</P>
+      <P class=3D"last">If <TT class=3D"literal"><SPAN=20
+      class=3D"pre">fortranname</SPAN></TT> statement is used without =
+<TT class=3D"literal"><SPAN=20
+      class=3D"pre">&lt;acctual</SPAN> <SPAN =
+class=3D"pre">Fortran/C</SPAN> <SPAN=20
+      class=3D"pre">routine</SPAN> <SPAN =
+class=3D"pre">name&gt;</SPAN></TT> then a=20
+      dummy wrapper is generated.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN class=3D"pre">usercode</SPAN> =
+<SPAN class=3D"pre">&lt;multi-line</SPAN>=20
+      <SPAN class=3D"pre">block&gt;</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first">When used inside <TT class=3D"literal"><SPAN=20
+      class=3D"pre">python</SPAN> <SPAN class=3D"pre">module</SPAN></TT> =
+block, then=20
+      given C code will be inserted to generated C/API source just =
+before
+       wrapper function definitions. Here you can define arbitrary C =
+functions=20
+      to be used in initialization of optional arguments, for example. =
+If <TT=20
+      class=3D"literal"><SPAN class=3D"pre">usercode</SPAN></TT> is used =
+twise=20
+      inside <TT class=3D"literal"><SPAN class=3D"pre">python</SPAN> =
+<SPAN class=3D"pre">module</SPAN></TT>=20
+      block then the second multi-line block is inserted after the =
+definition of=20
+      external routines.</P>
+      <P>When used inside <TT class=3D"literal"><SPAN=20
+      class=3D"pre">&lt;routine</SPAN> <SPAN=20
+      class=3D"pre">singature&gt;</SPAN></TT>, then given C code will be =
+inserted=20
+      to the corresponding wrapper function just after declaring =
+variables but=20
+      before any C statements. So, <TT class=3D"literal"><SPAN=20
+      class=3D"pre">usercode</SPAN></TT> follow-up can contain both =
+declarations=20
+      and C statements.</P>
+      <P class=3D"last">When used inside the first <TT =
+class=3D"literal"><SPAN=20
+      class=3D"pre">interface</SPAN></TT> block, then given C code will =
+be=20
+      inserted at the end of the initialization function of the =
+extension=20
+      module. Here you can modify extension modules dictionary. For =
+example, for=20
+      defining additional variables etc.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN class=3D"pre">pymethoddef</SPAN> =
+<SPAN class=3D"pre">&lt;multi-line</SPAN>=20
+      <SPAN class=3D"pre">block&gt;</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first last">Multiline block will be inserted to the =
+definition=20
+      of module methods <TT class=3D"literal"><SPAN=20
+      class=3D"pre">PyMethodDef</SPAN></TT>-array. It must be a =
+comma-separated=20
+      list of C arrays (see <A class=3D"reference" =
+href=3D"http://www.python.org/doc/current/ext/ext.html">Extending=20
+      and Embedding</A> Python documentation for details). <TT=20
+      class=3D"literal"><SPAN class=3D"pre">pymethoddef</SPAN></TT> =
+statement can be=20
+      used only inside  <TT class=3D"literal"><SPAN =
+class=3D"pre">python</SPAN>=20
+      <SPAN class=3D"pre">module</SPAN></TT>=20
+block.</P></DD></DL></LI></UL></BLOCKQUOTE></DIV>
+<DIV class=3D"section" id=3D"attributes">
+<H3><A name=3D"attributes" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id27">3.2.3=A0=A0=
+=A0Attributes</A></H3>
+<P>The following attributes are used by F2PY:</P>
+<DL>
+  <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">optional</SPAN></TT></DT>
+  <DD>
+  <P class=3D"first">The corresponding argument is moved to the end of =
+<TT class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;optional</SPAN> <SPAN =
+class=3D"pre">arguments&gt;</SPAN></TT>=20
+  list. A default value for an optional argument can be specified <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;init_expr&gt;</SPAN></TT>, see <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">entitydecl</SPAN></TT> definition. Note that the default =
+value=20
+  must be given as a valid C expression.</P>
+  <P>Note that whenever <TT class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;init_expr&gt;</SPAN></TT> is used, <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">optional</SPAN></TT> attribute is set automatically by =
+F2PY.</P>
+  <P class=3D"last">For an optional array argument, all its dimensions =
+must be=20
+  bounded.</P></DD>
+  <DT><TT class=3D"literal"><SPAN class=3D"pre">required</SPAN></TT> =
+</DT>
+  <DD>
+  <P class=3D"first">The corresponding argument is considered as a =
+required one.=20
+  This is default. You need to specify <TT class=3D"literal"><SPAN=20
+  class=3D"pre">required</SPAN></TT> only if there is a need to disable =
+automatic=20
+  <TT class=3D"literal"><SPAN class=3D"pre">optional</SPAN></TT> setting =
+when <TT=20
+  class=3D"literal"><SPAN class=3D"pre">&lt;init_expr&gt;</SPAN></TT> is =
+used.</P>
+  <P class=3D"last">If Python <TT class=3D"literal"><SPAN=20
+  class=3D"pre">None</SPAN></TT> object is used as an required argument, =
+the
+   argument is treated as optional. That is, in the case of array =
+argument, the=20
+  memory is allocated. And if <TT class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;init_expr&gt;</SPAN></TT> is given, the =
+corresponding=20
+  initialization is carried out.</P></DD>
+  <DT><TT class=3D"literal"><SPAN=20
+  class=3D"pre">dimension(&lt;arrayspec&gt;)</SPAN></TT></DT>
+  <DD>The corresponding variable is considered as an array with given =
+dimensions=20
+  in <TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;arrayspec&gt;</SPAN></TT>.</DD>
+  <DT><TT class=3D"literal"><SPAN=20
+  class=3D"pre">intent(&lt;intentspec&gt;)</SPAN></TT></DT>
+  <DD>
+  <P class=3D"first">This specifies the "intention" of the corresponding =
+argument.=20
+  <TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;intentspec&gt;</SPAN></TT> is a=20
+  comma separated list of the following keys:</P>
+  <UL>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN class=3D"pre">in</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first last">The argument is considered as an =
+input-only=20
+      argument. It means that the value of the argument is passed to =
+Fortran/C=20
+      function and that function is expected not to change the value of =
+an=20
+      argument.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">inout</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first">The argument is considered as an input/output =
+or <EM>in=20
+      situ</EM> output argument. <TT class=3D"literal"><SPAN=20
+      class=3D"pre">intent(inout)</SPAN></TT> arguments can be only =
+"contiguous"=20
+      Numeric arrays with proper type and size.  Here "contiguous" can =
+be either=20
+      in Fortran or C sense. The latter one coincides with the =
+contiguous=20
+      concept used in Numeric and is effective only if <TT =
+class=3D"literal"><SPAN=20
+      class=3D"pre">intent(c)</SPAN></TT> is used. =
+Fortran-contiguousness is=20
+      assumed by default.</P>
+      <P class=3D"last">Using <TT class=3D"literal"><SPAN=20
+      class=3D"pre">intent(inout)</SPAN></TT> is generally not =
+recommended, use=20
+      <TT class=3D"literal"><SPAN =
+class=3D"pre">intent(in,out)</SPAN></TT> instead.=20
+      See also <TT class=3D"literal"><SPAN =
+class=3D"pre">intent(inplace)</SPAN></TT>=20
+      attribute.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">inplace</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first">The argument is considered as an input/output =
+or <EM>in=20
+      situ</EM> output argument. <TT class=3D"literal"><SPAN=20
+      class=3D"pre">intent(inplace)</SPAN></TT> arguments must be =
+Numeric arrays=20
+      with proper size. If the type of an array is not "proper" or the =
+array is=20
+      non-contiguous then the array will be changed in-place to fix the =
+type and=20
+      make it contiguous.</P>
+      <P class=3D"last">Using <TT class=3D"literal"><SPAN=20
+      class=3D"pre">intent(inplace)</SPAN></TT> is generally not =
+recommended=20
+      either. For example, when slices have been taken from an <TT =
+class=3D"literal"><SPAN=20
+      class=3D"pre">intent(inplace)</SPAN></TT> argument then after =
+in-place=20
+      changes, slices data pointers may point to unallocated memory=20
+      area.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN class=3D"pre">out</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first">The argument is considered as an return =
+variable. It is=20
+      appended to the <TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;returned</SPAN>=20
+      <SPAN class=3D"pre">variables&gt;</SPAN></TT> list. Using <TT =
+class=3D"literal"><SPAN=20
+      class=3D"pre">intent(out)</SPAN></TT> sets <TT =
+class=3D"literal"><SPAN class=3D"pre">intent(hide)</SPAN></TT>=20
+      automatically, unless also <TT class=3D"literal"><SPAN=20
+      class=3D"pre">intent(in)</SPAN></TT> or <TT =
+class=3D"literal"><SPAN class=3D"pre">intent(inout)</SPAN></TT>=20
+      were used.</P>
+      <P class=3D"last">By default, returned multidimensional arrays are
+       Fortran-contiguous. If <TT class=3D"literal"><SPAN=20
+      class=3D"pre">intent(c)</SPAN></TT> is used, then returned =
+multi-dimensional=20
+      arrays are C-contiguous.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">hide</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first">The argument is removed from the list of =
+required or=20
+      optional arguments. Typically <TT class=3D"literal"><SPAN=20
+      class=3D"pre">intent(hide)</SPAN></TT> is used with <TT=20
+      class=3D"literal"><SPAN class=3D"pre">intent(out)</SPAN></TT> or =
+when <TT=20
+      class=3D"literal"><SPAN =
+class=3D"pre">&lt;init_expr&gt;</SPAN></TT> completely=20
+      determines the value of the argument like in the following =
+example:</P>
+<PRE class=3D"last literal-block">integer intent(hide),depend(a) :: n =
+=3D len(a)=0A=
+real intent(in),dimension(n) :: a      =0A=
+</PRE></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN class=3D"pre">c</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first">The argument is treated as a C scalar or C =
+array=20
+      argument.  In the case of a scalar argument, its value is passed =
+to C=20
+      function as a C scalar argument (recall that Fortran scalar =
+arguments are
+       actually C pointer arguments).  In the case of an array argument, =
+the=20
+      wrapper function is assumed to treat multi-dimensional arrays as=20
+      C-contiguous arrays.</P>
+      <P>There is no need to use <TT class=3D"literal"><SPAN=20
+      class=3D"pre">intent(c)</SPAN></TT> for one-dimensional arrays, no =
+matter if=20
+      the wrapped function is either a Fortran or a C function. This is =
+because=20
+      the concepts of Fortran- and C-contiguousness overlap in =
+one-dimensional=20
+      cases.</P>
+      <P>If <TT class=3D"literal"><SPAN =
+class=3D"pre">intent(c)</SPAN></TT> is used=20
+      as an statement but without entity declaration list, then F2PY =
+adds <TT=20
+      class=3D"literal"><SPAN class=3D"pre">intent(c)</SPAN></TT> =
+attibute to all
+       arguments.</P>
+      <P class=3D"last">Also, when wrapping C functions, one must use =
+<TT class=3D"literal"><SPAN=20
+      class=3D"pre">intent(c)</SPAN></TT> attribute for <TT =
+class=3D"literal"><SPAN=20
+      class=3D"pre">&lt;routine</SPAN> <SPAN =
+class=3D"pre">name&gt;</SPAN></TT> in=20
+      order to disable Fortran specific <TT class=3D"literal"><SPAN=20
+      class=3D"pre">F_FUNC(..,..)</SPAN></TT> macros.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">cache</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first last">The argument is treated as a junk of =
+memory. No=20
+      Fortran nor C contiguousness checks are carried out. Using <TT =
+class=3D"literal"><SPAN=20
+      class=3D"pre">intent(cache)</SPAN></TT> makes sense only for array =
+
+      arguments, also in connection with <TT class=3D"literal"><SPAN=20
+      class=3D"pre">intent(hide)</SPAN></TT> or <TT =
+class=3D"literal"><SPAN class=3D"pre">optional</SPAN></TT>=20
+      attributes.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">copy</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first last">Ensure that the original contents of <TT =
+class=3D"literal"><SPAN=20
+      class=3D"pre">intent(in)</SPAN></TT> argument is preserved. =
+Typically used=20
+      in connection with <TT class=3D"literal"><SPAN=20
+      class=3D"pre">intent(in,out)</SPAN></TT> attribute.  F2PY creates =
+an=20
+      optional argument <TT class=3D"literal"><SPAN=20
+      class=3D"pre">overwrite_&lt;argument</SPAN> <SPAN=20
+      class=3D"pre">name&gt;</SPAN></TT> with the default value <TT =
+class=3D"literal"><SPAN=20
+      class=3D"pre">0</SPAN></TT>.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">overwrite</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first last">The original contents of the <TT=20
+      class=3D"literal"><SPAN class=3D"pre">intent(in)</SPAN></TT> =
+argument may be
+       altered by the Fortran/C function.  F2PY creates an optional =
+argument <TT=20
+      class=3D"literal"><SPAN =
+class=3D"pre">overwrite_&lt;argument</SPAN> <SPAN=20
+      class=3D"pre">name&gt;</SPAN></TT> with the default value <TT =
+class=3D"literal"><SPAN=20
+      class=3D"pre">1</SPAN></TT>.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN class=3D"pre">out=3D&lt;new</SPAN> =
+<SPAN class=3D"pre">name&gt;</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first last">Replace the return name with <TT=20
+      class=3D"literal"><SPAN class=3D"pre">&lt;new</SPAN> <SPAN=20
+      class=3D"pre">name&gt;</SPAN></TT> in the <TT =
+class=3D"literal"><SPAN class=3D"pre">__doc__</SPAN></TT>
+       string of a wrapper function.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">callback</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first">Construct an external function suitable for =
+calling=20
+      Python function from Fortran. <TT class=3D"literal"><SPAN=20
+      class=3D"pre">intent(callback)</SPAN></TT> must be specified =
+before the
+       corresponding <TT class=3D"literal"><SPAN =
+class=3D"pre">external</SPAN></TT>=20
+      statement. If 'argument' is not in argument list then it will be =
+added to=20
+      Python wrapper but is not used when calling Fortran function.</P>
+      <P class=3D"last">Use <TT class=3D"literal"><SPAN=20
+      class=3D"pre">intent(callback)</SPAN></TT> in situations where a =
+Fortran/C=20
+      code assumes that a user implements a function with given =
+prototype and=20
+      links it to an executable.</P></DD></DL></LI>
+    <LI>
+    <DL class=3D"first">
+      <DT><TT class=3D"literal"><SPAN class=3D"pre">aux</SPAN></TT></DT>
+      <DD>
+      <P class=3D"first last">Define auxiliary C variable in F2PY =
+generated=20
+      wrapper function. Useful to save parameter values so that they can =
+be=20
+      accessed in initialization expression of other variables. Note =
+that <TT=20
+      class=3D"literal"><SPAN class=3D"pre">intent(aux)</SPAN></TT> =
+silently implies=20
+      <TT class=3D"literal"><SPAN=20
+    class=3D"pre">intent(c)</SPAN></TT>.</P></DD></DL></LI></UL>
+  <P>The following rules apply:</P>
+  <UL class=3D"last simple">
+    <LI>If no <TT class=3D"literal"><SPAN class=3D"pre">intent(in</SPAN> =
+<SPAN=20
+    class=3D"pre">|</SPAN> <SPAN class=3D"pre">inout</SPAN> <SPAN=20
+    class=3D"pre">|</SPAN> <SPAN class=3D"pre">out</SPAN> <SPAN =
+class=3D"pre">|</SPAN>=20
+    <SPAN class=3D"pre">hide)</SPAN></TT> is specified, <TT =
+class=3D"literal"><SPAN=20
+    class=3D"pre">intent(in)</SPAN></TT> is assumed.</LI>
+    <LI><TT class=3D"literal"><SPAN =
+class=3D"pre">intent(in,inout)</SPAN></TT> is=20
+    <TT class=3D"literal"><SPAN =
+class=3D"pre">intent(in)</SPAN></TT>.</LI>
+    <LI><TT class=3D"literal"><SPAN =
+class=3D"pre">intent(in,hide)</SPAN></TT> or <TT=20
+    class=3D"literal"><SPAN class=3D"pre">intent(inout,hide)</SPAN></TT> =
+is <TT=20
+    class=3D"literal"><SPAN class=3D"pre">intent(hide)</SPAN></TT>.</LI>
+    <LI><TT class=3D"literal"><SPAN =
+class=3D"pre">intent(out)</SPAN></TT> is <TT=20
+    class=3D"literal"><SPAN class=3D"pre">intent(out,hide)</SPAN></TT> =
+unless <TT=20
+    class=3D"literal"><SPAN class=3D"pre">intent(in)</SPAN></TT> or <TT =
+class=3D"literal"><SPAN=20
+    class=3D"pre">intent(inout)</SPAN></TT> is specified.</LI>
+    <LI>If <TT class=3D"literal"><SPAN =
+class=3D"pre">intent(copy)</SPAN></TT> or <TT=20
+    class=3D"literal"><SPAN class=3D"pre">intent(overwrite)</SPAN></TT> =
+is used,=20
+    then an additional optional argument is introduced with a name <TT =
+class=3D"literal"><SPAN=20
+    class=3D"pre">overwrite_&lt;argument</SPAN> <SPAN=20
+    class=3D"pre">name&gt;</SPAN></TT> and a default value 0 or 1,=20
+    respectively.</LI>
+    <LI><TT class=3D"literal"><SPAN =
+class=3D"pre">intent(inout,inplace)</SPAN></TT>=20
+    is <TT class=3D"literal"><SPAN =
+class=3D"pre">intent(inplace)</SPAN></TT>.</LI>
+    <LI><TT class=3D"literal"><SPAN =
+class=3D"pre">intent(in,inplace)</SPAN></TT> is=20
+    <TT class=3D"literal"><SPAN=20
+  class=3D"pre">intent(inplace)</SPAN></TT>.</LI></UL></DD>
+  <DT><TT class=3D"literal"><SPAN=20
+  class=3D"pre">check([&lt;C-booleanexpr&gt;])</SPAN></TT></DT>
+  <DD>
+  <P class=3D"first">Perform consistency check of arguments by =
+evaluating <TT=20
+  class=3D"literal"><SPAN =
+class=3D"pre">&lt;C-booleanexpr&gt;</SPAN></TT>; if <TT=20
+  class=3D"literal"><SPAN =
+class=3D"pre">&lt;C-booleanexpr&gt;</SPAN></TT> returns 0,=20
+  an exception is raised.</P>
+  <P class=3D"last">If <TT class=3D"literal"><SPAN =
+class=3D"pre">check(..)</SPAN></TT>=20
+  is not used then F2PY generates few standard checks (e.g. in a case of =
+an=20
+  array argument, check for the proper shape and size) automatically. =
+Use <TT=20
+  class=3D"literal"><SPAN class=3D"pre">check()</SPAN></TT> to disable =
+checks=20
+  generated by F2PY.</P></DD>
+  <DT><TT class=3D"literal"><SPAN=20
+  class=3D"pre">depend([&lt;names&gt;])</SPAN></TT></DT>
+  <DD>
+  <P class=3D"first">This declares that the corresponding argument =
+depends on the=20
+  values of variables in the list <TT class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;names&gt;</SPAN></TT>. For example, <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;init_expr&gt;</SPAN></TT> may use the values of =
+other=20
+  arguments.  Using information given by <TT class=3D"literal"><SPAN=20
+  class=3D"pre">depend(..)</SPAN></TT> attributes, F2PY ensures that =
+arguments are
+   initialized in a proper order. If <TT class=3D"literal"><SPAN=20
+  class=3D"pre">depend(..)</SPAN></TT> attribute is not used then F2PY =
+determines=20
+  dependence relations automatically. Use <TT class=3D"literal"><SPAN=20
+  class=3D"pre">depend()</SPAN></TT> to disable dependence relations =
+generated by=20
+  F2PY.</P>
+  <P class=3D"last">When you edit dependence relations that were =
+initially=20
+  generated by F2PY, be careful not to break the dependence relations of =
+other
+   relevant variables. Another thing to watch out is cyclic =
+dependencies. F2PY=20
+  is able to detect cyclic dependencies when constructing wrappers and =
+it=20
+  complains if any are found.</P></DD>
+  <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">allocatable</SPAN></TT></DT>
+  <DD>The corresponding variable is Fortran 90 allocatable array defined =
+as=20
+  Fortran 90 module data.</DD></DL><A name=3D"external" class=3D"target" =
+
+id=3D"external"></A>
+<DL>=20
+  <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">external</SPAN></TT></DT>
+  <DD>
+  <P class=3D"first">The corresponding argument is a function provided =
+by user.=20
+  The signature of this so-called call-back function can be defined</P>
+  <UL class=3D"simple">
+    <LI>in <TT class=3D"literal"><SPAN =
+class=3D"pre">__user__</SPAN></TT> module=20
+    block,</LI>
+    <LI>or by demonstrative (or real, if the signature file is a real =
+Fortran
+     code) call in the <TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;other</SPAN>=20
+    <SPAN class=3D"pre">statements&gt;</SPAN></TT> block.</LI></UL>
+  <P>For example, F2PY generates from</P>
+<PRE class=3D"literal-block">external cb_sub, cb_fun=0A=
+integer n=0A=
+real a(n),r=0A=
+call cb_sub(a,n)=0A=
+r =3D cb_fun(4)=0A=
+</PRE>
+  <P>the following call-back signatures:</P>
+<PRE class=3D"literal-block">subroutine cb_sub(a,n)=0A=
+    real dimension(n) :: a=0A=
+    integer optional,check(len(a)&gt;=3Dn),depend(a) :: n=3Dlen(a)=0A=
+end subroutine cb_sub=0A=
+function cb_fun(e_4_e) result (r)=0A=
+    integer :: e_4_e=0A=
+    real :: r=0A=
+end function cb_fun=0A=
+</PRE>
+  <P>The corresponding user-provided Python function are then:</P>
+<PRE class=3D"literal-block">def cb_sub(a,[n]):=0A=
+    ...=0A=
+    return=0A=
+def cb_fun(e_4_e):=0A=
+    ...=0A=
+    return r=0A=
+</PRE>
+  <P class=3D"last">See also <TT class=3D"literal"><SPAN=20
+  class=3D"pre">intent(callback)</SPAN></TT> attribute.</P></DD>
+  <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">parameter</SPAN></TT></DT>
+  <DD>The corresponding variable is a parameter and it must have a fixed =
+value.=20
+  F2PY replaces all parameter occurrences by their corresponding=20
+values.</DD></DL></DIV></DIV>
+<DIV class=3D"section" id=3D"extensions">
+<H2><A name=3D"extensions" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id28">3.3=A0=A0=
+=A0Extensions</A></H2>
+<DIV class=3D"section" id=3D"f2py-directives">
+<H3><A name=3D"f2py-directives" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id29">3.3.1=A0=A0=
+=A0F2PY=20
+directives</A></H3>
+<P>The so-called F2PY directives allow using F2PY signature file =
+constructs also=20
+in Fortran 77/90 source codes. With this feature you can skip (almost)=20
+completely intermediate signature file generations and apply F2PY =
+directly to=20
+Fortran source codes.</P>
+<P>F2PY directive has the following form:</P>
+<PRE class=3D"literal-block">&lt;comment char&gt;f2py ...=0A=
+</PRE>
+<P>where allowed comment characters for fixed and free format Fortran =
+codes are=20
+<TT class=3D"literal"><SPAN class=3D"pre">cC*!#</SPAN></TT> and <TT=20
+class=3D"literal"><SPAN class=3D"pre">!</SPAN></TT>, respectively. =
+Everything that=20
+follows <TT class=3D"literal"><SPAN class=3D"pre">&lt;comment</SPAN> =
+<SPAN class=3D"pre">char&gt;f2py</SPAN></TT>=20
+is ignored by a compiler but read by F2PY as a normal Fortran =
+(non-comment)=20
+line:</P>
+<BLOCKQUOTE>When F2PY finds a line with F2PY directive, the directive is =
+first
+   replaced by 5 spaces and then the line is reread.</BLOCKQUOTE>
+<P>For fixed format Fortran codes, <TT class=3D"literal"><SPAN=20
+class=3D"pre">&lt;comment</SPAN> <SPAN =
+class=3D"pre">char&gt;</SPAN></TT> must be at=20
+the first column of a file, of course. For free format Fortran codes, =
+F2PY=20
+directives can appear anywhere in a file.</P></DIV>
+<DIV class=3D"section" id=3D"c-expressions">
+<H3><A name=3D"c-expressions" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id30">3.3.2=A0=A0=
+=A0C=20
+expressions</A></H3>
+<P>C expressions are used in the following parts of signature files:</P>
+<UL class=3D"simple">
+  <LI><TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;init_expr&gt;</SPAN></TT> of=20
+  variable initialization;</LI>
+  <LI><TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;C-booleanexpr&gt;</SPAN></TT> of=20
+  the <TT class=3D"literal"><SPAN class=3D"pre">check</SPAN></TT> =
+attribute;</LI>
+  <LI><TT class=3D"literal"><SPAN class=3D"pre">&lt;arrayspec&gt;</SPAN> =
+<SPAN=20
+  class=3D"pre">of</SPAN> <SPAN class=3D"pre">the</SPAN> <SPAN=20
+  class=3D"pre">``dimension</SPAN></TT> attribute;</LI>
+  <LI><TT class=3D"literal"><SPAN =
+class=3D"pre">callstatement</SPAN></TT> statement,=20
+  here also a C multi-line block can be used.</LI></UL>
+<P>A C expression may contain:</P>
+<UL>
+  <LI>
+  <P class=3D"first">standard C constructs;</P></LI>
+  <LI>
+  <P class=3D"first">functions from <TT class=3D"literal"><SPAN=20
+  class=3D"pre">math.h</SPAN></TT> and <TT class=3D"literal"><SPAN=20
+  class=3D"pre">Python.h</SPAN></TT>;</P></LI>
+  <LI>
+  <P class=3D"first">variables from the argument list, presumably =
+initialized=20
+  before according to given dependence relations;</P></LI>
+  <LI>
+  <P class=3D"first">the following CPP macros:</P>
+  <DL>
+    <DT><TT class=3D"literal"><SPAN=20
+class=3D"pre">rank(&lt;name&gt;)</SPAN></TT></DT>
+    <DD>
+    <P class=3D"first last">Returns the rank of an array <TT =
+class=3D"literal"><SPAN=20
+    class=3D"pre">&lt;name&gt;</SPAN></TT>.</P></DD>
+    <DT><TT class=3D"literal"><SPAN=20
+    class=3D"pre">shape(&lt;name&gt;,&lt;n&gt;)</SPAN></TT></DT>
+    <DD>
+    <P class=3D"first last">Returns the <TT class=3D"literal"><SPAN=20
+    class=3D"pre">&lt;n&gt;</SPAN></TT>-th dimension of an array <TT =
+class=3D"literal"><SPAN=20
+    class=3D"pre">&lt;name&gt;</SPAN></TT>.</P></DD>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">len(&lt;name&gt;)</SPAN></TT></DT>
+    <DD>
+    <P class=3D"first last">Returns the lenght of an array <TT=20
+    class=3D"literal"><SPAN =
+class=3D"pre">&lt;name&gt;</SPAN></TT>.</P></DD>
+    <DT><TT class=3D"literal"><SPAN=20
+class=3D"pre">size(&lt;name&gt;)</SPAN></TT></DT>
+    <DD>
+    <P class=3D"first last">Returns the size of an array <TT =
+class=3D"literal"><SPAN=20
+    class=3D"pre">&lt;name&gt;</SPAN></TT>.</P></DD>
+    <DT><TT class=3D"literal"><SPAN=20
+class=3D"pre">slen(&lt;name&gt;)</SPAN></TT></DT>
+    <DD>
+    <P class=3D"first last">Returns the length of a string <TT=20
+    class=3D"literal"><SPAN=20
+class=3D"pre">&lt;name&gt;</SPAN></TT>.</P></DD></DL></LI></UL>
+<P>For initializing an array <TT class=3D"literal"><SPAN=20
+class=3D"pre">&lt;array</SPAN> <SPAN class=3D"pre">name&gt;</SPAN></TT>, =
+F2PY=20
+generates a loop over all indices and dimensions that executes the =
+following
+ pseudo-statement:</P>
+<PRE class=3D"literal-block">&lt;array name&gt;(_i[0],_i[1],...) =3D =
+&lt;init_expr&gt;;=0A=
+</PRE>
+<P>where <TT class=3D"literal"><SPAN =
+class=3D"pre">_i[&lt;i&gt;]</SPAN></TT> refers=20
+to the <TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;i&gt;</SPAN></TT>-th index=20
+value and that runs from <TT class=3D"literal"><SPAN =
+class=3D"pre">0</SPAN></TT> to=20
+<TT class=3D"literal"><SPAN class=3D"pre">shape(&lt;array</SPAN> <SPAN=20
+class=3D"pre">name&gt;,&lt;i&gt;)-1</SPAN></TT>.</P>
+<P>For example, a function <TT class=3D"literal"><SPAN=20
+class=3D"pre">myrange(n)</SPAN></TT> generated from the following =
+signature</P>
+<PRE class=3D"literal-block">subroutine myrange(a,n)=0A=
+  fortranname        ! myrange is a dummy wrapper=0A=
+  integer intent(in) :: n=0A=
+  real*8 intent(c,out),dimension(n),depend(n) :: a =3D _i[0]=0A=
+end subroutine myrange=0A=
+</PRE>
+<P>is equivalent to <TT class=3D"literal"><SPAN=20
+class=3D"pre">Numeric.arange(n,typecode=3D'd')</SPAN></TT>.</P>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Warning!</P>
+<P>F2PY may lower cases also in C expressions when scanning Fortran =
+codes (see=20
+<TT class=3D"literal"><SPAN class=3D"pre">--[no]-lower</SPAN></TT>=20
+option).</P></DIV></DIV>
+<DIV class=3D"section" id=3D"multi-line-blocks">
+<H3><A name=3D"multi-line-blocks" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id31">3.3.3=A0=A0=
+=A0Multi-line=20
+blocks</A></H3>
+<P>A multi-line block starts with <TT class=3D"literal"><SPAN=20
+class=3D"pre">'''</SPAN></TT> (triple single-quotes) and ends with <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">'''</SPAN></TT> in some <EM>strictly</EM> subsequent line. =
+=20
+Multi-line blocks can be used only within .pyf files. The contents of a=20
+multi-line block can be arbitrary (except that it cannot contain <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">'''</SPAN></TT>) and no transformations (e.g. lowering =
+cases) are=20
+applied to it.</P>
+<P>Currently, multi-line blocks can be used in the following =
+constructs:</P>
+<UL class=3D"simple">
+  <LI>as a C expression of the <TT class=3D"literal"><SPAN=20
+  class=3D"pre">callstatement</SPAN></TT> statement;</LI>
+  <LI>as a C type specification of the <TT class=3D"literal"><SPAN=20
+  class=3D"pre">callprotoargument</SPAN></TT> statement;</LI>
+  <LI>as a C code block of the <TT class=3D"literal"><SPAN=20
+  class=3D"pre">usercode</SPAN></TT> statement;</LI>
+  <LI>as a list of C arrays of the <TT class=3D"literal"><SPAN=20
+  class=3D"pre">pymethoddef</SPAN></TT> statement;</LI>
+  <LI>as documentation string.</LI></UL></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"using-f2py-bindings-in-python">
+<H1><A name=3D"using-f2py-bindings-in-python" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id32">4=A0=A0=A0=
+Using=20
+F2PY bindings in Python</A></H1>
+<P>All wrappers (to Fortran/C routines or to common blocks or to Fortran =
+90=20
+module data) generated by F2PY are exposed to Python as <TT=20
+class=3D"literal"><SPAN class=3D"pre">fortran</SPAN></TT> type objects.  =
+Routine=20
+wrappers are callable <TT class=3D"literal"><SPAN =
+class=3D"pre">fortran</SPAN></TT>=20
+type objects while wrappers to Fortran data have attributes referring to =
+data
+ objects.</P>
+<P>All <TT class=3D"literal"><SPAN class=3D"pre">fortran</SPAN></TT> =
+type object=20
+have attribute <TT class=3D"literal"><SPAN =
+class=3D"pre">_cpointer</SPAN></TT> that=20
+contains CObject referring to the C pointer of the corresponding =
+Fortran/C
+ function or variable in C level. Such CObjects can be used as an =
+callback=20
+argument of F2PY generated functions to bypass Python C/API  layer of =
+calling=20
+Python functions from Fortran or C when the computational part of such =
+functions=20
+is implemented in C or Fortran and wrapped with F2PY (or any other tool =
+capable=20
+of providing CObject of a function).</P>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Example</P>
+<P>Consider a <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/ftype.f">Fortran=
+=20
+77 file</A> <TT class=3D"literal"><SPAN =
+class=3D"pre">ftype.f</SPAN></TT>:</P>
+<PRE class=3D"literal-block">C FILE: FTYPE.F=0A=
+      SUBROUTINE FOO(N)=0A=
+      INTEGER N=0A=
+Cf2py integer optional,intent(in) :: n =3D 13=0A=
+      REAL A,X=0A=
+      COMMON /DATA/ A,X(3)=0A=
+      PRINT*, "IN FOO: N=3D",N," A=3D",A," X=3D[",X(1),X(2),X(3),"]"=0A=
+      END=0A=
+C END OF FTYPE.F=0A=
+=0A=
+</PRE>
+<P>and build a wrapper using:</P>
+<PRE class=3D"literal-block">f2py -c ftype.f -m ftype=0A=
+</PRE>
+<P>In Python:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import ftype=0A=
+&gt;&gt;&gt; print ftype.__doc__=0A=
+This module 'ftype' is auto-generated with f2py (version:2.28.198-1366).=0A=
+Functions:=0A=
+  foo(n=3D13)=0A=
+COMMON blocks:=0A=
+  /data/ a,x(3)=0A=
+.=0A=
+&gt;&gt;&gt; type(ftype.foo),type(ftype.data)=0A=
+(&lt;type 'fortran'&gt;, &lt;type 'fortran'&gt;)=0A=
+&gt;&gt;&gt; ftype.foo()=0A=
+ IN FOO: N=3D 13 A=3D  0. X=3D[  0.  0.  0.]=0A=
+&gt;&gt;&gt; ftype.data.a =3D 3=0A=
+&gt;&gt;&gt; ftype.data.x =3D [1,2,3]=0A=
+&gt;&gt;&gt; ftype.foo()=0A=
+ IN FOO: N=3D 13 A=3D  3. X=3D[  1.  2.  3.]=0A=
+&gt;&gt;&gt; ftype.data.x[1] =3D 45  =0A=
+&gt;&gt;&gt; ftype.foo(24)=0A=
+ IN FOO: N=3D 24 A=3D  3. X=3D[  1.  45.  3.]=0A=
+&gt;&gt;&gt; ftype.data.x=0A=
+array([  1.,  45.,   3.],'f')=0A=
+=0A=
+</PRE></DIV>
+<DIV class=3D"section" id=3D"scalar-arguments">
+<H2><A name=3D"scalar-arguments" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id33">4.1=A0=A0=
+=A0Scalar=20
+arguments</A></H2>
+<P>In general, a scalar argument of a F2PY generated wrapper function =
+can be=20
+ordinary Python scalar (integer, float, complex number) as well as an =
+arbitrary=20
+sequence object (list, tuple, array, string) of scalars. In the latter =
+case, the=20
+first element of the sequence object is passed to Fortran routine as a =
+scalar=20
+argument.</P>
+<P>Note that when type-casting is required and there is possible loss of
+ information (e.g. when type-casting float to integer or complex to =
+float), F2PY=20
+does not raise any exception. In complex to real type-casting only the =
+real part=20
+of a complex number is used.</P>
+<P><TT class=3D"literal"><SPAN class=3D"pre">intent(inout)</SPAN></TT> =
+scalar=20
+arguments are assumed to be array objects in order to <EM>in situ</EM> =
+changes=20
+to be effective. It is recommended to use arrays with proper type but =
+also other=20
+types work.</P>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Example</P>
+<P>Consider the following <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/scalar.f">Fortra=
+n=20
+77 code</A>:</P>
+<BLOCKQUOTE>
+<PRE class=3D"literal-block">C FILE: SCALAR.F=0A=
+      SUBROUTINE FOO(A,B)=0A=
+      REAL*8 A, B=0A=
+Cf2py intent(in) a=0A=
+Cf2py intent(inout) b=0A=
+      PRINT*, "    A=3D",A," B=3D",B=0A=
+      PRINT*, "INCREMENT A AND B"=0A=
+      A =3D A + 1D0=0A=
+      B =3D B + 1D0=0A=
+      PRINT*, "NEW A=3D",A," B=3D",B=0A=
+      END=0A=
+C END OF FILE SCALAR.F=0A=
+=0A=
+</PRE></BLOCKQUOTE>
+<P>and wrap it using <TT class=3D"literal"><SPAN =
+class=3D"pre">f2py</SPAN> <SPAN=20
+class=3D"pre">-c</SPAN> <SPAN class=3D"pre">-m</SPAN> <SPAN=20
+class=3D"pre">scalar</SPAN> <SPAN =
+class=3D"pre">scalar.f</SPAN></TT>.</P>
+<P>In Python:</P>
+<BLOCKQUOTE>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import scalar=0A=
+&gt;&gt;&gt; print scalar.foo.__doc__=0A=
+foo - Function signature:=0A=
+  foo(a,b)=0A=
+Required arguments:=0A=
+  a : input float=0A=
+  b : in/output rank-0 array(float,'d')=0A=
+ =0A=
+&gt;&gt;&gt; scalar.foo(2,3)   =0A=
+     A=3D  2. B=3D  3.=0A=
+ INCREMENT A AND B=0A=
+ NEW A=3D  3. B=3D  4.=0A=
+&gt;&gt;&gt; import Numeric=0A=
+&gt;&gt;&gt; a=3DNumeric.array(2)   # these are integer rank-0 arrays=0A=
+&gt;&gt;&gt; b=3DNumeric.array(3)=0A=
+&gt;&gt;&gt; scalar.foo(a,b)=0A=
+     A=3D  2. B=3D  3.=0A=
+ INCREMENT A AND B=0A=
+ NEW A=3D  3. B=3D  4.=0A=
+&gt;&gt;&gt; print a,b            # note that only b is changed in situ=0A=
+2 4=0A=
+</PRE></BLOCKQUOTE></DIV></DIV>
+<DIV class=3D"section" id=3D"string-arguments">
+<H2><A name=3D"string-arguments" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id34">4.2=A0=A0=
+=A0String=20
+arguments</A></H2>
+<P>F2PY generated wrapper functions accept (almost) any Python object as =
+a=20
+string argument, <TT class=3D"literal"><SPAN =
+class=3D"pre">str</SPAN></TT> is=20
+applied for non-string objects. Exceptions are Numeric arrays that must =
+have=20
+type code <TT class=3D"literal"><SPAN class=3D"pre">'c'</SPAN></TT> or =
+<TT class=3D"literal"><SPAN=20
+class=3D"pre">'1'</SPAN></TT> when used as string arguments.</P>
+<P>A string can have arbitrary length when using it as a string argument =
+to F2PY=20
+generated wrapper function. If the length is greater than expected, the =
+string=20
+is truncated. If the length is smaller that expected, additional memory =
+is=20
+allocated and filled with <TT class=3D"literal"><SPAN=20
+class=3D"pre">\0</SPAN></TT>.</P>
+<P>Because Python strings are immutable, an <TT class=3D"literal"><SPAN =
+class=3D"pre">intent(inout)</SPAN></TT>=20
+argument expects an array version of a string in order to <EM>in =
+situ</EM>=20
+changes to be effective.</P>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Example</P>
+<P>Consider the following <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/string.f">Fortra=
+n=20
+77 code</A>:</P>
+<PRE class=3D"literal-block">C FILE: STRING.F=0A=
+      SUBROUTINE FOO(A,B,C,D)=0A=
+      CHARACTER*5 A, B=0A=
+      CHARACTER*(*) C,D=0A=
+Cf2py intent(in) a,c=0A=
+Cf2py intent(inout) b,d=0A=
+      PRINT*, "A=3D",A=0A=
+      PRINT*, "B=3D",B=0A=
+      PRINT*, "C=3D",C=0A=
+      PRINT*, "D=3D",D=0A=
+      PRINT*, "CHANGE A,B,C,D"=0A=
+      A(1:1) =3D 'A'=0A=
+      B(1:1) =3D 'B'=0A=
+      C(1:1) =3D 'C'=0A=
+      D(1:1) =3D 'D'=0A=
+      PRINT*, "A=3D",A=0A=
+      PRINT*, "B=3D",B=0A=
+      PRINT*, "C=3D",C=0A=
+      PRINT*, "D=3D",D=0A=
+      END=0A=
+C END OF FILE STRING.F=0A=
+=0A=
+</PRE>
+<P>and wrap it using <TT class=3D"literal"><SPAN =
+class=3D"pre">f2py</SPAN> <SPAN=20
+class=3D"pre">-c</SPAN> <SPAN class=3D"pre">-m</SPAN> <SPAN=20
+class=3D"pre">mystring</SPAN> <SPAN =
+class=3D"pre">string.f</SPAN></TT>.</P>
+<P>Python session:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import mystring=0A=
+&gt;&gt;&gt; print mystring.foo.__doc__=0A=
+foo - Function signature:=0A=
+  foo(a,b,c,d)=0A=
+Required arguments:=0A=
+  a : input string(len=3D5)=0A=
+  b : in/output rank-0 array(string(len=3D5),'c')=0A=
+  c : input string(len=3D-1)=0A=
+  d : in/output rank-0 array(string(len=3D-1),'c')=0A=
+=0A=
+&gt;&gt;&gt; import Numeric=0A=
+&gt;&gt;&gt; a=3DNumeric.array('123')=0A=
+&gt;&gt;&gt; b=3DNumeric.array('123')=0A=
+&gt;&gt;&gt; c=3DNumeric.array('123')=0A=
+&gt;&gt;&gt; d=3DNumeric.array('123')=0A=
+&gt;&gt;&gt; mystring.foo(a,b,c,d)=0A=
+ A=3D123=0A=
+ B=3D123=0A=
+ C=3D123=0A=
+ D=3D123=0A=
+ CHANGE A,B,C,D=0A=
+ A=3DA23=0A=
+ B=3DB23=0A=
+ C=3DC23=0A=
+ D=3DD23=0A=
+&gt;&gt;&gt; a.tostring(),b.tostring(),c.tostring(),d.tostring()=0A=
+('123', 'B23', '123', 'D23')=0A=
+</PRE></DIV></DIV>
+<DIV class=3D"section" id=3D"array-arguments">
+<H2><A name=3D"array-arguments" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id35">4.3=A0=A0=
+=A0Array=20
+arguments</A></H2>
+<P>In general, array arguments of F2PY generated wrapper functions =
+accept
+ arbitrary sequences that can be transformed to Numeric array objects. =
+An=20
+exception is <TT class=3D"literal"><SPAN =
+class=3D"pre">intent(inout)</SPAN></TT>=20
+array arguments that always must be proper-contiguous and have proper =
+type,=20
+otherwise an exception is raised. Another exception is <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">intent(inplace)</SPAN></TT> array arguments that =
+attributes will be=20
+changed in-situ if the argument has different type than expected (see =
+<TT class=3D"literal"><SPAN=20
+class=3D"pre">intent(inplace)</SPAN></TT> attribute for more =
+information).</P>
+<P>In general, if a Numeric array is proper-contiguous and has a proper =
+type=20
+then it is directly passed to wrapped Fortran/C function. Otherwise, an=20
+element-wise copy of an input array is made and the copy, being=20
+proper-contiguous and with proper type, is used as an array =
+argument.</P>
+<P>There are two types of proper-contiguous Numeric arrays:</P>
+<UL class=3D"simple">
+  <LI>Fortran-contiguous arrays when data is stored column-wise, i.e. =
+indexing=20
+  of data as stored in memory starts from the lowest dimension;</LI>
+  <LI>C-contiguous or simply contiguous arrays when data is stored =
+row-wise,=20
+  i.e. indexing of data as stored in memory starts from the highest=20
+  dimension.</LI></UL>
+<P>For one-dimensional arrays these notions coincide.</P>
+<P>For example, an 2x2 array <TT class=3D"literal"><SPAN =
+class=3D"pre">A</SPAN></TT>=20
+is Fortran-contiguous if its elements are stored in memory in the =
+following=20
+order:</P>
+<PRE class=3D"literal-block">A[0,0] A[1,0] A[0,1] A[1,1]=0A=
+</PRE>
+<P>and C-contiguous if the order is as follows:</P>
+<PRE class=3D"literal-block">A[0,0] A[0,1] A[1,0] A[1,1]=0A=
+</PRE>
+<P>To test whether an array is C-contiguous, use <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">.iscontiguous()</SPAN></TT> method of Numeric arrays.  To =
+test for=20
+Fortran-contiguousness, all F2PY generated extension modules provide a =
+function=20
+<TT class=3D"literal"><SPAN=20
+class=3D"pre">has_column_major_storage(&lt;array&gt;)</SPAN></TT>. This =
+function=20
+is equivalent to <TT class=3D"literal"><SPAN=20
+class=3D"pre">Numeric.transpose(&lt;array&gt;).iscontiguous()</SPAN></TT>=
+ but more=20
+efficient.</P>
+<P>Usually there is no need to worry about how the arrays are stored in =
+memory=20
+and whether the wrapped functions, being either Fortran or C functions, =
+assume=20
+one or another storage order. F2PY automatically ensures that wrapped =
+functions=20
+get arguments with proper storage order; the corresponding algorithm is =
+designed=20
+to make copies of arrays only when absolutely necessary. However, when =
+dealing=20
+with very large multi-dimensional input arrays with sizes close to the =
+size of
+ the physical memory in your computer, then a care must be taken to use =
+always=20
+proper-contiguous and proper type arguments.</P>
+<P>To transform input arrays to column major storage order before =
+passing them=20
+to Fortran routines, use a function <TT class=3D"literal"><SPAN=20
+class=3D"pre">as_column_major_storage(&lt;array&gt;)</SPAN></TT> that is =
+provided=20
+by all F2PY generated extension modules.</P>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Example</P>
+<P>Consider <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/array.f">Fortran=
+=20
+77 code</A>:</P>
+<PRE class=3D"literal-block">C FILE: ARRAY.F=0A=
+      SUBROUTINE FOO(A,N,M)=0A=
+C=0A=
+C     INCREMENT THE FIRST ROW AND DECREMENT THE FIRST COLUMN OF A=0A=
+C=0A=
+      INTEGER N,M,I,J=0A=
+      REAL*8 A(N,M)=0A=
+Cf2py intent(in,out,copy) a=0A=
+Cf2py integer intent(hide),depend(a) :: n=3Dshape(a,0), m=3Dshape(a,1)=0A=
+      DO J=3D1,M=0A=
+         A(1,J) =3D A(1,J) + 1D0=0A=
+      ENDDO=0A=
+      DO I=3D1,N=0A=
+         A(I,1) =3D A(I,1) - 1D0=0A=
+      ENDDO=0A=
+      END=0A=
+C END OF FILE ARRAY.F=0A=
+=0A=
+</PRE>
+<P>and wrap it using <TT class=3D"literal"><SPAN =
+class=3D"pre">f2py</SPAN> <SPAN=20
+class=3D"pre">-c</SPAN> <SPAN class=3D"pre">-m</SPAN> <SPAN =
+class=3D"pre">arr</SPAN>=20
+<SPAN class=3D"pre">array.f</SPAN> <SPAN=20
+class=3D"pre">-DF2PY_REPORT_ON_ARRAY_COPY=3D1</SPAN></TT>.</P>
+<P>In Python:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import arr=0A=
+&gt;&gt;&gt; from Numeric import array=0A=
+&gt;&gt;&gt; print arr.foo.__doc__=0A=
+foo - Function signature:=0A=
+  a =3D foo(a,[overwrite_a])=0A=
+Required arguments:=0A=
+  a : input rank-2 array('d') with bounds (n,m)=0A=
+Optional arguments:=0A=
+  overwrite_a :=3D 0 input int=0A=
+Return objects:=0A=
+  a : rank-2 array('d') with bounds (n,m)=0A=
+=0A=
+&gt;&gt;&gt; a=3Darr.foo([[1,2,3],=0A=
+...            [4,5,6]])=0A=
+copied an array using PyArray_CopyFromObject: size=3D6, elsize=3D8=0A=
+&gt;&gt;&gt; print a=0A=
+[[ 1.  3.  4.]=0A=
+ [ 3.  5.  6.]]=0A=
+&gt;&gt;&gt; a.iscontiguous(), arr.has_column_major_storage(a)=0A=
+(0, 1)=0A=
+&gt;&gt;&gt; b=3Darr.foo(a)              # even if a is proper-contiguous=0A=
+...                           # and has proper type, a copy is made=0A=
+...                           # forced by intent(copy) attribute=0A=
+...                           # to preserve its original contents=0A=
+... =0A=
+copied an array using copy_ND_array: size=3D6, elsize=3D8=0A=
+&gt;&gt;&gt; print a=0A=
+[[ 1.  3.  4.]=0A=
+ [ 3.  5.  6.]]=0A=
+&gt;&gt;&gt; print b=0A=
+[[ 1.  4.  5.]=0A=
+ [ 2.  5.  6.]]=0A=
+&gt;&gt;&gt; b=3Darr.foo(a,overwrite_a=3D1) # a is passed directly to =
+Fortran=0A=
+...                            # routine and its contents is discarded=0A=
+... =0A=
+&gt;&gt;&gt; print a=0A=
+[[ 1.  4.  5.]=0A=
+ [ 2.  5.  6.]]=0A=
+&gt;&gt;&gt; print b=0A=
+[[ 1.  4.  5.]=0A=
+ [ 2.  5.  6.]]=0A=
+&gt;&gt;&gt; a is b                       # a and b are acctually the =
+same objects=0A=
+1=0A=
+&gt;&gt;&gt; print arr.foo([1,2,3])       # different rank arrays are =
+allowed=0A=
+copied an array using PyArray_CopyFromObject: size=3D3, elsize=3D8=0A=
+[ 1.  1.  2.]=0A=
+&gt;&gt;&gt; print arr.foo([[[1],[2],[3]]])=0A=
+copied an array using PyArray_CopyFromObject: size=3D3, elsize=3D8=0A=
+[ [[ 1.]=0A=
+  [ 3.]=0A=
+  [ 4.]]]=0A=
+&gt;&gt;&gt;=0A=
+&gt;&gt;&gt; # Creating arrays with column major data storage order:=0A=
+...=0A=
+&gt;&gt;&gt; s =3D arr.as_column_major_storage(array([[1,2,3],[4,5,6]]))=0A=
+copied an array using copy_ND_array: size=3D6, elsize=3D4=0A=
+&gt;&gt;&gt; arr.has_column_major_storage(s)=0A=
+1=0A=
+&gt;&gt;&gt; print s=0A=
+[[1 2 3]=0A=
+ [4 5 6]]=0A=
+&gt;&gt;&gt; s2 =3D arr.as_column_major_storage(s)=0A=
+&gt;&gt;&gt; s2 is s    # an array with column major storage order =0A=
+               # is returned immediately=0A=
+1=0A=
+</PRE></DIV></DIV>
+<DIV class=3D"section" id=3D"call-back-arguments">
+<H2><A name=3D"call-back-arguments" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id36">4.4=A0=A0=
+=A0Call-back=20
+arguments</A></H2>
+<P>F2PY supports calling Python functions from Fortran or C codes.</P>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Example</P>
+<P>Consider the following <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/callback.f">Fort=
+ran=20
+77 code</A></P>
+<PRE class=3D"literal-block">C FILE: CALLBACK.F=0A=
+      SUBROUTINE FOO(FUN,R)=0A=
+      EXTERNAL FUN=0A=
+      INTEGER I=0A=
+      REAL*8 R=0A=
+Cf2py intent(out) r=0A=
+      R =3D 0D0=0A=
+      DO I=3D-5,5=0A=
+         R =3D R + FUN(I)=0A=
+      ENDDO=0A=
+      END=0A=
+C END OF FILE CALLBACK.F=0A=
+=0A=
+</PRE>
+<P>and wrap it using <TT class=3D"literal"><SPAN =
+class=3D"pre">f2py</SPAN> <SPAN=20
+class=3D"pre">-c</SPAN> <SPAN class=3D"pre">-m</SPAN> <SPAN=20
+class=3D"pre">callback</SPAN> <SPAN =
+class=3D"pre">callback.f</SPAN></TT>.</P>
+<P>In Python:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import callback=0A=
+&gt;&gt;&gt; print callback.foo.__doc__=0A=
+foo - Function signature:=0A=
+  r =3D foo(fun,[fun_extra_args])=0A=
+Required arguments:=0A=
+  fun : call-back function=0A=
+Optional arguments:=0A=
+  fun_extra_args :=3D () input tuple=0A=
+Return objects:=0A=
+  r : float=0A=
+Call-back functions:=0A=
+  def fun(i): return r=0A=
+  Required arguments:=0A=
+    i : input int=0A=
+  Return objects:=0A=
+    r : float=0A=
+=0A=
+&gt;&gt;&gt; def f(i): return i*i=0A=
+... =0A=
+&gt;&gt;&gt; print callback.foo(f)     =0A=
+110.0=0A=
+&gt;&gt;&gt; print callback.foo(lambda i:1)=0A=
+11.0=0A=
+=0A=
+</PRE></DIV>
+<P>In the above example F2PY was able to guess accurately the signature =
+of a=20
+call-back function. However, sometimes F2PY cannot establish the =
+signature as=20
+one would wish and then the signature of a call-back function must be =
+modified=20
+in the signature file manually. Namely, signature files may contain =
+special=20
+modules (the names of such modules contain a substring <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">__user__</SPAN></TT>) that collect various signatures of =
+call-back=20
+functions.  Callback arguments in routine signatures have attribute <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">external</SPAN></TT> (see also <TT class=3D"literal"><SPAN =
+
+class=3D"pre">intent(callback)</SPAN></TT> attribute).  To relate a =
+callback=20
+argument and its signature in <TT class=3D"literal"><SPAN=20
+class=3D"pre">__user__</SPAN></TT> module block, use <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">use</SPAN></TT> statement as illustrated below. The same =
+signature
+ of a callback argument can be referred in different routine =
+signatures.</P>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Example</P>
+<P>We use the same <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/callback.f">Fort=
+ran=20
+77 code</A> as in previous example but now we'll pretend that F2PY was =
+not able=20
+to guess the signatures of call-back arguments correctly. First, we =
+create an=20
+initial signature file <TT class=3D"literal"><SPAN=20
+class=3D"pre">callback2.pyf</SPAN></TT> using F2PY:</P>
+<PRE class=3D"literal-block">f2py -m callback2 -h callback2.pyf =
+callback.f=0A=
+</PRE>
+<P>Then modify it as follows</P>
+<PRE class=3D"literal-block">!    -*- f90 -*-=0A=
+python module __user__routines =0A=
+    interface=0A=
+        function fun(i) result (r)=0A=
+            integer :: i=0A=
+            real*8 :: r=0A=
+        end function fun=0A=
+    end interface=0A=
+end python module __user__routines=0A=
+=0A=
+python module callback2=0A=
+    interface=0A=
+        subroutine foo(f,r)=0A=
+            use __user__routines, f=3D&gt;fun=0A=
+            external f=0A=
+            real*8 intent(out) :: r=0A=
+        end subroutine foo=0A=
+    end interface =0A=
+end python module callback2=0A=
+=0A=
+</PRE>
+<P>Finally, build the extension module using:</P>
+<PRE class=3D"literal-block">f2py -c callback2.pyf callback.f=0A=
+</PRE>
+<P>An example Python session would be identical to the previous example =
+except=20
+that argument names would differ.</P></DIV>
+<P>Sometimes a Fortran package may require that users provide routines =
+that the=20
+package will use. F2PY can construct an interface to such routines so =
+that=20
+Python functions could be called from Fortran.</P>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Example</P>
+<P>Consider the following <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/calculate.f">For=
+tran=20
+77 subroutine</A> that takes an array and applies a function <TT=20
+class=3D"literal"><SPAN class=3D"pre">func</SPAN></TT> to its =
+elements.</P>
+<PRE class=3D"literal-block">      subroutine calculate(x,n)=0A=
+cf2py intent(callback) func=0A=
+      external func=0A=
+c     The following lines define the signature of func for F2PY:=0A=
+cf2py real*8 y=0A=
+cf2py y =3D func(y)=0A=
+c=0A=
+cf2py intent(in,out,copy) x=0A=
+      integer n,i=0A=
+      real*8 x(n)=0A=
+      do i=3D1,n=0A=
+         x(i) =3D func(x(i))=0A=
+      end do=0A=
+      end=0A=
+=0A=
+</PRE>
+<P>It is expected that function <TT class=3D"literal"><SPAN=20
+class=3D"pre">func</SPAN></TT> has been defined externally. In order to =
+use a=20
+Python function as <TT class=3D"literal"><SPAN =
+class=3D"pre">func</SPAN></TT>, it=20
+must have an attribute <TT class=3D"literal"><SPAN=20
+class=3D"pre">intent(callback)</SPAN></TT> (it must be specified before =
+the <TT=20
+class=3D"literal"><SPAN class=3D"pre">external</SPAN></TT> =
+statement).</P>
+<P>Finally, build an extension module using:</P>
+<PRE class=3D"literal-block">f2py -c -m foo calculate.f=0A=
+</PRE>
+<P>In Python:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import foo=0A=
+&gt;&gt;&gt; foo.calculate(range(5), lambda x: x*x)=0A=
+array([  0.,   1.,   4.,   9.,  16.])=0A=
+&gt;&gt;&gt; import math=0A=
+&gt;&gt;&gt; foo.calculate(range(5), math.exp)=0A=
+array([  1.        ,   2.71828175,   7.38905621,  20.08553696,  =
+54.59814835])=0A=
+=0A=
+</PRE></DIV>
+<P>F2PY generated interface is very flexible with respect to call-back
+ arguments.  For each call-back argument an additional optional argument =
+<TT=20
+class=3D"literal"><SPAN =
+class=3D"pre">&lt;name&gt;_extra_args</SPAN></TT> is=20
+introduced by F2PY. This argument can be used to pass extra arguments to =
+user=20
+provided call-back arguments.</P>
+<P>If a F2PY generated wrapper function expects the following call-back
+ argument:</P>
+<PRE class=3D"literal-block">def fun(a_1,...,a_n):=0A=
+   ...=0A=
+   return x_1,...,x_k=0A=
+</PRE>
+<P>but the following Python function</P>
+<PRE class=3D"literal-block">def gun(b_1,...,b_m):=0A=
+   ...=0A=
+   return y_1,...,y_l=0A=
+</PRE>
+<P>is provided by an user, and in addition,</P>
+<PRE class=3D"literal-block">fun_extra_args =3D (e_1,...,e_p)=0A=
+</PRE>
+<P>is used, then the following rules are applied when a Fortran or C =
+function=20
+calls the call-back argument <TT class=3D"literal"><SPAN=20
+class=3D"pre">gun</SPAN></TT>:</P>
+<UL class=3D"simple">
+  <LI>If <TT class=3D"literal"><SPAN class=3D"pre">p=3D=3D0</SPAN></TT> =
+then <TT class=3D"literal"><SPAN=20
+  class=3D"pre">gun(a_1,...,a_q)</SPAN></TT> is called, here <TT=20
+  class=3D"literal"><SPAN class=3D"pre">q=3Dmin(m,n)</SPAN></TT>.</LI>
+  <LI>If <TT class=3D"literal"><SPAN =
+class=3D"pre">n+p&lt;=3Dm</SPAN></TT> then <TT=20
+  class=3D"literal"><SPAN =
+class=3D"pre">gun(a_1,...,a_n,e_1,...,e_p)</SPAN></TT> is=20
+  called.</LI>
+  <LI>If <TT class=3D"literal"><SPAN =
+class=3D"pre">p&lt;=3Dm&lt;n+p</SPAN></TT> then=20
+  <TT class=3D"literal"><SPAN =
+class=3D"pre">gun(a_1,...,a_q,e_1,...,e_p)</SPAN></TT>=20
+  is called, here <TT class=3D"literal"><SPAN =
+class=3D"pre">q=3Dm-p</SPAN></TT>.</LI>
+  <LI>If <TT class=3D"literal"><SPAN class=3D"pre">p&gt;m</SPAN></TT> =
+then <TT=20
+  class=3D"literal"><SPAN class=3D"pre">gun(e_1,...,e_m)</SPAN></TT> is =
+called.</LI>
+  <LI>If <TT class=3D"literal"><SPAN class=3D"pre">n+p</SPAN></TT> is =
+less than the=20
+  number of required arguments to <TT class=3D"literal"><SPAN=20
+  class=3D"pre">gun</SPAN></TT> then an exception is raised.</LI></UL>
+<P>The function <TT class=3D"literal"><SPAN =
+class=3D"pre">gun</SPAN></TT> may return=20
+any number of objects as a tuple. Then following rules are applied:</P>
+<UL class=3D"simple">
+  <LI>If <TT class=3D"literal"><SPAN class=3D"pre">k&lt;l</SPAN></TT>, =
+then <TT=20
+  class=3D"literal"><SPAN class=3D"pre">y_{k+1},...,y_l</SPAN></TT> are=20
+ignored.</LI>
+  <LI>If <TT class=3D"literal"><SPAN class=3D"pre">k&gt;l</SPAN></TT>, =
+then only <TT=20
+  class=3D"literal"><SPAN class=3D"pre">x_1,...,x_l</SPAN></TT> are=20
+set.</LI></UL></DIV>
+<DIV class=3D"section" id=3D"common-blocks">
+<H2><A name=3D"common-blocks" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id37">4.5=A0=A0=
+=A0Common=20
+blocks</A></H2>
+<P>F2PY generates wrappers to <TT class=3D"literal"><SPAN=20
+class=3D"pre">common</SPAN></TT> blocks defined in a routine signature =
+block.=20
+Common blocks are visible by all Fortran codes linked with the current =
+extension=20
+module, but not to other extension modules (this restriction is due to =
+how=20
+Python imports shared libraries).  In Python, the F2PY wrappers to <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">common</SPAN></TT> blocks are <TT class=3D"literal"><SPAN=20
+class=3D"pre">fortran</SPAN></TT> type objects that have (dynamic) =
+attributes=20
+related to data members of common blocks. When accessed, these =
+attributes return=20
+as Numeric array objects (multi-dimensional arrays are =
+Fortran-contiguous) that
+ directly link to data members in common blocks. Data members can be =
+changed by=20
+direct assignment or by in-place changes to the corresponding array =
+objects.</P>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Example</P>
+<P>Consider the following <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/common.f">Fortra=
+n=20
+77 code</A></P>
+<PRE class=3D"literal-block">C FILE: COMMON.F=0A=
+      SUBROUTINE FOO=0A=
+      INTEGER I,X=0A=
+      REAL A=0A=
+      COMMON /DATA/ I,X(4),A(2,3)=0A=
+      PRINT*, "I=3D",I=0A=
+      PRINT*, "X=3D[",X,"]"=0A=
+      PRINT*, "A=3D["=0A=
+      PRINT*, "[",A(1,1),",",A(1,2),",",A(1,3),"]"=0A=
+      PRINT*, "[",A(2,1),",",A(2,2),",",A(2,3),"]"=0A=
+      PRINT*, "]"=0A=
+      END=0A=
+C END OF COMMON.F=0A=
+=0A=
+</PRE>
+<P>and wrap it using <TT class=3D"literal"><SPAN =
+class=3D"pre">f2py</SPAN> <SPAN=20
+class=3D"pre">-c</SPAN> <SPAN class=3D"pre">-m</SPAN> <SPAN=20
+class=3D"pre">common</SPAN> <SPAN =
+class=3D"pre">common.f</SPAN></TT>.</P>
+<P>In Python:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import common=0A=
+&gt;&gt;&gt; print common.data.__doc__=0A=
+i - 'i'-scalar=0A=
+x - 'i'-array(4)=0A=
+a - 'f'-array(2,3)=0A=
+=0A=
+&gt;&gt;&gt; common.data.i =3D 5=0A=
+&gt;&gt;&gt; common.data.x[1] =3D 2 =0A=
+&gt;&gt;&gt; common.data.a =3D [[1,2,3],[4,5,6]]=0A=
+&gt;&gt;&gt; common.foo()=0A=
+ I=3D 5=0A=
+ X=3D[ 0 2 0 0]=0A=
+ A=3D[=0A=
+ [  1.,  2.,  3.]=0A=
+ [  4.,  5.,  6.]=0A=
+ ]=0A=
+&gt;&gt;&gt; common.data.a[1] =3D 45=0A=
+&gt;&gt;&gt; common.foo()=0A=
+ I=3D 5=0A=
+ X=3D[ 0 2 0 0]=0A=
+ A=3D[=0A=
+ [  1.,  2.,  3.]=0A=
+ [  45.,  45.,  45.]=0A=
+ ]=0A=
+&gt;&gt;&gt; common.data.a                 # a is Fortran-contiguous=0A=
+array([[  1.,   2.,   3.],=0A=
+       [ 45.,  45.,  45.]],'f')=0A=
+=0A=
+</PRE></DIV></DIV>
+<DIV class=3D"section" id=3D"fortran-90-module-data">
+<H2><A name=3D"fortran-90-module-data" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id38">4.6=A0=A0=
+=A0Fortran=20
+90 module data</A></H2>
+<P>The F2PY interface to Fortran 90 module data is similar to Fortran 77 =
+common=20
+blocks.</P>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Example</P>
+<P>Consider the following <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/moddata.f90">For=
+tran=20
+90 code</A></P>
+<PRE class=3D"literal-block">module mod=0A=
+  integer i=0A=
+  integer :: x(4)=0A=
+  real, dimension(2,3) :: a=0A=
+  real, allocatable, dimension(:,:) :: b =0A=
+contains=0A=
+  subroutine foo=0A=
+    integer k=0A=
+    print*, "i=3D",i=0A=
+    print*, "x=3D[",x,"]"=0A=
+    print*, "a=3D["=0A=
+    print*, "[",a(1,1),",",a(1,2),",",a(1,3),"]"=0A=
+    print*, "[",a(2,1),",",a(2,2),",",a(2,3),"]"=0A=
+    print*, "]"=0A=
+    print*, "Setting a(1,2)=3Da(1,2)+3"=0A=
+    a(1,2) =3D a(1,2)+3=0A=
+  end subroutine foo=0A=
+end module mod=0A=
+=0A=
+</PRE>
+<P>and wrap it using <TT class=3D"literal"><SPAN =
+class=3D"pre">f2py</SPAN> <SPAN=20
+class=3D"pre">-c</SPAN> <SPAN class=3D"pre">-m</SPAN> <SPAN=20
+class=3D"pre">moddata</SPAN> <SPAN =
+class=3D"pre">moddata.f90</SPAN></TT>.</P>
+<P>In Python:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import moddata=0A=
+&gt;&gt;&gt; print moddata.mod.__doc__=0A=
+i - 'i'-scalar=0A=
+x - 'i'-array(4)=0A=
+a - 'f'-array(2,3)=0A=
+foo - Function signature:=0A=
+  foo()=0A=
+=0A=
+=0A=
+&gt;&gt;&gt; moddata.mod.i =3D 5  =0A=
+&gt;&gt;&gt; moddata.mod.x[:2] =3D [1,2]=0A=
+&gt;&gt;&gt; moddata.mod.a =3D [[1,2,3],[4,5,6]]=0A=
+&gt;&gt;&gt; moddata.mod.foo()                =0A=
+ i=3D           5=0A=
+ x=3D[           1           2           0           0 ]=0A=
+ a=3D[=0A=
+ [   1.000000     ,   2.000000     ,   3.000000     ]=0A=
+ [   4.000000     ,   5.000000     ,   6.000000     ]=0A=
+ ]=0A=
+ Setting a(1,2)=3Da(1,2)+3=0A=
+&gt;&gt;&gt; moddata.mod.a               # a is Fortran-contiguous=0A=
+array([[ 1.,  5.,  3.],=0A=
+       [ 4.,  5.,  6.]],'f')=0A=
+=0A=
+</PRE></DIV>
+<DIV class=3D"section" id=3D"allocatable-arrays">
+<H3><A name=3D"allocatable-arrays" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id39">4.6.1=A0=A0=
+=A0Allocatable=20
+arrays</A></H3>
+<P>F2PY has basic support for Fortran 90 module allocatable arrays.</P>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Example</P>
+<P>Consider the following <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/allocarr.f90">Fo=
+rtran=20
+90 code</A></P>
+<PRE class=3D"literal-block">module mod=0A=
+  real, allocatable, dimension(:,:) :: b =0A=
+contains=0A=
+  subroutine foo=0A=
+    integer k=0A=
+    if (allocated(b)) then=0A=
+       print*, "b=3D["=0A=
+       do k =3D 1,size(b,1)=0A=
+          print*, b(k,1:size(b,2))=0A=
+       enddo=0A=
+       print*, "]"=0A=
+    else=0A=
+       print*, "b is not allocated"=0A=
+    endif=0A=
+  end subroutine foo=0A=
+end module mod=0A=
+=0A=
+</PRE>
+<P>and wrap it using <TT class=3D"literal"><SPAN =
+class=3D"pre">f2py</SPAN> <SPAN=20
+class=3D"pre">-c</SPAN> <SPAN class=3D"pre">-m</SPAN> <SPAN=20
+class=3D"pre">allocarr</SPAN> <SPAN =
+class=3D"pre">allocarr.f90</SPAN></TT>.</P>
+<P>In Python:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import allocarr =0A=
+&gt;&gt;&gt; print allocarr.mod.__doc__=0A=
+b - 'f'-array(-1,-1), not allocated=0A=
+foo - Function signature:=0A=
+  foo()=0A=
+=0A=
+&gt;&gt;&gt; allocarr.mod.foo()  =0A=
+ b is not allocated=0A=
+&gt;&gt;&gt; allocarr.mod.b =3D [[1,2,3],[4,5,6]]         # =
+allocate/initialize b=0A=
+&gt;&gt;&gt; allocarr.mod.foo()=0A=
+ b=3D[=0A=
+   1.000000       2.000000       3.000000    =0A=
+   4.000000       5.000000       6.000000    =0A=
+ ]=0A=
+&gt;&gt;&gt; allocarr.mod.b                             # b is =
+Fortran-contiguous=0A=
+array([[ 1.,  2.,  3.],=0A=
+       [ 4.,  5.,  6.]],'f')=0A=
+&gt;&gt;&gt; allocarr.mod.b =3D [[1,2,3],[4,5,6],[7,8,9]] # =
+reallocate/initialize b=0A=
+&gt;&gt;&gt; allocarr.mod.foo()=0A=
+ b=3D[=0A=
+   1.000000       2.000000       3.000000    =0A=
+   4.000000       5.000000       6.000000    =0A=
+   7.000000       8.000000       9.000000    =0A=
+ ]=0A=
+&gt;&gt;&gt; allocarr.mod.b =3D None                      # deallocate =
+array=0A=
+&gt;&gt;&gt; allocarr.mod.foo()=0A=
+ b is not allocated=0A=
+=0A=
+</PRE></DIV></DIV></DIV></DIV>
+<DIV class=3D"section" id=3D"using-f2py">
+<H1><A name=3D"using-f2py" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id40">5=A0=A0=A0=
+Using=20
+F2PY</A></H1>
+<P>F2PY can be used either as a command line tool <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">f2py</SPAN></TT> or as a Python module <TT =
+class=3D"literal"><SPAN=20
+class=3D"pre">f2py2e</SPAN></TT>.</P>
+<DIV class=3D"section" id=3D"command-f2py">
+<H2><A name=3D"command-f2py" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id41">5.1=A0=A0=
+=A0Command=20
+<TT class=3D"literal"><SPAN class=3D"pre">f2py</SPAN></TT></A></H2>
+<P>When used as a command line tool, <TT class=3D"literal"><SPAN=20
+class=3D"pre">f2py</SPAN></TT> has three major modes, distinguished by =
+the usage=20
+of <TT class=3D"literal"><SPAN class=3D"pre">-c</SPAN></TT> and <TT=20
+class=3D"literal"><SPAN class=3D"pre">-h</SPAN></TT> switches:</P>
+<OL class=3D"arabic simple">
+  <LI>To scan Fortran sources and generate a signature file, =
+use</LI></OL>
+<BLOCKQUOTE>
+<PRE class=3D"literal-block">f2py -h &lt;filename.pyf&gt; =
+&lt;options&gt; &lt;fortran files&gt;   \=0A=
+  [[ only: &lt;fortran functions&gt;  : ]                \=0A=
+   [ skip: &lt;fortran functions&gt;  : ]]...            \=0A=
+  [&lt;fortran files&gt; ...]=0A=
+</PRE>
+  <P>Note that a Fortran source file can contain many routines, and not
+   necessarily all routines are needed to be used from Python. So, you =
+can=20
+  either specify which routines should be wrapped (in <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">only:</SPAN> <SPAN class=3D"pre">..</SPAN> <SPAN=20
+  class=3D"pre">:</SPAN></TT> part) or which routines F2PY should =
+ignored (in <TT=20
+  class=3D"literal"><SPAN class=3D"pre">skip:</SPAN> <SPAN =
+class=3D"pre">..</SPAN>=20
+  <SPAN class=3D"pre">:</SPAN></TT> part).</P>
+  <P>If <TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;filename.pyf&gt;</SPAN></TT>=20
+  is specified as <TT class=3D"literal"><SPAN =
+class=3D"pre">stdout</SPAN></TT> then=20
+  signatures are send to standard output instead of a file.</P>
+  <P>Among other options (see below), the following options can be used =
+in this=20
+  mode:</P>
+  <DL>
+    <DT><TT class=3D"literal"><SPAN=20
+    class=3D"pre">--overwrite-signature</SPAN></TT></DT>
+    <DD>Overwrite existing signature file.</DD></DL></BLOCKQUOTE>
+<OL class=3D"arabic simple" start=3D"2">
+  <LI>To construct an extension module, use</LI></OL>
+<BLOCKQUOTE>
+<PRE class=3D"literal-block">f2py &lt;options&gt; &lt;fortran files&gt;  =
+        \=0A=
+  [[ only: &lt;fortran functions&gt;  : ]     \=0A=
+   [ skip: &lt;fortran functions&gt;  : ]]... \=0A=
+  [&lt;fortran files&gt; ...]=0A=
+</PRE>
+  <P>The constructed extension module is saved as <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;modulename&gt;module.c</SPAN></TT> to the current=20
+  directory.</P>
+  <P>Here <TT class=3D"literal"><SPAN class=3D"pre">&lt;fortran</SPAN> =
+<SPAN class=3D"pre">files&gt;</SPAN></TT>=20
+  may also contain signature files. Among other options (see below), the =
+
+  following options can be used in this mode:</P>
+  <DL>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">--debug-capi</SPAN></TT></DT>
+    <DD>Add debugging hooks to the extension module. When using this =
+extension=20
+    module, various information about the wrapper is printed to standard =
+output,=20
+    for example, the values of variables, the steps taken, etc.</DD>
+    <DT><TT class=3D"literal"><SPAN=20
+    class=3D"pre">-include'&lt;includefile&gt;'</SPAN></TT></DT>
+    <DD>
+    <P class=3D"first">Add a CPP <TT class=3D"literal"><SPAN=20
+    class=3D"pre">#include</SPAN></TT> statement to the extension module =
+source.=20
+    <TT class=3D"literal"><SPAN =
+class=3D"pre">&lt;includefile&gt;</SPAN></TT> should=20
+    be given in one of the following forms:</P>
+<PRE class=3D"literal-block">"filename.ext"=0A=
+&lt;filename.ext&gt;=0A=
+</PRE>
+    <P>The include statement is inserted just before the wrapper =
+functions. This=20
+    feature enables using arbitrary C functions (defined in <TT=20
+    class=3D"literal"><SPAN =
+class=3D"pre">&lt;includefile&gt;</SPAN></TT>) in F2PY=20
+    generated wrappers.</P>
+    <P class=3D"last">This option is deprecated. Use <TT =
+class=3D"literal"><SPAN=20
+    class=3D"pre">usercode</SPAN></TT> statement to specify C codelets =
+directly in=20
+    signature filess</P></DD></DL>
+  <P><TT class=3D"literal"><SPAN =
+class=3D"pre">--[no-]wrap-functions</SPAN></TT></P>
+  <BLOCKQUOTE>Create Fortran subroutine wrappers to Fortran functions. =
+<TT=20
+    class=3D"literal"><SPAN class=3D"pre">--wrap-functions</SPAN></TT> =
+is default=20
+    because it ensures maximum portability and compiler =
+independence.</BLOCKQUOTE>
+  <DL>
+    <DT><TT class=3D"literal"><SPAN class=3D"pre">--include-paths</SPAN> =
+<SPAN=20
+    class=3D"pre">&lt;path1&gt;:&lt;path2&gt;:..</SPAN></TT></DT>
+    <DD>Search include files from given directories.</DD>
+    <DT><TT class=3D"literal"><SPAN class=3D"pre">--help-link</SPAN> =
+<SPAN class=3D"pre">[&lt;list</SPAN>=20
+    <SPAN class=3D"pre">of</SPAN> <SPAN class=3D"pre">resources</SPAN> =
+<SPAN class=3D"pre">names&gt;]</SPAN></TT>=20
+    </DT>
+    <DD>List system resources found by <TT class=3D"literal"><SPAN=20
+    class=3D"pre">scipy_distutils/system_info.py</SPAN></TT>. For =
+example, try <TT=20
+    class=3D"literal"><SPAN class=3D"pre">f2py</SPAN> <SPAN=20
+    class=3D"pre">--help-link</SPAN> <SPAN=20
+  class=3D"pre">lapack_opt</SPAN></TT>.</DD></DL></BLOCKQUOTE>
+<OL class=3D"arabic simple" start=3D"3">
+  <LI>To build an extension module, use</LI></OL>
+<BLOCKQUOTE>
+<PRE class=3D"literal-block">f2py -c &lt;options&gt; &lt;fortran =
+files&gt;       \=0A=
+  [[ only: &lt;fortran functions&gt;  : ]     \=0A=
+   [ skip: &lt;fortran functions&gt;  : ]]... \=0A=
+  [ &lt;fortran/c source files&gt; ] [ &lt;.o, .a, .so files&gt; ]=0A=
+</PRE>
+  <P>If <TT class=3D"literal"><SPAN class=3D"pre">&lt;fortran</SPAN> =
+<SPAN class=3D"pre">files&gt;</SPAN></TT>=20
+  contains a signature file, then a source for an extension module is=20
+  constructed, all Fortran and C sources are compiled, and finally all =
+object=20
+  and library files are linked to the extension module <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;modulename&gt;.so</SPAN></TT> which is saved into =
+the current
+   directory.</P>
+  <P>If <TT class=3D"literal"><SPAN class=3D"pre">&lt;fortran</SPAN> =
+<SPAN class=3D"pre">files&gt;</SPAN></TT>=20
+  does not contain a signature file, then an extension module is =
+constructed by=20
+  scanning all Fortran source codes for routine signatures.</P>
+  <P>Among other options (see below) and options described in previous =
+mode, the=20
+  following options can be used in this mode:</P>
+  <DL>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">--help-fcompiler</SPAN></TT></DT>
+    <DD>List available Fortran compilers.</DD>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">--help-compiler</SPAN></TT>=20
+    [depreciated]</DT>
+    <DD>List available Fortran compilers.</DD>
+    <DT><TT class=3D"literal"><SPAN=20
+    class=3D"pre">--fcompiler=3D&lt;Vendor&gt;</SPAN></TT></DT>
+    <DD>Specify Fortran compiler type by vendor.</DD>
+    <DT><TT class=3D"literal"><SPAN=20
+    class=3D"pre">--f77exec=3D&lt;path&gt;</SPAN></TT></DT>
+    <DD>Specify the path to F77 compiler</DD>
+    <DT><TT class=3D"literal"><SPAN=20
+    class=3D"pre">--fcompiler-exec=3D&lt;path&gt;</SPAN></TT> =
+[depreciated]</DT>
+    <DD>Specify the path to F77 compiler</DD>
+    <DT><TT class=3D"literal"><SPAN=20
+    class=3D"pre">--f90exec=3D&lt;path&gt;</SPAN></TT></DT>
+    <DD>Specify the path to F90 compiler</DD>
+    <DT><TT class=3D"literal"><SPAN=20
+    class=3D"pre">--f90compiler-exec=3D&lt;path&gt;</SPAN></TT> =
+[depreciated]</DT>
+    <DD>Specify the path to F90 compiler</DD>
+    <DT><TT class=3D"literal"><SPAN=20
+    class=3D"pre">--f77flags=3D&lt;string&gt;</SPAN></TT></DT>
+    <DD>Specify F77 compiler flags</DD>
+    <DT><TT class=3D"literal"><SPAN=20
+    class=3D"pre">--f90flags=3D&lt;string&gt;</SPAN></TT></DT>
+    <DD>Specify F90 compiler flags</DD>
+    <DT><TT class=3D"literal"><SPAN=20
+    class=3D"pre">--opt=3D&lt;string&gt;</SPAN></TT></DT>
+    <DD>Specify optimization flags</DD>
+    <DT><TT class=3D"literal"><SPAN=20
+    class=3D"pre">--arch=3D&lt;string&gt;</SPAN></TT></DT>
+    <DD>Specify architecture specific optimization flags</DD>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">--noopt</SPAN></TT></DT>
+    <DD>Compile without optimization</DD>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">--noarch</SPAN></TT></DT>
+    <DD>Compile without arch-dependent optimization</DD>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">--debug</SPAN></TT></DT>
+    <DD>Compile with debugging information</DD>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">-l&lt;libname&gt;</SPAN></TT></DT>
+    <DD>Use the library <TT class=3D"literal"><SPAN=20
+    class=3D"pre">&lt;libname&gt;</SPAN></TT> when linking.</DD>
+    <DT><TT class=3D"literal"><SPAN=20
+    class=3D"pre">-D&lt;macro&gt;[=3D&lt;defn=3D1&gt;]</SPAN></TT></DT>
+    <DD>Define macro <TT class=3D"literal"><SPAN=20
+    class=3D"pre">&lt;macro&gt;</SPAN></TT> as <TT =
+class=3D"literal"><SPAN class=3D"pre">&lt;defn&gt;</SPAN></TT>.</DD>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">-U&lt;macro&gt;</SPAN></TT></DT>
+    <DD>Define macro <TT class=3D"literal"><SPAN=20
+    class=3D"pre">&lt;macro&gt;</SPAN></TT></DD>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">-I&lt;dir&gt;</SPAN></TT></DT>
+    <DD>Append directory <TT class=3D"literal"><SPAN=20
+    class=3D"pre">&lt;dir&gt;</SPAN></TT> to the list of directories =
+searched for
+     include files.</DD>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">-L&lt;dir&gt;</SPAN></TT></DT>
+    <DD>Add directory <TT class=3D"literal"><SPAN=20
+    class=3D"pre">&lt;dir&gt;</SPAN></TT> to the list of directories to  =
+be =20
+    searched for <TT class=3D"literal"><SPAN =
+class=3D"pre">-l</SPAN></TT>.</DD></DL>
+  <P><TT class=3D"literal"><SPAN =
+class=3D"pre">link-&lt;resource&gt;</SPAN></TT></P>
+  <BLOCKQUOTE>Link extension module with &lt;resource&gt; as defined by =
+<TT=20
+    class=3D"literal"><SPAN=20
+    class=3D"pre">scipy_distutils/system_info.py</SPAN></TT>. E.g. to =
+link with=20
+    optimized LAPACK libraries (vecLib on MacOSX, ATLAS elsewhere), use =
+<TT=20
+    class=3D"literal"><SPAN class=3D"pre">--link-lapack_opt</SPAN></TT>. =
+See also=20
+    <TT class=3D"literal"><SPAN class=3D"pre">--help-link</SPAN></TT>=20
+  switch.</BLOCKQUOTE>
+  <P>When building an extension module, a combination of the following =
+macros=20
+  may be required for non-gcc Fortran compilers:</P>
+<PRE class=3D"literal-block">-DPREPEND_FORTRAN=0A=
+-DNO_APPEND_FORTRAN=0A=
+-DUPPERCASE_FORTRAN=0A=
+</PRE>
+  <P>To test the performance of F2PY generated interfaces, use <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">-DF2PY_REPORT_ATEXIT</SPAN></TT>. Then a report of =
+various timings=20
+  is printed out at the exit of Python. This feature may not work on all =
+
+  platforms, currently only Linux platform is supported.</P>
+  <P>To see whether F2PY generated interface performs copies of array =
+arguments,=20
+  use <TT class=3D"literal"><SPAN=20
+  class=3D"pre">-DF2PY_REPORT_ON_ARRAY_COPY=3D&lt;int&gt;</SPAN></TT>. =
+When the size
+   of an array argument is larger than <TT class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;int&gt;</SPAN></TT>, a message about the coping is =
+sent to <TT=20
+  class=3D"literal"><SPAN =
+class=3D"pre">stderr</SPAN></TT>.</P></BLOCKQUOTE>
+<P>Other options:</P>
+<DL>
+  <DT><TT class=3D"literal"><SPAN class=3D"pre">-m</SPAN> <SPAN=20
+  class=3D"pre">&lt;modulename&gt;</SPAN></TT></DT>
+  <DD>Name of an extension module. Default is <TT =
+class=3D"literal"><SPAN class=3D"pre">untitled</SPAN></TT>.</DD>
+  <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">--[no-]lower</SPAN></TT></DT>
+  <DD>Do [not] lower the cases in <TT class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;fortran</SPAN> <SPAN =
+class=3D"pre">files&gt;</SPAN></TT>.  By=20
+  default, <TT class=3D"literal"><SPAN class=3D"pre">--lower</SPAN></TT> =
+is assumed=20
+  with <TT class=3D"literal"><SPAN class=3D"pre">-h</SPAN></TT> switch, =
+and <TT=20
+  class=3D"literal"><SPAN class=3D"pre">--no-lower</SPAN></TT> without =
+the <TT=20
+  class=3D"literal"><SPAN class=3D"pre">-h</SPAN></TT> switch.</DD>
+  <DT><TT class=3D"literal"><SPAN class=3D"pre">--build-dir</SPAN> <SPAN =
+
+  class=3D"pre">&lt;dirname&gt;</SPAN></TT></DT>
+  <DD>All F2PY generated files are created in <TT =
+class=3D"literal"><SPAN class=3D"pre">&lt;dirname&gt;</SPAN></TT>.=20
+   Default is <TT class=3D"literal"><SPAN=20
+  class=3D"pre">tempfile.mktemp()</SPAN></TT>.</DD>
+  <DT><TT class=3D"literal"><SPAN class=3D"pre">--quiet</SPAN></TT></DT>
+  <DD>Run quietly.</DD>
+  <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">--verbose</SPAN></TT></DT>
+  <DD>Run with extra verbosity.</DD>
+  <DT><TT class=3D"literal"><SPAN class=3D"pre">-v</SPAN></TT></DT>
+  <DD>Print f2py version ID and exit.</DD></DL>
+<P>Execute <TT class=3D"literal"><SPAN class=3D"pre">f2py</SPAN></TT> =
+without any=20
+options to get an up-to-date list of available options.</P></DIV>
+<DIV class=3D"section" id=3D"python-module-f2py2e">
+<H2><A name=3D"python-module-f2py2e" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id42">5.2=A0=A0=
+=A0Python=20
+module <TT class=3D"literal"><SPAN =
+class=3D"pre">f2py2e</SPAN></TT></A></H2>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Warning</P>
+<P>The current Python interface to <TT class=3D"literal"><SPAN=20
+class=3D"pre">f2py2e</SPAN></TT> module is not mature and may change in =
+future=20
+depending on users needs.</P></DIV>
+<P>The following functions are provided by the <TT =
+class=3D"literal"><SPAN class=3D"pre">f2py2e</SPAN></TT>=20
+module:</P>
+<DL>
+  <DT><TT class=3D"literal"><SPAN=20
+  class=3D"pre">run_main(&lt;list&gt;)</SPAN></TT></DT>
+  <DD>
+  <P class=3D"first">Equivalent to running:</P>
+<PRE class=3D"literal-block">f2py &lt;args&gt;=0A=
+</PRE>
+  <P>where <TT class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;args&gt;=3Dstring.join(&lt;list&gt;,'</SPAN> <SPAN=20
+  class=3D"pre">')</SPAN></TT>, but in Python.  Unless <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">-h</SPAN></TT> is used, this function returns a =
+dictionary=20
+  containing information on generated modules and their dependencies on =
+source
+   files.  For example, the command <TT class=3D"literal"><SPAN=20
+  class=3D"pre">f2py</SPAN> <SPAN class=3D"pre">-m</SPAN> <SPAN=20
+  class=3D"pre">scalar</SPAN> <SPAN class=3D"pre">scalar.f</SPAN></TT> =
+can be
+   executed from Python as follows</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import f2py2e=0A=
+&gt;&gt;&gt; =
+r=3Df2py2e.run_main(['-m','scalar','docs/usersguide/scalar.f'])=0A=
+Reading fortran codes...=0A=
+        Reading file 'docs/usersguide/scalar.f'=0A=
+Post-processing...=0A=
+        Block: scalar=0A=
+                        Block: FOO=0A=
+Building modules...=0A=
+        Building module "scalar"...=0A=
+        Wrote C/API module "scalar" to file "./scalarmodule.c"=0A=
+&gt;&gt;&gt; print r=0A=
+{'scalar': {'h': =
+['/home/users/pearu/src_cvs/f2py2e/src/fortranobject.h'],=0A=
+	 'csrc': ['./scalarmodule.c', =0A=
+                  =
+'/home/users/pearu/src_cvs/f2py2e/src/fortranobject.c']}}=0A=
+=0A=
+</PRE>
+  <P class=3D"last">You cannot build extension modules with this =
+function, that=20
+  is, using <TT class=3D"literal"><SPAN class=3D"pre">-c</SPAN></TT> is =
+not allowed.=20
+  Use <TT class=3D"literal"><SPAN class=3D"pre">compile</SPAN></TT> =
+command instead,=20
+  see below.</P></DD></DL>
+<P><TT class=3D"literal"><SPAN class=3D"pre">compile(source,</SPAN> =
+<SPAN class=3D"pre">modulename=3D'untitled',</SPAN>=20
+<SPAN class=3D"pre">extra_args=3D'',</SPAN> <SPAN =
+class=3D"pre">verbose=3D1,</SPAN>=20
+<SPAN class=3D"pre">source_fn=3DNone)</SPAN></TT></P>
+<BLOCKQUOTE>
+  <P>Build extension module from Fortran 77 source string <TT=20
+  class=3D"literal"><SPAN class=3D"pre">source</SPAN></TT>.  Return 0 if =
+successful.
+   Note that this function actually calls <TT class=3D"literal"><SPAN=20
+  class=3D"pre">f2py</SPAN> <SPAN class=3D"pre">-c</SPAN> <SPAN=20
+  class=3D"pre">..</SPAN></TT> from shell to ensure safety of the =
+current Python=20
+  process. For example,</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import f2py2e=0A=
+&gt;&gt;&gt; fsource =3D '''=0A=
+...       subroutine foo=0A=
+...       print*, "Hello world!"=0A=
+...       end =0A=
+... '''=0A=
+&gt;&gt;&gt; f2py2e.compile(fsource,modulename=3D'hello',verbose=3D0)=0A=
+0=0A=
+&gt;&gt;&gt; import hello=0A=
+&gt;&gt;&gt; hello.foo()=0A=
+ Hello world!=0A=
+=0A=
+</PRE></BLOCKQUOTE></DIV></DIV>
+<DIV class=3D"section" id=3D"using-scipy-distutils">
+<H1><A name=3D"using-scipy-distutils" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id43">6=A0=A0=A0=
+Using=20
+<TT class=3D"literal"><SPAN =
+class=3D"pre">scipy_distutils</SPAN></TT></A></H1>
+<P><TT class=3D"literal"><SPAN class=3D"pre">scipy_distutils</SPAN></TT> =
+is part of=20
+the <A class=3D"reference" href=3D"http://www.scipy.org/">SciPy</A> =
+project and aims=20
+to extend standard Python <TT class=3D"literal"><SPAN=20
+class=3D"pre">distutils</SPAN></TT> to deal with Fortran sources and =
+F2PY
+ signature files, e.g. compile Fortran sources, call F2PY to construct =
+extension=20
+modules, etc.</P>
+<DIV class=3D"topic">
+<P class=3D"topic-title">Example</P>
+<P>Consider the following <A class=3D"reference" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/setup_example.py=
+">setup=20
+file</A>:</P>
+<PRE class=3D"literal-block">#!/usr/bin/env python=0A=
+# File: setup_example.py=0A=
+=0A=
+from scipy_distutils.core import Extension=0A=
+=0A=
+ext1 =3D Extension(name =3D 'scalar',=0A=
+                 sources =3D ['scalar.f'])=0A=
+ext2 =3D Extension(name =3D 'fib2',=0A=
+                 sources =3D ['fib2.pyf','fib1.f'])=0A=
+=0A=
+if __name__ =3D=3D "__main__":=0A=
+    from scipy_distutils.core import setup=0A=
+    setup(name =3D 'f2py_example',=0A=
+          description       =3D "F2PY Users Guide examples",=0A=
+          author            =3D "Pearu Peterson",=0A=
+          author_email      =3D "pearu@cens.ioc.ee",=0A=
+          ext_modules =3D [ext1,ext2]=0A=
+          )=0A=
+# End of setup_example.py=0A=
+=0A=
+</PRE>
+<P>Running</P>
+<PRE class=3D"literal-block">python setup_example.py build=0A=
+</PRE>
+<P>will build two extension modules <TT class=3D"literal"><SPAN=20
+class=3D"pre">scalar</SPAN></TT> and <TT class=3D"literal"><SPAN=20
+class=3D"pre">fib2</SPAN></TT> to the build directory.</P></DIV>
+<P><TT class=3D"literal"><SPAN class=3D"pre">scipy_distutils</SPAN></TT> =
+extends <TT=20
+class=3D"literal"><SPAN class=3D"pre">distutils</SPAN></TT> with the =
+following=20
+features:</P>
+<UL>
+  <LI>
+  <P class=3D"first"><TT class=3D"literal"><SPAN =
+class=3D"pre">Extension</SPAN></TT>=20
+  class argument <TT class=3D"literal"><SPAN =
+class=3D"pre">sources</SPAN></TT> may=20
+  contain Fortran source files. In addition, the list <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">sources</SPAN></TT> may contain at most one F2PY =
+signature file,=20
+  and then the name of an Extension module must match with the <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">&lt;modulename&gt;</SPAN></TT> used in signature file.  =
+It is
+   assumed that an F2PY signature file contains exactly one <TT=20
+  class=3D"literal"><SPAN class=3D"pre">python</SPAN> <SPAN=20
+  class=3D"pre">module</SPAN></TT> block.</P>
+  <P>If <TT class=3D"literal"><SPAN class=3D"pre">sources</SPAN></TT> =
+does not=20
+  contain a signature files, then F2PY is used to scan Fortran source =
+files for=20
+  routine signatures to construct the wrappers to Fortran codes.</P>
+  <P>Additional options to F2PY process can be given using <TT=20
+  class=3D"literal"><SPAN class=3D"pre">Extension</SPAN></TT> class =
+argument <TT=20
+  class=3D"literal"><SPAN =
+class=3D"pre">f2py_options</SPAN></TT>.</P></LI></UL>
+<DIV class=3D"section" id=3D"scipy-distutils-0-2-2-and-up">
+<H2><A name=3D"scipy-distutils-0-2-2-and-up" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id44">6.1=A0=A0=
+&#65533;<TT=20
+class=3D"literal"><SPAN class=3D"pre">scipy_distutils</SPAN></TT> 0.2.2 =
+and=20
+up</A></H2>
+<UL>
+  <LI>
+  <P class=3D"first">The following new <TT class=3D"literal"><SPAN=20
+  class=3D"pre">distutils</SPAN></TT> commands are defined:</P>
+  <DL>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">build_src</SPAN></TT></DT>
+    <DD>
+    <P class=3D"first last">to construct Fortran wrapper extension =
+modules, among=20
+    many other things.</P></DD>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">config_fc</SPAN></TT></DT>
+    <DD>
+    <P class=3D"first last">to change Fortran compiler =
+options</P></DD></DL>
+  <P>as well as <TT class=3D"literal"><SPAN =
+class=3D"pre">build_ext</SPAN></TT> and =20
+  <TT class=3D"literal"><SPAN class=3D"pre">build_clib</SPAN></TT> =
+commands are=20
+  enhanced  to support Fortran sources.</P>
+  <P>Run</P>
+<PRE class=3D"literal-block">python &lt;setup.py file&gt; config_fc =
+build_src build_ext --help=0A=
+</PRE>
+  <P>to see available options for these commands.</P></LI>
+  <LI>
+  <P class=3D"first">When building Python packages containing Fortran =
+sources,=20
+  then one can choose different Fortran compilers by using <TT=20
+  class=3D"literal"><SPAN class=3D"pre">build_ext</SPAN></TT> command =
+option <TT=20
+  class=3D"literal"><SPAN =
+class=3D"pre">--fcompiler=3D&lt;Vendor&gt;</SPAN></TT>. Here=20
+  <TT class=3D"literal"><SPAN class=3D"pre">&lt;Vendor&gt;</SPAN></TT> =
+can be one of=20
+  the following names:</P>
+<PRE class=3D"literal-block">absoft sun mips intel intelv intele intelev =
+nag compaq compaqv gnu vast pg hpux=0A=
+</PRE>
+  <P>See <TT class=3D"literal"><SPAN=20
+  class=3D"pre">scipy_distutils/fcompiler.py</SPAN></TT> for up-to-date =
+list of
+   supported compilers or run</P>
+<PRE class=3D"literal-block">f2py -c --help-fcompiler=0A=
+</PRE></LI></UL></DIV>
+<DIV class=3D"section" id=3D"scipy-distutils-pre-0-2-2">
+<H2><A name=3D"scipy-distutils-pre-0-2-2" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id45">6.2=A0=A0=
+&#65533;<TT=20
+class=3D"literal"><SPAN class=3D"pre">scipy_distutils</SPAN></TT> pre =
+0.2.2</A></H2>
+<UL>
+  <LI>
+  <P class=3D"first">The following new <TT class=3D"literal"><SPAN=20
+  class=3D"pre">distutils</SPAN></TT> commands are defined:</P>
+  <DL>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">build_flib</SPAN></TT></DT>
+    <DD>
+    <P class=3D"first last">to build f77/f90 libraries used by Python=20
+    extensions;</P></DD>
+    <DT><TT class=3D"literal"><SPAN =
+class=3D"pre">run_f2py</SPAN></TT></DT>
+    <DD>
+    <P class=3D"first last">to construct Fortran wrapper extension=20
+    modules.</P></DD></DL>
+  <P>Run</P>
+<PRE class=3D"literal-block">python &lt;setup.py file&gt; build_flib =
+run_f2py --help=0A=
+</PRE>
+  <P>to see available options for these commands.</P></LI>
+  <LI>
+  <P class=3D"first">When building Python packages containing Fortran =
+sources,=20
+  then one can choose different Fortran compilers either by using <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">build_flib</SPAN></TT> command option <TT =
+class=3D"literal"><SPAN=20
+  class=3D"pre">--fcompiler=3D&lt;Vendor&gt;</SPAN></TT> or by defining =
+environment
+   variable <TT class=3D"literal"><SPAN=20
+  class=3D"pre">FC_VENDOR=3D&lt;Vendor&gt;</SPAN></TT>. Here <TT=20
+  class=3D"literal"><SPAN class=3D"pre">&lt;Vendor&gt;</SPAN></TT> can =
+be one of the
+   following names:</P>
+<PRE class=3D"literal-block">Absoft Sun SGI Intel Itanium NAG Compaq =
+Digital Gnu VAST PG=0A=
+</PRE>
+  <P>See <TT class=3D"literal"><SPAN=20
+  class=3D"pre">scipy_distutils/command/build_flib.py</SPAN></TT> for =
+up-to-date=20
+  list of supported compilers.</P></LI></UL></DIV></DIV>
+<DIV class=3D"section" id=3D"extended-f2py-usages">
+<H1><A name=3D"extended-f2py-usages" class=3D"toc-backref" =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id46">7=A0=A0=A0=
+Extended=20
+F2PY usages</A></H1>
+<DIV class=3D"section" =
+id=3D"adding-self-written-functions-to-f2py-generated-modules">
+<H2><A name=3D"adding-self-written-functions-to-f2py-generated-modules" =
+class=3D"toc-backref"=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id47">7.1=A0=A0=
+=A0Adding=20
+self-written functions to F2PY generated modules</A></H2>
+<P>Self-written Python C/API functions can be defined inside signature =
+files=20
+using <TT class=3D"literal"><SPAN class=3D"pre">usercode</SPAN></TT> and =
+<TT class=3D"literal"><SPAN=20
+class=3D"pre">pymethoddef</SPAN></TT> statements (they must be used =
+inside the <TT=20
+class=3D"literal"><SPAN class=3D"pre">python</SPAN> <SPAN=20
+class=3D"pre">module</SPAN></TT> block). For example, the following =
+signature file=20
+<TT class=3D"literal"><SPAN class=3D"pre">spam.pyf</SPAN></TT></P>
+<PRE class=3D"literal-block">!    -*- f90 -*-=0A=
+python module spam=0A=
+    usercode '''=0A=
+  static char doc_spam_system[] =3D "Execute a shell command.";=0A=
+  static PyObject *spam_system(PyObject *self, PyObject *args)=0A=
+  {=0A=
+    char *command;=0A=
+    int sts;=0A=
+=0A=
+    if (!PyArg_ParseTuple(args, "s", &amp;command))=0A=
+        return NULL;=0A=
+    sts =3D system(command);=0A=
+    return Py_BuildValue("i", sts);=0A=
+  }=0A=
+    '''=0A=
+    pymethoddef '''=0A=
+    {"system",  spam_system, METH_VARARGS, doc_spam_system},=0A=
+    '''=0A=
+end python module spam=0A=
+=0A=
+</PRE>
+<P>wraps the C library function <TT class=3D"literal"><SPAN=20
+class=3D"pre">system()</SPAN></TT>:</P>
+<PRE class=3D"literal-block">f2py -c spam.pyf=0A=
+</PRE>
+<P>In Python:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import spam=0A=
+&gt;&gt;&gt; status =3D spam.system('whoami')=0A=
+pearu=0A=
+&gt;&gt; status =3D spam.system('blah')=0A=
+sh: line 1: blah: command not found=0A=
+</PRE></DIV>
+<DIV class=3D"section" =
+id=3D"modifying-the-dictionary-of-a-f2py-generated-module">
+<H2><A name=3D"modifying-the-dictionary-of-a-f2py-generated-module" =
+class=3D"toc-backref"=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/#id48">7.2=A0=A0=
+=A0Modifying the=20
+dictionary of a F2PY generated module</A></H2>
+<P>The following example illustrates how to add an user-defined =
+variables to a=20
+F2PY generated extension module. Given the following signature file</P>
+<PRE class=3D"literal-block">!    -*- f90 -*-=0A=
+python module var=0A=
+  usercode '''=0A=
+    int BAR =3D 5;=0A=
+  '''=0A=
+  interface=0A=
+    usercode '''=0A=
+      PyDict_SetItemString(d,"BAR",PyInt_FromLong(BAR));=0A=
+    '''=0A=
+  end interface=0A=
+end python module=0A=
+=0A=
+</PRE>
+<P>compile it as <TT class=3D"literal"><SPAN class=3D"pre">f2py</SPAN> =
+<SPAN class=3D"pre">-c</SPAN>=20
+<SPAN class=3D"pre">var.pyf</SPAN></TT>.</P>
+<P>Notice that the second <TT class=3D"literal"><SPAN=20
+class=3D"pre">usercode</SPAN></TT> statement must be defined inside an =
+<TT class=3D"literal"><SPAN=20
+class=3D"pre">interface</SPAN></TT> block and where the module =
+dictionary is=20
+available through the variable <TT class=3D"literal"><SPAN=20
+class=3D"pre">d</SPAN></TT> (see <TT class=3D"literal"><SPAN =
+class=3D"pre">f2py</SPAN>=20
+<SPAN class=3D"pre">var.pyf</SPAN></TT>-generated <TT =
+class=3D"literal"><SPAN class=3D"pre">varmodule.c</SPAN></TT>=20
+for additional details).</P>
+<P>In Python:</P>
+<PRE class=3D"literal-block">&gt;&gt;&gt; import var=0A=
+&gt;&gt;&gt; var.BAR=0A=
+5=0A=
+</PRE><!-- References=0A=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D -->=20
+</DIV></DIV></DIV>
+<HR class=3D"footer">
+
+<DIV class=3D"footer">Generated on: 2005-01-30 18:58 UTC. Generated by =
+<A class=3D"reference"=20
+href=3D"http://docutils.sourceforge.net/">Docutils</A> from <A =
+class=3D"reference"=20
+href=3D"http://docutils.sourceforge.net/rst.html">reStructuredText</A> =
+source.=20
+</DIV></BODY></HTML>
+
+------=_NextPart_000_0000_01D15C6D.4CBA8D60
+Content-Type: text/css;
+	charset="ks_c_5601-1987"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://sysbio.ioc.ee/projects/f2py2e/usersguide/default.css
+
+body {
+	background: rgb(255, 255, 255); color: rgb(0, 0, 0);
+}
+a.footnote-reference {
+	font-size: smaller; vertical-align: super;
+}
+a.target {
+	color: blue;
+}
+a.toc-backref {
+	color: black; text-decoration: none;
+}
+dd {
+	margin-bottom: 0.5em;
+}
+div.abstract {
+	margin: 2em 5em;
+}
+div.abstract p.topic-title {
+	text-align: center; font-weight: bold;
+}
+div.attention {
+	margin: 2em; padding: 1em; border: outset currentColor; border-image: =
+none;
+}
+div.caution {
+	margin: 2em; padding: 1em; border: outset currentColor; border-image: =
+none;
+}
+div.danger {
+	margin: 2em; padding: 1em; border: outset currentColor; border-image: =
+none;
+}
+div.error {
+	margin: 2em; padding: 1em; border: outset currentColor; border-image: =
+none;
+}
+div.hint {
+	margin: 2em; padding: 1em; border: outset currentColor; border-image: =
+none;
+}
+div.important {
+	margin: 2em; padding: 1em; border: outset currentColor; border-image: =
+none;
+}
+div.note {
+	margin: 2em; padding: 1em; border: outset currentColor; border-image: =
+none;
+}
+div.tip {
+	margin: 2em; padding: 1em; border: outset currentColor; border-image: =
+none;
+}
+div.warning {
+	margin: 2em; padding: 1em; border: outset currentColor; border-image: =
+none;
+}
+div.attention p.admonition-title {
+	color: red; font-family: sans-serif; font-weight: bold;
+}
+div.caution p.admonition-title {
+	color: red; font-family: sans-serif; font-weight: bold;
+}
+div.danger p.admonition-title {
+	color: red; font-family: sans-serif; font-weight: bold;
+}
+div.error p.admonition-title {
+	color: red; font-family: sans-serif; font-weight: bold;
+}
+div.warning p.admonition-title {
+	color: red; font-family: sans-serif; font-weight: bold;
+}
+div.hint p.admonition-title {
+	font-family: sans-serif; font-weight: bold;
+}
+div.important p.admonition-title {
+	font-family: sans-serif; font-weight: bold;
+}
+div.note p.admonition-title {
+	font-family: sans-serif; font-weight: bold;
+}
+div.tip p.admonition-title {
+	font-family: sans-serif; font-weight: bold;
+}
+div.dedication {
+	margin: 2em 5em; text-align: center; font-style: italic;
+}
+div.dedication p.topic-title {
+	font-style: normal; font-weight: bold;
+}
+div.figure {
+	margin-left: 2em;
+}
+div.footer {
+	font-size: smaller;
+}
+div.header {
+	font-size: smaller;
+}
+div.system-messages {
+	margin: 5em;
+}
+div.system-messages h1 {
+	color: red;
+}
+div.system-message {
+	padding: 1em; border: outset currentColor; border-image: none;
+}
+div.system-message p.system-message-title {
+	color: red; font-weight: bold;
+}
+div.topic {
+	margin: 2em;
+}
+h1.title {
+	text-align: center;
+}
+h2.subtitle {
+	text-align: center;
+}
+hr {
+	width: 75%;
+}
+ol.simple {
+	margin-bottom: 1em;
+}
+ul.simple {
+	margin-bottom: 1em;
+}
+ol.arabic {
+	list-style: decimal;
+}
+ol.loweralpha {
+	list-style: lower-alpha;
+}
+ol.upperalpha {
+	list-style: upper-alpha;
+}
+ol.lowerroman {
+	list-style: lower-roman;
+}
+ol.upperroman {
+	list-style: upper-roman;
+}
+p.caption {
+	font-style: italic;
+}
+p.credits {
+	font-size: smaller; font-style: italic;
+}
+p.first {
+	margin-top: 0px;
+}
+p.label {
+	white-space: nowrap;
+}
+p.topic-title {
+	font-weight: bold;
+}
+tt.literal {
+	background-color: rgb(238, 190, 190);
+}
+pre.literal-block {
+	margin-right: 2em; margin-left: 2em; background-color: rgb(238, 158, =
+158);
+}
+pre.doctest-block {
+	margin-right: 2em; margin-left: 2em; background-color: rgb(238, 158, =
+158);
+}
+span.classifier {
+	font-family: sans-serif; font-style: oblique;
+}
+span.classifier-delimiter {
+	font-family: sans-serif; font-weight: bold;
+}
+span.field-argument {
+	font-style: italic;
+}
+span.interpreted {
+	font-family: sans-serif;
+}
+span.option-argument {
+	font-style: italic;
+}
+span.problematic {
+	color: red;
+}
+table {
+	margin-top: 0.5em; margin-bottom: 0.5em;
+}
+table.citation {
+	padding-left: 0.5ex; border-left-color: gray; border-left-width: thin; =
+border-left-style: solid;
+}
+table.docinfo {
+	margin: 2em 4em;
+}
+table.footnote {
+	padding-left: 0.5ex; border-left-color: black; border-left-width: thin; =
+border-left-style: solid;
+}
+td {
+	padding-right: 0.5em; padding-left: 0.5em; vertical-align: baseline;
+}
+th {
+	padding-right: 0.5em; padding-left: 0.5em; vertical-align: baseline;
+}
+td.docinfo-name {
+	text-align: right; font-weight: bold;
+}
+td.field-name {
+	font-weight: bold;
+}
+
+------=_NextPart_000_0000_01D15C6D.4CBA8D60--
