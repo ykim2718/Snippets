@@ -1,0 +1,1 @@
+python "c:\Program Files\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\Scripts\f2py.py" -c fib3.f -m fib3
