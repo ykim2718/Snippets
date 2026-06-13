@@ -23,7 +23,7 @@ def tick(_id):
 if __name__ == '__main__':
 
     jobstores = {
-        'default': MongoDBJobStore(database='apscheduler', collection='jobs', host='10.163.130.184', port=27117),
+        'default': MongoDBJobStore(database='apscheduler', collection='jobs', host='10.0.0.10', port=27117),
     }
     executors = {
         'default': ThreadPoolExecutor(20),

@@ -6,7 +6,7 @@ pymongo - aggregate min max.py
 import pymongo
 import pprint
 
-host_and_port = dict(host='10.227.253.51', port=28000)
+host_and_port = dict(host='10.0.0.51', port=28000)
 database_name = 'pa_fab'
 collection_name = 'cp_chip_para'
 

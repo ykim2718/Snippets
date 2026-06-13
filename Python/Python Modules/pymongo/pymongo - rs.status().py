@@ -11,10 +11,10 @@ from bson.codec_options import DEFAULT_CODEC_OPTIONS
 codec_options = DEFAULT_CODEC_OPTIONS.with_options(unicode_decode_error_handler='ignore')
 
 servers = dict(
-    S1='10.227.253.174',
-    S2='10.227.253.148',
-    S3='10.227.253.214',
-    S4='10.227.253.136',
+    S1='10.0.0.171',
+    S2='10.0.0.172',
+    S3='10.0.0.173',
+    S4='10.0.0.174',
 )
 replicas = dict(
     PASystem_mongodb_shard_s1=28001,

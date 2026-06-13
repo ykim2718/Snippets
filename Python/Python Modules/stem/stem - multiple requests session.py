@@ -10,6 +10,7 @@ import requests
 import typing
 import re
 import time
+import os
 
 
 class SingletonClass(object):
@@ -67,7 +68,7 @@ class TorRequestsSession(SingletonClass):
         def _renew_ip(port=9050):
             with Controller.from_port(port=port) as c:
                 # print(f"{c.is_newnym_available()=}")
-                c.authenticate(password="ad3ld!axsf2" + str(port))
+                c.authenticate(password=os.getenv("TOR_CONTROL_PASSWORD", "") + str(port))
                 c.signal(Signal.NEWNYM)
                 delay = c.get_newnym_wait()  # 10 sec
             return delay

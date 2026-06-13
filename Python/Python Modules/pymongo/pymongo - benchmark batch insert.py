@@ -6,7 +6,7 @@ import pymongo
 import datetime as dt
 
 host = 'localhost'
-host = '10.227.253.51'
+host = '10.0.0.51'
 port = 28000
 TZ_SEOUL = dt.timezone(dt.timedelta(hours=9))
 database = 'test_database'

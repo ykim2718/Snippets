@@ -8,7 +8,7 @@ https://api.mongodb.com/python/current/api/gridfs/index.html
 from pymongo import MongoClient
 import gridfs
 
-db = MongoClient('mongodb://10.222.46.227:27017').test_database
+db = MongoClient('mongodb://10.0.0.20:27017').test_database
 # db = MongoClient('mongodb://localhost:27017').test_database
 fs = gridfs.GridFS(db, collection='fs')
 fs_exists = fs.find_one({})

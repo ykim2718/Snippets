@@ -1,0 +1,15 @@
+{
+  "name": "mongo-api-docker",
+  "version": "1.0.3",
+  "description": "Node.js MongoDB REST API",
+  "main": "api/mongo_rest_api_w_mongodb.js",
+  "type": "module",
+  "scripts": {
+    "start": "node api/mongo_rest_api_w_mongodb.js",
+    "dev": "node api/mongodb_access.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^6.0.0"
+  }
+}

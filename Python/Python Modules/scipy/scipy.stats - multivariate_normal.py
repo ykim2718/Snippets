@@ -1,7 +1,6 @@
 """
 y, scipy.stats - multivariate_normal.py, 2018.12.15; 2019.11.11
 https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.multivariate_normal.html
-이기범 연세대 산업공학과, 010-6733-1447, kblee503@gmail.com
 """
 
 import matplotlib.pyplot as plt

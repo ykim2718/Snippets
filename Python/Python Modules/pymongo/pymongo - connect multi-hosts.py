@@ -7,7 +7,7 @@ import pymongo
 
 host = 'localhost'
 port = 27017
-host = ['localhost:28000', '10.227.253.51:28000', '12.23.64.241:28000']
+host = ['localhost:28000', '10.0.0.51:28000', '198.51.100.1:28000']
 port = None
 database = 'test_database'
 collection = 'test_collection'

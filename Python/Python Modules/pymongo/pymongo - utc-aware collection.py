@@ -11,7 +11,7 @@ import bson
 import datetime as dt
 import pprint
 
-# client = pymongo.MongoClient('10.227.253.51', 28000)
+# client = pymongo.MongoClient('10.0.0.51', 28000)
 client = pymongo.MongoClient('localhost', 27017)
 test_database = client.test_database
 

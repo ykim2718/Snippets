@@ -156,7 +156,7 @@ if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-host', type=str, default='10.227.253.51:29000')
+    parser.add_argument('-host', type=str, default='10.0.0.51:29000')
     parser.add_argument('-database', '-d', type=str, default='test_database')  # * for all
     parser.add_argument('-collection', '-c', type=str, default='test_collection')  # * for all
     parser.add_argument('-a_path', '-folder', '-file', type=str, default=str(pathlib.Path(__file__).parent))

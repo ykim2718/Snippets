@@ -1,0 +1,1 @@
+reg delete HKLM\Software\Classes\cmdfile\shell /ve /f

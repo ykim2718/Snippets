@@ -39,7 +39,7 @@ if ip_address.startswith('192'):  # home
     db_uri = 'mongodb://localhost:27017'
 else:  # office
     dll_path = r"c:\y\eBEST\xingAPI\xingAPI.dll"
-    db_uri = 'mongodb://10.163.130.184:27117'
+    db_uri = 'mongodb://10.0.0.10:27117'
 print(f"{ip_address=}")
 print(f"{dll_path=}")
 print(f"{db_uri=}")
@@ -116,7 +116,7 @@ elif evaluation == 4:
         get_client_ip.restype = ctypes.c_int
         buffer = ctypes.create_string_buffer(256)  # buffer = ctypes.create_unicode_buffer(256)
         print(f"{get_client_ip(buffer)=}")
-        print(f"get_client_ip: {buffer.value=}")  # WORKING AT LAST, 2022.10.27 ^____^;; b'012.056.025.250'
+        print(f"get_client_ip: {buffer.value=}")  # WORKING AT LAST, 2022.10.27 ^____^;; b'000.000.000.000'
     get_server_name = my_dll.ETK_GetServerName
     get_server_name.argtypes = [ctypes.c_char_p]  # ctypes.c_wchar_p
     get_server_name.restype = ctypes.c_int
