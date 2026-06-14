@@ -1,0 +1,107 @@
+!! Input
+
+! Raw Data : sample4-hp4062-1.txt
+first            1.1
+second          11.1
+third          101.1
+first            2.1
+second          22.1
+third          202.1
+first            3.1
+second          33.1
+third          303.1
+! Raw Data : sample4-hp4062-2.txt
+first            1.2
+second          11.2
+third          101.2
+first            2.2
+second          22.2
+third          202.2
+first            3.2
+second          33.2
+third          303.2
+! Raw Data : sample4-hp4062-3.txt
+first            1.3
+second          11.3
+third          101.3
+first            2.3
+second          22.3
+third          202.3
+first            3.3
+second          33.3
+third          303.3
+
+!! Output
+
+! -nST=Absolute -nCMT=No -nPPT=None -bNA=FALSE -bC=FALSE   (DEFAULT)
+first second third first second third
+1.1   11.1   101.1 1.3   11.3   101.3
+2.1   22.1   202.1 2.3   22.3   202.3
+3.1   33.1   303.1 3.3   33.3   303.3
+1.2   11.2   101.2 #     #      #    
+2.2   22.2   202.2 #     #      #    
+3.2   33.2   303.2 #     #      # 
+! -nST=Absolute -nCMT=ByPattern -nPPT=None -bNA=FALSE -bC=FALSE
+first  1.1   2.1   3.1   1.2   2.2   3.2   1.3   2.3   3.3   # # #
+second 11.1  22.1  33.1  11.2  22.2  33.2  11.3  22.3  33.3  # # #
+third  101.1 202.1 303.1 101.2 202.2 303.2 101.3 202.3 303.3 # # #
+! -nST=Absolute -nCMT=ByPattern2 -nPPT=None -bNA=FALSE -bC=FALSE
+first	1.1	1.3
+second	11.1	11.3
+third	101.1	101.3
+first	2.1	2.3
+second	22.1	22.3
+third	202.1	202.3
+first	3.1	3.3
+second	33.1	33.3
+third	303.1	303.3
+first	1.2	#
+second	11.2	#
+third	101.2	#
+first	2.2	#
+second	22.2	#
+third	202.2	#
+first	3.2	#
+second	33.2	#
+third	303.2	#
+! -nST=Absolute -nCMT=BySplit -nPPT=None -bNA=FALSE -bC=FALSE
+sample4-hp4062-1&2.txt 1.1 2.1 3.1 1.2 2.2 3.2 11.1 22.1 33.1 11.2 22.2 33.2 101.1 202.1 303.1 101.2 202.2 303.2
+sample4-hp4062-3.txt   1.3 2.3 3.3 #   #   #   11.3 22.3 33.3 #    #    #    101.3 202.3 303.3 #     #     #    
+
+! -nST=Absolute -nCMT=No -nPPT=Average -bNA=FALSE -bC=FALSE (DEFAULT)
+first second third  first second third
+2.15  22.15  202.15 2.3   22.3   202.3
+! -nST=Absolute -nCMT=ByPattern -nPPT=Average -bNA=FALSE -bC=FALSE
+first  2.15   2.3  
+second 22.15  22.3 
+third  202.15 202.3
+! -nST=Absolute -nCMT=ByPattern2 -nPPT=Average -bNA=FALSE -bC=FALSE
+first  2.15   2.3  
+second 22.15  22.3 
+third  202.15 202.3
+! -nST=Absolute -nCMT=BySplit -nPPT=Average -bNA=FALSE -bC=FALSE
+sample4-hp4062-1&2.txt 2.15 22.15 202.15
+sample4-hp4062-3.txt   2.3  22.3  202.3
+
+! -nST=Absolute -nCMT=No -nPPT=Average -bNA=FALSE -bC=TRUE (DEFAULT)
+first second third  first second third
+1.15  11.15  101.15 1.3   11.3   101.3
+2.15  22.15  202.15 2.3   22.3   202.3
+3.15  33.15  303.15 3.3   33.3   303.3
+! -nST=Absolute -nCMT=ByPattern -nPPT=Average -bNA=FALSE -bC=TRUE
+first  1.15   2.15   3.15   1.3   2.3   3.3  
+second 11.15  22.15  33.15  11.3  22.3  33.3 
+third  101.15 202.15 303.15 101.3 202.3 303.3
+! -nST=Absolute -nCMT=ByPattern2 -nPPT=Average -bNA=FALSE -bC=TRUE
+first  1.15   1.3  
+second 11.15  11.3 
+third  101.15 101.3
+first  2.15   2.3  
+second 22.15  22.3 
+third  202.15 202.3
+first  3.15   3.3  
+second 33.15  33.3 
+third  303.15 303.3
+! -nST=Absolute -nCMT=BySplit -nPPT=Average -bNA=FALSE -bC=TRUE
+sample4-hp4062-1&2.txt 1.15 2.15 3.15 11.15 22.15 33.15 101.15 202.15 303.15
+sample4-hp4062-3.txt   1.3  2.3  3.3  11.3  22.3  33.3  101.3  202.3  303.3 

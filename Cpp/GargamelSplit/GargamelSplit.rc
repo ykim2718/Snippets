@@ -1,0 +1,304 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""GargamelSplit.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "»ï¼ºÀüÀÚ\0"
+            VALUE "FileDescription", "GargamelSplit ActiveX Control Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GargamelSplit\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GargamelSplit.OCX\0"
+            VALUE "ProductName", "GargamelSplit ActiveX Control Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ABOUTDLL            ICON    DISCARDABLE     "GargamelSplit.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_GARGAMELSPLIT       BITMAP  DISCARDABLE     "GargamelSplitCtl.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX_GARGAMELSPLIT DIALOG DISCARDABLE  34, 22, 260, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About GargamelSplit Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ABOUTDLL,IDC_STATIC,10,10,20,20
+    LTEXT           "GargamelSplit Control, Version 1.0",IDC_STATIC,40,10,
+                    170,8
+    LTEXT           "Copyright (C) 2001, »ï¼ºÀüÀÚ",IDC_STATIC,40,25,170,8
+    DEFPUSHBUTTON   "OK",IDOK,221,7,32,14,WS_GROUP
+END
+
+IDD_PROPPAGE_GARGAMELSPLIT DIALOG DISCARDABLE  0, 0, 200, 75
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "TODO: Place controls to manipulate properties of Gargamelsplit Control on this dialog.",
+                    IDC_STATIC,17,24,161,20
+END
+
+IDD_CDIRTREEDLG DIALOGEX 0, 0, 225, 234
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CDirTreeDialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_DIRTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,7,172,220
+    PUSHBUTTON      "Ok",IDOK,182,196,36,14
+    PUSHBUTTON      "Cancel",IDCANCEL,182,213,36,14
+    CONTROL         "Folders",IDC_FOLDERS_AND_FILES,"Button",
+                    BS_AUTORADIOBUTTON,182,149,36,11
+    CONTROL         "Folders",IDC_FOLDERS_ONLY,"Button",BS_AUTORADIOBUTTON,
+                    182,169,36,12
+    LTEXT           "+ Files",IDC_STATIC,192,159,26,8
+END
+
+IDD_GARGAMEL_WRITEFILELISTTOSYNCHRONIZE DIALOG DISCARDABLE  0, 0, 275, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Synchronize the (internal) file list to the current. @Gargamel"
+FONT 10, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Add ...",ID_GARGAMEL_WRITEFILELIST_ADD,5,208,32,13
+    PUSHBUTTON      "Clear",ID_GARGAMEL_WRITEFILELIST_CLEAR,39,208,28,13
+    PUSHBUTTON      "Replace all !",ID_GARGAMEL_WRITEFILELIST_REPLACE,69,208,
+                    50,13
+    PUSHBUTTON      "Filter",ID_GARGAMEL_WRITEFILELIST_FILTER,121,208,27,13
+    EDITTEXT        ID_GARGAMEL_WRITEFILELIST_FILTER_STRING,150,208,81,13,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Dismiss",IDOK,236,208,34,13
+    LISTBOX         ID_GARGAMEL_ETCETRA_LIST,5,5,265,199,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_WANTKEYBOARDINPUT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+END
+
+IDD_GARGAMEL_SPLIT DIALOGEX 0, 0, 280, 220
+STYLE WS_CHILD | WS_VISIBLE
+FONT 10, "MS Sans Serif"
+BEGIN
+    LISTBOX         ID_SPLIT_LISTBOX,0,0,230,220,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | 
+                    LBS_WANTKEYBOARDINPUT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "Add ...",ID_SPLIT_ADD,234,1,41,15,BS_LEFT
+    PUSHBUTTON      "Insert",ID_SPLIT_INSERT,234,22,41,15,BS_LEFT
+    PUSHBUTTON      "Delete",ID_SPLIT_DELETE,234,38,41,15,BS_LEFT
+    PUSHBUTTON      "Clear     ¢¡",ID_SPLIT_CLEAR,234,54,41,15,BS_LEFT,0,
+                    HID_SPLIT_CLEAR
+    PUSHBUTTON      "Cut",ID_SPLIT_CUTPASTE,234,70,41,15,BS_LEFT
+    PUSHBUTTON      "Up",ID_SPLIT_MOVE_UP,234,86,16,15,BS_LEFT
+    PUSHBUTTON      "Down",ID_SPLIT_MOVE_DOWN,251,86,24,15,BS_LEFT
+    PUSHBUTTON      "Sort",ID_SPLIT_SORT,234,101,41,15,BS_LEFT
+    PUSHBUTTON      "Folder ...",ID_SPLIT_CHANGE_DIRECTORY,234,172,41,15,
+                    BS_LEFT
+    PUSHBUTTON      "Insert Alias",ID_SPLIT_ALIAS_INSERT,234,117,41,15,
+                    BS_LEFT
+    EDITTEXT        ID_SPLIT_ALIAS_INSERT_TAILCOUNT,252,134,13,14,ES_RIGHT | 
+                    ES_NUMBER
+    CONTROL         "Spin1",ID_SPLIT_ALIAS_INSERT_TAILCOUNT_SPIN,
+                    "msctls_updown32",UDS_ARROWKEYS,266,134,9,14
+    PUSHBUTTON      "Read ...",ID_SPLIT_READ_FILELIST,234,188,41,15,BS_LEFT
+    PUSHBUTTON      "Write      ¢¡",ID_SPLIT_WRITE_FILELIST,234,205,41,15,
+                    BS_LEFT
+    PUSHBUTTON      "View",ID_SPLIT_VIEW,234,156,29,15,BS_LEFT
+    PUSHBUTTON      "!",ID_SPLIT_VIEW_EDITOR,265,156,10,15,BS_CENTER
+    RTEXT           "tail",IDC_STATIC,236,136,12,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX_GARGAMELSPLIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PROPPAGE_GARGAMELSPLIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 195
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_GARGAMEL_WRITEFILELISTTOSYNCHRONIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 270
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_GARGAMEL_SPLIT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 279
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_WRITE_LIST_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "IDR_WRITE_LIST_MENU"
+    BEGIN
+        MENUITEM "A file ...",                  IDM_WRITE_LIST_TO_A_FILE
+        MENUITEM "Files ...",                   IDM_WRITE_LIST_TO_FILES
+    END
+END
+
+IDR_CLEAR_LIST_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "IDR_CLEAR_LIST_MENU"
+    BEGIN
+        MENUITEM "All",                         IDM_CLEAR_LIST_ALL
+        MENUITEM "Aliases",                     IDM_CLEAR_LIST_ALIASES
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GARGAMELSPLIT       "GargamelSplit Control"
+    IDS_GARGAMELSPLIT_PPG   "GargamelSplit Property Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GARGAMELSPLIT_PPG_CAPTION "General"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "GargamelSplit.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

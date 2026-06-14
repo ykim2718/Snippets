@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: EttoolPlus - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Debug/EttoolPlus.res" /d "_DEBUG" /d "_AFXDLL" "G:\HOME\CD2-Code\CnCPP\EttoolPlus\EttoolPlus.rc"" 
+Creating temporary file "C:\DOCUME~1\yskim\LOCALS~1\Temp\RSP2AB6.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/EttoolPlus.pch" /YX"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\HOME\CD2-Code\CnCPP\DialogAggregate\DialogAggregate_i.c"
+"G:\HOME\CD2-Code\CnCPP\EttoolPlus\EttoolAmbienceDlg.cpp"
+"G:\HOME\CD2-Code\CnCPP\EttoolPlus\EttoolPlus.cpp"
+"G:\HOME\CD2-Code\CnCPP\EttoolPlus\EttoolPlusDlg.cpp"
+"G:\HOME\CD2-Code\CnCPP\myCpp\CreateProcessWithRedirectedIO.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\yskim\LOCALS~1\Temp\RSP2AB6.tmp" 
+Creating temporary file "C:\DOCUME~1\yskim\LOCALS~1\Temp\RSP2AB7.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/EttoolPlus.pdb" /debug /machine:I386 /out:"Debug/EttoolPlus.exe" /pdbtype:sept 
+".\Debug\DialogAggregate_i.obj"
+".\Debug\EttoolAmbienceDlg.obj"
+".\Debug\EttoolPlus.obj"
+".\Debug\EttoolPlusDlg.obj"
+".\Debug\GargamelSplitCtrl.obj"
+".\Debug\GargamelSplitFrameDialog.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Token.obj"
+".\Debug\EttoolPlus.res"
+".\Debug\CreateProcessWithRedirectedIO.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\yskim\LOCALS~1\Temp\RSP2AB7.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+DialogAggregate_i.c
+EttoolAmbienceDlg.cpp
+EttoolPlus.cpp
+EttoolPlusDlg.cpp
+CreateProcessWithRedirectedIO.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+EttoolPlus.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

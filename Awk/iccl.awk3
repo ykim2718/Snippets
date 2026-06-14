@@ -1,0 +1,78 @@
+#!/usr/bin/ksh 
+#(c)shik,980327+0328+0404
+
+\rm -rf *.log
+for file in `ls *.w[0-9][0-9]`
+# for file in `ls *.w01`
+do
+print "xx yy $file" > $file.log
+nawk '
+BEGIN { 
+   blankLine="^[ \t]*$"
+   WAFERMAP="CHIPS69000"
+   FS=","
+   GROSS=0
+   while ( getline < WAFERMAP > 0) {
+       WMXY[GROSS]=sprintf("%03d%03d",$1,$2)
+       WMDATA[GROSS]="."
+       WMBIN[GROSS]="0"
+       GROSS++
+   }
+   if ( GROSS <= 0 ) {
+      printf("Error, ... \"%s\" file error ...\n",WAFERMAP)
+      exit
+   }
+   FS=" "
+}
+/^(X=)/ {
+   X=$2
+}
+/^(Y=)/ {
+   Y=$2
+}
+/^(B=)/ {
+   i=indexNo(WMXY,GROSS,X,Y)
+   WMBIN[i]=$2
+}
+/^(M=)/ {
+   Z=unitToMKS($3) 
+   i=indexNo(WMXY,GROSS,X,Y)
+   WMDATA[i]="t"
+   if (WMBIN[i]==1) printXYZ(X,Y,Z)
+   else printXYZ(X,Y,1.1e-18)
+}
+END { 
+   for (i=0;i<GROSS;i++)
+      if (WMDATA[i] ~ /(\.)/) {
+         X=substr(WMXY[i],1,3)
+         Y=substr(WMXY[i],4,3)
+         printXYZ(X,Y,1e-18)
+      }
+}
+function printXYZ( x,y,z ) {
+   printf("%2d %2d %+1.3e\n",x,y,z)
+}
+function indexNo( array,total,x,y ) {
+   indexStr=sprintf("%03d%03d",x,y)
+   for (i=0;i<total;i++)
+      if (array[i]~indexStr) return i 
+   return -1
+}
+function unitToMKS( value ) {
+   value=toupper(value)
+   l=length(value)
+   if ( value ~ /(UA)+/) new=substr(value,0,l-2)*1e-6
+   else if ( value ~ /(MA)+/) new=substr(value,0,l-2)*1e-3
+   else if ( value ~ /(A)+/) new=substr(value,0,l-1)
+   else new=value
+   return new
+}
+' $file >> $file.log
+echo $file
+done
+paste *.w0?.log > awk0.out
+paste *.w1?.log > awk1.out
+paste *.w2?.log > awk2.out
+\rm -rf *.log
+print "done..."
+exit

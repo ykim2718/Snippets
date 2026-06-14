@@ -1,0 +1,118 @@
+%grBeginning
+! include(/user/mospdt/.binHP/grDemo/gr_include)
+! include(./gr_include)
+! (c)shik,43290411+..+2001.0328
+_defn "view|16" "view x1=0.20 x2=0.45 y1=0.67 y2=0.90"
+_defn "view|26" "view x1=0.55 x2=0.80 y1=0.67 y2=0.90"
+_defn "view|36" "view x1=0.20 x2=0.45 y1=0.37 y2=0.60"
+_defn "view|46" "view x1=0.55 x2=0.80 y1=0.37 y2=0.60"
+_defn "view|56" "view x1=0.20 x2=0.45 y1=0.07 y2=0.30"
+_defn "view|66" "view x1=0.55 x2=0.80 y1=0.07 y2=0.30"
+_defn "view|14" "view x1=0.15 x2=0.45 y1=0.55 y2=0.90"
+_defn "view|24" "view x1=0.55 x2=0.85 y1=0.55 y2=0.90"
+_defn "view|34" "view x1=0.15 x2=0.45 y1=0.05 y2=0.40"
+_defn "view|44" "view x1=0.55 x2=0.85 y1=0.05 y2=0.40"
+_defn "view-12" "view x1=0.10 x2=0.45 y1=0.25 y2=0.70"
+_defn "view-22" "view x1=0.55 x2=0.90 y1=0.25 y2=0.70"
+_defn "view|12" "view x1=0.30 x2=0.80 y1=0.55 y2=0.95"
+_defn "view|22" "view x1=0.30 x2=0.80 y1=0.05 y2=0.45"
+_defn "LOGA"    "label.format="%1.0f" label.eq="z=log10(z)""
+_defn "LABEL"   "label.org=tick label.size=5 label.align=22"
+!
+.glob
+   gtxt txt="<DEMO-0>" t.width=10 t.height=20
+   gout psf portrait
+.plot ! four leaved rose
+   attr xlin  ylin  zlin  
+   data type=user
+   slct ____ xno=1 yno=2
+        xlb=-10 xub=10 ylb=-10 yub=10
+        type=7 legend.txt="legend" pen=1
+               symbol.size=10 symbol.color=navy !hollow solid
+               line.width=5 line.dash_list=(4,4) line.color=red
+   ufun type=Demo nrl=1 nrh=60 ncl=1 nch=2 drl=0 drh=360
+   axis	      
+	type=x loc=lower axle.color=magenta
+	       title.size=8 title.color=red title="X"
+	       gridmajor=on gridmajor.color=peru 
+               gridminor=on gridminor.color=wheat 
+        type=x loc=upper axle.color=magenta
+        type=y loc=lower axle.color=magenta
+               title.size=8 title.align=22 title.spaceFactor=8 title.color=red title="Y"
+               gridmajor=on gridmajor.color=peru 
+               gridminor=on gridminor.color=wheat 
+        type=y loc=upper axle.color=magenta
+   text type=1 txt="4-leaved rose"
+   view|16
+.plot 
+   slct ____ xno=1 yno=2 xlb=0 xub=900 ylb=0.4 yub=0.8
+        type=20 symbol.size=9 symbol.color=blue pen=2 line=off solid
+!   ufun type=PolynomialFit option=1 g.width=4 g.dash_list=(4,4) line.color=green
+!        type=PolynomialFit option=2 g.width=4 g.dash_list=(2,4) line.color=green
+   axis type=x loc=lower      tickmajor.loc=inside   LABEL
+               title="x-axis" title.spaceFactor=3 title.size=7
+        type=x loc=upper  tickmajor.loc=outside tickminor.loc=outside LABEL
+        type=x loc=middle tickmajor.loc=cross       LABEL
+        type=x loc=any    loc.x=(200,700) loc.y=0.7 LABEL
+        type=y loc=lower                            LABEL
+               tickmajor=off !tickminor=off
+	       title="y-axis" title.spaceFactor=7 title.size=7
+        type=y axle=off                     LABEL
+               title="none" title.spaceFactor=7 title.size=7
+        type=y loc=any    loc.x=700 loc.y=(0.5,0.7) LABEL
+   text type=1 txt="text(1)"
+        type=2 txt="text(2)"
+        type=3 txt="text(3)"
+        type=4 txt="text(4)"
+        type=0 txt="text(0)" x=100 y=0.42
+        type=0 txt="text(0)" x=1000 y=0.5 t.align=12
+   view|26
+.plot
+   slct ____ xno=1 yno=*
+        type=25 color=orchid symbol.size=7 line=on legend.txt="first" solid x=600
+ !  ufun type=1 option=-1 txton t.width=2 t.height=4
+ !             line.color=magenta line.width=2 line.dash_list=(4,4)
+   axis type=x axle.color==blue4      LABEL
+               gridmajor=on gridmajor.color=LimeGreen
+               gridminor=on gridminor.color=PaleGreen
+        type=x loc=upper axle.color=blue4 label=off
+        type=y axle.color==blue4   LABEL
+               gridmajor=on gridmajor.color=LimeGreen
+        type=y loc=upper axle.color=blue4 label=off
+   view|36
+.plot
+   slct ____ xno=1 yno=* autoLegend=on
+        type=14 color=red    line=off pen=4 x=600
+    !   type=15 color=cyan   solid      pen=5
+    !   type=16 color=orchid solid      pen=6
+   ufun type=PolyCoeffsDrawing argument="z=1/z" nrl=1 nrh=100 ncl=2 nch=2 !???
+   ufun type=PolynomialFit option=5 
+               rline.color=blue rline.width=2 rline.dash_list=(4,4)
+        type=PolyCoeffsDrawing option=3 
+               argument="+9.8987e-01,-5.7454e-03,+2.5285e-05,-5.3185e-08"
+               rline.color=seagreen rline.width=4
+   axis type=x axle=off     axle.color=red LABEL
+        type=x loc=upper axle.color=navy label=off LABEL 
+        type=y axle=off     axle.color=red LABEL
+        type=y loc=upper axle.color=navy LABEL
+   view|46
+.plot
+   attr moment
+        xlin  ylin  zlin
+   slct ____ xno=1 yno=* autoLegend=on
+        type=-6 legend.symbolsize=5 legend.txt="Moment (Box) Plot" x=1000 y=0.4
+               symbol.size=5 symbol.color=navy line=off
+   axis type=x loc=l axle=off LABEL label.format="%g"
+        type=x loc=u axle=off label=off
+        type=y loc=l axle=off LABEL label.format="%1.0z"
+        type=y loc=u axle=off label=off
+   view|56
+%grEnd
+   234 0.41 0.39 0.42
+   512 0.46 0.44 0.45
+   114 0.59 0.51 0.63
+   319 0.49 0.43 0.51
+   404 0.47 0.44 0.48
+   844 0.33 0.31 0.34
+   56  0.74 0.62 0.76
+

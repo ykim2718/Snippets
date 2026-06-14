@@ -1,0 +1,44 @@
+%grBeginning !2001.03.28
+ _defn "LOGA"     "label.format="%1.0f" label.eq="z=log10(z)""
+ _defn "YNOLABEL" "x=7.95 t.size=3 t.align=23 t.color=blue"
+
+.glob 
+    gxfm scale=1.2 angle=5 !  xtrans=-0.25 ytrans=-0.25
+    gtxt txt="<DEMO-1>" t.size=15 t.angle=10 t.color=magenta
+    gout landscape ! ps eps hpgl
+.plot 
+    attr xlog ynormal
+    slct ____ xno=1 yno=1,2
+         xlb=1e1 xub=1e5 !ylb=0.0001 yub=0.9999
+         type=1 legend.symbolsize=4 legend.txt="TOBIAS99.P"
+            symbol.color=red solid
+            line.color=green line.dash_list=(4,4) line.width=5
+	data ! nDenominatorForCDF=20
+    ufun type=PolynomialFit option=1 rline.color=yellow set=0
+         type=PolynomialFit option=1 rline.color=yellow set=1
+    ! ufun type=5 name="demo1.gr.dat"
+    axis
+         type=x label.org=t label.format="%1.0z" gridmajor=on
+                title="TIME [SEC]"  title.spaceFactor=4
+                title.size=10 title.color=red
+         type=x loc=u
+         type=y label.org=t label.format="%1.2f" label.eq="z=z*100"
+                gridmajor=on gridminor=on
+                title="CDF [%]"  title.spaceFactor=7
+                title.size=10 title.color=red
+         type=y loc=u
+    text type=1 txt="- LOGNORMAL PLOT -" t.size=8
+    view x1=0.3 x2=0.7 y1=0.3 y2=0.7
+
+%grEnd
+!    fail-time another
+     1317      100
+     2243      110
+     2248      150
+     2282      200
+     2362      250
+     2773      300
+     #         350
+     2797      400
+     3104      450
+     3600      500

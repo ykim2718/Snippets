@@ -1,0 +1,24 @@
+!!Gargamel,2003.0209
+!!settings
+qDumpFileName= G:\HOME\CD2-Code\CnCPP\Gargamel\Sample\q.out
+nSearchType= Block
+nColumnarMatrixType= No
+bNumericAlias= True
+nPostProcessType= None
+!!strings
+sBeginning= beginning asdfsadf
+sEnding= ed
+sBlockSelections= 1
+bBlockSelectionAll= 1
+n1stColumn= 2
+sOtherColumns= 3
+sFormat= %.4e
+sEquation= 5
+nCutLow= 6
+nCutHigh= 7
+!!files
+<first
+g:\HOME\CD2-Code\CnCPP\Gargamel\Sample\sample2-1.txt
+<second 2
+g:\HOME\CD2-Code\CnCPP\Gargamel\Sample\sample2-2.txt
+!!end

@@ -1,0 +1,374 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PROVERB             BITMAP  DISCARDABLE     "res\\proverb.bmp"
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Gargamel.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Gargamel.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GARGAMEL DIALOGEX 0, 0, 173, 76
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Gargamel (DataExtractionFromFiles)"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",ID_TABCTRL,"SysTabControl32",0x0,5,7,163,64
+END
+
+IDD_GARGAMEL_EXECUTE DIALOG DISCARDABLE  0, 0, 300, 230
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Script",IDC_DEFF_ENV_GB,5,4,290,35
+    PUSHBUTTON      "Load ...",ID_EXECUTE_LOAD,10,18,34,14
+    PUSHBUTTON      "Save",ID_EXECUTE_SAVE,51,18,27,14
+    PUSHBUTTON      "Save as ...",ID_EXECUTE_SAVEAS,80,18,41,14
+    CONTROL         "Synchronize ""out"" file name with ""in"" file",
+                    ID_SYNCHRONIZE_OUTFILENAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,129,20,133,10
+    GROUPBOX        "Extract",IDC_DEFF_EXTRACT_GB,5,43,290,83
+    PUSHBUTTON      "Execute",ID_EXECUTE_GARGAMEL,10,65,34,25
+    LTEXT           "Searching :",IDC_STATIC,57,54,37,9,SS_CENTERIMAGE
+    CONTROL         "Absolute",ID_OPTION_SEARCH_ABSOLUTE,"Button",
+                    BS_AUTORADIOBUTTON,98,54,37,8
+    CONTROL         "Sequential",ID_OPTION_SEARCH_SEQUENTIAL,"Button",
+                    BS_AUTORADIOBUTTON,139,54,43,8
+    CONTROL         "Wild",ID_OPTION_SEARCH_WILD,"Button",BS_AUTORADIOBUTTON,
+                    185,54,23,8
+    CONTROL         "Block",ID_OPTION_SEARCH_BLOCK,"Button",
+                    BS_AUTORADIOBUTTON,213,54,28,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,52,67,235,1
+    LTEXT           "Columnar Matrix :",IDC_STATIC,57,73,55,9,SS_CENTERIMAGE
+    CONTROL         "No",ID_OPTION_COLUMNARMTX_NO,"Button",
+                    BS_AUTORADIOBUTTON,117,73,18,8
+    CONTROL         "By Pattern",ID_OPTION_COLUMNARMTX_BYPATTERN,"Button",
+                    BS_AUTORADIOBUTTON,139,73,42,8
+    CONTROL         "By Pattern+",ID_OPTION_COLUMNARMTX_BYPATTERN2,"Button",
+                    BS_AUTORADIOBUTTON,185,73,46,8
+    CONTROL         "By Split",ID_OPTION_COLUMNARMTX_BYSPLIT,"Button",
+                    BS_AUTORADIOBUTTON,234,73,34,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,52,85,235,1
+    LTEXT           "Post-Process :",IDC_STATIC,57,91,49,9,SS_CENTERIMAGE
+    COMBOBOX        ID_OPTION_NUMPOSTPROCESS,110,90,41,108,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Numeric Alias",ID_OPTION_NUMERICALIAS,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | BS_VCENTER | WS_TABSTOP,160,
+                    91,56,9
+    CONTROL         "Composite",ID_OPTION_COMPOSITE,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFT | BS_VCENTER | WS_TABSTOP,220,91,48,9
+    CONTROL         "Progress1",ID_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,10,107,278,11
+    GROUPBOX        "Save extracted data (*.out)",IDC_DEFF_SAVE_GB,5,130,290,
+                    51
+    PUSHBUTTON      "Dump",ID_EXECUTE_DUMP,10,144,24,13
+    PUSHBUTTON      "Dump as ...",ID_EXECUTE_DUMPAS,36,144,42,13
+    PUSHBUTTON      "Dump/View",ID_EXECUTE_DUMPANDVIEW,80,144,42,13
+    PUSHBUTTON      "View",ID_EXECUTE_VIEW,124,144,24,13
+    EDITTEXT        ID_DUMPFILENAME,10,160,278,13,ES_AUTOHSCROLL
+    CTEXT           "?",ID_TIMER_TEXT,105,212,91,13,SS_CENTERIMAGE
+    ICON            IDR_MAINFRAME,ID_GARGAMEL_PICTURE,143,190,20,20,
+                    SS_REALSIZEIMAGE
+    PUSHBUTTON      "Example",ID_EXECUTE_EXAMPLE,5,212,35,13
+    PUSHBUTTON      "Dismiss",ID_DISMISS,260,212,35,13
+END
+
+IDD_CDIRTREEDLG DIALOGEX 0, 0, 225, 234
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CDirTreeDialog"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_DIRTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,7,172,220
+    PUSHBUTTON      "Ok",IDOK,182,196,36,14
+    PUSHBUTTON      "Cancel",IDCANCEL,182,213,36,14
+    CONTROL         "Folders",IDC_FOLDERS_AND_FILES,"Button",
+                    BS_AUTORADIOBUTTON,182,149,36,11
+    CONTROL         "Folders",IDC_FOLDERS_ONLY,"Button",BS_AUTORADIOBUTTON,
+                    182,169,36,12
+    LTEXT           "+ Files",IDC_STATIC,192,159,26,8
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 203, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Gargamel"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,17,50,20,20
+    CTEXT           "Gargamel (DataExtractionFromFiles)",IDC_STATIC,5,8,192,
+                    8,SS_NOPREFIX | SS_CENTERIMAGE
+    CTEXT           "19991101-20000105\n20000418-1213\n20010102-0217,0309,0405-0430\n20020714\n20030204-",
+                    IDC_STATIC,38,20,126,43
+    DEFPUSHBUTTON   "Ok",IDOK,81,92,34,14,WS_GROUP
+    CTEXT           "(copyLeft) yskim@ae.titech.ac.jp",IDC_STATIC,5,81,192,8
+    CTEXT           "Gargamel Version Here",ID_GARGAMEL_VERSION,81,67,39,11,
+                    SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_GARGAMEL_PATTERN DIALOG DISCARDABLE  0, 0, 300, 230
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+END
+
+IDD_GARGAMEL_SPLIT DIALOG DISCARDABLE  0, 0, 300, 230
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "",ID_GARGAMEL_SPLIT_OCX,
+                    "{3731EFA6-F83D-11D4-9E85-0000E8C3064A}",WS_TABSTOP,5,5,
+                    280,220
+    CTEXT           "Static",ID_PROVERB,287,5,8,65
+END
+
+IDD_GARGAMEL_PATTERNFORMATRIX DIALOG DISCARDABLE  0, 0, 300, 230
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "",ID_GARGAMEL_PATTERNFORMATRIX_OCX,
+                    "{941C461F-8BA3-406A-B09B-98D4C39FC524}",WS_TABSTOP,5,5,
+                    290,220
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Gargamel MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Gargamel\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Gargamel.EXE\0"
+            VALUE "ProductName", "Gargamel 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GARGAMEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_GARGAMEL_EXECUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 295
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_GARGAMEL_PATTERN, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 295
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_GARGAMEL_SPLIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 295
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_GARGAMEL_PATTERNFORMATRIX, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 295
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 225
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GARGAMEL_SPLIT DLGINIT
+BEGIN
+    ID_GARGAMEL_SPLIT_OCX, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x3417, 0x0000, 0x26b2, 0x0000, 0x0000, 
+0x0000, 
+    0
+END
+
+IDD_GARGAMEL_PATTERNFORMATRIX DLGINIT
+BEGIN
+    ID_GARGAMEL_PATTERNFORMATRIX_OCX, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x35fe, 0x0000, 0x26b2, 0x0000, 0x0000, 
+0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Gargamel 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\Gargamel.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

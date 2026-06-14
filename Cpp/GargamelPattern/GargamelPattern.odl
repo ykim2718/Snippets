@@ -1,0 +1,70 @@
+// GargamelPattern.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (GargamelPattern.tlb) that will become a resource in
+// GargamelPattern.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(33406938-F75F-11D4-9E85-0000E8C3064A), version(1.0),
+  helpfile("GargamelPattern.hlp"),
+  helpstring("GargamelPattern ActiveX Control module"),
+  control ]
+library GARGAMELPATTERNLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CGargamelPatternCtrl
+
+	[ uuid(33406939-F75F-11D4-9E85-0000E8C3064A),
+	  helpstring("Dispatch interface for GargamelPattern Control"), hidden ]
+	dispinterface _DGargamelPattern
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CGargamelPatternCtrl)
+			[id(1)] BSTR PatternScript;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CGargamelPatternCtrl)
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CGargamelPatternCtrl
+
+	[ uuid(3340693A-F75F-11D4-9E85-0000E8C3064A),
+	  helpstring("Event interface for GargamelPattern Control") ]
+	dispinterface _DGargamelPatternEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CGargamelPatternCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CGargamelPatternCtrl
+
+	[ uuid(33406922-F75F-11D4-9E85-0000E8C3064A),
+	  helpstring("GargamelPattern Control"), control ]
+	coclass GargamelPattern
+	{
+		[default] dispinterface _DGargamelPattern;
+		[default, source] dispinterface _DGargamelPatternEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

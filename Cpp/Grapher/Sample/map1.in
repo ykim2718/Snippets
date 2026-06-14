@@ -1,0 +1,15 @@
+!!Gargamel,2K.0808(c)shik
+!!settings
+sDumpFileName= E:\±è¿ë½Ä\Computer\CnCpp\Grapher\Sample\map1.out
+nSearchType= Absolutely
+nColumnarMatrixType= No
+bNumericAlias= False
+nPostProcessType= None
+!!strings
+"x=" 	x= 	1 1 %s z 0 0
+"y=" 	y= 	1 1 %s z 0 0
+"z=" 	z= 	1 1 %s z 0 0
+!!files
+< Alias
+e:\±è¿ë½Ä\Computer\CnCpp\Grapher\Sample\map1.dat
+!!end

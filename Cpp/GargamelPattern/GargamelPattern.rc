@@ -1,0 +1,314 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""GargamelPattern.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "»ï¼ºÀüÀÚ\0"
+            VALUE "FileDescription", "GargamelPattern ActiveX Control Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GargamelPattern\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GargamelPattern.OCX\0"
+            VALUE "ProductName", "GargamelPattern ActiveX Control Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ABOUTDLL            ICON    DISCARDABLE     "GargamelPattern.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_GARGAMELPATTERN     BITMAP  DISCARDABLE     "GargamelPatternCtl.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX_GARGAMELPATTERN DIALOG DISCARDABLE  34, 22, 260, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About GargamelPattern Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ABOUTDLL,IDC_STATIC,10,10,20,20
+    LTEXT           "GargamelPattern Control, Version 1.0",IDC_STATIC,40,10,
+                    170,8
+    LTEXT           "Copyright (C) 2001, »ï¼ºÀüÀÚ",IDC_STATIC,40,25,170,8
+    DEFPUSHBUTTON   "OK",IDOK,221,7,32,14,WS_GROUP
+END
+
+IDD_PROPPAGE_GARGAMELPATTERN DIALOGEX 0, 0, 330, 250
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Add",ID_PATTERN_ADD,0,235,20,14
+    PUSHBUTTON      "Wizard ...",ID_PATTERN_ADD_WIZARD,21,235,38,14
+    PUSHBUTTON      "Ins",ID_PATTERN_INS,70,235,15,14
+    PUSHBUTTON      "Del",ID_PATTERN_DEL,86,235,15,14
+    PUSHBUTTON      "Clr",ID_PATTERN_CLEAR,102,235,15,14
+    PUSHBUTTON      "Up",ID_PATTERN_MOVEUP,118,235,15,14
+    PUSHBUTTON      "Dn",ID_PATTERN_MOVEDOWN,134,235,15,14
+    PUSHBUTTON      "' Alias '",ID_PATTERN_ALIAS_CHANGE,176,235,30,14,
+                    BS_CENTER
+    PUSHBUTTON      "Replace ...",ID_PATTERN_SUPERSEDING,207,235,41,14
+    CONTROL         "List1",ID_PATTERN_LISTCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    WS_BORDER | WS_TABSTOP,0,0,330,171
+    RTEXT           "Pattern",IDC_STATIC,0,175,24,9,SS_CENTERIMAGE
+    EDITTEXT        ID_PATTERN_TEXT,30,174,220,12,ES_AUTOHSCROLL
+    RTEXT           "Alias",IDC_STATIC,5,190,19,9,SS_CENTERIMAGE
+    EDITTEXT        ID_PATTERN_ALIAS,30,189,123,12,ES_AUTOHSCROLL
+    CONTROL         "Auto Alias",ID_PATTERN_ALIAS_AUTO_TB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,159,191,43,9
+    COMBOBOX        ID_PATTERN_ALIAS_METHOD,212,189,38,44,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        ID_PATTERN_ALIAS_NO_FROM,254,189,15,12,ES_AUTOHSCROLL
+    CTEXT           "-",IDC_STATIC,270,190,8,9
+    EDITTEXT        ID_PATTERN_ALIAS_NO_TO,279,189,15,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Test",ID_PATTERN_ALIAS_AUTO_TRY,305,189,25,13
+    RTEXT           "Grab",IDC_STATIC,158,206,16,9
+    EDITTEXT        ID_PATTERN_GRAB_FIRST_NO,178,204,15,12,ES_AUTOHSCROLL
+    LTEXT           "=Last ,",IDC_STATIC,228,206,23,9
+    EDITTEXT        ID_PATTERN_GRAB_LAST_NO,212,204,15,12,ES_AUTOHSCROLL
+    LTEXT           "Format=",IDC_STATIC,251,206,27,9
+    COMBOBOX        ID_PATTERN_FORMAT,278,204,34,71,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,0,HID_PATTERN_FORMAT
+    RTEXT           "Eq.",IDC_STATIC,10,206,14,9
+    EDITTEXT        ID_PATTERN_EQUATION,30,204,123,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Script Read&&Attach",ID_PATTERN_SCRIPT_READ_ATTACH,260,
+                    235,70,14
+    LTEXT           "=1st",IDC_STATIC,194,206,15,9
+    RTEXT           "Trim",IDC_STATIC,5,221,19,9
+    EDITTEXT        ID_PATTERN_CUTLOW,30,219,29,12,ES_AUTOHSCROLL
+    LTEXT           "=Upper",IDC_STATIC,127,221,26,9
+    EDITTEXT        ID_PATTERN_CUTHIGH,94,219,29,12,ES_AUTOHSCROLL
+    LTEXT           "=Lower",IDC_STATIC,62,221,24,9
+    COMBOBOX        ID_PATTERN_ATTRIBUTE,259,174,71,44,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "?",ID_FORMAT_HELP,314,204,10,11
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,1,184,23,1
+END
+
+IDD_GARGAMEL_PATTERN_WIZARD DIALOG DISCARDABLE  0, 0, 251, 250
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AddSearchStringsWizard"
+FONT 10, "Arial"
+BEGIN
+    PUSHBUTTON      "Open ...",ID_WIZARD_OPENFILE,189,175,34,14
+    CONTROL         "Fixed Width",ID_WIZARD_FIXEDWIDTH,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,185,18,51,8
+    PUSHBUTTON      "Dismiss",IDCANCEL,189,231,34,14
+    LISTBOX         ID_WIZARD_LISTBOX,5,5,172,240,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_WANTKEYBOARDINPUT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    EDITTEXT        ID_WIZARD_SPECIALCHAR_OHTERS_STRING,195,84,41,12,
+                    WS_DISABLED
+    CONTROL         "Space",ID_WIZARD_SPECIALCHAR_SPACE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,195,56,33,10
+    CONTROL         "Tab",ID_WIZARD_SPECIALCHAR_TAB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,195,65,26,10
+    CONTROL         "Others",ID_WIZARD_SPECIALCHAR_OTHERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,195,74,33,10
+    CONTROL         "Special Char.",ID_WIZARD_SPECIALCHAR,"Button",
+                    BS_AUTORADIOBUTTON,185,46,56,8
+    EDITTEXT        ID_WIZARD_FIXEDWIDTHNO,195,29,20,12,ES_NUMBER
+    CONTROL         "Spin1",ID_WIZARD_FIXEDWIDTHNO_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,216,29,11,13
+    GROUPBOX        "Delimiter",IDC_STATIC,181,5,65,97
+    EDITTEXT        ID_WIZARD_LINESCOPE,189,160,31,12,ES_NUMBER
+    CONTROL         "Spin1",ID_WIZARD_LINESCOPE_SPIN,"msctls_updown32",
+                    UDS_ARROWKEYS,221,159,11,13
+    LTEXT           "Line Scope :",IDC_STATIC,190,149,45,8
+    GROUPBOX        "File",IDC_STATIC,181,138,65,74
+    EDITTEXT        ID_WIZARD_FILTER,190,117,42,12
+    GROUPBOX        "Filter",IDC_STATIC,181,105,65,30
+    PUSHBUTTON      "Re-Open",ID_WIZARD_REOPEN,189,191,42,14
+END
+
+IDD_GARGAMEL_PATTERN_SUPERSEDING DIALOG DISCARDABLE  0, 0, 227, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION " Replace ... in the selected column(s)"
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "Find what",IDC_STATIC,5,5,33,12,SS_CENTERIMAGE
+    EDITTEXT        ID_FINDWHAT,51,5,134,12,ES_AUTOHSCROLL
+    LTEXT           "Replace with",IDC_STATIC,5,20,44,12,SS_CENTERIMAGE
+    EDITTEXT        ID_REPLACEWITH,51,20,134,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,190,5,30,12
+    PUSHBUTTON      "Cancel",IDCANCEL,190,20,30,12
+    CONTROL         "Pattern",ID_FINDWHAT_IN_PATTERN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,52,36,37,9
+    CONTROL         "Alias",ID_FINDWHAT_IN_ALIAS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,89,36,30,9
+    CONTROL         "Last No",ID_FINDWHAT_IN_LASTNO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,162,36,35,9
+    LTEXT           "Column(s)",IDC_STATIC,5,36,41,12,SS_CENTERIMAGE
+    CONTROL         "1st No",ID_FINDWHAT_IN_1STNO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,128,36,30,9
+    CONTROL         "Equation",ID_FINDWHAT_IN_EQUATION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,89,50,38,9
+    CONTROL         "Format",ID_FINDWHAT_IN_FORMAT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,50,34,9
+    CONTROL         "UC",ID_FINDWHAT_IN_UC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,162,50,35,9
+    CONTROL         "LC",ID_FINDWHAT_IN_LC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,128,50,30,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX_GARGAMELPATTERN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_GARGAMEL_PATTERN_WIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 246
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_GARGAMEL_PATTERN_SUPERSEDING, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 62
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GARGAMELPATTERN     "GargamelPattern Control"
+    IDS_GARGAMELPATTERN_PPG "GargamelPattern Property Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GARGAMELPATTERN_PPG_CAPTION "General"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "GargamelPattern.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

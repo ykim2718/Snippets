@@ -1,0 +1,43 @@
+%grBeginning !2001.0514
+
+.glob
+ gout portrait
+ gtxt txt="DEMO-7" t.width=5 t.height=20 t.align=LL t.angle=0 t.color=128
+
+.plot
+ attr xlin ylin !genetic+ moment
+ slct
+   ____ xno=1 yno=2-11:12-21 xlb=0 xub=0.5 ylb=300 yub=600
+    type=-6 nCopy=2 symbol.color=blue line.color=blue hollow symbol.size=5 line=on
+        line.width=5 line.dash_list=shortdashed legend.txt="P1" legend.size=9 legend.symbolsize=5
+    type=2 nCopy=9 symbol.color=magenta line.color=magenta hollow symbol.size=5
+        line=on line.width=5 line.dash_list=longdashed legend.txt="P2" legend.size=9
+        legend.symbolsize=5
+ axis
+   type=x title="Pattern" title.size=9 label.format=%1.0z label.size=9
+        axle.color=navy  axle.width=10
+        gridmajor=on gridmajor.color=cyan3 gridmajor.dash_list=longdashed
+        gridminor=on gridminor.color=cyan1 gridminor.dash_list=(6,3)
+   type=x loc=upper label=off axle.color=navy
+   type=y title="0.1***" title.spaceFactor=9 title.size=9 label.format=%1.0z
+        label.size=9 axle.color=navy
+        gridmajor=on gridmajor.color=cyan2
+   type=y loc=upper label=off axle.color=navy
+ text
+   type=2 txt="Null" t.size=9
+ view x1=0.20 x2=0.80 y1=0.20 y2=0.80
+
+%grEnd
+
+0.13 179 202 122 113 117 272 229 76  50  210 143 21  74  66  50  # # # # #
+0.14 321 361 304 301 311 389 368 304 264 351 331 275 216 211 279 # # # # #
+0.15 423 436 415 398 428 456 449 419 386 435 410 391 371 380 389 # # # # #
+0.16 464 486 461 429 467 480 495 461 431 479 461 459 448 428 452 # # # # #
+0.17 484 500 473 468 493 501 512 492 455 494 492 489 485 463 483 # # # # #
+0.18 503 514 491 482 499 506 523 504 471 504 514 506 508 493 507 # # # # #
+0.19 496 516 496 483 509 516 525 512 473 515 512 519 508 497 520 # # # # #
+0.2  502 523 501 479 512 514 526 515 483 518 525 533 518 507 520 # # # # #
+0.22 506 527 499 481 520 513 529 517 481 521 525 533 526 520 529 # # # # #
+0.3  496 521 498 470 503 509 533 507 472 513 520 529 525 516 526 # # # # #
+0.5  488 515 480 455 494 501 524 498 451 506 517 526 521 512 524 # # # # #
+1    479 507 471 439 487 492 517 490 438 497 507 519 513 505 516 # # # # #

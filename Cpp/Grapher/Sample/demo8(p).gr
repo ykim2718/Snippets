@@ -1,0 +1,152 @@
+%grBeginning
+_defn "view|18" "view x1=0.15 x2=0.48 y1=0.84 y2=1.09"
+_defn "view|28" "view x1=0.58 x2=0.92 y1=0.84 y2=1.09"
+_defn "view|38" "view x1=0.15 x2=0.48 y1=0.53 y2=0.78"
+_defn "view|48" "view x1=0.58 x2=0.92 y1=0.53 y2=0.78"
+_defn "view|58" "view x1=0.15 x2=0.48 y1=0.22 y2=0.47"
+_defn "view|68" "view x1=0.58 x2=0.92 y1=0.22 y2=0.47"
+_defn "view|78" "view x1=0.15 x2=0.48 y1=-.09 y2=0.16"
+_defn "view|88" "view x1=0.58 x2=0.92 y1=-.09 y2=0.16"
+_defn "GRID_STYLE" "gridmajor=on gridmajor.color=green2 \
+                   \gridminor=on gridminor.color=green1 \
+                   \gridminor.dash_list=shortdashed"
+
+_defn "LABEL_STYLE" "label.org=tick label.size=9 label.align=22"
+
+.glob 
+   gtxt txt="DEMO-8(P) / IDEAL PMOS CAPACITOR (SiO2)"
+        t.size=20 txt.spaceFactor=1
+   gout portrait
+
+.plot
+   attr xlin ylin zlin
+   data type=user
+   xyzb xlb=-3 xub=3 ylb=0 yub=5e-6
+   slct ____ xno=6 yno=11,14
+        type=1 nCopy=0 legend.txt="LF" symbol.size=3 symbol.color=blue hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=cyan
+        type=6 nCopy=0 legend.txt="HF" symbol.size=3 symbol.color=red hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=magenta
+   ufun type=IdealMosCapacitor
+               option=2 suboption=0 sweep=-2.5,2.5,0.1 argument=p,290,4.1,0,10,3.9,7.035e18
+        type=MatrixPrint argument=demo8(p).gr.dat
+   axis	type=x loc=lower GRID_STYLE LABEL_STYLE
+	       title.size=10 title="Vg [V]"
+        type=x loc=upper label=off
+        type=y loc=lower GRID_STYLE LABEL_STYLE
+               title.size=10 title="Cg [F/cm^2]" title.spaceFactor=9
+        type=y loc=upper label=off
+   view|18
+
+.plot
+   attr xlin ylog zlin
+   data type=prev
+   xyzb xlb=-3 xub=3 ylb=1e-7 yub=1e-5
+   slct ____ xno=6 yno=11,14
+        type=1 nCopy=0 legend.txt="LF" symbol.size=3 symbol.color=blue hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=cyan
+        type=6 nCopy=0 legend.txt="HF" symbol.size=3 symbol.color=red hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=magenta
+   axis	type=x loc=lower GRID_STYLE LABEL_STYLE
+	       title.size=10 title="Vg [V]"
+        type=x loc=upper label=off
+        type=y loc=lower GRID_STYLE LABEL_STYLE
+               title.size=10 title="Cg [F/cm^2]" title.spaceFactor=9
+        type=y loc=upper label=off
+   view|28
+
+.plot
+   attr xlin ylin zlin
+   data type=prev
+   xyzb ylb=0 yub=5e-6
+   slct ____ xno=1 yno=11,14
+        type=1 nCopy=0 legend.txt="LF" symbol.size=3 symbol.color=blue hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=cyan
+        type=6 nCopy=0 legend.txt="HF" symbol.size=3 symbol.color=red hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=magenta
+   axis	type=x loc=lower GRID_STYLE LABEL_STYLE
+	       title.size=10 title="Vs []"
+        type=x loc=upper label=off
+        type=y loc=lower GRID_STYLE LABEL_STYLE
+               title.size=10 title="Cg [F/cm^2]" title.spaceFactor=9
+        type=y loc=upper label=off
+   text type=0 x=-30 y=4.4e-6 txt="Vs>0 Band bend downward"
+   view|38
+
+.plot
+   attr xlin ylin zlin
+   data type=prev
+   xyzb ylb=0.97 yub=1
+   slct ____ xno=1 yno=12
+        type=1 nCopy=0 etc.Range=100 symbol.size=3 symbol.color=blue hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=cyan
+   axis	type=x loc=lower GRID_STYLE LABEL_STYLE
+	       title.size=10 title="Vs []"
+        type=x loc=upper label=off
+        type=y loc=lower GRID_STYLE LABEL_STYLE
+               title.size=10 title="Berman Factor []" title.spaceFactor=9
+        type=y loc=upper label=off
+   view|48
+
+.plot
+   attr xlin ylin zlin
+   data type=prev
+   xyzb xlb=-3 xub=3 ylb=-1.5 yub=0.5
+   slct ____ xno=6 yno=7
+        type=1 nCopy=0 etc.Range=100 symbol.size=3 symbol.color=blue hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=cyan
+   axis	type=x loc=lower GRID_STYLE LABEL_STYLE
+	       title.size=10 title="Vg [V]"
+        type=x loc=upper label=off
+        type=y loc=lower GRID_STYLE LABEL_STYLE tickmajor.step=0.5
+               title.size=10 title="Vs [V] =[Ei(b)-Ei(s)]/q" title.spaceFactor=9
+        type=y loc=upper label=off
+   view|58
+
+.plot
+   attr xlin ylin zlin
+   data type=prev
+   xyzb xlb=-3 xub=3 ylb=-2.5 yub=2.5
+   slct ____ xno=6 yno=8
+        type=1 nCopy=0 etc.Range=100 symbol.size=3 symbol.color=blue hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=cyan
+   axis	type=x loc=lower GRID_STYLE LABEL_STYLE
+	       title.size=10 title="Vg [V]"
+        type=x loc=upper label=off
+        type=y loc=lower GRID_STYLE LABEL_STYLE
+               title.size=10 title="Vox [V]" title.spaceFactor=9
+        type=y loc=upper label=off
+   view|68
+
+.plot
+   attr xlin ylin zlin
+   data type=prev
+   xyzb xlb=-3 xub=3 ylb=-15 yub=15
+   slct ____ xno=6 yno=9
+        type=1 nCopy=0 etc.Range=100 symbol.size=3 symbol.color=blue hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=cyan
+   axis	type=x loc=lower GRID_STYLE LABEL_STYLE
+	       title.size=10 title="Vg [V]"
+        type=x loc=upper label=off
+        type=y loc=lower GRID_STYLE LABEL_STYLE tickmajor.step=5
+               title.size=10 title="Eox [MV/cm]" title.spaceFactor=9
+        type=y loc=upper label=off
+   view|78
+
+.plot
+   attr xlin ylog zlin
+   data type=prev
+   xyzb xlb=-3 xub=3 ylb=1e-7 yub=1e-5
+   slct ____ xno=6 yno=5
+        type=1 nCopy=0 etc.Range=100 symbol.size=3 symbol.color=blue hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=cyan
+   axis	type=x loc=lower GRID_STYLE LABEL_STYLE
+	       title.size=10 title="Vg [V]"
+        type=x loc=upper label=off
+        type=y loc=lower GRID_STYLE LABEL_STYLE label.format="%.0e"
+               title.size=10 title="|Qs| [C/cm^2]" title.spaceFactor=9
+        type=y loc=upper label=off
+   ufun type=MathParser argument="e=abs(e)"
+   view|88
+
+%grEnd

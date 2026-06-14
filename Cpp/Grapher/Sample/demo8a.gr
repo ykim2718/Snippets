@@ -1,0 +1,92 @@
+%grBeginning
+_defn "view|14" "view x1=0.15 x2=0.45 y1=0.55 y2=0.90"
+_defn "view|24" "view x1=0.55 x2=0.85 y1=0.55 y2=0.90"
+_defn "view|34" "view x1=0.15 x2=0.45 y1=0.05 y2=0.40"
+_defn "view|44" "view x1=0.55 x2=0.85 y1=0.05 y2=0.40"
+
+_defn "GRID_STYLE" "gridmajor=on gridmajor.color=green2 \
+                   \gridminor=on gridminor.color=green1 \
+                   \gridminor.dash_list=shortdashed"
+
+_defn "LABEL_STYLE" "label.org=tick label.size=9 label.align=22"
+
+.glob 
+   gtxt txt="DEMO-8A / IDEAL NMOS CAPACITOR (SiO2)"
+        t.size=20 txt.spaceFactor=1
+   gout portrait
+
+.plot
+   attr xlin ylin zlin
+   data type=user
+   xyzb xlb=-3 xub=3 ylb=0 yub=5e-6
+   slct ____ xno=6 yno=11,14
+        type=1 nCopy=0 legend.txt="LF" symbol.size=3 symbol.color=blue hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=cyan
+        type=6 nCopy=0 legend.txt="HF" symbol.size=3 symbol.color=red hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=magenta
+   ufun type=IdealMosCapacitor
+               option=2 sweep=-2.5,2.5,0.1 argument=n,290,4.1,10,7.035e18
+   axis	type=x loc=lower GRID_STYLE LABEL_STYLE
+	       title.size=10 title="Vg [V]"
+        type=x loc=upper label=off
+        type=y loc=lower GRID_STYLE LABEL_STYLE
+               title.size=10 title="Cg [F/cm^2]" title.spaceFactor=9
+        type=y loc=upper label=off
+   view|14
+
+.plot
+   attr xlin ylin zlin
+   data type=prev
+   xyzb xlb=-3 xub=3 ylb=0 yub=5e-6
+   slct ____ xno=6 yno=11,14
+        type=1 nCopy=0 legend.txt="LF" symbol.size=3 symbol.color=blue hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=cyan
+        type=6 nCopy=0 legend.txt="HF" symbol.size=3 symbol.color=red hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=magenta
+   ufun type=ColumnGroupNormalizer option=b
+   axis	type=x loc=lower GRID_STYLE LABEL_STYLE
+	       title.size=10 title="Vg [V]"
+        type=x loc=upper label=off
+        type=y loc=lower GRID_STYLE LABEL_STYLE
+               title.size=10 title="Normalized Cg" title.spaceFactor=9
+        type=y loc=upper label=off
+   view|24
+
+.plot
+   attr xlin ylin zlin
+   data type=prev
+   xyzb ylb=0 yub=5e-6
+   slct ____ xno=1 yno=11,14
+        type=1 nCopy=0 legend.txt="LF" symbol.size=3 symbol.color=blue hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=cyan
+        type=6 nCopy=0 legend.txt="HF" symbol.size=3 symbol.color=red hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=magenta
+   axis	type=x loc=lower GRID_STYLE LABEL_STYLE
+	       title.size=10 title="Vs [V]"
+        type=x loc=upper label=off
+        type=y loc=lower GRID_STYLE LABEL_STYLE
+               title.size=10 title="Cg [F/cm^2]" title.spaceFactor=9
+        type=y loc=upper label=off
+   text type=0 x=-30 y=4.4e-6 txt="Vs>0 Band bend downard"
+   view|34
+
+.plot
+   attr xlin ylin zlin
+   data type=prev
+   xyzb ylb=0 yub=5e-6
+   slct ____ xno=1 yno=11,14
+        type=1 nCopy=0 legend.txt="LF" symbol.size=3 symbol.color=blue hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=cyan
+        type=6 nCopy=0 legend.txt="HF" symbol.size=3 symbol.color=red hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=magenta
+   axis	type=x loc=lower GRID_STYLE LABEL_STYLE
+	       title.size=10 title="Vs [V]"
+        type=x loc=upper label=off
+        type=y loc=lower GRID_STYLE LABEL_STYLE
+               title.size=10 title="Cg [F/cm^2]" title.spaceFactor=9
+        type=y loc=upper label=off
+   text type=0 x=-30 y=4.4e-6 txt="Vs>0 Band bend downard"
+   view|44
+
+
+%grEnd

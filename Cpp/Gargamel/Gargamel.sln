@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Anyfind", "..\Anyfind\Anyfind.vcxproj", "{A6B49AAC-1C91-4A00-A0B5-28B386B92406}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FF223852-9D68-4319-BC44-DCCF8882B82E} = {FF223852-9D68-4319-BC44-DCCF8882B82E}
+	EndProjectSection
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "DialogAggregate", "..\DialogAggregate\DialogAggregate.vcxproj", "{38F020A0-8A71-44B7-9AE2-E6F7B218561C}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "Gargamel", "Gargamel.vcxproj", "{C8FC1CB3-7A66-48D0-85EC-CACFEFBAA08E}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "GargamelPattern", "..\GargamelPattern\GargamelPattern.vcxproj", "{00550F06-C30C-4BD2-A42E-A64EC40C83F1}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "GargamelPatternForMatrix", "..\GargamelPatternForMatrix\GargamelPatternForMatrix.vcxproj", "{4D23CFAF-9071-4905-9CAA-7469BEBB49E0}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "GargamelSplit", "..\GargamelSplit\GargamelSplit.vcxproj", "{0F511F1B-77A8-4964-92C0-493FCCC37EA5}"
+EndProject
+Project("{059D6162-CD51-11D0-AE1F-00A0C90FFFC3}") = "myC", "..\myC\myC.vcxproj", "{FF223852-9D68-4319-BC44-DCCF8882B82E}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

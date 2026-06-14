@@ -1,0 +1,341 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EttoolPlus.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\EttoolPlus.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 201, 75
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EttoolPlus 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,27,20,20
+    LTEXT           "EttoolPlus (Twetie)\nCreated by Kim,JongTae\nAdded by shik96@samsung.co.kr",
+                    IDC_STATIC,40,15,120,26,SS_NOPREFIX
+    LTEXT           "CopyLeft (C) 2001.0203-0317,0503-0511",IDC_STATIC,40,50,
+                    123,8
+    DEFPUSHBUTTON   "확인",IDOK,167,29,27,18,WS_GROUP
+END
+
+IDD_ETTOOLPLUS_DIALOG DIALOGEX 0, 0, 325, 270
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "EttoolPlus (Twetie)"
+FONT 10, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Dismiss",IDCANCEL,277,247,41,16
+    LTEXT           "SPEC Script (Dstart .. Dend)",IDC_STATIC,7,13,113,8
+    EDITTEXT        ID_SCRIPTFILE,7,25,237,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",ID_SCRIPTFILE_BROWSER,229,7,14,15
+    LTEXT           "Input Folder (where HP4062 out files are)",IDC_STATIC,7,
+                    47,136,8
+    EDITTEXT        ID_INPUTFOLDER,7,60,237,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",ID_INPUTFOLDER_BROWSER,229,42,14,15
+    LTEXT           "Output Folder",IDC_STATIC,7,83,57,8
+    EDITTEXT        ID_OUTPUTFOLDER,7,96,237,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",ID_OUTPUTFOLDER_BROWSER,229,78,14,15
+    COMBOBOX        ID_AGGREGATION,247,26,71,112,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Group",IDC_STATIC,248,14,20,8
+    GROUPBOX        "File Format",IDC_STATIC,7,114,237,74,BS_LEFT
+    CONTROL         "lot",ID_CB_LOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,
+                    133,23,8
+    CONTROL         "lot2",ID_CB_LOT2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    46,133,23,8
+    CONTROL         "plt",ID_CB_PLT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    107,149,23,8
+    CONTROL         "dat",ID_CB_DAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,
+                    149,23,8
+    CONTROL         "rpt",ID_CB_RPT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,
+                    166,23,8
+    CONTROL         "map",ID_CB_MAP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,
+                    166,27,8
+    CONTROL         "dat2",ID_CB_DAT2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    46,149,25,8
+    CONTROL         "log",ID_CB_LOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    107,166,23,8
+    CONTROL         "map2",ID_CB_MAP2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    46,166,30,8
+    PUSHBUTTON      "Execute",ID_EXECUTE,139,247,41,16
+    PUSHBUTTON      "Edit",ID_SCRIPTFILE_EDIT,205,7,22,15
+    PUSHBUTTON      "Ambiences",ID_ENVIRONMENT,7,247,41,16
+    EDITTEXT        ID_INPUTFOLDER_FILEFILTER,248,61,49,14,ES_AUTOHSCROLL
+    LTEXT           "UNIX-Style File Filter",IDC_STATIC,248,48,71,8
+    LISTBOX         ID_SPLIT,247,97,71,92,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Split ...",ID_SPLIT_WIZARD,248,79,34,15,BS_LEFT
+    COMBOBOX        ID_NUMBER_FORMAT,194,131,35,79,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Number",IDC_STATIC,164,134,27,8
+    CONTROL         "sum",ID_CB_SUM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,
+                    149,25,8
+    EDITTEXT        ID_STDOUT,6,192,313,51,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL,WS_EX_DLGMODALFRAME
+    CONTROL         "lot3",ID_CB_LOT3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    78,133,23,8
+    CONTROL         "lot4",ID_CB_LOT4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    107,133,23,8
+    CONTROL         "cvs",ID_CB_CVS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    135,166,23,8
+END
+
+IDD_AMBIENCES DIALOGEX 0, 0, 303, 125
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "EttoolPlus - Ambiences"
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Apply",ID_APPLY,114,104,36,14
+    EDITTEXT        ID_ETTOOL_PATH,7,19,275,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",ID_ETTOOL_PATH_BROWSER,284,19,12,15
+    EDITTEXT        ID_M4_PATH,7,51,275,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",ID_M4_PATH_BROWSER,284,51,12,15
+    PUSHBUTTON      "Dismiss",IDCANCEL,152,104,36,14
+    LTEXT           "Ettool.exe",IDC_STATIC,7,7,75,8
+    LTEXT           "M4.exe",IDC_STATIC,7,40,108,8
+    EDITTEXT        ID_EDITOR_PATH,7,82,275,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",ID_EDITOR_PATH_BROWSER,284,82,12,15
+    LTEXT           "Editor/Viewer",IDC_STATIC,7,70,108,8
+END
+
+IDD_GARGAMEL_SPLIT DIALOG DISCARDABLE  0, 0, 285, 255
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "File List Box (Gargamel Split Dialog)"
+FONT 10, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",ID_ANOTHEROK,218,238,25,12
+    PUSHBUTTON      "Cancel",ID_ANOTHERCANCEL,245,238,35,12
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYFRAME,5,234,275,1
+    LTEXT           "This is the very dialog Gargamel have that is linked by Active-X.",
+                    IDC_STATIC,5,238,211,12,SS_CENTERIMAGE
+    CONTROL         "",ID_GARGAMELSPLITCTRL,
+                    "{3731EFA6-F83D-11D4-9E85-0000E8C3064A}",WS_TABSTOP,5,5,
+                    275,226
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "EttoolPlus MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "EttoolPlus\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "EttoolPlus.EXE\0"
+            VALUE "ProductName", "EttoolPlus 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_ETTOOLPLUS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 318
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_AMBIENCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_GARGAMEL_SPLIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 280
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 250
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ETTOOLPLUS_DIALOG DLGINIT
+BEGIN
+    ID_NUMBER_FORMAT, 0x403, 4, 0
+0x2e25, 0x007a, 
+    ID_NUMBER_FORMAT, 0x403, 5, 0
+0x2e25, 0x7a32, "\000" 
+    ID_NUMBER_FORMAT, 0x403, 4, 0
+0x2e25, 0x0065, 
+    ID_NUMBER_FORMAT, 0x403, 5, 0
+0x2e25, 0x6532, "\000" 
+    ID_NUMBER_FORMAT, 0x403, 4, 0
+0x2e25, 0x0066, 
+    ID_NUMBER_FORMAT, 0x403, 5, 0
+0x2e25, 0x6632, "\000" 
+    0
+END
+
+IDD_GARGAMEL_SPLIT DLGINIT
+BEGIN
+    ID_GARGAMELSPLITCTRL, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x332e, 0x0000, 0x27b0, 0x0000, 0x0000, 
+0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "EttoolPlus 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\EttoolPlus.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

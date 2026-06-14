@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GargamelSplit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\yskim\LOCALS~1\Temp\RSPB8B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/GargamelSplit.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\HOME\CD2-Code\CnCPP\GargamelSplit\GargamelSplitDialog.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\yskim\LOCALS~1\Temp\RSPB8B.tmp" 
+Creating temporary file "C:\DOCUME~1\yskim\LOCALS~1\Temp\RSPB8C.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/GargamelSplit.pdb" /machine:I386 /def:".\GargamelSplit.def" /out:"Release/GargamelSplit.ocx" /implib:"Release/GargamelSplit.lib" 
+".\Release\FileDialogEx.obj"
+".\Release\GargamelSplit.obj"
+".\Release\GargamelSplitCtl.obj"
+".\Release\GargamelSplitDialog.obj"
+".\Release\GargamelSplitPpg.obj"
+".\Release\guids2.obj"
+".\Release\ListBoxEx.obj"
+".\Release\StdAfx.obj"
+".\Release\Token.obj"
+".\Release\WriteFileListToSynchronize.obj"
+".\Release\GargamelSplit.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\yskim\LOCALS~1\Temp\RSPB8C.tmp"
+Creating temporary file "C:\DOCUME~1\yskim\LOCALS~1\Temp\RSPB8D.bat" with contents
+[
+@echo off
+regsvr32 /s /c ".\Release\GargamelSplit.ocx"
+echo regsvr32 exec. time > ".\Release\regsvr32.trg"
+]
+Creating command line "C:\DOCUME~1\yskim\LOCALS~1\Temp\RSPB8D.bat"
+Compiling...
+GargamelSplitDialog.cpp
+Linking...
+   Creating library Release/GargamelSplit.lib and object Release/GargamelSplit.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+GargamelSplit.ocx - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

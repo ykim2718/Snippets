@@ -1,0 +1,298 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""GrapherPalleteDialog.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "»ï¼ºÀüÀÚ\0"
+            VALUE "FileDescription", "GrapherPalleteDialog ActiveX Control Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GrapherPalleteDialog\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GrapherPalleteDialog.OCX\0"
+            VALUE "ProductName", "GrapherPalleteDialog ActiveX Control Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_GRAPHERPALLETEDIALOG BITMAP  DISCARDABLE     "GrapherPalleteDialogCtl.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_GRAPHERPALLETEDIALOG DIALOG DISCARDABLE  0, 0, 250, 62
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TODO: Place controls to manipulate properties of GrapherPalleteDialog Control on this dialog.",
+                    IDC_STATIC,7,25,229,16
+END
+
+IDD_GR_PALLETE DIALOGEX 0, 0, 215, 165
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " Grapher Pallete Dialog (Color Table)"
+FONT 10, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Dismiss",IDOK,90,148,34,12
+    CONTROL         "",ID_GRCOLORTABLE_P1,"Static",SS_BLACKFRAME,5,27,12,11
+    EDITTEXT        ID_GRCOLORTABLE_R1,19,27,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "R",IDC_STATIC,19,5,11,8
+    LTEXT           "G",IDC_STATIC,35,5,11,8
+    LTEXT           "B",IDC_STATIC,51,5,11,8
+    EDITTEXT        ID_GRCOLORTABLE_G1,35,27,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_B1,51,27,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_V1,67,27,42,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Value",IDC_STATIC,67,5,22,8
+    LTEXT           "Name",IDC_STATIC,110,5,22,8
+    EDITTEXT        ID_GRCOLORTABLE_N1,110,27,80,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Slider1",ID_GRCOLORTABLE_SLIDER,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,194,9,16,
+                    138
+    CONTROL         "",ID_GRCOLORTABLE_P2,"Static",SS_BLACKFRAME,5,40,12,11
+    EDITTEXT        ID_GRCOLORTABLE_R2,19,40,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_G2,35,40,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_B2,51,40,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_V2,67,40,42,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_N2,110,40,80,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",ID_GRCOLORTABLE_P3,"Static",SS_BLACKFRAME,5,53,12,11
+    EDITTEXT        ID_GRCOLORTABLE_R3,19,53,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_G3,35,53,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_B3,51,53,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_V3,67,53,42,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_N3,110,53,80,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",ID_GRCOLORTABLE_P4,"Static",SS_BLACKFRAME,5,66,12,11
+    EDITTEXT        ID_GRCOLORTABLE_R4,19,66,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_G4,35,66,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_B4,51,66,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_V4,67,66,42,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_N4,110,66,80,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",ID_GRCOLORTABLE_P5,"Static",SS_BLACKFRAME,5,79,12,11
+    EDITTEXT        ID_GRCOLORTABLE_R5,19,79,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_G5,35,79,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_B5,51,79,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_V5,67,79,42,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_N5,110,79,80,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",ID_GRCOLORTABLE_P6,"Static",SS_BLACKFRAME,5,92,12,11
+    EDITTEXT        ID_GRCOLORTABLE_R6,19,92,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_G6,35,92,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_B6,51,92,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_V6,67,92,42,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_N6,110,92,80,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",ID_GRCOLORTABLE_P7,"Static",SS_BLACKFRAME,5,105,12,11
+    EDITTEXT        ID_GRCOLORTABLE_R7,19,105,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_G7,35,105,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_B7,51,105,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_V7,67,105,42,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_N7,110,105,80,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",ID_GRCOLORTABLE_P8,"Static",SS_BLACKFRAME,5,118,12,11
+    EDITTEXT        ID_GRCOLORTABLE_R8,19,118,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_G8,35,118,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_B8,51,118,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_V8,67,118,42,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_N8,110,118,80,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",ID_GRCOLORTABLE_P9,"Static",SS_BLACKFRAME,5,131,12,11
+    EDITTEXT        ID_GRCOLORTABLE_R9,19,131,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_G9,35,131,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_B9,51,131,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_V9,67,131,42,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_N9,110,131,80,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "",ID_GRCOLORTABLE_P0,"Static",SS_BLACKFRAME,5,14,12,11
+    EDITTEXT        ID_GRCOLORTABLE_R0,19,14,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_G0,35,14,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_B0,51,14,15,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_V0,67,14,42,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        ID_GRCOLORTABLE_N0,110,14,80,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROPPAGE_GRAPHERPALLETEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_GR_PALLETE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 210
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GRAPHERPALLETEDIALOG "GrapherPalleteDialog Control"
+    IDS_GRAPHERPALLETEDIALOG_PPG "GrapherPalleteDialog Property Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GRAPHERPALLETEDIALOG_PPG_CAPTION "General"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "GrapherPalleteDialog.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

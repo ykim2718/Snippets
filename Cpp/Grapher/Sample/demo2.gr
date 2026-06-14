@@ -1,0 +1,71 @@
+%grBeginning !2K
+
+_defn "view|12" "view x1=0.30 x2=0.80 y1=0.55 y2=0.95"
+_defn "view|22" "view x1=0.30 x2=0.80 y1=0.05 y2=0.45"
+
+_defn "LOGA"     "label.format="%1.0f" lb.p="z=log10(z)""
+
+.glob
+      gtxt txt="<DEMO-2>" t.size=20 t.height=30 t.width=10 t.align=LL t.color=aquamarine
+      gout portrait ! xyp psf
+.plot
+     attr xnormal ylin ! bar
+     slct ____ xno=1,2,3 yno=*
+          xlb=0.01 xub=0.99 autoLegend=on
+     axis
+          type=x axle.color=navy axle.width=10
+                 label.org=t label.format="%1.2f" label.size=8 label.align=32 label.angle=90
+                 title="DOWN-AXIS"  title.spaceFactor=5 title.size=5 title.color=red
+          type=x loc=u axle.color=navy axle.width=10
+                 gridmajor=on gridminor=on gridmajor.color=cyan3 gridminor.color=cyan1
+                 label.format="%1.0g" label.size=10
+                 title="UP-AXIS" title.spaceFactor=5 title.size=5 title.color=red
+          type=y axle.color=navy axle.width=10 
+                 label.format="%1.0f" label.size=10 label.align=32
+                 title="LEFT-AXIS" title.spaceFactor=5 title.color=red
+          type=y loc=u axle.color=navy axle.width=10
+                 gridmajor=on gridmajor.color=cyan2
+                 tickmajor.loc=i
+                 label=off label.align=32                 
+                 title="RIGHT-AXIS" title.spaceFactor=5 title.size=5 title.color=red
+      view|12
+.plot
+     attr ynormal xlin
+     slct ____ xno=* yno=1,2,3
+          ylb=0.01 yub=0.99 autoLegend=on
+     ufun type=PolynomialFit set=0 option=1
+     ufun type=PolynomialFit set=1 option=1
+!    ufun type=MatrixPrint name=demo2.gr.dat
+     axis
+          type=x axle.color=navy
+                 title="DOWN-AXIS" title.spaceFactor=5 title.size=5 title.color=red
+          type=x loc=upper axle.color=navy gridmajor=on gridmajor.color=cyan2
+                 label.format="%1.1f" label.size=5
+                 title="UP-AXIS" title.spaceFactor=5 title.size=5 title.color=red
+          type=y axle.color=navy
+                 gridmajor=on gridminor=on gridmajor.color=cyan3 gridminor.color=cyan1
+                 label.format="%1.2f" label.size=10 label.align=32                 
+                 title="LEFT-AXIS" title.spaceFactor=7 title.color=red
+          type=y loc=upper tickmajor.loc=inside axle.color=navy
+                 label.org=tick label.align=32
+                 title="RIGHT-AXIS" title.spaceFactor=4 title.size=5 title.color=red
+      view|22
+%grEnd
+
+!    arbitrary number
+     13  33   48
+     22  33   48
+     22  35   48
+     22  40   49
+     23  43   50
+     27  38   50
+     27  45   50
+     31  48   50
+     36  43   50
+     26  35   51
+     19  36   51
+     17  34   51
+     12  36   52
+     10  37   63
+     
+

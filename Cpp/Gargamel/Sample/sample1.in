@@ -1,0 +1,17 @@
+!!Gargamel,2003.0209
+!!settings
+qDumpFileName= G:\HOME\CD2-Code\CnCPP\Gargamel\Sample\sample1.out
+nSearchType= Absolutely
+nColumnarMatrixType= No
+bNumericAlias= False
+nPostProcessType= None
+!!strings
+"aaa" 	A 	1 1 %s z 0 0
+"bbb" 	B 	1 1 %s z 0 0
+"ccc" 	C 	1 1 %s z 0 0
+!!files
+<<$01>
+G:\HOME\CD2-Code\CnCPP\Gargamel\Sample\sample1-1.txt
+G:\HOME\CD2-Code\CnCPP\Gargamel\Sample\sample1-2.txt
+G:\HOME\CD2-Code\CnCPP\Gargamel\Sample\sample1-3.txt
+!!end

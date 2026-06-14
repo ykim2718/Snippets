@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by GargamelSplit.rc
+//
+#define HID_SPLIT_CLEAR                 0x80c90421    // IDD_GARGAMEL_SPLIT

@@ -1,0 +1,18 @@
+!!Gargamel,2001.0430
+!!settings
+qDumpFileName= E:\±è¿ë½Ä\CD1-First\Computer\CnCpp\Gargamel\Sample\sample4.out
+nSearchType= Absolutely
+nColumnarMatrixType= No
+bNumericAlias= False
+nPostProcessType= Average
+!!strings
+"first" 	first 	1 1 %.1z z=z 0 0
+"second" 	second 	1 1 %.1z z=z 0 0
+"third" 	third 	1 1 %.1z z=z 0 0
+!!files
+< sample4-hp4062-1&2.txt
+e:\±è¿ë½Ä\cd1-first\Computer\CnCPP\Gargamel\Sample\sample4-hp4062-1.txt
+e:\±è¿ë½Ä\cd1-first\Computer\CnCPP\Gargamel\Sample\sample4-hp4062-2.txt
+< sample4-hp4062-3.txt
+e:\±è¿ë½Ä\cd1-first\Computer\CnCPP\Gargamel\Sample\sample4-hp4062-3.txt
+!!end

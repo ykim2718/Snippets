@@ -1,0 +1,77 @@
+%grBeginning !2K.0913
+
+.glob
+     gtxt txt="<DEMO-6>" t.size=20
+     gout portrait
+.plot
+     slct ____ xno=1 yno=2 zno=3
+          etc.ColorMin=yellow etc.ColorMax=red etc.ColorTotal=10
+          etc.Format="%1.1f"
+          type=0 legend.symbolsize=19 legend.size=9
+                 solid symbol.color=pink line.color=black !color=cyan
+     attr flat3d zlog
+     axis type=x axle=off title="x-axis"
+          type=y axle=off title="y-axis"
+          type=x loc=upper axle=off label=off
+          type=y loc=upper axle=off label=off
+     text type=1 txt="mapping"
+%grEnd
+!    x  y   z
+     4  1  1
+     5  1  1
+     6  1  1
+     3  2  1
+     4  2  2
+     5  2  8
+     6  2  2
+     7  2  1
+     2  3  1
+     3  3  #
+     4  3  3
+     5  3  3
+     6  3  3
+     7  3  2
+     8  3  1
+     1  4  1
+     2  4  2
+     3  4  3
+     4  4  4
+     5  4  4
+     6  4  4
+     7  4  3
+     8  4  2
+     9  4  1
+     1  5  1
+     2  5  2
+     3  5  3
+     4  5  4
+     5  5  5
+     6  5  4
+     7  5  3
+     8  5  2
+     9  5  1
+     1  6  1
+     2  6  2
+     3  6  3
+     4  6  4
+     5  6  4
+     6  6  4
+     7  6  3
+     8  6  2
+     9  6  1
+     2  7  1
+     3  7  2
+     4  7  3
+     5  7  3
+     6  7  3
+     7  7  2
+     8  7  1
+     3  8  1
+     4  8  2
+     5  8  2
+     6  8  2
+     7  8  1
+     4  9  1
+     5  9  1
+     6  9  1
+
