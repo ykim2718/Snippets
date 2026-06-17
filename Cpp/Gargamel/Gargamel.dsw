@@ -1,0 +1,106 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Anyfind"="..\Anyfind\Anyfind.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name myC
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DialogAggregate"="..\DialogAggregate\DialogAggregate.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Gargamel"=".\Gargamel.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "GargamelPattern"="..\GargamelPattern\GargamelPattern.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "GargamelPatternForMatrix"="..\GargamelPatternForMatrix\GargamelPatternForMatrix.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "GargamelSplit"="..\GargamelSplit\GargamelSplit.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "myC"="..\myC\myC.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+    {3731EFA6-F83D-11D4-9E85-0000E8C3064A}
+    {941C461F-8BA3-406A-B09B-98D4C39FC524}
+}}}
+
+###############################################################################
+

@@ -1,0 +1,24 @@
+!Y.Kim,20030211
+%grBeginning !2001.0514
+.glob
+     gtxt txt="<DEMO-5>" t.size=36
+	 gout portrait
+.plot
+     attr genetic xseries
+     slct ____ xno=0 yno=* autoLegend=on
+     axis type=x title="SERIES scaled x-axis" title.color=blue label.color=blue 
+                 label.align=CC
+          type=x loc=upper title="<another x-axis>"
+          type=y title="<y-axis>"
+                 tickmajor.loc=cross tickminor.loc=cross
+          type=y loc=upper title="<another y-axis>"
+     ufun type=MatrixPrint argument=demo5.gr.dat
+%grEnd
+!    alias  y
+     x01    4.10  5.00  #     4.86  4.40
+     x02    4.20  6.40  5.74  5.96  5.50
+     x03    4.30  7.60  6.65  7.00  6.39
+     x04    #     #     7.53  #     #
+     x05    4.50  9.70  #     9.00  7.08
+     x06    4.60  8.99  #     8.30  6.86
+     x07    4.70  7.83  6.80  6.90  6.46

@@ -1,0 +1,73 @@
+// GargamelSplit.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (GargamelSplit.tlb) that will become a resource in
+// GargamelSplit.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(3731EFA3-F83D-11D4-9E85-0000E8C3064A), version(1.0),
+  helpfile("GargamelSplit.hlp"),
+  helpstring("GargamelSplit ActiveX Control module"),
+  control ]
+library GARGAMELSPLITLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CGargamelSplitCtrl
+
+	[ uuid(3731EFA4-F83D-11D4-9E85-0000E8C3064A),
+	  helpstring("Dispatch interface for GargamelSplit Control"), hidden ]
+	dispinterface _DGargamelSplit
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CGargamelSplitCtrl)
+			[id(1)] BSTR SplitScript;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CGargamelSplitCtrl)
+			[id(2)] void NotifyFlagrantDialogOk();
+			[id(3)] void NotifyFlagrantDialogCancel();
+			[id(4)] void SetDirectory(BSTR qPath);
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CGargamelSplitCtrl
+
+	[ uuid(3731EFA5-F83D-11D4-9E85-0000E8C3064A),
+	  helpstring("Event interface for GargamelSplit Control") ]
+	dispinterface _DGargamelSplitEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CGargamelSplitCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CGargamelSplitCtrl
+
+	[ uuid(3731EFA6-F83D-11D4-9E85-0000E8C3064A),
+	  helpstring("GargamelSplit Control"), control ]
+	coclass GargamelSplit
+	{
+		[default] dispinterface _DGargamelSplit;
+		[default, source] dispinterface _DGargamelSplitEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

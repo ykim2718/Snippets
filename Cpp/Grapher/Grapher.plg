@@ -1,0 +1,127 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Grapher - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\YKim\LOCALS~1\Temp\RSP6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MSWINDOW_" /D "_MSC_" /Fp"Release/Grapher.pch" /YX"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Home\DVD-Code\CnCPP\Grapher\AnyfindClient.c"
+"H:\Home\DVD-Code\CnCPP\Grapher\ChildFrm.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\Grapher.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrapherDoc.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrapherView.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrAttrPage.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrAxisPage.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrDataPage.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrDefaultSymbolDialog.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrGlobPage.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrHistoryDialog.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrLogDialog.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\grpathenvironmentdialog.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrPlotMixerDialog.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrPlotPage.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrPlotSymbolBtn.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrPlotWizard.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrPropertySheet.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrSlctPage.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrTextPage.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrUfunPage.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrViewPage.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\GrXyzbPage.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\MainFrm.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\SmallFontAttrDialog.cpp"
+"H:\Home\DVD-Code\CnCPP\Grapher\XYZListBox.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\YKim\LOCALS~1\Temp\RSP6.tmp" 
+Creating temporary file "C:\DOCUME~1\YKim\LOCALS~1\Temp\RSP7.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Grapher.pdb" /machine:I386 /out:"Release/Grapher.exe" 
+".\Release\AnyfindClient.obj"
+".\Release\BCMenu.obj"
+".\Release\ChildFrm.obj"
+".\Release\colorbtn.obj"
+".\Release\CreateProcessWithRedirectedIO.obj"
+".\Release\CreateProcessWithRedirectedIO2.obj"
+".\Release\DialogAggregate_i.obj"
+".\Release\FileDialogEx.obj"
+".\Release\GetFolder.obj"
+".\Release\Grapher.obj"
+".\Release\GrapherDoc.obj"
+".\Release\grapherpalletedialog.obj"
+".\Release\grapherrenovatordialog.obj"
+".\Release\GrapherView.obj"
+".\Release\GrAttrPage.obj"
+".\Release\GrAxisPage.obj"
+".\Release\GrDataPage.obj"
+".\Release\GrDefaultSymbolDialog.obj"
+".\Release\GrGlobPage.obj"
+".\Release\GrHistoryDialog.obj"
+".\Release\GrLogDialog.obj"
+".\Release\grpathenvironmentdialog.obj"
+".\Release\GrPlotMixerDialog.obj"
+".\Release\GrPlotPage.obj"
+".\Release\GrPlotSymbolBtn.obj"
+".\Release\GrPlotWizard.obj"
+".\Release\GrPropertySheet.obj"
+".\Release\GrSlctPage.obj"
+".\Release\GrTextPage.obj"
+".\Release\GrUfunPage.obj"
+".\Release\GrViewPage.obj"
+".\Release\GrXyzbPage.obj"
+".\Release\ListBoxEx.obj"
+".\Release\ListCtrlEx2.obj"
+".\Release\MainFrm.obj"
+".\Release\MYorkPrint.obj"
+".\Release\Options.obj"
+".\Release\OptionsTreeCtrl.obj"
+".\Release\SmallFontAttrDialog.obj"
+".\Release\StdAfx.obj"
+".\Release\ToggleBtn.obj"
+".\Release\Token.obj"
+".\Release\XYZListBox.obj"
+".\Release\Zoomview.obj"
+".\Debug\Grapher.res"
+"\Home\DVD-Code\CnCPP\myC\Release\myC.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\YKim\LOCALS~1\Temp\RSP7.tmp"
+<h3>Output Window</h3>
+Compiling...
+AnyfindClient.c
+ChildFrm.cpp
+Grapher.cpp
+GrapherDoc.cpp
+GrapherView.cpp
+GrAttrPage.cpp
+GrAxisPage.cpp
+GrDataPage.cpp
+GrDefaultSymbolDialog.cpp
+GrGlobPage.cpp
+GrHistoryDialog.cpp
+GrLogDialog.cpp
+grpathenvironmentdialog.cpp
+GrPlotMixerDialog.cpp
+GrPlotPage.cpp
+GrPlotSymbolBtn.cpp
+GrPlotWizard.cpp
+GrPropertySheet.cpp
+GrSlctPage.cpp
+GrTextPage.cpp
+GrUfunPage.cpp
+GrViewPage.cpp
+GrXyzbPage.cpp
+MainFrm.cpp
+SmallFontAttrDialog.cpp
+XYZListBox.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Grapher.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

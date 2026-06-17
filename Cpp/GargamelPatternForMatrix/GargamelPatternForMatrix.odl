@@ -1,0 +1,70 @@
+// GargamelPatternForMatrix.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (GargamelPatternForMatrix.tlb) that will become a resource in
+// GargamelPatternForMatrix.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(0A86400E-9E0A-4937-9930-80788D5DC74C), version(1.0),
+  helpfile("GargamelPatternForMatrix.hlp"),
+  helpstring("GargamelPatternForMatrix ActiveX Control module"),
+  control ]
+library GARGAMELPATTERNFORMATRIXLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CGargamelPatternForMatrixCtrl
+
+	[ uuid(2025CFCD-058A-4B3E-AB84-AF1D8453EBA6),
+	  helpstring("Dispatch interface for GargamelPatternForMatrix Control"), hidden ]
+	dispinterface _DGargamelPatternForMatrix
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CGargamelPatternForMatrixCtrl)
+			[id(1)] BSTR PatternForMatrixScript;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CGargamelPatternForMatrixCtrl)
+			//}}AFX_ODL_METHOD
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CGargamelPatternForMatrixCtrl
+
+	[ uuid(90158D30-C775-404F-992E-402F0F925683),
+	  helpstring("Event interface for GargamelPatternForMatrix Control") ]
+	dispinterface _DGargamelPatternForMatrixEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CGargamelPatternForMatrixCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CGargamelPatternForMatrixCtrl
+
+	[ uuid(941C461F-8BA3-406A-B09B-98D4C39FC524),
+	  helpstring("GargamelPatternForMatrix Control"), control ]
+	coclass GargamelPatternForMatrix
+	{
+		[default] dispinterface _DGargamelPatternForMatrix;
+		[default, source] dispinterface _DGargamelPatternForMatrixEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

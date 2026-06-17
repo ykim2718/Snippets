@@ -1,0 +1,68 @@
+// GrapherRenovatorDialog.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (GrapherRenovatorDialog.tlb) that will become a resource in
+// GrapherRenovatorDialog.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(9FF3AC59-4612-11D5-9E85-0000E8C3064A), version(1.0),
+  helpfile("GrapherRenovatorDialog.hlp"),
+  helpstring("GrapherRenovatorDialog ActiveX Control module"),
+  control ]
+library GRAPHERRENOVATORDIALOGLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CGrapherRenovatorDialogCtrl
+
+	[ uuid(9FF3AC5A-4612-11D5-9E85-0000E8C3064A),
+	  helpstring("Dispatch interface for GrapherRenovatorDialog Control"), hidden ]
+	dispinterface _DGrapherRenovatorDialog
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CGrapherRenovatorDialogCtrl)
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CGrapherRenovatorDialogCtrl)
+			[id(1)] long DoModal();
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CGrapherRenovatorDialogCtrl
+
+	[ uuid(9FF3AC5B-4612-11D5-9E85-0000E8C3064A),
+	  helpstring("Event interface for GrapherRenovatorDialog Control") ]
+	dispinterface _DGrapherRenovatorDialogEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CGrapherRenovatorDialogCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CGrapherRenovatorDialogCtrl
+
+	[ uuid(9FF3AC45-4612-11D5-9E85-0000E8C3064A),
+	  helpstring("GrapherRenovatorDialog Control"), control ]
+	coclass GrapherRenovatorDialog
+	{
+		[default] dispinterface _DGrapherRenovatorDialog;
+		[default, source] dispinterface _DGrapherRenovatorDialogEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

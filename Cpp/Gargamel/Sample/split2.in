@@ -1,0 +1,15 @@
+!!Gargamel,2K.0808(c)shik
+!!settings
+sDumpFileName= noName.out
+nSearchType= Absolutely
+nColumnarMatrixType= No
+bNumericAlias= False
+nPostProcessType= None
+!!strings
+
+!!files
+< first
+d:\HOME\Computer\CnCPP\Gargamel\Sample\sample2-1.txt
+< second 2
+d:\HOME\Computer\CnCPP\Gargamel\Sample\sample2-2.txt
+!!end

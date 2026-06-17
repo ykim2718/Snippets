@@ -1,0 +1,17 @@
+# Created by shik96@samsung.co.kr .... 2001.02/L18PA 
+# Modified by ... 
+# 
+include(i:\L18Process\TrendMonitoring(Fab&ET&Yield)\Ettool\ScriptSPEC\L18_TOS1_UL_DR_M6.spec) 
+# 
+define(WAFER_SPLIT,`` 
+g.split=All g.wf=* 
+'') 
+define(myPrint, `` 
+group g.name=$1 g.data=$1 + $2 print p.group=$1 p.mode=$3 p.fmt=%.z 
+'') 
+Pstart 
+   open o.name=L18 +
+        o.workdir=j:\L18ETTOSR1@UL\S4LD005\kt014\kt014_02 o.wf=*[0-9][0-9] +
+        o.outdir=j:\L18ETTOSR1@UL\S4LD005\kt014 
+   myPrint(L18,WAFER_SPLIT,lot5) 
+Pend

@@ -1,0 +1,36 @@
+%grBeginning
+_defn "LOGA"     "label.format="%1.0f" lbpgm="z=log10(z)""
+_defn "XLABEL"   "label.org=tick label.align=22 label.size=12"
+_defn "YLABEL"   "label.org=tick label.align=22 label.size=12 label.angle=90"
+
+! _defn "PATH"     "d:\±ËøÅEƒ\Computer\CnCpp\Gargamel\Sample"
+  _defn "PATH"     "g:\home\cd2-code\CnCpp\Gargamel\Sample"
+.glob
+     gtxt txt="<DEMO-4>" t.width=10 t.height=20
+     gout portrait ! psf xyp
+     exec file="PATH\Sample2.in|PATH\split2.in|-nCMT=1 -bNA=1"
+.plot
+     data type=script file=00
+     slct ____ xno=1 yno=1-3:4-6 autoLegend=on
+          type=68 legend.symbolsize=14 symbol.size=14 solid legend.txt="#01" line=off color=blue
+          type=69 legend.symbolsize=14 symbol.size=14 solid legend.txt="#02" line=off color=red
+       !  type=70 legend.symbolsize=14 symbol.size=14 solid legend.txt="#03" line=off
+     ufun type=1 option=1 set=0 rline.color=cyan rline.width=20
+      !    type=1 option=1 set=1
+      !           rline.color=orchid rline.width=8 rline.dash_list=(2,2)
+      !    type=1 option=1 set=2
+      !           rline.color=gold rline.width=8 rline.dash_list=(2,2)
+     axis type=x title="<x-axis-name>" title.spaceFactor=3.5      
+                 XLABEL label.format="%1.0f"
+                 axle.color=blue
+                 gridmajor=on gridmajor.color=green
+          type=x loc=upper
+                 axle.color=blue
+          type=y title="<y-axis-name>"
+                 YLABEL label.format="%1.0f"
+                 axle.color=blue
+                 gridmajor=on gridmajor.color=green
+          type=y loc=upper
+                 axle.color=blue
+     text type=1 txt="plot-name"
+%grEnd

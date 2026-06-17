@@ -1,0 +1,236 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""GargamelPatternForMatrix.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "iwai-lab\0"
+            VALUE "FileDescription", "GargamelPatternForMatrix ActiveX Control Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GargamelPatternForMatrix\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GargamelPatternForMatrix.OCX\0"
+            VALUE "ProductName", "GargamelPatternForMatrix ActiveX Control Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ABOUTDLL            ICON    DISCARDABLE     "GargamelPatternForMatrix.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_GARGAMELPATTERNFORMATRIX BITMAP  DISCARDABLE     "GargamelPatternForMatrixCtl.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX_GARGAMELPATTERNFORMATRIX DIALOG DISCARDABLE  34, 22, 260, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About GargamelPatternForMatrix Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ABOUTDLL,IDC_STATIC,10,10,20,20
+    LTEXT           "GargamelPatternForMatrix Control, Version 1.0",
+                    IDC_STATIC,40,10,170,8
+    LTEXT           "Copyright (C) 2003, iwai-lab",IDC_STATIC,40,25,170,8
+    DEFPUSHBUTTON   "OK",IDOK,221,7,32,14,WS_GROUP
+END
+
+IDD_PROPPAGE_GARGAMELPATTERNFORMATRIX DIALOG DISCARDABLE  0, 0, 200, 75
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "TODO: Place controls to manipulate properties of Gargamelsplit Control on this dialog.",
+                    IDC_STATIC,17,24,161,20
+END
+
+IDD_GARGAMEL_PATTERNFORMATRIX DIALOGEX 0, 0, 290, 220
+STYLE WS_CHILD | WS_VISIBLE
+FONT 10, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Check",ID_PATTRN2_CHECK,186,206,28,14,WS_DISABLED
+    LTEXT           "Beginning Text",-1,0,1,50,9,SS_CENTERIMAGE
+    EDITTEXT        ID_BEGINNING_TEXT,62,0,228,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_ENDING_TEXT,62,14,228,12,ES_AUTOHSCROLL
+    LTEXT           "1st Column (Ref.)",ID_1ST_COLUMN_TAG,0,44,58,8,
+                    SS_CENTERIMAGE
+    EDITTEXT        ID_1ST_COLUMN,62,42,15,12,ES_AUTOHSCROLL
+    LTEXT           "Format",-1,0,72,27,9,SS_CENTERIMAGE
+    COMBOBOX        ID_FORMAT,62,70,34,71,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP,0,HID_FORMAT
+    LTEXT           "Equation",-1,0,86,30,9,SS_CENTERIMAGE
+    EDITTEXT        ID_EQUATION,62,84,172,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Script Read&&Replace",ID_PATTRN2_SCRIPT_READ_ATTACH,217,
+                    206,73,14,WS_DISABLED
+    LTEXT           "Trim less than",-1,0,100,50,9,SS_CENTERIMAGE
+    EDITTEXT        ID_CUTLOW,62,98,42,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",ID_FORMAT_HELP,99,70,10,11
+    LTEXT           "Ending Text",-1,0,15,49,9,SS_CENTERIMAGE
+    LTEXT           "Other Columns",ID_OTHER_COLUMNS_TAG,0,58,50,8,
+                    SS_CENTERIMAGE
+    EDITTEXT        ID_OTHER_COLUMNS,62,56,228,12,ES_AUTOHSCROLL
+    CONTROL         "Block Selections",ID_BLOCK_SELECTION_TAG,"Static",
+                    SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,0,30,57,8
+    EDITTEXT        ID_BLOCK_SELECTION,62,28,111,12,ES_AUTOHSCROLL
+    CONTROL         "as a Hash key",ID_BLOCK_SELECTION_ALL,"Button",
+                    BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,80,44,57,8
+    LTEXT           "Trim greater than",-1,0,114,59,9,SS_CENTERIMAGE
+    EDITTEXT        ID_CUTHIGH,62,112,42,12,ES_AUTOHSCROLL
+    CONTROL         "Be cautious about the following :\n1) Data block should be the same in number of columns and rows.\n2) The numbers of rows and columns are set by the string token separated by whites.\n3) There should be no text between the beginning and the ending text.",
+                    -1,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,0,134,282,46
+    PUSHBUTTON      "Wizard",IDC_BUTTON1,191,28,27,12
+    PUSHBUTTON      "All",IDC_BUTTON2,176,28,13,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX_GARGAMELPATTERNFORMATRIX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PROPPAGE_GARGAMELPATTERNFORMATRIX, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 195
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 70
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GARGAMELPATTERNFORMATRIX "GargamelPatternForMatrix Control"
+    IDS_GARGAMELPATTERNFORMATRIX_PPG "GargamelPatternForMatrix Property Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GARGAMELPATTERNFORMATRIX_PPG_CAPTION "General"
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "GargamelPatternForMatrix.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

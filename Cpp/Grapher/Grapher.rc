@@ -1,0 +1,2020 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Grapher.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ARROW_RIGHT         BITMAP  DISCARDABLE     "res\\IDB_ARROW_RIGHT.bmp"
+IDB_ARROW_LEFT          BITMAP  DISCARDABLE     "res\\IDB_ARROW_LEFT.bmp"
+IDB_OPTIONTREECTRL_RADIOON BITMAP  DISCARDABLE     "res\\IDB_OPTIONTREECTRL_RADIOON.bmp"
+IDB_OPTIONTREECTRL_RADIOOFF BITMAP  DISCARDABLE     "res\\IDB_OPTIONTREECTRL_RADIOOFF.bmp"
+IDB_OPTIONTREECTRL_ITEMS BITMAP  DISCARDABLE     "res\\IDB_OPTIONTREECTRL_ITEMS.bmp"
+IDB_OPTIONTREECTRL_CHECKON BITMAP  DISCARDABLE     "res\\IDB_OPTIONTREECTRL_CHECKON.bmp"
+IDB_OPTIONTREECTRL_CHECKOFF BITMAP  DISCARDABLE     "res\\IDB_OPTIONTREECTRL_CHECKOFF.bmp"
+IDB_EXEC_GR             BITMAP  DISCARDABLE     "res\\IDB_EXEC_GR.bmp"
+IDB_GR_WIZARD           BITMAP  DISCARDABLE     "res\\IDB_GR_WIZARD.bmp"
+IDB_GR_SCRIPT           BITMAP  DISCARDABLE     "res\\IDB_GR_SCRIPT.bmp"
+IDB_CLEAR               BITMAP  DISCARDABLE     "res\\IDB_CLEAR.bmp"
+IDB_FILE_OPEN           BITMAP  DISCARDABLE     "res\\IDB_FILE_OPEN.bmp"
+IDB_PREFERENCE          BITMAP  DISCARDABLE     "res\\IDB_PREFERENCE.bmp"
+IDB_GR_PROPERTYSHEET    BITMAP  DISCARDABLE     "res\\IDB_GR_PROPERTYSHEET.bmp"
+IDB_GR_MIXER            BITMAP  DISCARDABLE     "res\\IDB_GR_MIXER.bmp"
+IDB_GR_RENOVATOR        BITMAP  DISCARDABLE     "res\\IDB_GR_RENOVATOR.bmp"
+IDB_GR_LOG              BITMAP  DISCARDABLE     "res\\IDB_GR_LOG.bmp"
+IDB_PALLETE             BITMAP  DISCARDABLE     "res\\IDB_PALLETE.bmp"
+IDB_SMURFETTE           BITMAP  DISCARDABLE     "res\\IDB_SMURFETTE.bmp"
+IDB_GARGAMEL            BITMAP  DISCARDABLE     "res\\IDB_GARGAMEL.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GR_VIEW_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 320
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_GR_UFUN_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 320
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_GR_TEXT_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 324
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_GR_SMALL_FONT_SELECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 67
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_GR_SYMB_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 320
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_GR_PLOT_WIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 246
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_GR_PLOT_SYMBOL_PORTFOLIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 150
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_GR_PATH_ENVIRONMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 298
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_GR_LOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 297
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_GR_GLOB_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 320
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_GR_DEFAULT_SYMBOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 220
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_GR_DATA_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 320
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_GR_AXIS_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 320
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_GR_ATTR_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 320
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_GR_PLOT_MIXER, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 146
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_GR_XYZB_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 320
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 195
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GR_VIEW_PAGE DIALOGEX 0, 0, 325, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Viewport"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,47,25,71,77,BS_FLAT
+    EDITTEXT        ID_GRVIEW_X1,13,60,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",ID_GRVIEW_X1_SPIN,"msctls_updown32",
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,53,60,7,
+                    12
+    CTEXT           "x1",IDC_STATIC,51,61,8,9,0,WS_EX_RIGHT
+    CTEXT           "x2",IDC_STATIC,104,61,8,9
+    EDITTEXT        ID_GRVIEW_X2,120,60,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",ID_GRVIEW_X2_SPIN,"msctls_updown32",
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,161,60,7,
+                    12
+    CTEXT           "y1",IDC_STATIC,79,89,8,9,0,WS_EX_RIGHT
+    EDITTEXT        ID_GRVIEW_Y1,76,104,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",ID_GRVIEW_Y1_SPIN,"msctls_updown32",
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,116,104,7,
+                    12
+    CTEXT           "y2",IDC_STATIC,79,32,8,9
+    EDITTEXT        ID_GRVIEW_Y2,76,14,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",ID_GRVIEW_Y2_SPIN,"msctls_updown32",
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,116,14,7,
+                    12
+    LTEXT           "그림을 그리기 위한 캔바스의 최대값은 수평과 수직 각각 1.0 입니다. 그러나 A4 용지의 방향에 따라 너비와 높이가 틀리기 때문에 최대 값은 약 1.2 까지 가능할 수 있습니다. 이 이상의 입력값은 그림이 캔바스 영역내로 포함되는지를 확인한 후 사용하기 바랍니다. ^o^",
+                    IDC_STATIC,15,128,150,67
+    PUSHBUTTON      "1",ID_GRVIEW_PRESET_11,187,26,16,16
+    PUSHBUTTON      "1",ID_GRVIEW_PRESET_121,206,26,15,12
+    PUSHBUTTON      "1",ID_GRVIEW_PRESET_131,225,26,14,10
+    PUSHBUTTON      "1",ID_GRVIEW_PRESET_141,242,26,10,10
+    PUSHBUTTON      "1",ID_GRVIEW_PRESET_161,268,26,10,10
+    PUSHBUTTON      "Inflate",ID_GRVIEW_INFLATE,187,114,32,13
+    PUSHBUTTON      "Deflate",ID_GRVIEW_DEFLATE,187,129,32,13
+    LTEXT           "(1) Pre-defined viewport",IDC_STATIC,177,14,85,9
+    EDITTEXT        ID_GRVIEW_STEP,257,121,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Step",IDC_STATIC,280,122,19,9
+    LTEXT           "(2) Row-col viewport",IDC_STATIC,176,62,85,9
+    EDITTEXT        ID_GRVIEW_ROW,188,74,13,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        ID_GRVIEW_COL,206,74,13,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        ID_GRVIEW_RCINDEX,223,74,13,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "row",IDC_STATIC,189,87,12,9
+    LTEXT           "col",IDC_STATIC,207,87,12,9
+    LTEXT           "index",IDC_STATIC,224,87,21,9
+    PUSHBUTTON      "Try",ID_GRVIEW_RCLAPPLY,241,74,16,13
+    LTEXT           "(3) Symmetric resize",IDC_STATIC,176,102,85,9
+    LTEXT           "(4) Move",IDC_STATIC,176,150,34,9
+    PUSHBUTTON      "X",ID_GRVIEW_INFLATE_X,222,114,10,13
+    PUSHBUTTON      "Y",ID_GRVIEW_INFLATE_Y,235,114,10,13
+    PUSHBUTTON      "X",ID_GRVIEW_DEFLATE_X,222,129,10,13
+    PUSHBUTTON      "Y",ID_GRVIEW_DEFLATE_Y,235,129,10,13
+    PUSHBUTTON      "Left",ID_GRVIEW_MOVE_LEFT,187,166,20,13
+    PUSHBUTTON      "Right",ID_GRVIEW_MOVE_RIGHT,233,166,20,13
+    PUSHBUTTON      "Up",ID_GRVIEW_MOVE_UP,210,159,20,13
+    PUSHBUTTON      "Dn",ID_GRVIEW_MOVE_DOWN,210,175,20,13
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,267,137,1,36
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,256,172,11,1
+    PUSHBUTTON      "2",ID_GRVIEW_PRESET_122,206,39,15,12
+    PUSHBUTTON      "2",ID_GRVIEW_PRESET_132,225,36,14,10
+    PUSHBUTTON      "3",ID_GRVIEW_PRESET_133,225,47,14,10
+    PUSHBUTTON      "2",ID_GRVIEW_PRESET_142,253,26,10,10
+    PUSHBUTTON      "3",ID_GRVIEW_PRESET_143,242,36,10,10
+    PUSHBUTTON      "4",ID_GRVIEW_PRESET_144,253,36,10,10
+    PUSHBUTTON      "2",ID_GRVIEW_PRESET_162,279,26,10,10
+    PUSHBUTTON      "3",ID_GRVIEW_PRESET_163,268,36,10,10
+    PUSHBUTTON      "4",ID_GRVIEW_PRESET_164,279,36,10,10
+    PUSHBUTTON      "5",ID_GRVIEW_PRESET_165,268,47,10,10
+    PUSHBUTTON      "6",ID_GRVIEW_PRESET_166,279,47,10,10
+    PUSHBUTTON      "1",ID_GRVIEW_PRESET_181,293,26,10,10
+    PUSHBUTTON      "2",ID_GRVIEW_PRESET_182,304,26,10,10
+    PUSHBUTTON      "3",ID_GRVIEW_PRESET_183,293,36,10,10
+    PUSHBUTTON      "4",ID_GRVIEW_PRESET_184,304,36,10,10
+    PUSHBUTTON      "5",ID_GRVIEW_PRESET_185,293,47,10,10
+    PUSHBUTTON      "6",ID_GRVIEW_PRESET_186,304,47,10,10
+    PUSHBUTTON      "7",ID_GRVIEW_PRESET_187,293,58,10,10
+    PUSHBUTTON      "8",ID_GRVIEW_PRESET_188,304,58,10,10
+END
+
+IDD_GR_UFUN_PAGE DIALOG DISCARDABLE  0, 0, 325, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "User Function"
+FONT 10, "System"
+BEGIN
+    COMBOBOX        ID_GRUFUN_LIST,52,183,129,97,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Function List",IDC_STATIC,5,185,44,8
+    EDITTEXT        ID_GRUFUN_TEXT,5,5,315,175,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    PUSHBUTTON      "Help",ID_GRUFUN_HELP,300,183,20,13
+    PUSHBUTTON      "Clear",ID_GRUFUN_CLEAR,213,183,23,13,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "Try",ID_GRUFUN_TRY,187,183,24,13,BS_CENTER | BS_VCENTER
+    PUSHBUTTON      "Undo",ID_GRUFUN_UNDO,238,183,24,13,BS_CENTER | 
+                    BS_VCENTER | WS_DISABLED
+END
+
+IDD_GR_TEXT_PAGE DIALOG DISCARDABLE  0, 0, 329, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Text"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        ID_GRTEXT_TEXT01,64,18,236,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "F",ID_GRTEXT_TEXT01_BTN,304,18,13,12
+    EDITTEXT        ID_GRTEXT_TEXT02,64,33,236,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "F",ID_GRTEXT_TEXT02_BTN,304,33,13,12
+    EDITTEXT        ID_GRTEXT_TEXT03,64,48,236,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "F",ID_GRTEXT_TEXT03_BTN,304,48,13,12
+    EDITTEXT        ID_GRTEXT_TEXT04,64,63,236,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "F",ID_GRTEXT_TEXT04_BTN,304,63,13,12
+    RTEXT           "Main Title",IDC_STATIC,9,20,50,10
+    RTEXT           "Left Shoulder",IDC_STATIC,9,35,50,10
+    RTEXT           "Right Shoulder",IDC_STATIC,9,50,50,10
+    RTEXT           "Bottom",IDC_STATIC,9,65,50,10
+    GROUPBOX        "Reserved",IDC_STATIC,5,5,319,77
+    GROUPBOX        "Placing Anywhere",IDC_STATIC,5,86,319,110
+    CONTROL         "List1",ID_GRTEXT_LISTCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_EDITLABELS | WS_BORDER | 
+                    WS_TABSTOP,12,98,305,77
+    PUSHBUTTON      "Add",ID_GRTEXT_LISTCTRL_ADD,13,179,20,12
+    PUSHBUTTON      "Delete",ID_GRTEXT_LISTCTRL_DELETE,37,179,28,12
+    PUSHBUTTON      "F",ID_GRTEXT_LISTCTRL_BTN,304,179,13,12
+END
+
+IDD_GR_SMALL_FONT_SELECTION DIALOGEX 0, 0, 71, 96
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "Arial", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,38,81,28,12
+    DEFPUSHBUTTON   "OK",IDOK,10,81,28,12
+    EDITTEXT        ID_FONTD_WIDTH,38,14,18,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        ID_FONTD_HEIGHT,38,27,18,12,ES_AUTOHSCROLL
+    COMBOBOX        ID_FONTD_ALIGNMENT,38,40,29,140,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        ID_FONTD_ANGLE,38,53,18,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_FONTD_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,38,
+                    66,14,12
+    LTEXT           "Font",IDC_STATIC,10,3,25,9,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Width",IDC_STATIC,10,15,25,9,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Height",IDC_STATIC,10,28,25,9,SS_CENTERIMAGE,
+                    WS_EX_RIGHT
+    LTEXT           "Alignment",IDC_STATIC,2,41,33,9,SS_CENTERIMAGE,
+                    WS_EX_RIGHT
+    LTEXT           "Angle",IDC_STATIC,10,54,25,9,SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Color",IDC_STATIC,10,67,25,9,SS_CENTERIMAGE,WS_EX_RIGHT
+    CONTROL         "Spin2",ID_FONTD_HEIGHT_SPIN,"msctls_updown32",
+                    UDS_ARROWKEYS,56,27,9,12
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,21,11,14,1
+END
+
+IDD_GR_SYMB_PAGE DIALOGEX 0, 0, 325, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Symbol"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    LTEXT           ")",IDC_STATIC,251,23,8,8
+    LTEXT           "Pen",IDC_STATIC,258,23,14,9,WS_DISABLED
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,5,10,
+                    315,1
+    PUSHBUTTON      "Prev",ID_GRSLCT_PREV,85,179,21,12
+    CTEXT           "00/00",ID_GRSLCT_LEGEND_SLIDER_TEXT,57,179,25,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "Slider1",ID_GRSLCT_LEGEND_SLIDER,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,8,
+                    180,45,12
+    EDITTEXT        ID_GRSLCT_ETC_MOMENT_RANGE,88,89,20,12,ES_AUTOHSCROLL
+    LTEXT           "Range[%]=",IDC_STATIC,50,90,37,9
+    CONTROL         "Spin1",ID_GRSLCT_ETC_MOMENT_RANGE_SPIN,"msctls_updown32",
+                    UDS_ARROWKEYS,109,89,9,13
+    CONTROL         "     ",ID_GRSLCT_SYMBOL_TYPE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,69,20,15,14
+    LTEXT           "Type",IDC_STATIC,50,23,17,9
+    LTEXT           "Text",IDC_STATIC,50,60,15,9
+    EDITTEXT        ID_GRSLCT_SYMBOL_SIZE,176,22,16,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",ID_GRSLCT_SYMBOL_SIZE_SPIN,"msctls_updown32",
+                    UDS_ARROWKEYS,192,22,9,12
+    LTEXT           "Size",IDC_STATIC,157,23,15,8
+    EDITTEXT        ID_GRSLCT_LEGEND_TEXT,69,58,142,12,ES_AUTOHSCROLL
+    LTEXT           "x=",IDC_STATIC,87,73,9,8,0,WS_EX_RIGHT
+    EDITTEXT        ID_GRSLCT_LEGEND_X,98,71,29,12,ES_AUTOHSCROLL
+    LTEXT           "y=",IDC_STATIC,142,73,9,8,0,WS_EX_RIGHT
+    EDITTEXT        ID_GRSLCT_LEGEND_Y,153,71,29,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_GRSLCT_SYMBOL_PEN,275,22,16,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    CONTROL         "Spin2",ID_GRSLCT_SYMBOL_PEN_SPIN,"msctls_updown32",
+                    UDS_ARROWKEYS | WS_DISABLED,291,22,9,12
+    LTEXT           "Fill",IDC_STATIC,90,23,11,8
+    CONTROL         "     ",ID_GRSLCT_SYMBOL_COLOR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,105,20,15,14
+    LTEXT           "Hue",IDC_STATIC,50,41,14,8
+    CONTROL         "     ",ID_GRSLCT_SYMBOL_LINE_COLOR,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,69,38,15,14
+    CONTROL         "Solid",ID_GRSLCT_SYMBOL_SOLID,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,23,28,8,WS_EX_RIGHT
+    CONTROL         "Line",ID_GRSLCT_LINECONNECTION_CB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,41,26,8
+    CONTROL         "Legend",ID_GRSLCT_LEGEND_CB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,60,35,8
+    CONTROL         "Symbol",ID_GRSLCT_SYMBOL_CB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,23,35,8
+    PUSHBUTTON      "Add",ID_GRSLCT_ADD,131,179,21,12
+    PUSHBUTTON      "Del",ID_GRSLCT_DEL,185,179,21,12
+    COMBOBOX        ID_GRSLCT_SYMBOL_LINE_STYLE,89,39,70,135,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        ID_GRSLCT_XCOLS,266,125,25,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        ID_GRSLCT_YCOLS,266,139,46,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        ID_GRSLCT_ZCOLS,266,153,46,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CTEXT           "x",IDC_STATIC,256,126,8,9
+    CTEXT           "y",IDC_STATIC,256,140,8,9
+    CTEXT           "z",IDC_STATIC,256,154,8,9
+    GROUPBOX        "Columns",IDC_STATIC,251,111,70,62,BS_CENTER
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,5,172,
+                    315,1
+    CONTROL         "     ",ID_GRSLCT_ETC_MAP_COLOR_MIN,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,70,105,15,14
+    LTEXT           "Min.",IDC_STATIC,51,108,14,8
+    CONTROL         "     ",ID_GRSLCT_ETC_MAP_COLOR_MAX,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,106,105,15,14
+    LTEXT           "Max.",IDC_STATIC,88,108,16,8
+    EDITTEXT        ID_GRSLCT_ETC_MAP_COLOR_TOTAL,143,106,15,12,
+                    ES_AUTOHSCROLL
+    CONTROL         "Spin2",ID_GRSLCT_ETC_MAP_COLOR_TOTAL_SPIN,
+                    "msctls_updown32",UDS_ARROWKEYS,159,106,9,13
+    LTEXT           "Total",IDC_STATIC,124,108,17,8
+    LTEXT           "Map",ID_GRSLCT_MAP,13,108,15,8
+    LTEXT           "Moment",ID_GRSLCT_MOMENT,12,90,27,8
+    PUSHBUTTON      "F",ID_GRSLCT_LEGEND_TEXT_FONTATTR,214,58,13,12
+    LTEXT           "Format",IDC_STATIC,170,108,25,9
+    COMBOBOX        ID_GRSLCT_ETC_MAP_NO_FORMAT,195,106,32,71,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,0,HID_GRSLCT_ETC_MAP_NO_FORMAT
+    EDITTEXT        ID_GRSLCT_LEGEND_SIZE,250,57,16,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",ID_GRSLCT_LEGEND_SIZE_SPIN,"msctls_updown32",
+                    UDS_ARROWKEYS,267,57,9,13
+    LTEXT           "Size",IDC_STATIC,231,59,15,8
+    EDITTEXT        ID_GRSLCT_SYMBOL_NCOPY,233,21,16,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "(nCopy=",IDC_STATIC,204,23,28,8
+    PUSHBUTTON      "Next",ID_GRSLCT_NEXT,108,179,21,12
+    EDITTEXT        ID_GRSLCT_SYMBOL_LINE_WIDTH,161,39,13,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",ID_GRSLCT_SYMBOL_LINE_WIDTH_SPIN,"msctls_updown32",
+                    UDS_ARROWKEYS,175,39,9,13
+    LTEXT           "=Width",IDC_STATIC,186,41,26,8
+    CONTROL         "",ID_GRSLCT_LEGEND_Y_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,185,73,8,8
+    CONTROL         "",ID_GRSLCT_LEGEND_X_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,130,73,9,8
+    LTEXT           "Location",IDC_STATIC,50,73,30,8
+    LTEXT           "Batch",IDC_STATIC,214,180,21,8
+    LISTBOX         ID_GRSLCT_BATCHJOB,235,178,67,12,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add all",ID_GRSLCT_ADDALL,154,179,29,12
+    PUSHBUTTON      "off",ID_GRSYMB_DISPLAY_OFF,27,5,15,10,BS_FLAT
+    PUSHBUTTON      "on",ID_GRSYMB_DISPLAY_ON,12,5,13,10,BS_FLAT
+END
+
+IDD_GR_PLOT_WIZARD DIALOGEX 0, 0, 251, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Grapher (Plot) Wizard through Gargamel"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Draw",ID_GRPLOTWIZARD_DRAW,90,212,33,13
+    PUSHBUTTON      "Pattern",ID_GRPLOTWIZARD_EXECPATTERN,5,5,28,12,0,
+                    WS_EX_RIGHT
+    PUSHBUTTON      "⇒",ID_GRPLOTWIZARD_READPATTERN,235,5,11,12,BS_CENTER | 
+                    BS_BOTTOM
+    PUSHBUTTON      "Split",ID_GRPLOTWIZARD_EXECSPLIT,13,19,20,12,0,
+                    WS_EX_RIGHT
+    PUSHBUTTON      "⇒",ID_GRPLOTWIZARD_READSPLIT,235,19,11,12,BS_CENTER | 
+                    BS_BOTTOM
+    LTEXT           "X-Scale",IDC_STATIC,16,55,25,8
+    LTEXT           "X-Variable",IDC_STATIC,68,55,34,8
+    CONTROL         "Y-Variable",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,116,55,36,8
+    LTEXT           "Count",IDC_STATIC,198,55,21,8,0,WS_EX_RIGHT
+    CONTROL         "Series",ID_GRPLOTWIZARD_XSERIES,"Button",
+                    BS_AUTORADIOBUTTON,7,67,33,8
+    PUSHBUTTON      "Dismiss",IDOK,126,212,33,13
+    CONTROL         "Pattern",ID_GRPLOTWIZARD_XSERIES01,"Button",
+                    BS_AUTORADIOBUTTON,57,67,36,8
+    CONTROL         "Split",ID_GRPLOTWIZARD_XSERIES02,"Button",
+                    BS_AUTORADIOBUTTON,57,77,36,8
+    CONTROL         "Scatter",ID_GRPLOTWIZARD_XSCATTER,"Button",
+                    BS_AUTORADIOBUTTON,7,87,36,8
+    LTEXT           "Split",IDC_STATIC,116,67,25,8
+    LTEXT           "#",ID_GRPLOTWIZARD_XSERIES01_COUNT,228,67,13,8,0,
+                    WS_EX_RIGHT
+    LTEXT           "Pattern",IDC_STATIC,116,77,25,8
+    LTEXT           "#",ID_GRPLOTWIZARD_XSERIES02_COUNT,228,77,13,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "Pattern",ID_GRPLOTWIZARD_XSCATTER01,"Button",
+                    BS_AUTORADIOBUTTON,57,88,37,8
+    CONTROL         "Split",ID_GRPLOTWIZARD_XSCATTER02,"Button",
+                    BS_AUTORADIOBUTTON,57,98,29,8
+    LTEXT           "CDF",IDC_STATIC,116,88,16,8
+    LTEXT           "#",ID_GRPLOTWIZARD_XSCATTER01_COUNT,228,88,13,8,0,
+                    WS_EX_RIGHT
+    LTEXT           "CDF",IDC_STATIC,116,98,16,8
+    LTEXT           "#",ID_GRPLOTWIZARD_XSCATTER02_COUNT,228,98,13,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "Pattern Alias",ID_GRPLOTWIZARD_XSCATTER03,"Button",
+                    BS_AUTORADIOBUTTON,57,108,59,8
+    LTEXT           "Pattern",IDC_STATIC,116,108,25,8
+    LTEXT           "#",ID_GRPLOTWIZARD_XSCATTER03_COUNT,228,108,13,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,43,70,11,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,70,1,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,80,6,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,43,91,11,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,91,1,61
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,101,6,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,111,6,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,5,206,
+                    241,1
+    CONTROL         "Every 1st",ID_GRPLOTWIZARD_XSCATTER05,"Button",
+                    BS_AUTORADIOBUTTON,57,128,49,8
+    LTEXT           "Every 2nd+",IDC_STATIC,116,128,38,8
+    LTEXT           "#",ID_GRPLOTWIZARD_XSCATTER05_COUNT,228,128,13,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "Odd",ID_GRPLOTWIZARD_XSCATTER06,"Button",
+                    BS_AUTORADIOBUTTON,57,138,36,8
+    LTEXT           "Even",IDC_STATIC,116,138,29,8
+    LTEXT           "#",ID_GRPLOTWIZARD_XSCATTER06_COUNT,228,138,13,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,121,6,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,131,6,1
+    CONTROL         "Split Alias",ID_GRPLOTWIZARD_XSCATTER04,"Button",
+                    BS_AUTORADIOBUTTON,57,118,48,8
+    LTEXT           "Split",IDC_STATIC,116,118,16,8
+    LTEXT           "#",ID_GRPLOTWIZARD_XSCATTER04_COUNT,228,118,13,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,141,6,1
+    COMBOBOX        ID_GRPLOTWIZARD_POSTPROCESSTYPE,186,33,46,80,
+                    CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Viewport",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,157,55,30,8
+    LTEXT           "One",IDC_STATIC,158,67,15,8
+    LTEXT           "One",IDC_STATIC,158,77,15,8
+    LTEXT           "A Split",IDC_STATIC,158,88,23,8
+    LTEXT           "A Pattern",IDC_STATIC,158,98,32,8
+    LTEXT           "One",IDC_STATIC,158,108,15,8
+    LTEXT           "A Split",IDC_STATIC,158,128,29,8
+    LTEXT           "A Odd",IDC_STATIC,158,138,25,8
+    LTEXT           "One",IDC_STATIC,158,118,15,8
+    CONTROL         "All Odds",ID_GRPLOTWIZARD_XSCATTER07,"Button",
+                    BS_AUTORADIOBUTTON,57,148,42,8
+    LTEXT           "All Evens",IDC_STATIC,116,148,32,8
+    LTEXT           "#",ID_GRPLOTWIZARD_XSCATTER07_COUNT,228,148,13,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,151,6,1
+    LTEXT           "A Split",IDC_STATIC,158,148,25,8
+    CONTROL         "Map",ID_GRPLOTWIZARD_MAP,"Button",BS_AUTORADIOBUTTON,7,
+                    158,36,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,43,162,11,1
+    LTEXT           "#",ID_GRPLOTWIZARD_MAP01_COUNT,230,170,11,8,0,
+                    WS_EX_RIGHT
+    LTEXT           "After-Searching-Process =",IDC_STATIC,98,35,88,8
+    EDITTEXT        ID_GRPLOTWIZARD_MAP01_EDIT,65,180,166,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    PUSHBUTTON      "☞",ID_GRPLOTWIZARD_MAP01_READ,235,180,11,12,BS_CENTER | 
+                    BS_BOTTOM
+    CONTROL         "Through Grxy File (Map  Information)",
+                    ID_GRPLOTWIZARD_MAP01,"Button",BS_AUTORADIOBUTTON,57,170,
+                    133,8
+    CONTROL         "From U-/RS-Line ET Data",ID_GRPLOTWIZARD_MAP02,"Button",
+                    BS_AUTORADIOBUTTON,57,194,99,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,197,6,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,174,1,24
+    LTEXT           "#",ID_GRPLOTWIZARD_MAP02_COUNT,228,194,13,8,0,
+                    WS_EX_RIGHT
+    COMBOBOX        ID_GRPLOTWIZARD_SPLITFILE,35,19,197,139,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "grxy",ID_GRPLOTWIZARD_MAP01_CREATE,20,169,19,11,BS_LEFT
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,5,49,
+                    241,1
+    CONTROL         "Composite using a After-Searching-Process",
+                    ID_GRPLOTWIZARD_MAP_COMPOSITE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,57,159,164,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,49,173,6,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,48,162,1,12
+    PUSHBUTTON      "Write ...",ID_GRPLOTWIZARD_WRITESCRIPT,35,33,32,12,
+                    BS_LEFT | WS_DISABLED,WS_EX_RIGHT
+    COMBOBOX        ID_GRPLOTWIZARD_PATTERNFILE,35,5,197,153,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,15,64,26,1
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,67,64,34,1
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,115,64,36,1
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,157,64,30,1
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,199,64,21,1
+    LTEXT           "#",IDC_STATIC,233,55,8,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,231,64,12,1
+    LTEXT           "1",IDC_STATIC,200,67,8,8
+    LTEXT           "1",IDC_STATIC,200,77,8,8
+    LTEXT           "&nSplit",IDC_STATIC,200,88,20,8
+    LTEXT           "&nPattern",IDC_STATIC,200,98,28,8
+    LTEXT           "1",IDC_STATIC,200,108,8,8
+    LTEXT           "&nSplit",IDC_STATIC,200,128,21,8
+    LTEXT           "&nOdd",IDC_STATIC,200,138,20,8
+    LTEXT           "1",IDC_STATIC,200,118,8,8
+    LTEXT           "&nSplit",IDC_STATIC,200,148,20,8
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,39,173,6,1
+END
+
+IDD_GR_PLOT_SYMBOL_PORTFOLIO DIALOGEX 0, 0, 151, 105
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "01",10001,"Button",BS_OWNERDRAW | WS_TABSTOP,1,1,14,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "02",10002,"Button",BS_OWNERDRAW | WS_TABSTOP,16,1,14,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "03",10003,"Button",BS_OWNERDRAW | WS_TABSTOP,31,1,14,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "04",10004,"Button",BS_OWNERDRAW | WS_TABSTOP,46,1,14,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "05",10005,"Button",BS_OWNERDRAW | WS_TABSTOP,61,1,14,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "06",10006,"Button",BS_OWNERDRAW | WS_TABSTOP,76,1,14,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "07",10007,"Button",BS_OWNERDRAW | WS_TABSTOP,91,1,14,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "08",10008,"Button",BS_OWNERDRAW | WS_TABSTOP,106,1,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "09",10009,"Button",BS_OWNERDRAW | WS_TABSTOP,121,1,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "10",10010,"Button",BS_OWNERDRAW | WS_TABSTOP,136,1,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "11",10011,"Button",BS_OWNERDRAW | WS_TABSTOP,1,14,14,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "12",10012,"Button",BS_OWNERDRAW | WS_TABSTOP,16,14,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "13",10013,"Button",BS_OWNERDRAW | WS_TABSTOP,31,14,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "14",10014,"Button",BS_OWNERDRAW | WS_TABSTOP,46,14,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "15",10015,"Button",BS_OWNERDRAW | WS_TABSTOP,61,14,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "16",10016,"Button",BS_OWNERDRAW | WS_TABSTOP,76,14,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "17",10017,"Button",BS_OWNERDRAW | WS_TABSTOP,91,14,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "18",10018,"Button",BS_OWNERDRAW | WS_TABSTOP,106,14,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "19",10019,"Button",BS_OWNERDRAW | WS_TABSTOP,121,14,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "20",10020,"Button",BS_OWNERDRAW | WS_TABSTOP,136,14,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "21",10021,"Button",BS_OWNERDRAW | WS_TABSTOP,1,27,14,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "22",10022,"Button",BS_OWNERDRAW | WS_TABSTOP,16,27,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "23",10023,"Button",BS_OWNERDRAW | WS_TABSTOP,31,27,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "24",10024,"Button",BS_OWNERDRAW | WS_TABSTOP,46,27,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "25",10025,"Button",BS_OWNERDRAW | WS_TABSTOP,61,27,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "26",10026,"Button",BS_OWNERDRAW | WS_TABSTOP,76,27,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "27",10027,"Button",BS_OWNERDRAW | WS_TABSTOP,91,27,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "28",10028,"Button",BS_OWNERDRAW | WS_TABSTOP,106,27,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "29",10029,"Button",BS_OWNERDRAW | WS_TABSTOP,121,27,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "30",10030,"Button",BS_OWNERDRAW | WS_TABSTOP,136,27,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "31",10031,"Button",BS_OWNERDRAW | WS_TABSTOP,1,40,14,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "32",10032,"Button",BS_OWNERDRAW | WS_TABSTOP,16,40,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "33",10033,"Button",BS_OWNERDRAW | WS_TABSTOP,31,40,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "34",10034,"Button",BS_OWNERDRAW | WS_TABSTOP,46,40,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "35",10035,"Button",BS_OWNERDRAW | WS_TABSTOP,61,40,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "36",10036,"Button",BS_OWNERDRAW | WS_TABSTOP,76,40,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "37",10037,"Button",BS_OWNERDRAW | WS_TABSTOP,91,40,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "38",10038,"Button",BS_OWNERDRAW | WS_TABSTOP,106,40,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "39",10039,"Button",BS_OWNERDRAW | WS_TABSTOP,121,40,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "40",10040,"Button",BS_OWNERDRAW | WS_TABSTOP,136,40,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "41",10041,"Button",BS_OWNERDRAW | WS_TABSTOP,1,53,14,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "42",10042,"Button",BS_OWNERDRAW | WS_TABSTOP,16,53,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "43",10043,"Button",BS_OWNERDRAW | WS_TABSTOP,31,53,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "44",10044,"Button",BS_OWNERDRAW | WS_TABSTOP,46,53,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "45",10045,"Button",BS_OWNERDRAW | WS_TABSTOP,61,53,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "46",10046,"Button",BS_OWNERDRAW | WS_TABSTOP,76,53,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "47",10047,"Button",BS_OWNERDRAW | WS_TABSTOP,91,53,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "48",10048,"Button",BS_OWNERDRAW | WS_TABSTOP,106,53,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "49",10049,"Button",BS_OWNERDRAW | WS_TABSTOP,121,53,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "50",10050,"Button",BS_OWNERDRAW | WS_TABSTOP,136,53,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "51",10051,"Button",BS_OWNERDRAW | WS_TABSTOP,1,66,14,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "52",10052,"Button",BS_OWNERDRAW | WS_TABSTOP,16,66,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "53",10053,"Button",BS_OWNERDRAW | WS_TABSTOP,31,66,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "54",10054,"Button",BS_OWNERDRAW | WS_TABSTOP,46,66,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "55",10055,"Button",BS_OWNERDRAW | WS_TABSTOP,61,66,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "56",10056,"Button",BS_OWNERDRAW | WS_TABSTOP,76,66,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "57",10057,"Button",BS_OWNERDRAW | WS_TABSTOP,91,66,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "58",10058,"Button",BS_OWNERDRAW | WS_TABSTOP,106,66,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "59",10059,"Button",BS_OWNERDRAW | WS_TABSTOP,121,66,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "60",10060,"Button",BS_OWNERDRAW | WS_TABSTOP,136,66,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "61",10061,"Button",BS_OWNERDRAW | WS_TABSTOP,1,79,14,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "62",10062,"Button",BS_OWNERDRAW | WS_TABSTOP,16,79,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "63",10063,"Button",BS_OWNERDRAW | WS_TABSTOP,31,79,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "64",10064,"Button",BS_OWNERDRAW | WS_TABSTOP,46,79,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "65",10065,"Button",BS_OWNERDRAW | WS_TABSTOP,61,79,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "66",10066,"Button",BS_OWNERDRAW | WS_TABSTOP,76,79,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "67",10067,"Button",BS_OWNERDRAW | WS_TABSTOP,91,79,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "68",10068,"Button",BS_OWNERDRAW | WS_TABSTOP,106,79,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "69",10069,"Button",BS_OWNERDRAW | WS_TABSTOP,121,79,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "70",10070,"Button",BS_OWNERDRAW | WS_TABSTOP,136,79,14,
+                    12,WS_EX_STATICEDGE
+    CONTROL         "71",10071,"Button",BS_OWNERDRAW | WS_TABSTOP,1,92,14,12,
+                    WS_EX_STATICEDGE
+END
+
+IDD_GR_PLOT_PAGE DIALOG DISCARDABLE  0, 0, 325, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " Plot"
+FONT 10, "System"
+BEGIN
+    CONTROL         "",ID_GRPLOT_EMF_CANVAS,"Static",SS_ENHMETAFILE | 
+                    SS_CENTERIMAGE | SS_REALSIZEIMAGE,5,5,190,190
+    PUSHBUTTON      "Add",ID_GRPLOT_ADD,249,182,19,13
+    PUSHBUTTON      "Delete",ID_GRPLOT_DELETE,293,182,27,13
+    PUSHBUTTON      "to EMF ...",ID_GRPLOT_TOEMF,200,182,38,13
+    CONTROL         "Tree1",ID_GRPLOT_TREECTRL,"SysTreeView32",TVS_HASLINES | 
+                    TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,200,16,120,
+                    162
+    LTEXT           "ID) ""X-Axis""/""Y-Axis""/""Text""/...",IDC_STATIC,200,
+                    5,120,11
+    PUSHBUTTON      "Copy",ID_GRPLOT_COPY,269,182,23,13
+END
+
+IDD_GR_PATH_ENVIRONMENT DIALOGEX 0, 0, 303, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Path Environments"
+FONT 8, "Arial", 0, 0, 0x1
+BEGIN
+    EDITTEXT        ID_PATHENV_SAMPLE,5,44,293,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_PATHENV_GARGAMEL,5,96,293,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_PATHENV_SMURFETTE,5,122,293,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_PATHENV_EDITOR,5,70,293,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Grapher Sample Directory",ID_PATHENV_SAMPLE_BROWSER,5,
+                    31,94,12,BS_LEFT,WS_EX_STATICEDGE
+    PUSHBUTTON      "External Script Editor",ID_PATHENV_EDITOR_BROWSER,5,57,
+                    80,12,BS_LEFT,WS_EX_STATICEDGE
+    PUSHBUTTON      "Gargamel (DEFF)",ID_PATHENV_GARGAMEL_BROWSER,5,83,67,12,
+                    BS_LEFT,WS_EX_STATICEDGE
+    PUSHBUTTON      "Smurfette",ID_PATHENV_SMURFETTE_BROWSER,5,109,40,12,
+                    BS_LEFT,WS_EX_STATICEDGE
+    EDITTEXT        ID_PATHENV_HOME,5,18,293,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Home Directory ( ~ )",ID_PATHENV_HOME_DIRECTORY,5,5,76,
+                    12,BS_LEFT,WS_EX_STATICEDGE
+    PUSHBUTTON      "Dismiss",IDOK,130,138,42,12
+END
+
+IDD_GR_LOG DIALOG DISCARDABLE  0, 0, 302, 253
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_THICKFRAME
+FONT 9, "MS Sans Serif"
+BEGIN
+    CONTROL         "",ID_BITMAP_GRIPPER,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE,292,243,10,9
+    EDITTEXT        ID_GRLOG_EDIT,5,5,292,223,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    DEFPUSHBUTTON   "Save as ...",ID_SCRIPT_DIALOG_SAVEAS,5,235,52,13
+    DEFPUSHBUTTON   "Clear",ID_SCRIPT_DIALOG_CLEAR,59,235,30,13
+    DEFPUSHBUTTON   "Dismiss",IDCANCEL,260,235,37,13
+    DEFPUSHBUTTON   "Print",ID_SCRIPT_DIALOG_PRINT,91,235,30,13
+END
+
+IDD_GR_GLOB_PAGE DIALOGEX 0, 0, 325, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Global"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    LTEXT           "X",IDC_STATIC,9,89,8,8,WS_DISABLED,WS_EX_RIGHT
+    LTEXT           "Y",IDC_STATIC,9,104,8,8,WS_DISABLED,WS_EX_RIGHT
+    LTEXT           "Scaling",IDC_STATIC,21,76,25,8,WS_DISABLED
+    LTEXT           "Translation",IDC_STATIC,51,76,37,8,WS_DISABLED
+    GROUPBOX        "Transformation",IDC_STATIC,5,63,124,60
+    EDITTEXT        ID_GRGLOB_XSCALE,21,87,26,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        ID_GRGLOB_YSCALE,21,102,26,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        ID_GRGLOB_XTRANSLATE,52,87,26,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        ID_GRGLOB_YTRANSLATE,52,102,26,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        ID_GRGLOB_ROTATION,92,87,26,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    GROUPBOX        "Header",IDC_STATIC,5,5,316,51
+    EDITTEXT        ID_GRGLOB_HEADER,11,20,289,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "F",ID_GRGLOB_HEADER_ATTRIBUTE,302,20,12,13
+    CONTROL         "Landscape",ID_GRGLOB_LANDSCAPE,"Button",
+                    BS_AUTORADIOBUTTON,142,94,48,9
+    CONTROL         "Portrait",ID_GRGLOB_PORTRAIT,"Button",
+                    BS_AUTORADIOBUTTON,142,81,36,9
+    GROUPBOX        "File + Extension (Type)",IDC_STATIC,5,130,280,66
+    EDITTEXT        ID_GRGLOB_OUTFILE,12,144,250,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "...",ID_GRGLOB_OUTFILE_ATTRIBUTE,266,144,12,12,
+                    WS_DISABLED
+    CONTROL         "Color Postscript (*.ps)",ID_GRGLOB_OUTFILE_PS,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,12,164,93,8
+    CONTROL         "Gray Postscript (*.gps)",ID_GRGLOB_OUTFILE_GPS,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,12,178,93,8
+    CONTROL         "Encapsulated Postscript (*.eps)",ID_GRGLOB_OUTFILE_EPS,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,112,
+                    164,118,8
+    CONTROL         "HPGL (*.hpgl)",ID_GRGLOB_OUTFILE_HPGL,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,112,178,65,8
+    LTEXT           "Rotation",IDC_STATIC,91,76,32,8,WS_DISABLED
+    GROUPBOX        "Page",IDC_STATIC,135,63,62,60
+    LTEXT           "Spacing Factor",IDC_STATIC,227,38,50,8
+    EDITTEXT        ID_GRGLOB_HEADER_SPACEFACTOR,278,37,22,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",ID_GRGLOB_HEADER_SPACEFACTOR_SPIN,
+                    "msctls_updown32",UDS_ARROWKEYS,302,36,12,13
+    GROUPBOX        "Log",IDC_STATIC,203,63,82,60
+    CONTROL         "Print plot points",ID_GRGLOB_LOG_ECHOPLOTPOINTS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,210,81,70,8
+END
+
+IDD_GR_DEFAULT_SYMBOL DIALOGEX 0, 0, 225, 111
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Grapher Default Symbols"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,5,79,155,1
+    CONTROL         "     ",ID_GRDEFAULTSYMBOL_TYPE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,32,17,13,11
+    LTEXT           "Type",IDC_STATIC,12,18,17,9
+    EDITTEXT        ID_GRDEFAULTSYMBOL_LEGEND_SIZE,32,60,16,12,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",ID_GRDEFAULTSYMBOL_LEGEND_SIZE_SPIN,
+                    "msctls_updown32",UDS_ARROWKEYS,50,60,9,12
+    LTEXT           "Text",IDC_STATIC,66,62,15,9
+    EDITTEXT        ID_GRDEFAULTSYMBOL_SIZE,32,32,16,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",ID_GRDEFAULTSYMBOL_SIZE_SPIN,"msctls_updown32",
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS,49,32,9,12
+    LTEXT           "Size",IDC_STATIC,12,34,15,8
+    EDITTEXT        ID_GRDEFAULTSYMBOL_LEGEND_TEXT,84,60,27,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "Size",IDC_STATIC,12,62,16,8
+    LTEXT           "Fill",IDC_STATIC,49,18,11,8
+    CONTROL         "     ",ID_GRDEFAULTSYMBOL_COLOR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,63,17,13,11
+    LTEXT           "Line",IDC_STATIC,81,18,15,8
+    CONTROL         "     ",ID_GRDEFAULTSYMBOL_LINE_COLOR,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,98,17,13,11
+    CONTROL         "Solid",ID_GRDEFAULTSYMBOL_SOLID,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,117,18,28,8,WS_EX_RIGHT
+    CONTROL         "Interconnect",ID_GRDEFAULTSYMBOL_CB_LINECONNECTION,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,11,88,52,
+                    10,WS_EX_RIGHT
+    COMBOBOX        ID_GRDEFAULTSYMBOL_LINE_STYLE,97,87,56,135,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        ID_GRDEFAULTSYMBOL_LINE_THICKNESS,69,87,25,98,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Slider1",ID_GRDEFAULTSYMBOL_SLIDER,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_TOP | WS_TABSTOP,164,5,19,
+                    101
+    PUSHBUTTON      "Load",ID_GRDEFAULTSYMBOL_LOAD,187,5,33,11
+    PUSHBUTTON      "Save",ID_GRDEFAULTSYMBOL_SAVE,187,16,33,11
+    PUSHBUTTON      "Add",ID_GRDEFAULTSYMBOL_ADD,187,27,33,11
+    PUSHBUTTON      "Delete",ID_GRDEFAULTSYMBOL_DEL,187,38,33,11
+    PUSHBUTTON      "Dismiss",IDOK,187,95,33,11
+    PUSHBUTTON      "Reset",ID_GRDEFAULTSYMBOL_RESET,187,53,33,11
+    PUSHBUTTON      "Previous",ID_GRDEFAULTSYMBOL_PREV,187,68,33,11
+    PUSHBUTTON      "Next",ID_GRDEFAULTSYMBOL_Next,187,79,33,11
+    CTEXT           "Line",IDC_STATIC,12,75,17,8
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,5,51,155,1
+    CTEXT           "Legend",IDC_STATIC,12,47,27,8
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,5,9,155,1
+    CTEXT           "Symbol",IDC_STATIC,12,5,27,8
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,5,105,155,1
+END
+
+IDD_GR_DATA_PAGE DIALOG DISCARDABLE  0, 0, 325, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Data"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        ID_GRDATA_GRFOLDER,47,5,253,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "from data file",ID_GRDATA_FROMFILE,"Button",
+                    BS_AUTORADIOBUTTON,12,36,58,8
+    CONTROL         "from (internal) user function",
+                    ID_GRDATA_FROMUSERFUNCTION,"Button",BS_AUTORADIOBUTTON,
+                    12,47,116,8
+    CONTROL         "by using the previous matrix",
+                    ID_GRDATA_FROMPREVIOUSMATRIX,"Button",BS_AUTORADIOBUTTON,
+                    12,58,120,8
+    CONTROL         "by using a clone of the previous matrix",
+                    ID_GRDATA_FROMPREVIOUSCLONEMATRIX,"Button",
+                    BS_AUTORADIOBUTTON,12,69,149,8
+    CONTROL         "Exchange Row-Column",ID_GRDATA_EXCHANGEROWCOLUMN,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,97,186,91,9
+    PUSHBUTTON      "...",ID_GRDATA_FILE_BROWSER,301,19,15,12
+    CONTROL         "by script execution (Gargamel)",ID_GRDATA_FROMSCRIPT,
+                    "Button",BS_AUTORADIOBUTTON,12,80,116,8
+    EDITTEXT        ID_GRDATA_FROMSCRIPT_PATTERN,47,92,251,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",ID_GRDATA_FROMSCRIPT_PATTERN_BROWSER,301,92,15,12
+    CONTROL         "Sort Ys By X Column",ID_GRDATA_SORTBYXCOLUMN,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,189,186,85,9
+    EDITTEXT        ID_GRDATA_FROMSCRIPT_SPLIT,47,106,251,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",ID_GRDATA_FROMSCRIPT_SPLIT_BROWSER,301,106,15,12
+    EDITTEXT        ID_GRDATA_FROMSCRIPT_OPTION,47,120,143,12,ES_AUTOHSCROLL
+    LTEXT           "pattern",IDC_STATIC,22,93,22,9
+    LTEXT           ": block index",IDC_STATIC,75,36,42,9
+    LTEXT           "option",IDC_STATIC,22,121,23,9
+    COMBOBOX        ID_GRDATA_NAME,47,19,253,59,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Reuse files on a disk",ID_GRDATA_REUSEFILEONADISK,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,12,
+                    186,82,9
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYFRAME | SS_SUNKEN,8,182,
+                    309,1
+    EDITTEXT        ID_GRDATA_GRXYFILE,47,134,251,12,ES_AUTOHSCROLL
+    LTEXT           "Grxy File",IDC_STATIC,12,136,31,8
+    PUSHBUTTON      "...",ID_GRDATA_GRXYFILE_BROWSER,301,134,15,12
+    PUSHBUTTON      "!!",ID_GRDATA_FILE_VIEWER,301,33,15,12
+    LTEXT           "Data File",IDC_STATIC,12,21,31,8
+    EDITTEXT        ID_GRDATA_FROMFILE_BLOCKINDEX,120,35,38,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "split",IDC_STATIC,22,108,23,9
+    LTEXT           "(default *)",IDC_STATIC,161,36,36,9
+    PUSHBUTTON      "!",ID_GRDATA_FILE_DBIVIEWER,290,33,10,12
+    LTEXT           "Gr Folder",IDC_STATIC,12,7,31,8
+    PUSHBUTTON      "Apply all",ID_GRDATA_FILE_APPLYALL,253,33,35,12
+END
+
+IDD_GR_AXIS_PAGE DIALOGEX 0, 0, 325, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Axis"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "ID",IDC_STATIC,5,5,95,50
+    COMBOBOX        ID_GRAXIS_ID,14,19,79,105,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "add",ID_GRAXIS_ADD,14,37,19,11,WS_DISABLED
+    PUSHBUTTON      "del",ID_GRAXIS_DEL,35,37,19,11
+    GROUPBOX        "Type",IDC_STATIC,5,58,95,30
+    CONTROL         "X",ID_GRAXIS_TYPE_X,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,12,72,17,10
+    CONTROL         "Y",ID_GRAXIS_TYPE_Y,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,35,72,17,10
+    GROUPBOX        "Location",IDC_STATIC,5,91,95,104
+    CONTROL         "low boundary",ID_GRAXIS_LOC_LOWBOUNDARY,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,12,103,62,10
+    CONTROL         "middle",ID_GRAXIS_LOC_MIDDLE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,12,115,41,10
+    CONTROL         "high boundary",ID_GRAXIS_LOC_HIGHBOUNDARY,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,12,126,60,10
+    CONTROL         "any",ID_GRAXIS_LOC_ANY,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,12,137,25,10
+    LTEXT           "From",IDC_STATIC,26,150,18,8
+    EDITTEXT        ID_GRAXIS_LOC_ANY_FROM,46,148,46,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "To",IDC_STATIC,26,164,18,8
+    EDITTEXT        ID_GRAXIS_LOC_ANY_TO,46,162,46,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "At",IDC_STATIC,26,178,18,8
+    EDITTEXT        ID_GRAXIS_LOC_ANY_AT,46,176,46,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "Display",IDC_STATIC,105,5,215,190
+    PUSHBUTTON      "off",ID_GRAXIS_DISPLAY_OFF,157,5,15,10,BS_FLAT
+    PUSHBUTTON      "on",ID_GRAXIS_DISPLAY_ON,142,5,13,10,BS_FLAT
+    CONTROL         "",ID_GRAXIS_AXIS_DISPLAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,22,8,11
+    LTEXT           "Axis",ID_GRAXIS_AXIS,131,23,18,8,0,WS_EX_RIGHT
+    LTEXT           "(Tick) Label",ID_GRAXIS_TICKLABEL,109,88,40,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "",ID_GRAXIS_LABEL_DISPLAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,87,8,11
+    LTEXT           "(Axis) Title",ID_GRAXIS_AXISTITLE,110,127,39,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "",ID_GRAXIS_TITLE_DISPLAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,126,8,11
+    LTEXT           "Major Grid",ID_GRAXIS_MAJORGRID,110,164,39,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "",ID_GRAXIS_GRIDMAJOR_DISPLAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,162,8,11
+    LTEXT           "Minor Grid",ID_GRAXIS_MINORGRID,109,178,40,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "",ID_GRAXIS_GRIDMINOR_DISPLAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,177,8,11
+    LTEXT           "Eq.",IDC_STATIC,164,104,12,8
+    LTEXT           "Major Tick",ID_GRAXIS_MAJORTICK,115,51,34,8,0,
+                    WS_EX_RIGHT
+    LTEXT           "Spacing Factor",IDC_STATIC,204,127,50,8
+    CONTROL         "",ID_GRAXIS_TICKMAJOR_DISPLAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,49,8,11
+    EDITTEXT        ID_GRAXIS_LABEL_EQUATION,183,102,130,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_GRAXIS_TITLE_SPACEFACTOR,256,125,18,12,ES_AUTOHSCROLL
+    LTEXT           "Step",IDC_STATIC,202,50,17,8
+    EDITTEXT        ID_GRAXIS_TICKMAJOR_STEP,221,48,35,12,ES_AUTOHSCROLL
+    CONTROL         "Auto",ID_GRAXIS_TICKMAJOR_STEP_AUTO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,259,50,28,9
+    EDITTEXT        ID_GRAXIS_TICKMINOR_STEP,221,63,35,12,ES_AUTOHSCROLL
+    CONTROL         "Auto",ID_GRAXIS_TICKMINOR_STEP_AUTO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,259,64,28,9
+    CONTROL         "     ",ID_GRAXIS_GRIDMINOR_COLOR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,164,176,15,14
+    CONTROL         "     ",ID_GRAXIS_GRIDMAJOR_COLOR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,164,160,15,14
+    CONTROL         "     ",ID_GRAXIS_TITLE_COLOR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,164,124,15,14
+    COMBOBOX        ID_GRAXIS_GRIDMAJOR_LINESTYLE,183,160,70,112,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        ID_GRAXIS_GRIDMINOR_LINESTYLE,183,176,70,116,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "     ",ID_GRAXIS_LABEL_COLOR,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,164,85,15,14
+    DEFPUSHBUTTON   "     ",ID_GRAXIS_COLOR,164,20,15,14
+    COMBOBOX        ID_GRAXIS_LINESTYLE,183,21,70,135,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "F",ID_GRAXIS_LABEL_FONTATTR,183,85,15,14
+    LTEXT           "Step",IDC_STATIC,202,64,17,8
+    LTEXT           "Minor Tick",ID_GRAXIS_MINORTICK,115,65,34,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "",ID_GRAXIS_TICKMINOR_DISPLAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,63,8,11
+    EDITTEXT        ID_GRAXIS_TITLE_STRING,164,140,149,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",ID_GRAXIS_TITLE_SPACEFACTOR_SPIN,"msctls_updown32",
+                    UDS_ARROWKEYS,275,125,8,13
+    PUSHBUTTON      "F",ID_GRAXIS_TITLE_FONTATTR,183,124,15,14
+    LTEXT           "Format",IDC_STATIC,204,87,25,9
+    COMBOBOX        ID_GRAXIS_LABEL_FORMAT,231,85,34,71,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP,0,HID_GRAXIS_LABEL_FORMAT
+    CONTROL         "",ID_GRAXIS_TICKMAJOR_INSIDE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,168,50,8,9
+    LTEXT           "In",IDC_STATIC,168,39,8,8
+    CONTROL         "",ID_GRAXIS_TICKMINOR_INSIDE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,168,64,8,9
+    LTEXT           "Out",IDC_STATIC,179,39,13,8
+    CONTROL         "",ID_GRAXIS_TICKMAJOR_OUTSIDE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,182,50,8,9
+    CONTROL         "",ID_GRAXIS_TICKMINOR_OUTSIDE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,182,64,8,9
+    EDITTEXT        ID_GRAXIS_AXLETHICKNESS,256,21,13,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",ID_GRAXIS_AXLETHICKNESS_SPIN,"msctls_updown32",
+                    UDS_ARROWKEYS,270,21,8,13
+    LTEXT           "=Width",IDC_STATIC,281,24,26,8
+END
+
+IDD_GR_ATTR_PAGE DIALOGEX 0, 0, 325, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Attribute"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "Genetic",ID_GRATTR_TYPE_GENETIC,"Button",
+                    BS_AUTORADIOBUTTON | BS_TOP | WS_GROUP,13,67,45,8
+    CONTROL         "Moment (Box)",ID_GRATTR_TYPE_MOMENT,"Button",
+                    BS_AUTORADIOBUTTON | BS_TOP | WS_GROUP,13,91,59,8
+    CONTROL         "Area",ID_GRATTR_TYPE_AREA,"Button",BS_AUTORADIOBUTTON | 
+                    BS_TOP | WS_DISABLED | WS_GROUP,13,115,29,8
+    CONTROL         "Bar",ID_GRATTR_TYPE_BAR,"Button",BS_AUTORADIOBUTTON | 
+                    BS_TOP | WS_DISABLED | WS_GROUP,13,127,29,8
+    CONTROL         "Column",ID_GRATTR_TYPE_COLUMN,"Button",
+                    BS_AUTORADIOBUTTON | BS_TOP | WS_DISABLED | WS_GROUP,13,
+                    139,37,8
+    CONTROL         "Pie",ID_GRATTR_TYPE_PIE,"Button",BS_AUTORADIOBUTTON | 
+                    BS_TOP | WS_DISABLED | WS_GROUP,13,151,24,8
+    GROUPBOX        "Type",IDC_STATIC,5,52,72,114
+    CONTROL         "2 Dimension",ID_GRATTR_DIM_2D,"Button",
+                    BS_AUTORADIOBUTTON | BS_TOP | WS_GROUP,13,20,58,8
+    CONTROL         "3 Dimension",ID_GRATTR_DIM_3D,"Button",
+                    BS_AUTORADIOBUTTON | BS_TOP | WS_DISABLED | WS_GROUP,13,
+                    31,59,8
+    GROUPBOX        "Dim.",IDC_STATIC,5,5,72,43
+    CONTROL         "",ID_GRATTR_SCALE_X_LINEAR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,168,36,8,8
+    CONTROL         "",ID_GRATTR_SCALE_X_LOGARITHMIC,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,168,52,8,8
+    CONTROL         "",ID_GRATTR_SCALE_X_NORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,168,68,8,8
+    CONTROL         "",ID_GRATTR_SCALE_X_WEIBULL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP,168,86,8,8
+    CONTROL         "",ID_GRATTR_SCALE_X_SERIES,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,168,103,8,8
+    LTEXT           "X",IDC_STATIC,169,19,8,8
+    CONTROL         "",ID_GRATTR_SCALE_Y_LINEAR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,184,36,8,8
+    CONTROL         "",ID_GRATTR_SCALE_Y_LOGARITHMIC,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,184,52,8,8
+    CONTROL         "",ID_GRATTR_SCALE_Y_NORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,184,68,8,8
+    CONTROL         "",ID_GRATTR_SCALE_Y_WEIBULL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP,184,86,8,8
+    LTEXT           "Y",IDC_STATIC,186,19,8,8
+    CONTROL         "",ID_GRATTR_SCALE_Z_LINEAR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,201,36,8,8
+    CONTROL         "",ID_GRATTR_SCALE_Z_LOGARITHMIC,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,201,52,8,8
+    CONTROL         "",ID_GRATTR_SCALE_Z_NORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP,201,68,8,8
+    CONTROL         "",ID_GRATTR_SCALE_Z_WEIBULL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP,201,86,8,8
+    LTEXT           "Z",IDC_STATIC,202,19,8,8
+    CONTROL         "Use the previous logical-scale,logical-boundary, and viewport.",
+                    ID_GRATTR_PREVIOUS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    11,180,232,8
+    LTEXT           "Linear",IDC_STATIC,129,36,30,8,0,WS_EX_RIGHT
+    LTEXT           "Logarithmic",IDC_STATIC,111,51,48,8,0,WS_EX_RIGHT
+    LTEXT           "Normal (Gaussian)",IDC_STATIC,91,67,68,8,0,WS_EX_RIGHT
+    LTEXT           "Serial (No-Scatter)",IDC_STATIC,94,103,65,8,0,
+                    WS_EX_RIGHT
+    GROUPBOX        "Scale",IDC_STATIC,84,5,139,161
+    LTEXT           "Weibull",IDC_STATIC,126,85,33,8,0,WS_EX_RIGHT
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,94,47,
+                    118,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,94,64,
+                    118,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,94,80,
+                    118,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,94,98,
+                    118,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,94,30,
+                    118,1
+    CONTROL         "Flat 3D",ID_GRATTR_TYPE_FLAT3D,"Button",
+                    BS_AUTORADIOBUTTON | BS_TOP | WS_GROUP,13,103,45,8
+    CONTROL         "Genetic +",ID_GRATTR_TYPE_GENETICPLUS,"Button",
+                    BS_AUTORADIOBUTTON | BS_TOP | WS_GROUP,13,79,50,8
+    CONTROL         "Check1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,168,124,8,8
+    CONTROL         "Check1",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,184,124,8,8
+    CONTROL         "Check1",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,202,124,8,8
+END
+
+IDD_GR_PLOT_MIXER DIALOG DISCARDABLE  0, 0, 151, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gr (Plot) Mixer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,88,207,28,14
+    PUSHBUTTON      "Cancel",IDCANCEL,118,207,28,14
+    CONTROL         "Tree2",ID_GR_PLOT_MIXER_TREECTRL,"SysTreeView32",
+                    WS_BORDER | WS_TABSTOP,5,5,141,197
+    CONTROL         "Re-layout",ID_RELAYOUT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,208,43,10
+END
+
+IDD_GR_HISTORY DIALOG DISCARDABLE  0, 0, 250, 175
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Grapher Revision History"
+FONT 10, "Times New Roman"
+BEGIN
+    CONTROL         "",ID_BITMAP_GRIPPER,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE,240,166,10,9
+    EDITTEXT        ID_GRHISTORY_EDIT,0,0,250,175,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_GR_XYZB_PAGE DIALOG DISCARDABLE  0, 0, 325, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Variable"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        ID_GRXYZB_XLB,186,29,45,12,ES_AUTOHSCROLL
+    LTEXT           "Low",IDC_STATIC,187,18,15,9
+    LTEXT           "High",IDC_STATIC,188,71,18,9
+    EDITTEXT        ID_GRXYZB_XUB,187,82,45,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_GRXYZB_XLB_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,234,31,8,9
+    CTEXT           "Auto",IDC_STATIC,230,18,17,9
+    CONTROL         "",ID_GRXYZB_XUB_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,235,83,8,9
+    LTEXT           "X",IDC_STATIC,176,31,8,9
+    EDITTEXT        ID_GRXYZB_YLB,186,43,45,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_GRXYZB_YUB,187,96,45,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_GRXYZB_YLB_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,234,45,8,9
+    CONTROL         "",ID_GRXYZB_YUB_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,235,97,8,9
+    LTEXT           "Y",IDC_STATIC,176,45,8,9
+    EDITTEXT        ID_GRXYZB_ZLB,186,57,45,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_GRXYZB_ZUB,187,110,45,12,ES_AUTOHSCROLL
+    CONTROL         "",ID_GRXYZB_ZLB_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,234,59,8,9
+    CONTROL         "",ID_GRXYZB_ZUB_AUTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,235,111,8,9
+    LTEXT           "Z",IDC_STATIC,176,59,8,9
+    LTEXT           "X",IDC_STATIC,176,84,8,9
+    LTEXT           "Y",IDC_STATIC,176,98,8,9
+    LTEXT           "Z",IDC_STATIC,176,112,8,9
+    EDITTEXT        ID_GRXYZB_XLB_DATA,265,29,43,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        ID_GRXYZB_XUB_DATA,265,82,43,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        ID_GRXYZB_YLB_DATA,265,43,43,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        ID_GRXYZB_YUB_DATA,265,96,43,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        ID_GRXYZB_ZLB_DATA,265,57,43,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        ID_GRXYZB_ZUB_DATA,265,110,43,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Data",IDC_STATIC,266,18,18,9
+    CTEXT           "Apply",IDC_STATIC,243,124,21,9
+    LISTBOX         ID_GRXYZB_COLUMNS,13,28,67,153,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_MULTICOLUMN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "X",IDC_STATIC,29,19,8,8
+    CTEXT           "Y",IDC_STATIC,41,19,8,8
+    CTEXT           "Z",IDC_STATIC,53,19,8,8
+    CTEXT           "V",IDC_STATIC,66,19,8,8
+    CTEXT           "C",IDC_STATIC,18,19,8,8
+    PUSHBUTTON      ">>>",ID_GRXYZB_ADD,84,170,18,11
+    LISTBOX         ID_GRXYZB_GROUPS,84,28,67,140,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_MULTICOLUMN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,163,5,1,
+                    191
+    LTEXT           "Variables (Columns)",ID_GRXYZB_VARIABLES,12,5,70,9
+    LTEXT           "Boundary",ID_GRXYZB_BOUNDARY,173,5,35,9
+    PUSHBUTTON      "All",ID_GRXYZB_XLB_ALL,247,29,14,12
+    PUSHBUTTON      "All",ID_GRXYZB_YLB_ALL,247,43,14,12
+    PUSHBUTTON      "All",ID_GRXYZB_ZLB_ALL,247,57,14,12
+    PUSHBUTTON      "All",ID_GRXYZB_XUB_ALL,247,82,14,12
+    PUSHBUTTON      "All",ID_GRXYZB_YUB_ALL,247,96,14,12
+    PUSHBUTTON      "All",ID_GRXYZB_ZUB_ALL,247,110,14,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GR_SMALL_FONT_SELECTION DLGINIT
+BEGIN
+    ID_FONTD_ALIGNMENT, 0x403, 3, 0
+0x424c, "\000" 
+    ID_FONTD_ALIGNMENT, 0x403, 3, 0
+0x434c, "\000" 
+    ID_FONTD_ALIGNMENT, 0x403, 3, 0
+0x544c, "\000" 
+    ID_FONTD_ALIGNMENT, 0x403, 3, 0
+0x4243, "\000" 
+    ID_FONTD_ALIGNMENT, 0x403, 3, 0
+0x4343, "\000" 
+    ID_FONTD_ALIGNMENT, 0x403, 3, 0
+0x5443, "\000" 
+    ID_FONTD_ALIGNMENT, 0x403, 3, 0
+0x4252, "\000" 
+    ID_FONTD_ALIGNMENT, 0x403, 3, 0
+0x4352, "\000" 
+    ID_FONTD_ALIGNMENT, 0x403, 3, 0
+0x5452, "\000" 
+    0
+END
+
+IDD_GR_SYMB_PAGE DLGINIT
+BEGIN
+    ID_GRSLCT_ETC_MAP_NO_FORMAT, 0x403, 3, 0
+0x6425, "\000" 
+    ID_GRSLCT_ETC_MAP_NO_FORMAT, 0x403, 5, 0
+0x2e25, 0x6632, "\000" 
+    ID_GRSLCT_ETC_MAP_NO_FORMAT, 0x403, 5, 0
+0x2e25, 0x6532, "\000" 
+    ID_GRSLCT_ETC_MAP_NO_FORMAT, 0x403, 4, 0
+0x2e25, 0x007a, 
+    ID_GRSLCT_ETC_MAP_NO_FORMAT, 0x403, 5, 0
+0x2e25, 0x7a31, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ZOOM_OUT_CURSOR     CURSOR  DISCARDABLE     "res\\zoomOut.cur"
+IDC_ZOOM_IN_CURSOR      CURSOR  DISCARDABLE     "res\\zoomIn.cur"
+IDC_HAND_SPREADED_CURSOR CURSOR  DISCARDABLE     "res\\handSpreaded.cur"
+IDC_HAND_GRAPSED_CURSOR CURSOR  DISCARDABLE     "res\\handGrapsed.cur"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\IDR_MAINFRAME.bmp"
+IDR_GRAPHER             BITMAP  MOVEABLE PURE   "res\\IDR_GRAPHER.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 190
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 95
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 195, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Grapher"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,87,5,20,20
+    CTEXT           "Grapher on MS-Windows 95/98/NT/2000/XP",IDC_STATIC,5,36,
+                    185,8,SS_NOPREFIX
+    CTEXT           "Grapher Version Here",ID_GRAPHER_VERSION,5,54,185,8
+    DEFPUSHBUTTON   "OK",IDOK,82,81,32,14,WS_GROUP
+    CTEXT           "(copyLeft) yongshik.kim@samsung.com",IDC_STATIC,4,64,
+                    185,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Grapher.ico"
+IDR_CHILDFRAME          ICON    DISCARDABLE     "res\\GrapherDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_GRSCRIPTER MENU DISCARDABLE 
+BEGIN
+    POPUP "Gr Scripter"
+    BEGIN
+        MENUITEM "Log ... \t Alt+G",            IDM_VIEW_LOG, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "Plot \t Ctrl+T",              IDM_GR_PLOT_PAGE, INACTIVE
+        MENUITEM "Attribute (Dimension,Graph Type,Scale)", IDM_GR_ATTR_PAGE
+        , INACTIVE
+        MENUITEM "Data",                        IDM_GR_DATA_PAGE, INACTIVE
+        MENUITEM "Variable (XYZ and Boundary)", IDM_GR_XYZB_PAGE, INACTIVE
+        MENUITEM "Symbol",                      IDM_GR_SYMB_PAGE, INACTIVE
+        MENUITEM "Axis",                        IDM_GR_AXIS_PAGE, INACTIVE
+        MENUITEM "Text",                        IDM_GR_TEXT_PAGE, INACTIVE
+        MENUITEM "User Function",               IDM_GR_UFUN_PAGE, INACTIVE
+        MENUITEM "Viewport",                    IDM_GR_VIEW_PAGE, INACTIVE
+        MENUITEM "Global",                      IDM_GR_GLOB_PAGE, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "Gr &Mixer \tCtrl+M",          IDM_GR_MIXER
+        MENUITEM "Gr &Renovator",               IDM_GR_RENOVATOR
+    END
+END
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW_
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE_
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS_
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "E&xecute"
+    BEGIN
+        MENUITEM "Gr Wizard From Data File",    IDM_GRPLOT_WIZARD_FROMDATA
+        MENUITEM "Gr Wizard thru.Gargamel",     IDM_GRPLOT_WIZARD_THRUGARGAMEL
+
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Gargamel (DEFF) ...",         IDM_GARGAMEL
+        MENUITEM "Smurfette (Wafer Mapper) ...", IDM_SMURFETTE
+        MENUITEM "Brainy (Eng.Calculator) ...", IDM_BRAINY
+        MENUITEM SEPARATOR
+        POPUP "Font"
+        BEGIN
+            MENUITEM "Windows Font ...",            IDM_WINDOWSFONT
+            MENUITEM "Home-Made Font",              IDM_HOMEMADEFONT
+        END
+        POPUP "Defaults"
+        BEGIN
+            MENUITEM "Symbol",                      IDM_GR_PLOT_DEFAULTSYMBOL
+
+        END
+        MENUITEM "&Preference ...",             IDM_PREFERENCE
+    END
+    POPUP "&Help"
+    BEGIN
+        POPUP "Example"
+        BEGIN
+            MENUITEM "Sample 0",                    IDM_SAMPLE0
+            MENUITEM "Sample 1",                    IDM_SAMPLE1
+            MENUITEM "Sample 2",                    IDM_SAMPLE2
+            MENUITEM "Sample 3",                    IDM_SAMPLE3
+            MENUITEM "Sample 4",                    IDM_SAMPLE4
+            MENUITEM "Sample 5",                    IDM_SAMPLE5
+            MENUITEM "Sample 6",                    IDM_SAMPLE6
+            MENUITEM "Sample 7",                    IDM_SAMPLE7
+        END
+        MENUITEM "Pallete ...",                 IDM_PALLETE
+        MENUITEM SEPARATOR
+        MENUITEM "History",                     IDM_HISTORY
+        MENUITEM "&About Grapher ...",          ID_APP_ABOUT
+        MENUITEM "About Author ...",            IDM_ABOUT_AUTHOR
+    END
+END
+
+IDR_CHILDFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW_
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN_
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE_
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS_
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\t Ctrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Clear \t c",                  IDM_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\t Ctrl+X",               ID_EDIT_CUT
+        MENUITEM "&Copy\t Ctrl+C",              ID_EDIT_COPY
+        MENUITEM "&Paste\t Ctrl+V",             ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Zoom In \t z",                IDM_VIEW_ZOOM_IN
+        MENUITEM "Zoom Out \t Shift+Z",         IDM_VIEW_ZOOM_OUT
+        MENUITEM "Full Fit \t f",               IDM_VIEW_FULL
+        MENUITEM SEPARATOR
+        MENUITEM "Redraw \t r",                 IDM_VIEW_REDRAW
+        POPUP "Magnification"
+        BEGIN
+            MENUITEM "25 %",                        IDM_VIEW_MAG_25, CHECKED
+            MENUITEM "50 %",                        IDM_VIEW_MAG_50, CHECKED
+            MENUITEM "75 %",                        IDM_VIEW_MAG_75, CHECKED
+            MENUITEM "100 %",                       IDM_VIEW_MAG_100
+            , CHECKED
+            MENUITEM "125 %",                       IDM_VIEW_MAG_125
+            , CHECKED
+            MENUITEM "200 %",                       IDM_VIEW_MAG_200
+            , CHECKED
+            MENUITEM "400 %",                       IDM_VIEW_MAG_400
+            , CHECKED
+            MENUITEM "Arbitrary",                   IDM_VIEW_MAG_ARBITRARY
+            , CHECKED
+            MENUITEM "Page width",                  IDM_VIEW_MAG_PAGE_WIDTH
+            , CHECKED
+            MENUITEM "Page height",                 IDM_VIEW_MAG_PAGE_HEIGHT
+            , CHECKED
+        END
+        POPUP "Canvas (Page)"
+        BEGIN
+            MENUITEM "A4 (210x297mm) Horizontal",   IDM_VIEW_CANVAS_A4H
+            , CHECKED
+            MENUITEM "A4 (210x297mm) Vertical",     IDM_VIEW_CANVAS_A4V
+            , CHECKED
+            MENUITEM "Arbitrary",                   IDM_VIEW_CANVAS_ARBITRARY
+            , CHECKED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Left \t h",                   IDM_VIEW_LEFT
+        MENUITEM "Right \t l",                  IDM_VIEW_RIGHT
+        MENUITEM "Up \t k",                     IDM_VIEW_UP
+        MENUITEM "Down \t j",                   IDM_VIEW_DOWN
+        MENUITEM "Translate \t t",              IDM_VIEW_TRANSLATE
+        MENUITEM SEPARATOR
+        MENUITEM "Fit to &Canvas \t Alt+C",     IDM_FIT_TO_CANVAS, CHECKED
+        MENUITEM "Fit to &Object \t Alt+O",     IDM_FIT_TO_OBJECT, CHECKED
+        MENUITEM SEPARATOR
+        POPUP "Dump"
+        BEGIN
+            MENUITEM "Postscript",                  IDM_VIEW_DUMP2PS
+            MENUITEM "EMF",                         IDM_VIEW_DUMP2EMF
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "E&xecute"
+    BEGIN
+        MENUITEM "&Grapher \tCtrl+G",           IDM_EXEC_GR
+        MENUITEM "Gr Wizard From Data File",    IDM_GRPLOT_WIZARD_FROMDATA
+        MENUITEM "Gr Wizard thru.Gargamel \tCtrl+W", 
+                                                IDM_GRPLOT_WIZARD_THRUGARGAMEL
+
+        MENUITEM SEPARATOR
+        MENUITEM "Gr Property Shee&t \tCtrl+T", IDM_GR_PLOT_PAGE
+        MENUITEM "Gr &Mixer \tCtrl+M",          IDM_GR_MIXER
+        MENUITEM "Gr &Renovator",               IDM_GR_RENOVATOR
+        MENUITEM "Gr &Batcher",                 IDM_GR_BATCHER
+        MENUITEM "Gr Mar&ker",                  IDM_GR_MARKER
+    END
+    POPUP "&Tools"
+    BEGIN
+        POPUP "Export plot(s) to vector graphics"
+        BEGIN
+            MENUITEM "WMF",                         IDM_FILE_SAVEAS_WMF
+            , INACTIVE
+            MENUITEM "EMF",                         IDM_FILE_SAVEAS_EMF
+            MENUITEM "Postscript",                  IDM_FILE_SAVEAS_PSF
+            , INACTIVE
+            MENUITEM "HPGL",                        IDM_FILE_SAVEAS_HPGLF
+            , INACTIVE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Log ... \t Alt+G",            IDM_VIEW_LOG
+        MENUITEM "Script ... (on a disk) \t Alt+S", IDM_VIEW_SCRIPT
+        MENUITEM SEPARATOR
+        MENUITEM "Gargamel (DEFF) ...",         IDM_GARGAMEL
+        MENUITEM "Smurfette (Wafer Mapper) ...", IDM_SMURFETTE
+        MENUITEM "Brainy (Eng.Calculator) ...", IDM_BRAINY
+        MENUITEM SEPARATOR
+        POPUP "Font"
+        BEGIN
+            MENUITEM "Windows Font ...",            IDM_WINDOWSFONT
+            MENUITEM "Home-Made Font",              IDM_HOMEMADEFONT
+        END
+        POPUP "Defaults"
+        BEGIN
+            MENUITEM "Symbol",                      IDM_GR_PLOT_DEFAULTSYMBOL
+
+        END
+        MENUITEM "&Preference ...",             IDM_PREFERENCE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW_, GRAYED
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM "Close Al&l",                  IDM_CLOSE_ALL_WINDOWS
+    END
+    POPUP "&Help", HELP
+    BEGIN
+        POPUP "Example"
+        BEGIN
+            MENUITEM "Sample 0",                    IDM_SAMPLE0
+            MENUITEM "Sample 1",                    IDM_SAMPLE1
+            MENUITEM "Sample 2",                    IDM_SAMPLE2
+            MENUITEM "Sample 3",                    IDM_SAMPLE3
+            MENUITEM "Sample 4",                    IDM_SAMPLE4
+            MENUITEM "Sample 5",                    IDM_SAMPLE5
+            MENUITEM "Sample 6",                    IDM_SAMPLE6
+            MENUITEM "Sample 7",                    IDM_SAMPLE7
+        END
+        MENUITEM "Pallete ...",                 IDM_PALLETE
+        MENUITEM SEPARATOR
+        MENUITEM "History",                     IDM_HISTORY
+        MENUITEM "&About Grapher ...",          ID_APP_ABOUT
+        MENUITEM "About Author ...",            IDM_ABOUT_AUTHOR
+    END
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Grapher MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Grapher\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Grapher.EXE\0"
+            VALUE "ProductName", "Grapher Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW_
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE_
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      IDM_GRPLOT_WIZARD_THRUGARGAMEL
+END
+
+IDR_GRAPHER TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW_
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE_
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      IDM_VIEW_REDRAW
+    SEPARATOR
+    BUTTON      IDM_VIEW_ZOOM_OFF
+    BUTTON      IDM_VIEW_HAND
+    BUTTON      IDM_VIEW_ZOOM_IN
+    BUTTON      IDM_VIEW_ZOOM_OUT
+    BUTTON      IDM_VIEW_FULL
+    BUTTON      IDM_VIEW_WINDOW_FIT
+    SEPARATOR
+    BUTTON      IDM_WINDOWSFONT
+    SEPARATOR
+    BUTTON      IDM_EXEC_GR
+    BUTTON      IDM_GRPLOT_WIZARD_THRUGARGAMEL
+    SEPARATOR
+    BUTTON      IDM_GR_PLOT_VIEWPORT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "C",            IDM_FIT_TO_CANVAS,      VIRTKEY, ALT, NOINVERT
+    "F",            IDM_VIEW_FULL,          VIRTKEY, NOINVERT
+    "G",            IDM_EXEC_GR,            VIRTKEY, CONTROL, NOINVERT
+    "G",            IDM_VIEW_LOG,           VIRTKEY, ALT, NOINVERT
+    "M",            IDM_GR_MIXER,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_FIT_TO_OBJECT,      VIRTKEY, ALT, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "R",            IDM_VIEW_REDRAW,        VIRTKEY, NOINVERT
+    "S",            ID_FILE_SAVE_,          VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_VIEW_SCRIPT,        VIRTKEY, ALT, NOINVERT
+    "T",            IDM_GR_PLOT_PAGE,       VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_VIEW_ZOOM_IN,       VIRTKEY, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_VIEW_ZOOM_OUT,      VIRTKEY, SHIFT, NOINVERT
+    "c",            IDM_CLEAR,              ASCII,  NOINVERT
+    "h",            IDM_VIEW_LEFT,          ASCII,  NOINVERT
+    "j",            IDM_VIEW_DOWN,          ASCII,  NOINVERT
+    "k",            IDM_VIEW_UP,            ASCII,  NOINVERT
+    "l",            IDM_VIEW_RIGHT,         ASCII,  NOINVERT
+    "t",            IDM_VIEW_TRANSLATE,     ASCII,  NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Grapher\n\nGr\n\n\nGrapher.Document\nGrapher Document"
+    IDR_CHILDFRAME          "\nGrapher\nGrapher\n\n\nGrapher.Document\nGrapher Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Grapher"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_EXEC_GR             "Execute Gr ...\nGrapher"
+    ID_FILE_OPEN_           "Open an existing document\nOpen"
+    IDM_CLOSEALL            "Close all open windows"
+    IDM_GR_RENOVATOR        "Renovate the existing script"
+    IDM_GR_BATCHER          "Do a batch processing"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_SMURFETTE           "Execute Smurfette ...\nSmurfette"
+    IDM_GARGAMEL            "Execute Gargamel ...\nGargamel"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_BRAINY              "Execute Brainy ...\nBrainy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_VIEW_FULL           "View a whole of a plot\nView a whole"
+    IDM_VIEW_ZOOM_OFF       "Set zooming off\nZoom-off"
+    IDM_VIEW_ZOOM_IN        "Selects the zoom-in tool\nZoom-in"
+    IDM_VIEW_ZOOM_OUT       "Selects the zoom-out tool\nZoom-out"
+    IDM_VIEW_REDRAW         "Redraw ...\nRedraw"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_VIEW_HAND           "\nGrasp and Drag to move"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_WINDOWSFONT         "Choose a font among the Windows font set."
+    IDM_HISTORY             "Check revision history"
+    IDM_VIEW_SCRIPT         "View and edit a script on a hard disk, not in a memory."
+    IDM_GR_MIXER            "Mix some of gr plot windows into one and make its window"
+    IDM_GRPLOT_WIZARD_THRUGARGAMEL "Wizard for Gr script\nGrapher Wizard"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_VIEW_WINDOW_FIT     "Fit the window frame to your canvas"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Grapher.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

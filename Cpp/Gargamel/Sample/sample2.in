@@ -1,0 +1,17 @@
+!!Gargamel,2K.0808(c)shik
+!!settings
+sDumpFileName= D:\HOME\Computer\CnCPP\Gargamel\Sample\sample2.out
+nSearchType= Absolutely
+nColumnarMatrixType= No
+bNumericAlias= True
+nPostProcessType= None
+!!strings
+"aaa" 	A 	1 1 %s z 0 0
+"bbb" 	B 	1 1 %s z 0 0
+"ccc" 	C 	1 1 %e z 100 1e99
+!!files
+< first
+g:\HOME\CD2-Code\CnCPP\Gargamel\Sample\sample2-1.txt
+< second 2
+g:\HOME\CD2-Code\CnCPP\Gargamel\Sample\sample2-2.txt
+!!end

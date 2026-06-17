@@ -1,0 +1,5 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by GargamelPattern.rc
+//
+#define HID_PATTERN_FORMAT              0x806c0415    // IDD_PROPPAGE_GARGAMELPATTERN
+#define HID_PATTRN2_FORMAT              0x80c900d1    // IDD_PROPPAGE_GARGAMELPATTRN2
