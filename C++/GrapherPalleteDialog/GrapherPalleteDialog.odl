@@ -1,0 +1,68 @@
+// GrapherPalleteDialog.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (GrapherPalleteDialog.tlb) that will become a resource in
+// GrapherPalleteDialog.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(0F24C349-4552-11D5-9E85-0000E8C3064A), version(1.0),
+  helpfile("GrapherPalleteDialog.hlp"),
+  helpstring("GrapherPalleteDialog ActiveX Control module"),
+  control ]
+library GRAPHERPALLETEDIALOGLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CGrapherPalleteDialogCtrl
+
+	[ uuid(0F24C34A-4552-11D5-9E85-0000E8C3064A),
+	  helpstring("Dispatch interface for GrapherPalleteDialog Control"), hidden ]
+	dispinterface _DGrapherPalleteDialog
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CGrapherPalleteDialogCtrl)
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CGrapherPalleteDialogCtrl)
+			[id(1)] void DoModal();
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CGrapherPalleteDialogCtrl
+
+	[ uuid(0F24C34B-4552-11D5-9E85-0000E8C3064A),
+	  helpstring("Event interface for GrapherPalleteDialog Control") ]
+	dispinterface _DGrapherPalleteDialogEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CGrapherPalleteDialogCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CGrapherPalleteDialogCtrl
+
+	[ uuid(0F24C34C-4552-11D5-9E85-0000E8C3064A),
+	  helpstring("GrapherPalleteDialog Control"), control ]
+	coclass GrapherPalleteDialog
+	{
+		[default] dispinterface _DGrapherPalleteDialog;
+		[default, source] dispinterface _DGrapherPalleteDialogEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

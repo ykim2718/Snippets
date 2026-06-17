@@ -1,0 +1,1 @@
+e:\±è¿ë½Ä\Computer\CnCpp\DEFF\Debug\DEFF.exe e:\±è¿ë½Ä\Computer\CnCpp\DEFF\Sample\Sample2.in c:\WINDOWS\TEMP\grTemporary.daT

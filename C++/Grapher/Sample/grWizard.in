@@ -1,0 +1,15 @@
+!!Gargamel,2003.0209
+!!settings
+qDumpFileName= G:\HOME\CD2-Code\CnCPP\Grapher\Sample\grWizard.out
+nSearchType= Absolutely
+nColumnarMatrixType= No
+bNumericAlias= False
+nPostProcessType= None
+!!strings
+"pattern 0" 	pattern 0 	1 1 %d z=z 0 0
+"pattern 1" 	pattern 1 	1 1 %1.3f z=z 0 0
+"pattern 2" 	pattern 2 	1 1 %1.3e z=z 0 0
+!!files
+<Alias
+G:\HOME\CD2-Code\CnCPP\Grapher\Sample\grWizard.dat
+!!end

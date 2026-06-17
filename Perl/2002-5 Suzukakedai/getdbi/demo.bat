@@ -1,0 +1,2 @@
+getdbi.pl *.dat
+pause

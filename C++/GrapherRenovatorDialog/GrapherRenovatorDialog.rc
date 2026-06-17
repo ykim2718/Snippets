@@ -1,0 +1,237 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""GrapherRenovatorDialog.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "»ï¼ºÀüÀÚ\0"
+            VALUE "FileDescription", "GrapherRenovatorDialog ActiveX Control Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GrapherRenovatorDialog\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GrapherRenovatorDialog.OCX\0"
+            VALUE "ProductName", "GrapherRenovatorDialog ActiveX Control Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_GRAPHERRENOVATORDIALOG BITMAP  DISCARDABLE     "GrapherRenovatorDialogCtl.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_GRAPHERRENOVATORDIALOG DIALOG DISCARDABLE  0, 0, 250, 62
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TODO: Place controls to manipulate properties of GrapherRenovatorDialog Control on this dialog.",
+                    IDC_STATIC,7,25,229,16
+END
+
+IDD_GR_RENOVATOR DIALOG DISCARDABLE  0, 0, 375, 275
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Grapher (Script) Renovator / Batcher"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,294,247,36,
+                    21
+    CONTROL         "CANCEL",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,334,
+                    247,36,21
+    CONTROL         "List1",ID_RENOVATOR_LISTCTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,5,5,365,227
+    PUSHBUTTON      "Add ...",ID_RENOVATOR_ADD,5,237,29,14
+    PUSHBUTTON      "Delete",ID_RENOVATOR_DELETE,37,237,29,14
+    PUSHBUTTON      "Folder",ID_RENOVATOR_OUTFOLDER_BROWSER,5,254,29,14
+    EDITTEXT        ID_RENOVATOR_OUTFOLDER,37,254,206,14,ES_AUTOHSCROLL
+    CONTROL         "Progress1",ID_RENOVATOR_PROGRESS,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,204,236,76,15
+    PUSHBUTTON      "Clear",ID_RENOVATOR_CLEAR,69,237,29,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROPPAGE_GRAPHERRENOVATORDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_GR_RENOVATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 370
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 268
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_RENOVATOR MENU DISCARDABLE 
+BEGIN
+    POPUP "IDR_RENOVATOR"
+    BEGIN
+        MENUITEM "Open Grapher File",           IDR_RENOVATOR_OPENGRAPHERFILE
+
+        MENUITEM "Save Script",                 IDR_RENOVATOR_SAVESCRIPT
+        MENUITEM "Print Plot",                  IDR_RENOVATOR_PRINTPLOT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GRAPHERRENOVATORDIALOG "GrapherRenovatorDialog Control"
+    IDS_GRAPHERRENOVATORDIALOG_PPG "GrapherRenovatorDialog Property Page"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GRAPHERRENOVATORDIALOG_PPG_CAPTION "General"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+OKU                     BITMAP  MOVEABLE PURE   "RES\\OKU.BMP"
+OKF                     BITMAP  MOVEABLE PURE   "RES\\OKF.BMP"
+OKD                     BITMAP  MOVEABLE PURE   "RES\\OKD.BMP"
+IDB_STATEICONS          BITMAP  DISCARDABLE     "res\\stateico.bmp"
+IDB_SMALLICONS          BITMAP  FIXED IMPURE    "res\\smallico.bmp"
+IDB_LARGEICONS          BITMAP  FIXED IMPURE    "res\\largeico.bmp"
+CANCELU                 BITMAP  MOVEABLE PURE   "RES\\CANCELU.BMP"
+CANCELF                 BITMAP  MOVEABLE PURE   "RES\\CANCELF.BMP"
+CANCELD                 BITMAP  MOVEABLE PURE   "RES\\CANCELD.BMP"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "GrapherRenovatorDialog.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

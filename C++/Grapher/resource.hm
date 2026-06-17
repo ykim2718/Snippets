@@ -1,0 +1,5 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by Grapher.rc
+//
+#define HID_GRAXIS_LABEL_FORMAT         0x809c0415    // IDD_GR_AXIS_PAGE [Korean]
+#define HID_GRSLCT_ETC_MAP_NO_FORMAT    0x809f03f4    // IDD_GR_SYMB_PAGE [Korean]

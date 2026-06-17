@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GargamelPatternForMatrix - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /nologo /D "NDEBUG" /tlb "Release/GargamelPatternForMatrix.tlb" /mktyplib203 /win32 "G:\HOME\CD2-Code\CnCPP\GargamelPatternForMatrix\GargamelPatternForMatrix.odl""
+Creating command line "rc.exe /l 0x411 /fo"Release/GargamelPatternForMatrix.res" /i "Release" /d "NDEBUG" /d "_AFXDLL" "G:\HOME\CD2-Code\CnCPP\GargamelPatternForMatrix\GargamelPatternForMatrix.rc"" 
+Creating temporary file "C:\DOCUME~1\yskim\LOCALS~1\Temp\RSP8A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/GargamelPatternForMatrix.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\HOME\CD2-Code\CnCPP\GargamelPatternForMatrix\GargamelPatternForMatrix.cpp"
+"G:\HOME\CD2-Code\CnCPP\GargamelPatternForMatrix\GargamelPatternForMatrixCtl.cpp"
+"G:\HOME\CD2-Code\CnCPP\GargamelPatternForMatrix\GargamelPatternForMatrixDialog.cpp"
+"G:\HOME\CD2-Code\CnCPP\GargamelPatternForMatrix\GargamelPatternForMatrixPpg.cpp"
+"G:\HOME\CD2-Code\CnCPP\myCpp\Token.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\yskim\LOCALS~1\Temp\RSP8A.tmp" 
+Creating temporary file "C:\DOCUME~1\yskim\LOCALS~1\Temp\RSP8B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/GargamelPatternForMatrix.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\HOME\CD2-Code\CnCPP\GargamelPatternForMatrix\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\yskim\LOCALS~1\Temp\RSP8B.tmp" 
+Creating temporary file "C:\DOCUME~1\yskim\LOCALS~1\Temp\RSP8C.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/GargamelPatternForMatrix.pdb" /machine:I386 /def:".\GargamelPatternForMatrix.def" /out:"Release/GargamelPatternForMatrix.ocx" /implib:"Release/GargamelPatternForMatrix.lib" 
+".\Release\GargamelPatternForMatrix.obj"
+".\Release\GargamelPatternForMatrixCtl.obj"
+".\Release\GargamelPatternForMatrixDialog.obj"
+".\Release\GargamelPatternForMatrixPpg.obj"
+".\Release\StdAfx.obj"
+".\Release\Token.obj"
+".\Release\GargamelPatternForMatrix.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\yskim\LOCALS~1\Temp\RSP8C.tmp"
+Creating temporary file "C:\DOCUME~1\yskim\LOCALS~1\Temp\RSP8D.bat" with contents
+[
+@echo off
+regsvr32 /s /c ".\Release\GargamelPatternForMatrix.ocx"
+echo regsvr32 exec. time > ".\Release\regsvr32.trg"
+]
+Creating command line "C:\DOCUME~1\yskim\LOCALS~1\Temp\RSP8D.bat"
+Creating Type Library...
+Processing G:\HOME\CD2-Code\CnCPP\GargamelPatternForMatrix\GargamelPatternForMatrix.odl
+GargamelPatternForMatrix.odl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GargamelPatternForMatrix.cpp
+GargamelPatternForMatrixCtl.cpp
+GargamelPatternForMatrixDialog.cpp
+GargamelPatternForMatrixPpg.cpp
+Token.cpp
+Generating Code...
+Linking...
+   Creating library Release/GargamelPatternForMatrix.lib and object Release/GargamelPatternForMatrix.exp
+<h3>Output Window</h3>
+Registering ActiveX Control...
+
+
+
+<h3>Results</h3>
+GargamelPatternForMatrix.ocx - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

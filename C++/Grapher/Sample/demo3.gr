@@ -1,0 +1,73 @@
+%grBeginning
+
+_defn "view|14" "view x1=0.15 x2=0.45 y1=0.55 y2=0.90"
+_defn "view|24" "view x1=0.55 x2=0.85 y1=0.55 y2=0.90"
+_defn "view|34" "view x1=0.15 x2=0.45 y1=0.05 y2=0.40"
+_defn "view|44" "view x1=0.55 x2=0.85 y1=0.05 y2=0.40"
+
+.glob 
+   gtxt txt="<DEMO-3>" t.size=20
+   gout portrait ps ! eps hpgl
+   
+.plot ! four leaved rose
+   attr xlin ylin zlin
+   data type=user
+   slct ____ xno=1 yno=2
+        xlb=-10 xub=10 ylb=-10 yub=10
+        type=7 nCopy=0 legend.txt="4-leaved rose" pen=1
+               symbol.size=7 symbol.color=red hollow
+               line=on line.width=2 line.dash_list=(4,4) line.color=magenta
+   ufun type=Demo nrl=1 nrh=60 ncl=1 nch=2 drl=0 drh=360
+   axis	type=x loc=lower
+	       title.size=7 title="x"
+	       gridmajor=on gridmajor.color=green2
+               gridminor=on gridminor.color=green1 gridminor.dash_list=shortdashed
+        type=x loc=upper label=off
+        type=y loc=lower
+               title.size=7 title="y" title.align=22 title.spaceFactor=8
+               gridmajor=on gridmajor.color=green2
+               gridminor=on gridminor.color=green1 gridminor.dash_list=shortdashed 
+        type=y loc=upper label=off
+   text type=2 txt="type=Demo"
+   view|14
+   
+.plot
+   attr xlog ylin
+   data type=user
+   slct ____ xno=1 yno=2
+        type=9 legend.txt="NORMSDIST (Excel Style)" solid line=off
+               symbol.color=red symbol.size=9
+   ufun type=NORMSDIST nrl=1 nrh=201 ncl=1 nch=2 drl=1e-3 drh=1 dcl2=0.1 dch=0.9
+   axis type=x loc=lower label.org=t title.size=10 title.align=22 label.format="%1.0z"
+        type=x loc=upper label=off
+        type=y loc=lower label.org=t title.size=10 title.align=32
+        type=y loc=upper label=off
+   text type=2 txt="type=NORMSDIST"
+   view|24
+   
+.plot
+   slct ____ xno=1 yno=* autoLegend=on
+        type=14 color=red line=off
+        type=15 color=red line=off
+        type=16 color=red line=off
+   ufun type=PolynomialFit option=5 
+               rline.color=magenta rline.width=2 rline.dash_list=solid
+        type=PolyCoeffsDrawing option=3 
+               argument="+9.8987e-01,-5.7454e-03,+2.5285e-05,-5.3185e-08"
+               rline.color=blue rline.width=3 rline.dash_list=longdashed
+   axis type=x loc=lower
+        type=x loc=upper label=off
+        type=y loc=lower
+        type=y loc=upper label=off
+   view|34
+
+   
+%grEnd
+
+   234 0.41 0.39 0.42
+   512 0.46 0.44 0.45
+   114 0.59 0.51 0.63
+   319 0.49 0.43 0.51
+   404 0.47 0.44 0.48
+   844 0.33 0.31 0.34
+   56  0.74 0.62 0.76
