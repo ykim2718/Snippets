@@ -1,0 +1,80 @@
+################################################################################
+#
+# shik(c)970211,0920
+#
+################################################################################
+
+# xhost +
+setenv DISPLAY mipu7:0.0
+unset ignoreeof
+stty erase ^H
+stty kill 
+
+#---- C environment -----------------------------------------------------------#
+alias maek make
+alias xres 'setenv XAPPLRESDIR $cwd'
+alias ores 'setenv XAPPLRESDIR $OPENWINHOME/lib/X11/app-defaults'
+
+# X/Motif include
+if (-e /usr/include/X11R5) then
+   setenv SHIK_XINC '/usr/include/X11R5'
+else if (-e /usr/include/X11) then
+   setenv SHIK_XINC '/usr/include/X11'
+else if (-e /usr/openwin/include) then
+   setenv SHIK_XINC '/usr/openwin/include'
+endif
+if (-e /usr/include/Motif1.2) then
+   setenv SHIK_MINC '/usr/include/Motif1.2'
+else if (-e /usr/dt/share/include) then
+   setenv SHIK_MINC '/usr/dt/share/include'
+endif
+# X/Motif library
+if (-e /usr/lib/X11R5) then
+   setenv SHIK_XLIB '/usr/lib/X11R5'
+else if (-e /usr/lib/X11) then
+   setenv SHIK_XLIB '/usr/lib/X11'
+else if (-e /usr/openwin/lib) then
+   setenv SHIK_XLIB '/usr/openwin/lib'
+endif
+if (-e /usr/lib/Motif1.2) then
+   setenv SHIK_MLIB '/usr/lib/Motif1.2'
+else if (-e /usr/dt/lib) then
+   setenv SHIK_MLIB '/usr/dt/lib'
+endif
+
+alias dbxtool '$OPENWINHOME/bin/xview/dbxtool &'
+alias debugger 'setenv DISPLAY :0.0;/appl/SOL/SUNWspro/bin/debugger &'
+
+#---- MISCELLANEOUS -----------------------------------------------------------#
+alias lpx enscript -fCourier-Bold10
+alias etlpr enscript -fCourier-Bold9 -r -h
+alias lock lockscreen
+alias Ppr  lpr -dPCL4 -opostscript -o12 -olpi8 -otl132
+alias grep grep -n
+alias sunview "sunview  -f 255 255 255 -b 0 0 0"
+alias suntools "suntools  -f 255 255 255 -b 0 0 0"
+#---- USER ALIAS --------------------------------------------------------------#
+alias Ppr  lpr -dPCL4 -opostscript -o12 -olpi8 -otl132
+alias c   clear
+alias ls  ls -F
+alias ll  "ls -aslF | more"
+alias dir "ls -aslF | more"
+alias h   history
+alias mv  mv -i
+alias search "find . -name '\!*' -print"
+alias fe   "find . -name '*'\!:1'*' -print -exec \!:2* {} \;"
+alias s1  set g1 = \`pwd\`
+alias s2  set g2 = \`pwd\`
+alias go1 cd g1
+alias go2 cd g2
+alias downLoad 'lp -dPOST /appl/SUN/stens/lib/downLoad/*'
+
+alias run telnet 165.213.47.67
+alias hvi "helvis"
+if (-e /vmunix) then
+    alias hstat "/appl/SUN/meta/96/sun4/lmstat -a -c /appl/SUN/meta/96/license.dat"
+else
+    alias hstat "/appl/HP/meta/96/pa/lmstat -a -c /appl/HP/meta/96/license.dat"
+endif
+
+################################################################################

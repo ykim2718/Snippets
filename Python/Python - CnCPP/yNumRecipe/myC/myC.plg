@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: xbsstep - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\YKim\LOCALS~1\Temp\RSP196.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/xbsstep.pdb" /debug /machine:I386 /out:"Debug/xbsstep.exe" /pdbtype:sept 
+".\Debug\xbsstep.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\YKim\LOCALS~1\Temp\RSP196.tmp"
+<h3>Output Window</h3>
+Linking...
+xbsstep.obj : error LNK2001: unresolved external symbol _free_vector
+xbsstep.obj : error LNK2001: unresolved external symbol _free_matrix
+xbsstep.obj : error LNK2001: unresolved external symbol _odeint
+xbsstep.obj : error LNK2001: unresolved external symbol _bsstep
+xbsstep.obj : error LNK2001: unresolved external symbol _bessj
+xbsstep.obj : error LNK2001: unresolved external symbol _bessj1
+xbsstep.obj : error LNK2001: unresolved external symbol _bessj0
+xbsstep.obj : error LNK2001: unresolved external symbol _matrix
+xbsstep.obj : error LNK2001: unresolved external symbol _vector
+LIBCD.lib(wincrt0.obj) : error LNK2001: unresolved external symbol _WinMain@16
+Debug/xbsstep.exe : fatal error LNK1120: 10 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+myC.lib - 11 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

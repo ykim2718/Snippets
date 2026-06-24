@@ -1,0 +1,37 @@
+#!/bin/ksh
+#43290502,0518,0606(copyLeft)shik
+#43290612,0822,0826,0920(copyLeft)shik
+
+#########1#########2#########3#########4#########5#########6#########7#########8
+hostName="`hostname`"
+if [[ $hostName = ?(hmosprc1|shmos4|shmos6) ]] then # HP #######################
+   grx="grxHP"
+elif [[ $hostName = ?(tdu5|mipu7) ]] then # SUN ################################
+   grx="grxSUN"
+else
+   grx="unknown"
+fi
+for file in $*
+do
+    if [[ ! -r  $file ]] then
+       print "Error, .. \"$file\" not found ...."
+       continue
+    fi
+    m4 $file > .$file
+    if (( $? ))
+    then
+       \cp $file .$file
+    fi
+    echo ">>> $file <<<"
+    $grx -s -geometry 600x600+0+0 $PWD/.$file
+    for ext in log ps psf xyp fmt
+    do
+       if [[ -a .$file.$ext ]] then
+          \mv -f .$file.$ext $file.$ext
+       fi
+    done
+    \rm -f .$file*
+done
+exit
+#########1#########2#########3#########4#########5#########6#########7#########8
+

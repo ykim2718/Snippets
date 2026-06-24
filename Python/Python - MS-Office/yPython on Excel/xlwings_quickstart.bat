@@ -1,0 +1,2 @@
+xlwings quickstart mymodule
+pause

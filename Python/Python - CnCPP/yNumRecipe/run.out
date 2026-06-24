@@ -1,0 +1,3587 @@
+
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD>cls
+
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD>del *.pyd 
+
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD>set SWIGPATH="c:\Coding\swigwin-3.0.8" 
+
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD>set path="c:\Coding\swigwin-3.0.8" 
+
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD>swig.exe -IyNumRecipe -debug-tmsearch -python ynr.i 
+ynr.i(4) : Searching for a suitable 'except' typemap for: double *new_doublePointer
+  Looking for: double *new_doublePointer
+  Looking for: double *
+  Looking for: SWIGTYPE *new_doublePointer
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE new_doublePointer
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'out' typemap for: double *new_doublePointer
+  Looking for: double *new_doublePointer
+  Looking for: double *
+  Looking for: SWIGTYPE *new_doublePointer
+  Looking for: SWIGTYPE *
+  Using: %typemap(out) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'ret' typemap for: double *new_doublePointer
+  Looking for: double *new_doublePointer
+  Looking for: double *
+  Looking for: SWIGTYPE *new_doublePointer
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE new_doublePointer
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'default' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'arginit' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'in' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(4) : Searching for a suitable 'typecheck' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(typecheck) double
+ynr.i(4) : Searching for a suitable 'argout' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'check' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'freearg' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(freearg) double
+ynr.i(4) : Searching for a suitable 'except' typemap for: double *copy_doublePointer
+  Looking for: double *copy_doublePointer
+  Looking for: double *
+  Looking for: SWIGTYPE *copy_doublePointer
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE copy_doublePointer
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'out' typemap for: double *copy_doublePointer
+  Looking for: double *copy_doublePointer
+  Looking for: double *
+  Looking for: SWIGTYPE *copy_doublePointer
+  Looking for: SWIGTYPE *
+  Using: %typemap(out) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'ret' typemap for: double *copy_doublePointer
+  Looking for: double *copy_doublePointer
+  Looking for: double *
+  Looking for: SWIGTYPE *copy_doublePointer
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE copy_doublePointer
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'default' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'in' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(4) : Searching for a suitable 'doc' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+ynr.i(4) : Searching for a suitable 'default' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'in' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(4) : Searching for a suitable 'doc' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+ynr.i(4) : Searching for a suitable 'default' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'arginit' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'in' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'typecheck' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'argout' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'check' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'freearg' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'except' typemap for: void delete_doublePointer
+  Looking for: void delete_doublePointer
+  Looking for: void
+  Looking for: SWIGTYPE delete_doublePointer
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'out' typemap for: void delete_doublePointer
+  Looking for: void delete_doublePointer
+  Looking for: void
+  Using: %typemap(out) void
+ynr.i(4) : Searching for a suitable 'ret' typemap for: void delete_doublePointer
+  Looking for: void delete_doublePointer
+  Looking for: void
+  Looking for: SWIGTYPE delete_doublePointer
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'default' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'in' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'doc' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'default' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'in' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'doc' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'default' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'default' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'arginit' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'arginit' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'in' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'in' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(4) : Searching for a suitable 'typecheck' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'typecheck' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(typecheck) double
+ynr.i(4) : Searching for a suitable 'argout' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'argout' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'check' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'check' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'freearg' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'freearg' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(freearg) double
+ynr.i(4) : Searching for a suitable 'except' typemap for: void doublePointer_assign
+  Looking for: void doublePointer_assign
+  Looking for: void
+  Looking for: SWIGTYPE doublePointer_assign
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'out' typemap for: void doublePointer_assign
+  Looking for: void doublePointer_assign
+  Looking for: void
+  Using: %typemap(out) void
+ynr.i(4) : Searching for a suitable 'ret' typemap for: void doublePointer_assign
+  Looking for: void doublePointer_assign
+  Looking for: void
+  Looking for: SWIGTYPE doublePointer_assign
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'default' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'default' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'in' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'in' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(4) : Searching for a suitable 'doc' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'doc' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+ynr.i(4) : Searching for a suitable 'default' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'default' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'in' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'in' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(4) : Searching for a suitable 'doc' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'doc' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+ynr.i(4) : Searching for a suitable 'default' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'arginit' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'in' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'typecheck' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'argout' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'check' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'freearg' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'except' typemap for: double doublePointer_value
+  Looking for: double doublePointer_value
+  Looking for: double
+  Looking for: SWIGTYPE doublePointer_value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'out' typemap for: double doublePointer_value
+  Looking for: double doublePointer_value
+  Looking for: double
+  Using: %typemap(out) double
+ynr.i(4) : Searching for a suitable 'ret' typemap for: double doublePointer_value
+  Looking for: double doublePointer_value
+  Looking for: double
+  Looking for: SWIGTYPE doublePointer_value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'default' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'in' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'doc' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'default' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE obj
+  Looking for: SWIGTYPE
+  None found
+ynr.i(4) : Searching for a suitable 'in' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(4) : Searching for a suitable 'doc' typemap for: double *obj
+  Looking for: double *obj
+  Looking for: double *
+  Looking for: SWIGTYPE *obj
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'default' typemap for: size_t nelements
+  Looking for: size_t nelements
+  Looking for: size_t
+  Looking for: SWIGTYPE nelements
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'arginit' typemap for: size_t nelements
+  Looking for: size_t nelements
+  Looking for: size_t
+  Looking for: SWIGTYPE nelements
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'in' typemap for: size_t nelements
+  Looking for: size_t nelements
+  Looking for: size_t
+  Using: %typemap(in) size_t
+ynr.i(7) : Searching for a suitable 'typecheck' typemap for: size_t nelements
+  Looking for: size_t nelements
+  Looking for: size_t
+  Using: %typemap(typecheck) size_t
+ynr.i(7) : Searching for a suitable 'argout' typemap for: size_t nelements
+  Looking for: size_t nelements
+  Looking for: size_t
+  Looking for: SWIGTYPE nelements
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'check' typemap for: size_t nelements
+  Looking for: size_t nelements
+  Looking for: size_t
+  Looking for: SWIGTYPE nelements
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'freearg' typemap for: size_t nelements
+  Looking for: size_t nelements
+  Looking for: size_t
+  Using: %typemap(freearg) size_t
+ynr.i(7) : Searching for a suitable 'except' typemap for: double *new_doubleArray
+  Looking for: double *new_doubleArray
+  Looking for: double *
+  Looking for: SWIGTYPE *new_doubleArray
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE new_doubleArray
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'out' typemap for: double *new_doubleArray
+  Looking for: double *new_doubleArray
+  Looking for: double *
+  Looking for: SWIGTYPE *new_doubleArray
+  Looking for: SWIGTYPE *
+  Using: %typemap(out) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'ret' typemap for: double *new_doubleArray
+  Looking for: double *new_doubleArray
+  Looking for: double *
+  Looking for: SWIGTYPE *new_doubleArray
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE new_doubleArray
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'default' typemap for: size_t nelements
+  Looking for: size_t nelements
+  Looking for: size_t
+  Looking for: SWIGTYPE nelements
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'in' typemap for: size_t nelements
+  Looking for: size_t nelements
+  Looking for: size_t
+  Using: %typemap(in) size_t
+ynr.i(7) : Searching for a suitable 'doc' typemap for: size_t nelements
+  Looking for: size_t nelements
+  Looking for: size_t
+  Looking for: SWIGTYPE nelements
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+ynr.i(7) : Searching for a suitable 'default' typemap for: size_t nelements
+  Looking for: size_t nelements
+  Looking for: size_t
+  Looking for: SWIGTYPE nelements
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'in' typemap for: size_t nelements
+  Looking for: size_t nelements
+  Looking for: size_t
+  Using: %typemap(in) size_t
+ynr.i(7) : Searching for a suitable 'doc' typemap for: size_t nelements
+  Looking for: size_t nelements
+  Looking for: size_t
+  Looking for: SWIGTYPE nelements
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+ynr.i(7) : Searching for a suitable 'default' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'arginit' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'in' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'typecheck' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'argout' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'check' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'freearg' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'except' typemap for: void delete_doubleArray
+  Looking for: void delete_doubleArray
+  Looking for: void
+  Looking for: SWIGTYPE delete_doubleArray
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'out' typemap for: void delete_doubleArray
+  Looking for: void delete_doubleArray
+  Looking for: void
+  Using: %typemap(out) void
+ynr.i(7) : Searching for a suitable 'ret' typemap for: void delete_doubleArray
+  Looking for: void delete_doubleArray
+  Looking for: void
+  Looking for: SWIGTYPE delete_doubleArray
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'default' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'in' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'doc' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'default' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'in' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'doc' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'default' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'default' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'arginit' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'arginit' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'in' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'in' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Using: %typemap(in) size_t
+ynr.i(7) : Searching for a suitable 'typecheck' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'typecheck' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Using: %typemap(typecheck) size_t
+ynr.i(7) : Searching for a suitable 'argout' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'argout' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'check' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'check' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'freearg' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'freearg' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Using: %typemap(freearg) size_t
+ynr.i(7) : Searching for a suitable 'except' typemap for: double doubleArray_getitem
+  Looking for: double doubleArray_getitem
+  Looking for: double
+  Looking for: SWIGTYPE doubleArray_getitem
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'out' typemap for: double doubleArray_getitem
+  Looking for: double doubleArray_getitem
+  Looking for: double
+  Using: %typemap(out) double
+ynr.i(7) : Searching for a suitable 'ret' typemap for: double doubleArray_getitem
+  Looking for: double doubleArray_getitem
+  Looking for: double
+  Looking for: SWIGTYPE doubleArray_getitem
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'default' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'default' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'in' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'in' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Using: %typemap(in) size_t
+ynr.i(7) : Searching for a suitable 'doc' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'doc' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+ynr.i(7) : Searching for a suitable 'default' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'default' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'in' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'in' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Using: %typemap(in) size_t
+ynr.i(7) : Searching for a suitable 'doc' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'doc' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+ynr.i(7) : Searching for a suitable 'default' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'default' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'default' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'arginit' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'arginit' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'arginit' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'in' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'in' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Using: %typemap(in) size_t
+ynr.i(7) : Searching for a suitable 'in' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(7) : Searching for a suitable 'typecheck' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'typecheck' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Using: %typemap(typecheck) size_t
+ynr.i(7) : Searching for a suitable 'typecheck' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(typecheck) double
+ynr.i(7) : Searching for a suitable 'argout' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'argout' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'argout' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'check' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'check' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'check' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'freearg' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'freearg' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Using: %typemap(freearg) size_t
+ynr.i(7) : Searching for a suitable 'freearg' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(freearg) double
+ynr.i(7) : Searching for a suitable 'except' typemap for: void doubleArray_setitem
+  Looking for: void doubleArray_setitem
+  Looking for: void
+  Looking for: SWIGTYPE doubleArray_setitem
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'out' typemap for: void doubleArray_setitem
+  Looking for: void doubleArray_setitem
+  Looking for: void
+  Using: %typemap(out) void
+ynr.i(7) : Searching for a suitable 'ret' typemap for: void doubleArray_setitem
+  Looking for: void doubleArray_setitem
+  Looking for: void
+  Looking for: SWIGTYPE doubleArray_setitem
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'default' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'default' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'default' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'in' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'in' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Using: %typemap(in) size_t
+ynr.i(7) : Searching for a suitable 'in' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(7) : Searching for a suitable 'doc' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'doc' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+ynr.i(7) : Searching for a suitable 'doc' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+ynr.i(7) : Searching for a suitable 'default' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE ary
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'default' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'default' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  None found
+ynr.i(7) : Searching for a suitable 'in' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'in' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Using: %typemap(in) size_t
+ynr.i(7) : Searching for a suitable 'in' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(7) : Searching for a suitable 'doc' typemap for: double *ary
+  Looking for: double *ary
+  Looking for: double *
+  Looking for: SWIGTYPE *ary
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+ynr.i(7) : Searching for a suitable 'doc' typemap for: size_t index
+  Looking for: size_t index
+  Looking for: size_t
+  Looking for: SWIGTYPE index
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+ynr.i(7) : Searching for a suitable 'doc' typemap for: double value
+  Looking for: double value
+  Looking for: double
+  Looking for: SWIGTYPE value
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+ynr.i(35) : Searching for a suitable 'memberin' typemap for: double mean
+  Looking for: double mean
+  Looking for: double
+  Looking for: SWIGTYPE mean
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'default' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'default' typemap for: double mean
+  Looking for: double mean
+  Looking for: double
+  Looking for: SWIGTYPE mean
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'arginit' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'arginit' typemap for: double mean
+  Looking for: double mean
+  Looking for: double
+  Looking for: SWIGTYPE mean
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'in' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'in' typemap for: double mean
+  Looking for: double mean
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(35) : Searching for a suitable 'typecheck' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'typecheck' typemap for: double mean
+  Looking for: double mean
+  Looking for: double
+  Using: %typemap(typecheck) double
+ynr.i(35) : Searching for a suitable 'argout' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'argout' typemap for: double mean
+  Looking for: double mean
+  Looking for: double
+  Looking for: SWIGTYPE mean
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'check' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'check' typemap for: double mean
+  Looking for: double mean
+  Looking for: double
+  Looking for: SWIGTYPE mean
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'freearg' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'freearg' typemap for: double mean
+  Looking for: double mean
+  Looking for: double
+  Using: %typemap(freearg) double
+ynr.i(35) : Searching for a suitable 'except' typemap for: void UVNParameter::mean
+  Looking for: void UVNParameter::mean
+  Looking for: void mean
+  Looking for: void
+  Looking for: SWIGTYPE UVNParameter::mean
+  Looking for: SWIGTYPE mean
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'out' typemap for: void UVNParameter::mean
+  Looking for: void UVNParameter::mean
+  Looking for: void mean
+  Looking for: void
+  Using: %typemap(out) void
+ynr.i(35) : Searching for a suitable 'ret' typemap for: void UVNParameter::mean
+  Looking for: void UVNParameter::mean
+  Looking for: void mean
+  Looking for: void
+  Looking for: SWIGTYPE UVNParameter::mean
+  Looking for: SWIGTYPE mean
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'default' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'arginit' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'in' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'typecheck' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'argout' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'check' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'freearg' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'except' typemap for: double UVNParameter::mean
+  Looking for: double UVNParameter::mean
+  Looking for: double mean
+  Looking for: double
+  Looking for: SWIGTYPE UVNParameter::mean
+  Looking for: SWIGTYPE mean
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'out' typemap for: double UVNParameter::mean
+  Looking for: double UVNParameter::mean
+  Looking for: double mean
+  Looking for: double
+  Using: %typemap(out) double
+ynr.i(35) : Searching for a suitable 'ret' typemap for: double UVNParameter::mean
+  Looking for: double UVNParameter::mean
+  Looking for: double mean
+  Looking for: double
+  Looking for: SWIGTYPE UVNParameter::mean
+  Looking for: SWIGTYPE mean
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'memberin' typemap for: double stdev
+  Looking for: double stdev
+  Looking for: double
+  Looking for: SWIGTYPE stdev
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'default' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'default' typemap for: double stdev
+  Looking for: double stdev
+  Looking for: double
+  Looking for: SWIGTYPE stdev
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'arginit' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'arginit' typemap for: double stdev
+  Looking for: double stdev
+  Looking for: double
+  Looking for: SWIGTYPE stdev
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'in' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'in' typemap for: double stdev
+  Looking for: double stdev
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(35) : Searching for a suitable 'typecheck' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'typecheck' typemap for: double stdev
+  Looking for: double stdev
+  Looking for: double
+  Using: %typemap(typecheck) double
+ynr.i(35) : Searching for a suitable 'argout' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'argout' typemap for: double stdev
+  Looking for: double stdev
+  Looking for: double
+  Looking for: SWIGTYPE stdev
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'check' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'check' typemap for: double stdev
+  Looking for: double stdev
+  Looking for: double
+  Looking for: SWIGTYPE stdev
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'freearg' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'freearg' typemap for: double stdev
+  Looking for: double stdev
+  Looking for: double
+  Using: %typemap(freearg) double
+ynr.i(35) : Searching for a suitable 'except' typemap for: void UVNParameter::stdev
+  Looking for: void UVNParameter::stdev
+  Looking for: void stdev
+  Looking for: void
+  Looking for: SWIGTYPE UVNParameter::stdev
+  Looking for: SWIGTYPE stdev
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'out' typemap for: void UVNParameter::stdev
+  Looking for: void UVNParameter::stdev
+  Looking for: void stdev
+  Looking for: void
+  Using: %typemap(out) void
+ynr.i(35) : Searching for a suitable 'ret' typemap for: void UVNParameter::stdev
+  Looking for: void UVNParameter::stdev
+  Looking for: void stdev
+  Looking for: void
+  Looking for: SWIGTYPE UVNParameter::stdev
+  Looking for: SWIGTYPE stdev
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'default' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'arginit' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'in' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'typecheck' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'argout' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'check' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'freearg' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'except' typemap for: double UVNParameter::stdev
+  Looking for: double UVNParameter::stdev
+  Looking for: double stdev
+  Looking for: double
+  Looking for: SWIGTYPE UVNParameter::stdev
+  Looking for: SWIGTYPE stdev
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'out' typemap for: double UVNParameter::stdev
+  Looking for: double UVNParameter::stdev
+  Looking for: double stdev
+  Looking for: double
+  Using: %typemap(out) double
+ynr.i(35) : Searching for a suitable 'ret' typemap for: double UVNParameter::stdev
+  Looking for: double UVNParameter::stdev
+  Looking for: double stdev
+  Looking for: double
+  Looking for: SWIGTYPE UVNParameter::stdev
+  Looking for: SWIGTYPE stdev
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'except' typemap for: UVNParameter *UVNParameter::UVNParameter
+  Looking for: UVNParameter *UVNParameter::UVNParameter
+  Looking for: UVNParameter *UVNParameter
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *UVNParameter::UVNParameter
+  Looking for: SWIGTYPE *UVNParameter
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE UVNParameter::UVNParameter
+  Looking for: SWIGTYPE UVNParameter
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'out' typemap for: UVNParameter *UVNParameter::UVNParameter
+  Looking for: UVNParameter *UVNParameter::UVNParameter
+  Looking for: UVNParameter *UVNParameter
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *UVNParameter::UVNParameter
+  Looking for: SWIGTYPE *UVNParameter
+  Looking for: SWIGTYPE *
+  Using: %typemap(out) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'newfree' typemap for: UVNParameter *UVNParameter::UVNParameter
+  Looking for: UVNParameter *UVNParameter::UVNParameter
+  Looking for: UVNParameter *UVNParameter
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *UVNParameter::UVNParameter
+  Looking for: SWIGTYPE *UVNParameter
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE UVNParameter::UVNParameter
+  Looking for: SWIGTYPE UVNParameter
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'ret' typemap for: UVNParameter *UVNParameter::UVNParameter
+  Looking for: UVNParameter *UVNParameter::UVNParameter
+  Looking for: UVNParameter *UVNParameter
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *UVNParameter::UVNParameter
+  Looking for: SWIGTYPE *UVNParameter
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE UVNParameter::UVNParameter
+  Looking for: SWIGTYPE UVNParameter
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'default' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'arginit' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'in' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'typecheck' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'argout' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'check' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'freearg' typemap for: UVNParameter *self
+  Looking for: UVNParameter *self
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(35) : Searching for a suitable 'except' typemap for: void UVNParameter::~UVNParameter
+  Looking for: void UVNParameter::~UVNParameter
+  Looking for: void ~UVNParameter
+  Looking for: void
+  Looking for: SWIGTYPE UVNParameter::~UVNParameter
+  Looking for: SWIGTYPE ~UVNParameter
+  Looking for: SWIGTYPE
+  None found
+ynr.i(35) : Searching for a suitable 'out' typemap for: void UVNParameter::~UVNParameter
+  Looking for: void UVNParameter::~UVNParameter
+  Looking for: void ~UVNParameter
+  Looking for: void
+  Using: %typemap(out) void
+ynr.i(35) : Searching for a suitable 'ret' typemap for: void UVNParameter::~UVNParameter
+  Looking for: void UVNParameter::~UVNParameter
+  Looking for: void ~UVNParameter
+  Looking for: void
+  Looking for: SWIGTYPE UVNParameter::~UVNParameter
+  Looking for: SWIGTYPE ~UVNParameter
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'memberin' typemap for: double m_x
+  Looking for: double m_x
+  Looking for: double
+  Looking for: SWIGTYPE m_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: double m_x
+  Looking for: double m_x
+  Looking for: double
+  Looking for: SWIGTYPE m_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: double m_x
+  Looking for: double m_x
+  Looking for: double
+  Looking for: SWIGTYPE m_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'in' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'in' typemap for: double m_x
+  Looking for: double m_x
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: double m_x
+  Looking for: double m_x
+  Looking for: double
+  Using: %typemap(typecheck) double
+ynr.i(36) : Searching for a suitable 'argout' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'argout' typemap for: double m_x
+  Looking for: double m_x
+  Looking for: double
+  Looking for: SWIGTYPE m_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: double m_x
+  Looking for: double m_x
+  Looking for: double
+  Looking for: SWIGTYPE m_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: double m_x
+  Looking for: double m_x
+  Looking for: double
+  Using: %typemap(freearg) double
+ynr.i(36) : Searching for a suitable 'except' typemap for: void BVNParameter::m_x
+  Looking for: void BVNParameter::m_x
+  Looking for: void m_x
+  Looking for: void
+  Looking for: SWIGTYPE BVNParameter::m_x
+  Looking for: SWIGTYPE m_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'out' typemap for: void BVNParameter::m_x
+  Looking for: void BVNParameter::m_x
+  Looking for: void m_x
+  Looking for: void
+  Using: %typemap(out) void
+ynr.i(36) : Searching for a suitable 'ret' typemap for: void BVNParameter::m_x
+  Looking for: void BVNParameter::m_x
+  Looking for: void m_x
+  Looking for: void
+  Looking for: SWIGTYPE BVNParameter::m_x
+  Looking for: SWIGTYPE m_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'in' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'argout' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'except' typemap for: double BVNParameter::m_x
+  Looking for: double BVNParameter::m_x
+  Looking for: double m_x
+  Looking for: double
+  Looking for: SWIGTYPE BVNParameter::m_x
+  Looking for: SWIGTYPE m_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'out' typemap for: double BVNParameter::m_x
+  Looking for: double BVNParameter::m_x
+  Looking for: double m_x
+  Looking for: double
+  Using: %typemap(out) double
+ynr.i(36) : Searching for a suitable 'ret' typemap for: double BVNParameter::m_x
+  Looking for: double BVNParameter::m_x
+  Looking for: double m_x
+  Looking for: double
+  Looking for: SWIGTYPE BVNParameter::m_x
+  Looking for: SWIGTYPE m_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'memberin' typemap for: double s_x
+  Looking for: double s_x
+  Looking for: double
+  Looking for: SWIGTYPE s_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: double s_x
+  Looking for: double s_x
+  Looking for: double
+  Looking for: SWIGTYPE s_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: double s_x
+  Looking for: double s_x
+  Looking for: double
+  Looking for: SWIGTYPE s_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'in' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'in' typemap for: double s_x
+  Looking for: double s_x
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: double s_x
+  Looking for: double s_x
+  Looking for: double
+  Using: %typemap(typecheck) double
+ynr.i(36) : Searching for a suitable 'argout' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'argout' typemap for: double s_x
+  Looking for: double s_x
+  Looking for: double
+  Looking for: SWIGTYPE s_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: double s_x
+  Looking for: double s_x
+  Looking for: double
+  Looking for: SWIGTYPE s_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: double s_x
+  Looking for: double s_x
+  Looking for: double
+  Using: %typemap(freearg) double
+ynr.i(36) : Searching for a suitable 'except' typemap for: void BVNParameter::s_x
+  Looking for: void BVNParameter::s_x
+  Looking for: void s_x
+  Looking for: void
+  Looking for: SWIGTYPE BVNParameter::s_x
+  Looking for: SWIGTYPE s_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'out' typemap for: void BVNParameter::s_x
+  Looking for: void BVNParameter::s_x
+  Looking for: void s_x
+  Looking for: void
+  Using: %typemap(out) void
+ynr.i(36) : Searching for a suitable 'ret' typemap for: void BVNParameter::s_x
+  Looking for: void BVNParameter::s_x
+  Looking for: void s_x
+  Looking for: void
+  Looking for: SWIGTYPE BVNParameter::s_x
+  Looking for: SWIGTYPE s_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'in' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'argout' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'except' typemap for: double BVNParameter::s_x
+  Looking for: double BVNParameter::s_x
+  Looking for: double s_x
+  Looking for: double
+  Looking for: SWIGTYPE BVNParameter::s_x
+  Looking for: SWIGTYPE s_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'out' typemap for: double BVNParameter::s_x
+  Looking for: double BVNParameter::s_x
+  Looking for: double s_x
+  Looking for: double
+  Using: %typemap(out) double
+ynr.i(36) : Searching for a suitable 'ret' typemap for: double BVNParameter::s_x
+  Looking for: double BVNParameter::s_x
+  Looking for: double s_x
+  Looking for: double
+  Looking for: SWIGTYPE BVNParameter::s_x
+  Looking for: SWIGTYPE s_x
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'memberin' typemap for: double m_y
+  Looking for: double m_y
+  Looking for: double
+  Looking for: SWIGTYPE m_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: double m_y
+  Looking for: double m_y
+  Looking for: double
+  Looking for: SWIGTYPE m_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: double m_y
+  Looking for: double m_y
+  Looking for: double
+  Looking for: SWIGTYPE m_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'in' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'in' typemap for: double m_y
+  Looking for: double m_y
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: double m_y
+  Looking for: double m_y
+  Looking for: double
+  Using: %typemap(typecheck) double
+ynr.i(36) : Searching for a suitable 'argout' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'argout' typemap for: double m_y
+  Looking for: double m_y
+  Looking for: double
+  Looking for: SWIGTYPE m_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: double m_y
+  Looking for: double m_y
+  Looking for: double
+  Looking for: SWIGTYPE m_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: double m_y
+  Looking for: double m_y
+  Looking for: double
+  Using: %typemap(freearg) double
+ynr.i(36) : Searching for a suitable 'except' typemap for: void BVNParameter::m_y
+  Looking for: void BVNParameter::m_y
+  Looking for: void m_y
+  Looking for: void
+  Looking for: SWIGTYPE BVNParameter::m_y
+  Looking for: SWIGTYPE m_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'out' typemap for: void BVNParameter::m_y
+  Looking for: void BVNParameter::m_y
+  Looking for: void m_y
+  Looking for: void
+  Using: %typemap(out) void
+ynr.i(36) : Searching for a suitable 'ret' typemap for: void BVNParameter::m_y
+  Looking for: void BVNParameter::m_y
+  Looking for: void m_y
+  Looking for: void
+  Looking for: SWIGTYPE BVNParameter::m_y
+  Looking for: SWIGTYPE m_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'in' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'argout' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'except' typemap for: double BVNParameter::m_y
+  Looking for: double BVNParameter::m_y
+  Looking for: double m_y
+  Looking for: double
+  Looking for: SWIGTYPE BVNParameter::m_y
+  Looking for: SWIGTYPE m_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'out' typemap for: double BVNParameter::m_y
+  Looking for: double BVNParameter::m_y
+  Looking for: double m_y
+  Looking for: double
+  Using: %typemap(out) double
+ynr.i(36) : Searching for a suitable 'ret' typemap for: double BVNParameter::m_y
+  Looking for: double BVNParameter::m_y
+  Looking for: double m_y
+  Looking for: double
+  Looking for: SWIGTYPE BVNParameter::m_y
+  Looking for: SWIGTYPE m_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'memberin' typemap for: double s_y
+  Looking for: double s_y
+  Looking for: double
+  Looking for: SWIGTYPE s_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: double s_y
+  Looking for: double s_y
+  Looking for: double
+  Looking for: SWIGTYPE s_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: double s_y
+  Looking for: double s_y
+  Looking for: double
+  Looking for: SWIGTYPE s_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'in' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'in' typemap for: double s_y
+  Looking for: double s_y
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: double s_y
+  Looking for: double s_y
+  Looking for: double
+  Using: %typemap(typecheck) double
+ynr.i(36) : Searching for a suitable 'argout' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'argout' typemap for: double s_y
+  Looking for: double s_y
+  Looking for: double
+  Looking for: SWIGTYPE s_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: double s_y
+  Looking for: double s_y
+  Looking for: double
+  Looking for: SWIGTYPE s_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: double s_y
+  Looking for: double s_y
+  Looking for: double
+  Using: %typemap(freearg) double
+ynr.i(36) : Searching for a suitable 'except' typemap for: void BVNParameter::s_y
+  Looking for: void BVNParameter::s_y
+  Looking for: void s_y
+  Looking for: void
+  Looking for: SWIGTYPE BVNParameter::s_y
+  Looking for: SWIGTYPE s_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'out' typemap for: void BVNParameter::s_y
+  Looking for: void BVNParameter::s_y
+  Looking for: void s_y
+  Looking for: void
+  Using: %typemap(out) void
+ynr.i(36) : Searching for a suitable 'ret' typemap for: void BVNParameter::s_y
+  Looking for: void BVNParameter::s_y
+  Looking for: void s_y
+  Looking for: void
+  Looking for: SWIGTYPE BVNParameter::s_y
+  Looking for: SWIGTYPE s_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'in' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'argout' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'except' typemap for: double BVNParameter::s_y
+  Looking for: double BVNParameter::s_y
+  Looking for: double s_y
+  Looking for: double
+  Looking for: SWIGTYPE BVNParameter::s_y
+  Looking for: SWIGTYPE s_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'out' typemap for: double BVNParameter::s_y
+  Looking for: double BVNParameter::s_y
+  Looking for: double s_y
+  Looking for: double
+  Using: %typemap(out) double
+ynr.i(36) : Searching for a suitable 'ret' typemap for: double BVNParameter::s_y
+  Looking for: double BVNParameter::s_y
+  Looking for: double s_y
+  Looking for: double
+  Looking for: SWIGTYPE BVNParameter::s_y
+  Looking for: SWIGTYPE s_y
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'memberin' typemap for: double r
+  Looking for: double r
+  Looking for: double
+  Looking for: SWIGTYPE r
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: double r
+  Looking for: double r
+  Looking for: double
+  Looking for: SWIGTYPE r
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: double r
+  Looking for: double r
+  Looking for: double
+  Looking for: SWIGTYPE r
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'in' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'in' typemap for: double r
+  Looking for: double r
+  Looking for: double
+  Using: %typemap(in) double
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: double r
+  Looking for: double r
+  Looking for: double
+  Using: %typemap(typecheck) double
+ynr.i(36) : Searching for a suitable 'argout' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'argout' typemap for: double r
+  Looking for: double r
+  Looking for: double
+  Looking for: SWIGTYPE r
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: double r
+  Looking for: double r
+  Looking for: double
+  Looking for: SWIGTYPE r
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: double r
+  Looking for: double r
+  Looking for: double
+  Using: %typemap(freearg) double
+ynr.i(36) : Searching for a suitable 'except' typemap for: void BVNParameter::r
+  Looking for: void BVNParameter::r
+  Looking for: void r
+  Looking for: void
+  Looking for: SWIGTYPE BVNParameter::r
+  Looking for: SWIGTYPE r
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'out' typemap for: void BVNParameter::r
+  Looking for: void BVNParameter::r
+  Looking for: void r
+  Looking for: void
+  Using: %typemap(out) void
+ynr.i(36) : Searching for a suitable 'ret' typemap for: void BVNParameter::r
+  Looking for: void BVNParameter::r
+  Looking for: void r
+  Looking for: void
+  Looking for: SWIGTYPE BVNParameter::r
+  Looking for: SWIGTYPE r
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'in' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'argout' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'except' typemap for: double BVNParameter::r
+  Looking for: double BVNParameter::r
+  Looking for: double r
+  Looking for: double
+  Looking for: SWIGTYPE BVNParameter::r
+  Looking for: SWIGTYPE r
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'out' typemap for: double BVNParameter::r
+  Looking for: double BVNParameter::r
+  Looking for: double r
+  Looking for: double
+  Using: %typemap(out) double
+ynr.i(36) : Searching for a suitable 'ret' typemap for: double BVNParameter::r
+  Looking for: double BVNParameter::r
+  Looking for: double r
+  Looking for: double
+  Looking for: SWIGTYPE BVNParameter::r
+  Looking for: SWIGTYPE r
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'except' typemap for: BVNParameter *BVNParameter::BVNParameter
+  Looking for: BVNParameter *BVNParameter::BVNParameter
+  Looking for: BVNParameter *BVNParameter
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *BVNParameter::BVNParameter
+  Looking for: SWIGTYPE *BVNParameter
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE BVNParameter::BVNParameter
+  Looking for: SWIGTYPE BVNParameter
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'out' typemap for: BVNParameter *BVNParameter::BVNParameter
+  Looking for: BVNParameter *BVNParameter::BVNParameter
+  Looking for: BVNParameter *BVNParameter
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *BVNParameter::BVNParameter
+  Looking for: SWIGTYPE *BVNParameter
+  Looking for: SWIGTYPE *
+  Using: %typemap(out) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'newfree' typemap for: BVNParameter *BVNParameter::BVNParameter
+  Looking for: BVNParameter *BVNParameter::BVNParameter
+  Looking for: BVNParameter *BVNParameter
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *BVNParameter::BVNParameter
+  Looking for: SWIGTYPE *BVNParameter
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE BVNParameter::BVNParameter
+  Looking for: SWIGTYPE BVNParameter
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'ret' typemap for: BVNParameter *BVNParameter::BVNParameter
+  Looking for: BVNParameter *BVNParameter::BVNParameter
+  Looking for: BVNParameter *BVNParameter
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *BVNParameter::BVNParameter
+  Looking for: SWIGTYPE *BVNParameter
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE BVNParameter::BVNParameter
+  Looking for: SWIGTYPE BVNParameter
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'default' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'arginit' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'in' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'typecheck' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'argout' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'check' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE self
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'freearg' typemap for: BVNParameter *self
+  Looking for: BVNParameter *self
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *self
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+ynr.i(36) : Searching for a suitable 'except' typemap for: void BVNParameter::~BVNParameter
+  Looking for: void BVNParameter::~BVNParameter
+  Looking for: void ~BVNParameter
+  Looking for: void
+  Looking for: SWIGTYPE BVNParameter::~BVNParameter
+  Looking for: SWIGTYPE ~BVNParameter
+  Looking for: SWIGTYPE
+  None found
+ynr.i(36) : Searching for a suitable 'out' typemap for: void BVNParameter::~BVNParameter
+  Looking for: void BVNParameter::~BVNParameter
+  Looking for: void ~BVNParameter
+  Looking for: void
+  Using: %typemap(out) void
+ynr.i(36) : Searching for a suitable 'ret' typemap for: void BVNParameter::~BVNParameter
+  Looking for: void BVNParameter::~BVNParameter
+  Looking for: void ~BVNParameter
+  Looking for: void
+  Looking for: SWIGTYPE BVNParameter::~BVNParameter
+  Looking for: SWIGTYPE ~BVNParameter
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(16) : Searching for a suitable 'consttab' typemap for: int yNr4_header_INSTALLED
+  Looking for: int yNr4_header_INSTALLED
+  Looking for: int
+  Looking for: SWIGTYPE yNr4_header_INSTALLED
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(16) : Searching for a suitable 'constcode' typemap for: int yNr4_header_INSTALLED
+  Looking for: int yNr4_header_INSTALLED
+  Looking for: int
+  Using: %typemap(constcode) int
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'default' typemap for: double *vXB0
+  Looking for: double *vXB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vXB0
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE vXB0
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'default' typemap for: double *vYB0
+  Looking for: double *vYB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vYB0
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE vYB0
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'default' typemap for: int vSize
+  Looking for: int vSize
+  Looking for: int
+  Looking for: SWIGTYPE vSize
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'default' typemap for: double *Area
+  Looking for: double *Area
+  Looking for: double *
+  Looking for: SWIGTYPE *Area
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE Area
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'arginit' typemap for: double *vXB0
+  Looking for: double *vXB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vXB0
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE vXB0
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'arginit' typemap for: double *vYB0
+  Looking for: double *vYB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vYB0
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE vYB0
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'arginit' typemap for: int vSize
+  Looking for: int vSize
+  Looking for: int
+  Looking for: SWIGTYPE vSize
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'arginit' typemap for: double *Area
+  Looking for: double *Area
+  Looking for: double *
+  Looking for: SWIGTYPE *Area
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE Area
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'in' typemap for: double *vXB0
+  Looking for: double *vXB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vXB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'in' typemap for: double *vYB0
+  Looking for: double *vYB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vYB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'in' typemap for: int vSize
+  Looking for: int vSize
+  Looking for: int
+  Using: %typemap(in) int
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'in' typemap for: double *Area
+  Looking for: double *Area
+  Looking for: double *
+  Looking for: SWIGTYPE *Area
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'typecheck' typemap for: double *vXB0
+  Looking for: double *vXB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vXB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'typecheck' typemap for: double *vYB0
+  Looking for: double *vYB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vYB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'typecheck' typemap for: int vSize
+  Looking for: int vSize
+  Looking for: int
+  Using: %typemap(typecheck) int
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'typecheck' typemap for: double *Area
+  Looking for: double *Area
+  Looking for: double *
+  Looking for: SWIGTYPE *Area
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'argout' typemap for: double *vXB0
+  Looking for: double *vXB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vXB0
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE vXB0
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'argout' typemap for: double *vYB0
+  Looking for: double *vYB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vYB0
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE vYB0
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'argout' typemap for: int vSize
+  Looking for: int vSize
+  Looking for: int
+  Looking for: SWIGTYPE vSize
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'argout' typemap for: double *Area
+  Looking for: double *Area
+  Looking for: double *
+  Looking for: SWIGTYPE *Area
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE Area
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'check' typemap for: double *vXB0
+  Looking for: double *vXB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vXB0
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE vXB0
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'check' typemap for: double *vYB0
+  Looking for: double *vYB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vYB0
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE vYB0
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'check' typemap for: int vSize
+  Looking for: int vSize
+  Looking for: int
+  Looking for: SWIGTYPE vSize
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'check' typemap for: double *Area
+  Looking for: double *Area
+  Looking for: double *
+  Looking for: SWIGTYPE *Area
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE Area
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'freearg' typemap for: double *vXB0
+  Looking for: double *vXB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vXB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'freearg' typemap for: double *vYB0
+  Looking for: double *vYB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vYB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'freearg' typemap for: int vSize
+  Looking for: int vSize
+  Looking for: int
+  Using: %typemap(freearg) int
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'freearg' typemap for: double *Area
+  Looking for: double *Area
+  Looking for: double *
+  Looking for: SWIGTYPE *Area
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'except' typemap for: double yBVNCDFOCP
+  Looking for: double yBVNCDFOCP
+  Looking for: double
+  Looking for: SWIGTYPE yBVNCDFOCP
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'out' typemap for: double yBVNCDFOCP
+  Looking for: double yBVNCDFOCP
+  Looking for: double
+  Using: %typemap(out) double
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'ret' typemap for: double yBVNCDFOCP
+  Looking for: double yBVNCDFOCP
+  Looking for: double
+  Looking for: SWIGTYPE yBVNCDFOCP
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'default' typemap for: double *vXB0
+  Looking for: double *vXB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vXB0
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE vXB0
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'default' typemap for: double *vYB0
+  Looking for: double *vYB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vYB0
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE vYB0
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'default' typemap for: int vSize
+  Looking for: int vSize
+  Looking for: int
+  Looking for: SWIGTYPE vSize
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'default' typemap for: double *Area
+  Looking for: double *Area
+  Looking for: double *
+  Looking for: SWIGTYPE *Area
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE Area
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'in' typemap for: double *vXB0
+  Looking for: double *vXB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vXB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'in' typemap for: double *vYB0
+  Looking for: double *vYB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vYB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'in' typemap for: int vSize
+  Looking for: int vSize
+  Looking for: int
+  Using: %typemap(in) int
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'in' typemap for: double *Area
+  Looking for: double *Area
+  Looking for: double *
+  Looking for: SWIGTYPE *Area
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'doc' typemap for: double *vXB0
+  Looking for: double *vXB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vXB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'doc' typemap for: double *vYB0
+  Looking for: double *vYB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vYB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'doc' typemap for: int vSize
+  Looking for: int vSize
+  Looking for: int
+  Looking for: SWIGTYPE vSize
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'doc' typemap for: double *Area
+  Looking for: double *Area
+  Looking for: double *
+  Looking for: SWIGTYPE *Area
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'default' typemap for: double *vXB0
+  Looking for: double *vXB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vXB0
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE vXB0
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'default' typemap for: double *vYB0
+  Looking for: double *vYB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vYB0
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE vYB0
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'default' typemap for: int vSize
+  Looking for: int vSize
+  Looking for: int
+  Looking for: SWIGTYPE vSize
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'default' typemap for: double *Area
+  Looking for: double *Area
+  Looking for: double *
+  Looking for: SWIGTYPE *Area
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE Area
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'in' typemap for: double *vXB0
+  Looking for: double *vXB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vXB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'in' typemap for: double *vYB0
+  Looking for: double *vYB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vYB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'in' typemap for: int vSize
+  Looking for: int vSize
+  Looking for: int
+  Using: %typemap(in) int
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'in' typemap for: double *Area
+  Looking for: double *Area
+  Looking for: double *
+  Looking for: SWIGTYPE *Area
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'doc' typemap for: double *vXB0
+  Looking for: double *vXB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vXB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'doc' typemap for: double *vYB0
+  Looking for: double *vYB0
+  Looking for: double *
+  Looking for: SWIGTYPE *vYB0
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'doc' typemap for: int vSize
+  Looking for: int vSize
+  Looking for: int
+  Looking for: SWIGTYPE vSize
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+yNumRecipe\yNr4.h(20) : Searching for a suitable 'doc' typemap for: double *Area
+  Looking for: double *Area
+  Looking for: double *
+  Looking for: SWIGTYPE *Area
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'default' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'default' typemap for: UVNParameter *n
+  Looking for: UVNParameter *n
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE n
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'arginit' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'arginit' typemap for: UVNParameter *n
+  Looking for: UVNParameter *n
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE n
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'in' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Using: %typemap(in) double
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'in' typemap for: UVNParameter *n
+  Looking for: UVNParameter *n
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'typecheck' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Using: %typemap(typecheck) double
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'typecheck' typemap for: UVNParameter *n
+  Looking for: UVNParameter *n
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'argout' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'argout' typemap for: UVNParameter *n
+  Looking for: UVNParameter *n
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE n
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'check' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'check' typemap for: UVNParameter *n
+  Looking for: UVNParameter *n
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE n
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'freearg' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Using: %typemap(freearg) double
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'freearg' typemap for: UVNParameter *n
+  Looking for: UVNParameter *n
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'except' typemap for: double yZscore1d
+  Looking for: double yZscore1d
+  Looking for: double
+  Looking for: SWIGTYPE yZscore1d
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'out' typemap for: double yZscore1d
+  Looking for: double yZscore1d
+  Looking for: double
+  Using: %typemap(out) double
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'ret' typemap for: double yZscore1d
+  Looking for: double yZscore1d
+  Looking for: double
+  Looking for: SWIGTYPE yZscore1d
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'default' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'default' typemap for: UVNParameter *n
+  Looking for: UVNParameter *n
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE n
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'in' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Using: %typemap(in) double
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'in' typemap for: UVNParameter *n
+  Looking for: UVNParameter *n
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'doc' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'doc' typemap for: UVNParameter *n
+  Looking for: UVNParameter *n
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'default' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'default' typemap for: UVNParameter *n
+  Looking for: UVNParameter *n
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE n
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'in' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Using: %typemap(in) double
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'in' typemap for: UVNParameter *n
+  Looking for: UVNParameter *n
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'doc' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+yNumRecipe\yNr4.h(21) : Searching for a suitable 'doc' typemap for: UVNParameter *n
+  Looking for: UVNParameter *n
+  Looking for: UVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'default' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'default' typemap for: double y
+  Looking for: double y
+  Looking for: double
+  Looking for: SWIGTYPE y
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'default' typemap for: BVNParameter *n
+  Looking for: BVNParameter *n
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE n
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'arginit' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'arginit' typemap for: double y
+  Looking for: double y
+  Looking for: double
+  Looking for: SWIGTYPE y
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'arginit' typemap for: BVNParameter *n
+  Looking for: BVNParameter *n
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE n
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'in' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Using: %typemap(in) double
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'in' typemap for: double y
+  Looking for: double y
+  Looking for: double
+  Using: %typemap(in) double
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'in' typemap for: BVNParameter *n
+  Looking for: BVNParameter *n
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'typecheck' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Using: %typemap(typecheck) double
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'typecheck' typemap for: double y
+  Looking for: double y
+  Looking for: double
+  Using: %typemap(typecheck) double
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'typecheck' typemap for: BVNParameter *n
+  Looking for: BVNParameter *n
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(typecheck) SWIGTYPE *
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'argout' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'argout' typemap for: double y
+  Looking for: double y
+  Looking for: double
+  Looking for: SWIGTYPE y
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'argout' typemap for: BVNParameter *n
+  Looking for: BVNParameter *n
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE n
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'check' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'check' typemap for: double y
+  Looking for: double y
+  Looking for: double
+  Looking for: SWIGTYPE y
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'check' typemap for: BVNParameter *n
+  Looking for: BVNParameter *n
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE n
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'freearg' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Using: %typemap(freearg) double
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'freearg' typemap for: double y
+  Looking for: double y
+  Looking for: double
+  Using: %typemap(freearg) double
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'freearg' typemap for: BVNParameter *n
+  Looking for: BVNParameter *n
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(freearg) SWIGTYPE *
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'except' typemap for: double *yZscore2d
+  Looking for: double *yZscore2d
+  Looking for: double *
+  Looking for: SWIGTYPE *yZscore2d
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE yZscore2d
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'out' typemap for: double *yZscore2d
+  Looking for: double *yZscore2d
+  Using: %typemap(out) double *yZscore2d
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'ret' typemap for: double *yZscore2d
+  Looking for: double *yZscore2d
+  Looking for: double *
+  Looking for: SWIGTYPE *yZscore2d
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE yZscore2d
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'default' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'default' typemap for: double y
+  Looking for: double y
+  Looking for: double
+  Looking for: SWIGTYPE y
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'default' typemap for: BVNParameter *n
+  Looking for: BVNParameter *n
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE n
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'in' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Using: %typemap(in) double
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'in' typemap for: double y
+  Looking for: double y
+  Looking for: double
+  Using: %typemap(in) double
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'in' typemap for: BVNParameter *n
+  Looking for: BVNParameter *n
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'doc' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'doc' typemap for: double y
+  Looking for: double y
+  Looking for: double
+  Looking for: SWIGTYPE y
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'doc' typemap for: BVNParameter *n
+  Looking for: BVNParameter *n
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'default' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'default' typemap for: double y
+  Looking for: double y
+  Looking for: double
+  Looking for: SWIGTYPE y
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'default' typemap for: BVNParameter *n
+  Looking for: BVNParameter *n
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Looking for: SWIGTYPE n
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'in' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Using: %typemap(in) double
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'in' typemap for: double y
+  Looking for: double y
+  Looking for: double
+  Using: %typemap(in) double
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'in' typemap for: BVNParameter *n
+  Looking for: BVNParameter *n
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(in) SWIGTYPE *
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'doc' typemap for: double x
+  Looking for: double x
+  Looking for: double
+  Looking for: SWIGTYPE x
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'doc' typemap for: double y
+  Looking for: double y
+  Looking for: double
+  Looking for: SWIGTYPE y
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+yNumRecipe\yNr4.h(23) : Searching for a suitable 'doc' typemap for: BVNParameter *n
+  Looking for: BVNParameter *n
+  Looking for: BVNParameter *
+  Looking for: SWIGTYPE *n
+  Looking for: SWIGTYPE *
+  Using: %typemap(doc) SWIGTYPE *
+yNumRecipe\yNr4.h(24) : Searching for a suitable 'except' typemap for: void demo_Fig_33_on_page_52
+  Looking for: void demo_Fig_33_on_page_52
+  Looking for: void
+  Looking for: SWIGTYPE demo_Fig_33_on_page_52
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(24) : Searching for a suitable 'out' typemap for: void demo_Fig_33_on_page_52
+  Looking for: void demo_Fig_33_on_page_52
+  Looking for: void
+  Using: %typemap(out) void
+yNumRecipe\yNr4.h(24) : Searching for a suitable 'ret' typemap for: void demo_Fig_33_on_page_52
+  Looking for: void demo_Fig_33_on_page_52
+  Looking for: void
+  Looking for: SWIGTYPE demo_Fig_33_on_page_52
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(25) : Searching for a suitable 'except' typemap for: void demo_Fig_35_on_page_54
+  Looking for: void demo_Fig_35_on_page_54
+  Looking for: void
+  Looking for: SWIGTYPE demo_Fig_35_on_page_54
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(25) : Searching for a suitable 'out' typemap for: void demo_Fig_35_on_page_54
+  Looking for: void demo_Fig_35_on_page_54
+  Looking for: void
+  Using: %typemap(out) void
+yNumRecipe\yNr4.h(25) : Searching for a suitable 'ret' typemap for: void demo_Fig_35_on_page_54
+  Looking for: void demo_Fig_35_on_page_54
+  Looking for: void
+  Looking for: SWIGTYPE demo_Fig_35_on_page_54
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(26) : Searching for a suitable 'except' typemap for: void demo_Fig_40_on_page_59
+  Looking for: void demo_Fig_40_on_page_59
+  Looking for: void
+  Looking for: SWIGTYPE demo_Fig_40_on_page_59
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(26) : Searching for a suitable 'out' typemap for: void demo_Fig_40_on_page_59
+  Looking for: void demo_Fig_40_on_page_59
+  Looking for: void
+  Using: %typemap(out) void
+yNumRecipe\yNr4.h(26) : Searching for a suitable 'ret' typemap for: void demo_Fig_40_on_page_59
+  Looking for: void demo_Fig_40_on_page_59
+  Looking for: void
+  Looking for: SWIGTYPE demo_Fig_40_on_page_59
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'default' typemap for: int set
+  Looking for: int set
+  Looking for: int
+  Looking for: SWIGTYPE set
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'arginit' typemap for: int set
+  Looking for: int set
+  Looking for: int
+  Looking for: SWIGTYPE set
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'in' typemap for: int set
+  Looking for: int set
+  Looking for: int
+  Using: %typemap(in) int
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'typecheck' typemap for: int set
+  Looking for: int set
+  Looking for: int
+  Using: %typemap(typecheck) int
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'argout' typemap for: int set
+  Looking for: int set
+  Looking for: int
+  Looking for: SWIGTYPE set
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'check' typemap for: int set
+  Looking for: int set
+  Looking for: int
+  Looking for: SWIGTYPE set
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'freearg' typemap for: int set
+  Looking for: int set
+  Looking for: int
+  Using: %typemap(freearg) int
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'except' typemap for: void demo_rectangle_9x9
+  Looking for: void demo_rectangle_9x9
+  Looking for: void
+  Looking for: SWIGTYPE demo_rectangle_9x9
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'out' typemap for: void demo_rectangle_9x9
+  Looking for: void demo_rectangle_9x9
+  Looking for: void
+  Using: %typemap(out) void
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'ret' typemap for: void demo_rectangle_9x9
+  Looking for: void demo_rectangle_9x9
+  Looking for: void
+  Looking for: SWIGTYPE demo_rectangle_9x9
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'default' typemap for: int set
+  Looking for: int set
+  Looking for: int
+  Looking for: SWIGTYPE set
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'in' typemap for: int set
+  Looking for: int set
+  Looking for: int
+  Using: %typemap(in) int
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'doc' typemap for: int set
+  Looking for: int set
+  Looking for: int
+  Looking for: SWIGTYPE set
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'default' typemap for: int set
+  Looking for: int set
+  Looking for: int
+  Looking for: SWIGTYPE set
+  Looking for: SWIGTYPE
+  None found
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'in' typemap for: int set
+  Looking for: int set
+  Looking for: int
+  Using: %typemap(in) int
+yNumRecipe\yNr4.h(27) : Searching for a suitable 'doc' typemap for: int set
+  Looking for: int set
+  Looking for: int
+  Looking for: SWIGTYPE set
+  Looking for: SWIGTYPE
+  Using: %typemap(doc) SWIGTYPE
+
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD>set PYTHONPATH="c:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3" 
+
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD>set PATH="c:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3";"c:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3"\scripts;c:\windows\system32;c:\windows 
+
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD>python.exe setup(yNumRecipe).py build_ext --inplace 
+includeDirs:
+['yNumRecipe', 'd:\\期渠\\Homo academicus\\yStudy on code - Python\\Python with CnCPP\\PYD\\yNumRecipe']
+sourceFiles:
+['ynr_wrap.c', 'd:\\期渠\\Homo academicus\\yStudy on code - Python\\Python with CnCPP\\PYD\\yNumRecipe\\yAlloc.c', 'd:\\期渠\\Homo academicus\\yStudy on code - Python\\Python with CnCPP\\PYD\\yNumRecipe\\yAny.c', 'd:\\期渠\\Homo academicus\\yStudy on code - Python\\Python with CnCPP\\PYD\\yNumRecipe\\yCore.c', 'd:\\期渠\\Homo academicus\\yStudy on code - Python\\Python with CnCPP\\PYD\\yNumRecipe\\yFile.c', 'd:\\期渠\\Homo academicus\\yStudy on code - Python\\Python with CnCPP\\PYD\\yNumRecipe\\yNr.c', 'd:\\期渠\\Homo academicus\\yStudy on code - Python\\Python with CnCPP\\PYD\\yNumRecipe\\yNr2.c', 'd:\\期渠\\Homo academicus\\yStudy on code - Python\\Python with CnCPP\\PYD\\yNumRecipe\\yNr3.c', 'd:\\期渠\\Homo academicus\\yStudy on code - Python\\Python with CnCPP\\PYD\\yNumRecipe\\yNr4.c', 'd:\\期渠\\Homo academicus\\yStudy on code - Python\\Python with CnCPP\\PYD\\yNumRecipe\\yNrecipe.c', 'd:\\期渠\\Homo academicus\\yStudy on code - Python\\Python with CnCPP\\PYD\\yNumRecipe\\yNumRecipe.c', 'd:\\期渠\\Homo academicus\\yStudy on code - Python\\Python with CnCPP\\PYD\\yNumRecipe\\yString.c']
+running build_ext
+building '_yNumRecipe' extension
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -IyNumRecipe "-Id:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe" -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include /Tcynr_wrap.c /Fobuild\temp.win32-3.4\Release\ynr_wrap.obj /wd4996
+ynr_wrap.c
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -IyNumRecipe "-Id:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe" -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include "/Tcd:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yAlloc.c" "/Fobuild\temp.win32-3.4\Release\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yAlloc.obj" /wd4996
+yAlloc.c
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yAlloc.c(96): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -IyNumRecipe "-Id:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe" -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include "/Tcd:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yAny.c" "/Fobuild\temp.win32-3.4\Release\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yAny.obj" /wd4996
+yAny.c
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -IyNumRecipe "-Id:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe" -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include "/Tcd:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yCore.c" "/Fobuild\temp.win32-3.4\Release\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yCore.obj" /wd4996
+yCore.c
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -IyNumRecipe "-Id:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe" -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include "/Tcd:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yFile.c" "/Fobuild\temp.win32-3.4\Release\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yFile.obj" /wd4996
+yFile.c
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -IyNumRecipe "-Id:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe" -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include "/Tcd:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yNr.c" "/Fobuild\temp.win32-3.4\Release\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yNr.obj" /wd4996
+yNr.c
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -IyNumRecipe "-Id:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe" -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include "/Tcd:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yNr2.c" "/Fobuild\temp.win32-3.4\Release\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yNr2.obj" /wd4996
+yNr2.c
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -IyNumRecipe "-Id:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe" -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include "/Tcd:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yNr3.c" "/Fobuild\temp.win32-3.4\Release\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yNr3.obj" /wd4996
+yNr3.c
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\BIN\cl.exe /c /nologo /Ox /MD /W3 /GS- /DNDEBUG -IyNumRecipe "-Id:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe" -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include -Ic:\Coding\WinPython-32bit-3.4.3.7Qt5\python-3.4.3\include "/Tcd:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yNr4.c" "/Fobuild\temp.win32-3.4\Release\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yNr4.obj" /wd4996
+yNr4.c
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD\yNumRecipe\yNr4.c(83): error C2143: syntax error: missing ';' before '}'
+
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD>dir *.pyd   | findstr pyd 
+
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD>python -c "import yNumRecipe as y; print(dir(y))" 
+
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD>python call_yNumRecipe.py 
+
+d:\期渠\Homo academicus\yStudy on code - Python\Python with CnCPP\PYD>rem
