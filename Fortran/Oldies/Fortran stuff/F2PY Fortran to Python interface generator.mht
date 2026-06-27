@@ -1,0 +1,1024 @@
+From: "Saved by Windows Internet Explorer 10"
+Subject: F2PY: Fortran to Python interface generator
+Date: Sun, 10 Jan 2016 11:23:50 +0900
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://sysbio.ioc.ee/projects/f2py2e/
+X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7601.17609
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML lang=3Den xml:lang=3D"en" =
+xmlns=3D"http://www.w3.org/1999/xhtml"><HEAD><META=20
+content=3D"IE=3D7.0000" http-equiv=3D"X-UA-Compatible">
+<TITLE>F2PY: Fortran to Python interface generator</TITLE>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 10.00.9200.17566">
+<META name=3Dauthor content=3D"Pearu Peterson <pearu@cens.ioc.ee>">
+<META name=3Ddate content=3D2007-07-19>
+<STYLE type=3Dtext/css>.borderless {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: =
+0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.borderless TD {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: =
+0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.borderless TH {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: =
+0px; BORDER-TOP-WIDTH: 0px
+}
+TABLE.borderless TD {
+	PADDING-BOTTOM: 0px !important; PADDING-TOP: 0px !important; =
+PADDING-LEFT: 0px !important; PADDING-RIGHT: 0.5em !important
+}
+TABLE.borderless TH {
+	PADDING-BOTTOM: 0px !important; PADDING-TOP: 0px !important; =
+PADDING-LEFT: 0px !important; PADDING-RIGHT: 0.5em !important
+}
+.first {
+	MARGIN-TOP: 0px !important
+}
+.last {
+	MARGIN-BOTTOM: 0px !important
+}
+.with-subtitle {
+	MARGIN-BOTTOM: 0px !important
+}
+.hidden {
+	DISPLAY: none
+}
+A.toc-backref {
+	COLOR: black; TEXT-DECORATION: none
+}
+BLOCKQUOTE.epigraph {
+	MARGIN: 2em 5em
+}
+DL.docutils DD {
+	MARGIN-BOTTOM: 0.5em
+}
+DIV.abstract {
+	MARGIN: 2em 5em
+}
+DIV.abstract P.topic-title {
+	FONT-WEIGHT: bold; TEXT-ALIGN: center
+}
+DIV.admonition {
+	BORDER-TOP: outset; BORDER-RIGHT: outset; BORDER-BOTTOM: outset; =
+PADDING-BOTTOM: 1em; PADDING-TOP: 1em; PADDING-LEFT: 1em; MARGIN: 2em; =
+BORDER-LEFT: outset; PADDING-RIGHT: 1em
+}
+DIV.attention {
+	BORDER-TOP: outset; BORDER-RIGHT: outset; BORDER-BOTTOM: outset; =
+PADDING-BOTTOM: 1em; PADDING-TOP: 1em; PADDING-LEFT: 1em; MARGIN: 2em; =
+BORDER-LEFT: outset; PADDING-RIGHT: 1em
+}
+DIV.caution {
+	BORDER-TOP: outset; BORDER-RIGHT: outset; BORDER-BOTTOM: outset; =
+PADDING-BOTTOM: 1em; PADDING-TOP: 1em; PADDING-LEFT: 1em; MARGIN: 2em; =
+BORDER-LEFT: outset; PADDING-RIGHT: 1em
+}
+DIV.danger {
+	BORDER-TOP: outset; BORDER-RIGHT: outset; BORDER-BOTTOM: outset; =
+PADDING-BOTTOM: 1em; PADDING-TOP: 1em; PADDING-LEFT: 1em; MARGIN: 2em; =
+BORDER-LEFT: outset; PADDING-RIGHT: 1em
+}
+DIV.error {
+	BORDER-TOP: outset; BORDER-RIGHT: outset; BORDER-BOTTOM: outset; =
+PADDING-BOTTOM: 1em; PADDING-TOP: 1em; PADDING-LEFT: 1em; MARGIN: 2em; =
+BORDER-LEFT: outset; PADDING-RIGHT: 1em
+}
+DIV.hint {
+	BORDER-TOP: outset; BORDER-RIGHT: outset; BORDER-BOTTOM: outset; =
+PADDING-BOTTOM: 1em; PADDING-TOP: 1em; PADDING-LEFT: 1em; MARGIN: 2em; =
+BORDER-LEFT: outset; PADDING-RIGHT: 1em
+}
+DIV.important {
+	BORDER-TOP: outset; BORDER-RIGHT: outset; BORDER-BOTTOM: outset; =
+PADDING-BOTTOM: 1em; PADDING-TOP: 1em; PADDING-LEFT: 1em; MARGIN: 2em; =
+BORDER-LEFT: outset; PADDING-RIGHT: 1em
+}
+DIV.note {
+	BORDER-TOP: outset; BORDER-RIGHT: outset; BORDER-BOTTOM: outset; =
+PADDING-BOTTOM: 1em; PADDING-TOP: 1em; PADDING-LEFT: 1em; MARGIN: 2em; =
+BORDER-LEFT: outset; PADDING-RIGHT: 1em
+}
+DIV.tip {
+	BORDER-TOP: outset; BORDER-RIGHT: outset; BORDER-BOTTOM: outset; =
+PADDING-BOTTOM: 1em; PADDING-TOP: 1em; PADDING-LEFT: 1em; MARGIN: 2em; =
+BORDER-LEFT: outset; PADDING-RIGHT: 1em
+}
+DIV.warning {
+	BORDER-TOP: outset; BORDER-RIGHT: outset; BORDER-BOTTOM: outset; =
+PADDING-BOTTOM: 1em; PADDING-TOP: 1em; PADDING-LEFT: 1em; MARGIN: 2em; =
+BORDER-LEFT: outset; PADDING-RIGHT: 1em
+}
+DIV.admonition P.admonition-title {
+	FONT-FAMILY: sans-serif; FONT-WEIGHT: bold
+}
+DIV.hint P.admonition-title {
+	FONT-FAMILY: sans-serif; FONT-WEIGHT: bold
+}
+DIV.important P.admonition-title {
+	FONT-FAMILY: sans-serif; FONT-WEIGHT: bold
+}
+DIV.note P.admonition-title {
+	FONT-FAMILY: sans-serif; FONT-WEIGHT: bold
+}
+DIV.tip P.admonition-title {
+	FONT-FAMILY: sans-serif; FONT-WEIGHT: bold
+}
+DIV.attention P.admonition-title {
+	FONT-FAMILY: sans-serif; FONT-WEIGHT: bold; COLOR: red
+}
+DIV.caution P.admonition-title {
+	FONT-FAMILY: sans-serif; FONT-WEIGHT: bold; COLOR: red
+}
+DIV.danger P.admonition-title {
+	FONT-FAMILY: sans-serif; FONT-WEIGHT: bold; COLOR: red
+}
+DIV.error P.admonition-title {
+	FONT-FAMILY: sans-serif; FONT-WEIGHT: bold; COLOR: red
+}
+DIV.warning P.admonition-title {
+	FONT-FAMILY: sans-serif; FONT-WEIGHT: bold; COLOR: red
+}
+DIV.dedication {
+	FONT-STYLE: italic; TEXT-ALIGN: center; MARGIN: 2em 5em
+}
+DIV.dedication P.topic-title {
+	FONT-WEIGHT: bold; FONT-STYLE: normal
+}
+DIV.figure {
+	MARGIN-LEFT: 2em; MARGIN-RIGHT: 2em
+}
+DIV.footer {
+	FONT-SIZE: smaller; CLEAR: both
+}
+DIV.header {
+	FONT-SIZE: smaller; CLEAR: both
+}
+DIV.line-block {
+	MARGIN-BOTTOM: 1em; MARGIN-TOP: 1em; DISPLAY: block
+}
+DIV.line-block DIV.line-block {
+	MARGIN-BOTTOM: 0px; MARGIN-LEFT: 1.5em; MARGIN-TOP: 0px
+}
+DIV.sidebar {
+	BORDER-TOP: outset; BORDER-RIGHT: outset; BORDER-BOTTOM: outset; FLOAT: =
+right; PADDING-BOTTOM: 1em; PADDING-TOP: 1em; PADDING-LEFT: 1em; =
+MARGIN-LEFT: 1em; CLEAR: right; BORDER-LEFT: outset; PADDING-RIGHT: 1em; =
+WIDTH: 40%; BACKGROUND-COLOR: #ffffee
+}
+DIV.sidebar P.rubric {
+	FONT-SIZE: medium; FONT-FAMILY: sans-serif
+}
+DIV.system-messages {
+	MARGIN: 5em
+}
+DIV.system-messages H1 {
+	COLOR: red
+}
+DIV.system-message {
+	BORDER-TOP: outset; BORDER-RIGHT: outset; BORDER-BOTTOM: outset; =
+PADDING-BOTTOM: 1em; PADDING-TOP: 1em; PADDING-LEFT: 1em; BORDER-LEFT: =
+outset; PADDING-RIGHT: 1em
+}
+DIV.system-message P.system-message-title {
+	FONT-WEIGHT: bold; COLOR: red
+}
+DIV.topic {
+	MARGIN: 2em
+}
+H1.section-subtitle {
+	MARGIN-TOP: 0.4em
+}
+H2.section-subtitle {
+	MARGIN-TOP: 0.4em
+}
+H3.section-subtitle {
+	MARGIN-TOP: 0.4em
+}
+H4.section-subtitle {
+	MARGIN-TOP: 0.4em
+}
+H5.section-subtitle {
+	MARGIN-TOP: 0.4em
+}
+H6.section-subtitle {
+	MARGIN-TOP: 0.4em
+}
+H1.title {
+	TEXT-ALIGN: center
+}
+H2.subtitle {
+	TEXT-ALIGN: center
+}
+HR.docutils {
+	WIDTH: 75%
+}
+IMG.align-left {
+	CLEAR: left
+}
+IMG.align-right {
+	CLEAR: right
+}
+OL.simple {
+	MARGIN-BOTTOM: 1em
+}
+UL.simple {
+	MARGIN-BOTTOM: 1em
+}
+OL.arabic {
+	LIST-STYLE-TYPE: decimal
+}
+OL.loweralpha {
+	LIST-STYLE-TYPE: lower-alpha
+}
+OL.upperalpha {
+	LIST-STYLE-TYPE: upper-alpha
+}
+OL.lowerroman {
+	LIST-STYLE-TYPE: lower-roman
+}
+OL.upperroman {
+	LIST-STYLE-TYPE: upper-roman
+}
+P.attribution {
+	TEXT-ALIGN: right; MARGIN-LEFT: 50%
+}
+P.caption {
+	FONT-STYLE: italic
+}
+P.credits {
+	FONT-SIZE: smaller; FONT-STYLE: italic
+}
+P.label {
+	WHITE-SPACE: nowrap
+}
+P.rubric {
+	FONT-SIZE: larger; FONT-WEIGHT: bold; COLOR: maroon; TEXT-ALIGN: center
+}
+P.sidebar-title {
+	FONT-SIZE: larger; FONT-FAMILY: sans-serif; FONT-WEIGHT: bold
+}
+P.sidebar-subtitle {
+	FONT-FAMILY: sans-serif; FONT-WEIGHT: bold
+}
+P.topic-title {
+	FONT-WEIGHT: bold
+}
+PRE.address {
+	MARGIN-BOTTOM: 0px; FONT-SIZE: 100%; FONT-FAMILY: serif; MARGIN-TOP: =
+0px
+}
+PRE.literal-block {
+	MARGIN-LEFT: 2em; BACKGROUND-COLOR: #eeeeee; MARGIN-RIGHT: 2em
+}
+PRE.doctest-block {
+	MARGIN-LEFT: 2em; BACKGROUND-COLOR: #eeeeee; MARGIN-RIGHT: 2em
+}
+SPAN.classifier {
+	FONT-FAMILY: sans-serif; FONT-STYLE: oblique
+}
+SPAN.classifier-delimiter {
+	FONT-FAMILY: sans-serif; FONT-WEIGHT: bold
+}
+SPAN.interpreted {
+	FONT-FAMILY: sans-serif
+}
+SPAN.option {
+	WHITE-SPACE: nowrap
+}
+SPAN.pre {
+	WHITE-SPACE: pre
+}
+SPAN.problematic {
+	COLOR: red
+}
+SPAN.section-subtitle {
+	FONT-SIZE: 80%
+}
+TABLE.citation {
+	MARGIN-LEFT: 1px; BORDER-LEFT: gray 1px solid
+}
+TABLE.docinfo {
+	MARGIN: 2em 4em
+}
+TABLE.docutils {
+	MARGIN-BOTTOM: 0.5em; MARGIN-TOP: 0.5em
+}
+TABLE.footnote {
+	MARGIN-LEFT: 1px; BORDER-LEFT: black 1px solid
+}
+TABLE.docutils TD {
+	VERTICAL-ALIGN: top; PADDING-LEFT: 0.5em; PADDING-RIGHT: 0.5em
+}
+TABLE.docutils TH {
+	VERTICAL-ALIGN: top; PADDING-LEFT: 0.5em; PADDING-RIGHT: 0.5em
+}
+TABLE.docinfo TD {
+	VERTICAL-ALIGN: top; PADDING-LEFT: 0.5em; PADDING-RIGHT: 0.5em
+}
+TABLE.docinfo TH {
+	VERTICAL-ALIGN: top; PADDING-LEFT: 0.5em; PADDING-RIGHT: 0.5em
+}
+TABLE.docutils TH.field-name {
+	WHITE-SPACE: nowrap; FONT-WEIGHT: bold; TEXT-ALIGN: left; PADDING-LEFT: =
+0px
+}
+TABLE.docinfo TH.docinfo-name {
+	WHITE-SPACE: nowrap; FONT-WEIGHT: bold; TEXT-ALIGN: left; PADDING-LEFT: =
+0px
+}
+H1 TT.docutils {
+	FONT-SIZE: 100%
+}
+H2 TT.docutils {
+	FONT-SIZE: 100%
+}
+H3 TT.docutils {
+	FONT-SIZE: 100%
+}
+H4 TT.docutils {
+	FONT-SIZE: 100%
+}
+H5 TT.docutils {
+	FONT-SIZE: 100%
+}
+H6 TT.docutils {
+	FONT-SIZE: 100%
+}
+TT.docutils {
+	BACKGROUND-COLOR: #eeeeee
+}
+UL.auto-toc {
+	LIST-STYLE-TYPE: none
+}
+</STYLE>
+</HEAD>
+<BODY>
+<DIV id=3Df2py-fortran-to-python-interface-generator class=3Ddocument>
+<H1 class=3Dtitle>F2PY: Fortran to Python interface generator</H1>
+<TABLE class=3Ddocinfo rules=3Dnone frame=3Dvoid>
+  <COLGROUP>
+  <COL class=3Ddocinfo-name>
+  <COL class=3Ddocinfo-content>
+  <TBODY vAlign=3Dtop>
+  <TR>
+    <TH class=3Ddocinfo-name>Author:</TH>
+    <TD>Pearu Peterson &lt;<A class=3Dreference=20
+      =
+href=3D"mailto:pearu@cens.ioc.ee">pearu@cens.ioc.ee</A>&gt;</TD></TR>
+  <TR class=3Dfield>
+    <TH class=3Ddocinfo-name>License:</TH>
+    <TD class=3Dfield-body><A class=3Dreference=20
+      =
+href=3D"http://www.fsf.org/copyleft/lesser.html">LGPL</A>.</TD></TR>
+  <TR class=3Dfield>
+    <TH class=3Ddocinfo-name>Web-site:</TH>
+    <TD class=3Dfield-body><A class=3Dreference=20
+      =
+href=3D"http://cens.ioc.ee/projects/f2py2e/">http://cens.ioc.ee/projects/=
+f2py2e/</A></TD></TR>
+  <TR class=3Dfield>
+    <TH class=3Ddocinfo-name>Discussions to:</TH>
+    <TD class=3Dfield-body><A class=3Dreference=20
+      =
+href=3D"http://cens.ioc.ee/mailman/listinfo/f2py-users/">f2py-users =
+mailing=20
+      list</A></TD></TR>
+  <TR class=3Dfield>
+    <TH class=3Ddocinfo-name>Documentation:</TH>
+    <TD class=3Dfield-body><A class=3Dreference=20
+      =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/index.html">User=
+'s=20
+      Guide</A>, <A class=3Dreference=20
+      =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/FAQ.html">FAQ</A></TD></TR>=
+
+  <TR class=3Dfield>
+    <TH class=3Ddocinfo-name>Platforms:</TH>
+    <TD class=3Dfield-body>All</TD></TR>
+  <TR>
+    <TH class=3Ddocinfo-name>Date:</TH>
+    <TD>2007-07-19</TD></TR></TBODY></TABLE><!-- -*- rest -*- -->
+<HR class=3Ddocutils>
+
+<DIV class=3Dtopic>
+<P class=3D"topic-title first">NEWS!!!</P>
+<P>July 19, 2007</P>
+<BLOCKQUOTE>F2PY is now part of <A class=3Dreference=20
+  href=3D"http://numpy.scipy.org/">NumPy</A>. All the development and =
+maintenance=20
+  of F2PY is carried out under NumPy SVN tree. See <A class=3Dreference=20
+  href=3D"http://www.scipy.org/F2py">F2PY</A> for more information. If =
+you need=20
+  F2PY with Numeric or Numarray array support then you must use the F2PY =
+version=20
+  found below.</BLOCKQUOTE>
+<P>January 30, 2005</P>
+<BLOCKQUOTE>Latest F2PY release (version 2.45.241_1926). New features:=20
+  wrapping unsigned integers, support for <TT class=3D"docutils =
+literal"><SPAN=20
+  class=3Dpre>.pyf.src</SPAN></TT> template files, callback arguments =
+can now be=20
+  CObjects, fortran objects, built-in functions. Introduced <TT=20
+  class=3D"docutils literal"><SPAN class=3Dpre>intent(aux)</SPAN></TT> =
+attribute.=20
+  Wrapped objects have <TT class=3D"docutils literal"><SPAN=20
+  class=3Dpre>_cpointer</SPAN></TT> attribute holding C pointer to =
+wrapped=20
+  functions or variables. Many bug fixes and improvements, updated=20
+  documentation. <A class=3Dreference=20
+  =
+href=3D"http://cens.ioc.ee/cgi-bin/cvsweb/python/f2py2e/docs/HISTORY.txt.=
+diff?r1=3D1.163&amp;r2=3D1.137&amp;f=3Dh">Differences=20
+  with the previous release (version 2.43.239_1831)</A>.</BLOCKQUOTE>
+<DL class=3Ddocutils>
+  <DT>October 4, 2004=20
+  <DD>F2PY bug fix release (version 2.43.239_1831). Better support for =
+64-bit=20
+  platforms. Introduced <TT class=3D"docutils literal"><SPAN=20
+  class=3Dpre>--help-link</SPAN></TT> and <TT class=3D"docutils =
+literal"><SPAN=20
+  class=3Dpre>--link-&lt;resource&gt;</SPAN></TT> options. Bug fixes. <A =
+
+  class=3Dreference=20
+  =
+href=3D"http://cens.ioc.ee/cgi-bin/cvsweb/python/f2py2e/docs/HISTORY.txt.=
+diff?r1=3D1.137&amp;r2=3D1.131&amp;f=3Dh">Differences=20
+  with the previous release (version 2.43.239_1806)</A>. </DD></DL>
+<DL class=3Ddocutils>
+  <DT>September 25, 2004=20
+  <DD>Latest F2PY release (version 2.43.239_1806). Support for <TT=20
+  class=3D"docutils literal"><SPAN class=3Dpre>ENTRY</SPAN></TT> =
+statement. New=20
+  attributes: <TT class=3D"docutils literal"><SPAN=20
+  class=3Dpre>intent(inplace)</SPAN></TT>, <TT class=3D"docutils =
+literal"><SPAN=20
+  class=3Dpre>intent(callback)</SPAN></TT>. Supports Numarray 1.1. =
+Introduced <TT=20
+  class=3D"docutils literal"><SPAN class=3Dpre>-*-</SPAN> <SPAN =
+class=3Dpre>fix</SPAN>=20
+  <SPAN class=3Dpre>-*-</SPAN></TT> header content. Improved <TT=20
+  class=3D"docutils literal"><SPAN class=3Dpre>PARAMETER</SPAN></TT> =
+support.=20
+  Documentation updates. <A class=3Dreference=20
+  =
+href=3D"http://cens.ioc.ee/cgi-bin/cvsweb/python/f2py2e/docs/HISTORY.txt.=
+diff?r1=3D1.131&amp;r2=3D1.98&amp;f=3Dh">Differences=20
+  with the previous release (version 2.39.235-1693)</A>. </DD></DL>
+<P><A class=3Dreference=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/OLDNEWS.html">History of=20
+NEWS</A></P></DIV>
+<HR class=3Ddocutils>
+
+<DIV class=3D"contents topic">
+<P class=3D"topic-title first"><A id=3Dcontents =
+name=3Dcontents>Contents</A></P>
+<UL class=3Dsimple>
+  <LI><A id=3Did38 class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/#introduction"=20
+  name=3Did38>Introduction</A>
+  <UL>
+    <LI><A id=3Did39 class=3Dreference=20
+    href=3D"https://sysbio.ioc.ee/projects/f2py2e/#main-features" =
+name=3Did39>Main=20
+    features</A> </LI></UL>
+  <LI><A id=3Did40 class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/#prerequisites"=20
+  name=3Did40>Prerequisites</A>=20
+  <LI><A id=3Did41 class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/#download" =
+name=3Did41>Download</A>=20
+  <LI><A id=3Did42 class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/#installation"=20
+  name=3Did42>Installation</A>=20
+  <LI><A id=3Did43 class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/#usage" =
+name=3Did43>Usage</A>=20
+  <LI><A id=3Did44 class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/#documentation"=20
+  name=3Did44>Documentation</A>=20
+  <LI><A id=3Did45 class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/#mailing-list" =
+name=3Did45>Mailing=20
+  list</A>=20
+  <LI><A id=3Did46 class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/#cvs" =
+name=3Did46>CVS</A>=20
+  <LI><A id=3Did47 class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/#contributions"=20
+  name=3Did47>Contributions</A>=20
+  <LI><A id=3Did48 class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/#related-sites" =
+name=3Did48>Related=20
+  sites</A> </LI></UL></DIV>
+<DIV class=3Dsection>
+<H1><A id=3Dintroduction class=3Dtoc-backref=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/#id38"=20
+name=3Dintroduction>Introduction</A></H1>
+<P>The purpose of the F2PY --<EM>Fortran to Python interface =
+generator</EM>--=20
+project is to provide connection between <A class=3Dreference=20
+href=3D"http://www.python.org/">Python</A> and Fortran languages. F2PY =
+is a Python=20
+extension tool for creating Python C/API modules from (handwritten or =
+F2PY=20
+generated) signature files (or directly from Fortran sources). The =
+generated=20
+extension modules facilitate:</P>
+<UL class=3Dsimple>
+  <LI>Calling Fortran 77/90/95, Fortran 90/95 module, and C functions =
+from=20
+  Python.=20
+  <LI>Accessing Fortran 77 <TT class=3D"docutils literal"><SPAN=20
+  class=3Dpre>COMMON</SPAN></TT> blocks and Fortran 90/95 module data =
+(including=20
+  allocatable arrays) from Python.=20
+  <LI>Calling Python functions from Fortran or C (call-backs).=20
+  <LI>Automatically handling the difference in the data storage order of =
+
+  multi-dimensional Fortran and Numerical Python (i.e. C) arrays. =
+</LI></UL>
+<P>In addition, F2PY can build the generated extension modules to shared =
+
+libraries with one command. F2PY uses the <TT class=3D"docutils =
+literal"><SPAN=20
+class=3Dpre>scipy_distutils</SPAN></TT> module from <A class=3Dreference =
+
+href=3D"http://www.scipy.org/">SciPy</A> that supports number of major =
+Fortran=20
+compilers.</P><!-- (see `COMPILERS.txt`_ for more information). -->
+<P>F2PY generated extension modules depend on <A class=3Dreference=20
+href=3D"http://www.numpy.org/">NumPy</A> package that provides fast=20
+multi-dimensional array language facility to Python.</P>
+<DIV class=3Dsection>
+<H2><A id=3Dmain-features class=3Dtoc-backref=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/#id39" =
+name=3Dmain-features>Main=20
+features</A></H2>
+<P>Here follows a more detailed list of F2PY features:</P>
+<UL>
+  <LI>
+  <P class=3Dfirst>F2PY scans real Fortran codes to produce the =
+so-called=20
+  signature files (.pyf files). The signature files contain all the =
+information=20
+  (function names, arguments and their types, etc.) that is needed to =
+construct=20
+  Python bindings to Fortran (or C) functions.</P>
+  <P>The syntax of signature files is borrowed from the Fortran 90/95 =
+language=20
+  specification and has some F2PY specific extensions. The signature =
+files can=20
+  be modified to dictate how Fortran (or C) programs are called from =
+Python:</P>
+  <BLOCKQUOTE>
+    <UL class=3Dsimple>
+      <LI>F2PY solves dependencies between arguments (this is relevant =
+for the=20
+      order of initializing variables in extension modules).=20
+      <LI>Arguments can be specified to be optional or hidden that =
+simplifies=20
+      calling Fortran programs from Python considerably.=20
+      <LI>In principle, one can design any Python signature for a given =
+Fortran=20
+      function, e.g. change the order arguments, introduce auxiliary =
+arguments,=20
+      hide the arguments, process the arguments before passing to =
+Fortran,=20
+      return arguments as output of F2PY generated functions, etc.=20
+  </LI></UL></BLOCKQUOTE>
+  <LI>
+  <P class=3Dfirst>F2PY automatically generates __doc__ strings (and =
+optionally=20
+  LaTeX documentation) for extension modules.</P>
+  <LI>
+  <P class=3Dfirst>F2PY generated functions accept arbitrary (but =
+sensible) Python=20
+  objects as arguments. The F2PY interface automatically takes care of=20
+  type-casting and handling of non-contiguous arrays.</P>
+  <LI>
+  <P class=3Dfirst>The following Fortran constructs are recognized by =
+F2PY:</P>
+  <UL>
+    <LI>
+    <P class=3Dfirst>All basic Fortran types:</P><PRE =
+class=3Dliteral-block>integer[ | *1 | *2 | *4 | *8 ], logical[ | *1 | *2 =
+| *4 | *8 ]
+integer*([ -1 | -2 | -4 | -8 ])
+character[ | *(*) | *1 | *2 | *3 | ... ]
+real[ | *4 | *8 | *16 ], double precision
+complex[ | *8 | *16 | *32 ]
+</PRE>
+    <P>Negative <TT class=3D"docutils literal"><SPAN =
+class=3Dpre>integer</SPAN></TT>=20
+    kinds are used to wrap unsigned integers.</P>
+    <LI>
+    <P class=3Dfirst>Multi-dimensional arrays of all basic types with =
+the=20
+    following dimension specifications:</P><PRE =
+class=3Dliteral-block>&lt;dim&gt; | &lt;start&gt;:&lt;end&gt; | * | :
+</PRE>
+    <LI>
+    <P class=3Dfirst>Attributes and statements:</P><PRE =
+class=3Dliteral-block>intent([ in | inout | out | hide | in,out | =
+inout,out | c |
+         copy | cache | callback | inplace | aux ])
+dimension(&lt;dimspec&gt;)
+common, parameter
+allocatable
+optional, required, external
+depend([&lt;names&gt;])
+check([&lt;C-booleanexpr&gt;])
+note(&lt;LaTeX text&gt;)
+usercode, callstatement, callprotoargument, threadsafe, fortranname
+pymethoddef
+entry
+</PRE></LI></UL>
+  <LI>
+  <P class=3Dfirst>Because there are only little (and easily handleable) =
+
+  differences between calling C and Fortran functions from F2PY =
+generated=20
+  extension modules, then F2PY is also well suited for wrapping C =
+libraries to=20
+  Python.</P>
+  <LI>
+  <P class=3Dfirst>Practice has shown that F2PY generated interfaces (to =
+C or=20
+  Fortran functions) are less error prone and even more efficient than=20
+  handwritten extension modules. The F2PY generated interfaces are easy =
+to=20
+  maintain and any future optimization of F2PY generated interfaces=20
+  transparently apply to extension modules by just regenerating them =
+with the=20
+  latest version of F2PY.</P>
+  <LI>
+  <P class=3Dfirst><A class=3Dreference=20
+  =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/index.html">F2PY=
+ Users=20
+  Guide and Reference Manual</A></P></LI></UL></DIV></DIV>
+<DIV class=3Dsection>
+<H1><A id=3Dprerequisites class=3Dtoc-backref=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/#id40"=20
+name=3Dprerequisites>Prerequisites</A></H1>
+<P>F2PY requires the following software installed:</P>
+<UL class=3Dsimple>
+  <LI><A class=3Dreference href=3D"http://www.python.org/">Python</A> =
+(versions=20
+  1.5.2 or later; 2.1 and up are recommended). You must have python-dev =
+package=20
+  installed.=20
+  <LI><A class=3Dreference href=3D"http://www.numpy.org/">NumPy</A> =
+(versions 13 or=20
+  later; 20.x, 21.x, 22.x, 23.x are recommended)=20
+  <LI><A class=3Dreference=20
+  =
+href=3D"http://www.stsci.edu/resources/software_hardware/numarray">Numarr=
+ay</A>=20
+  (version 0.9 and up), optional, partial support.=20
+  <LI>Scipy_distutils (version 0.2.2 and up are recommended) from <A=20
+  class=3Dreference href=3D"http://www.scipy.org/">SciPy</A> project. =
+Get it from=20
+  Scipy CVS or download it below. </LI></UL>
+<P>Python 1.x users also need <A class=3Dreference=20
+href=3D"http://www.python.org/sigs/distutils-sig/">distutils</A>.</P>
+<P>Of course, to build extension modules, you'll need also working C =
+and/or=20
+Fortran compilers installed.</P></DIV>
+<DIV class=3Dsection>
+<H1><A id=3Ddownload class=3Dtoc-backref=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/#id41"=20
+name=3Ddownload>Download</A></H1>
+<P>You can download the sources for the latest F2PY and scipy_distutils =
+releases=20
+as:</P>
+<UL class=3Dsimple>
+  <LI><A class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/2.x/">2.x</A>/<A =
+class=3Dreference=20
+  =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/2.x/F2PY-2-latest.tar.gz">F=
+2PY-2-latest.tar.gz</A>=20
+
+  <LI><A class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/2.x/">2.x</A>/<A =
+class=3Dreference=20
+  =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/2.x/scipy_distutils-latest.=
+tar.gz">scipy_distutils-latest.tar.gz</A>=20
+  </LI></UL>
+<P>Windows users might be interested in Win32 installer for F2PY and=20
+Scipy_distutils (these installers are built using Python 2.3):</P>
+<UL class=3Dsimple>
+  <LI><A class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/2.x/">2.x</A>/<A =
+class=3Dreference=20
+  =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/2.x/F2PY-2-latest.win32.exe=
+">F2PY-2-latest.win32.exe</A>=20
+
+  <LI><A class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/2.x/">2.x</A>/<A =
+class=3Dreference=20
+  =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/2.x/scipy_distutils-latest.=
+win32.exe">scipy_distutils-latest.win32.exe</A>=20
+  </LI></UL>
+<P>Older releases are also available in the directories <A =
+class=3Dreference=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/rel-0.x">rel-0.x</A>, <A=20
+class=3Dreference=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/rel-1.x">rel-1.x</A>, <A=20
+class=3Dreference=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/rel-2.x">rel-2.x</A>, <A=20
+class=3Dreference=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/rel-3.x">rel-3.x</A>, <A=20
+class=3Dreference=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/rel-4.x">rel-4.x</A>, <A=20
+class=3Dreference=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/rel-5.x">rel-5.x</A>, if =
+you need=20
+them.</P>
+<P>Development version of F2PY from CVS is available as <A =
+class=3Dreference=20
+href=3D"http://cens.ioc.ee/cgi-bin/viewcvs.cgi/python/f2py2e/f2py2e.tar.g=
+z?tarball=3D1">f2py2e.tar.gz</A>.</P>
+<P>Debian Sid users can simply install <TT class=3D"docutils =
+literal"><SPAN=20
+class=3Dpre>python-f2py</SPAN></TT> package.</P></DIV>
+<DIV class=3Dsection>
+<H1><A id=3Dinstallation class=3Dtoc-backref=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/#id42"=20
+name=3Dinstallation>Installation</A></H1>
+<P>Unpack the source file, change to directrory <TT=20
+class=3D"docutils literal"><SPAN class=3Dpre>F2PY-?-???/</SPAN></TT> and =
+run (you=20
+may need to become a root):</P><PRE class=3Dliteral-block>python =
+setup.py install
+</PRE>
+<P>The F2PY installation installs a Python package <TT=20
+class=3D"docutils literal"><SPAN class=3Dpre>f2py2e</SPAN></TT> to your =
+Python <TT=20
+class=3D"docutils literal"><SPAN class=3Dpre>site-packages</SPAN></TT> =
+directory and=20
+a script <TT class=3D"docutils literal"><SPAN =
+class=3Dpre>f2py</SPAN></TT> to your=20
+Python executable path.</P>
+<P>See also <A class=3Dreference=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/FAQ.html#installation">Inst=
+allation</A>=20
+section in <A class=3Dreference=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/FAQ.html">F2PY =
+FAQ</A>.</P>
+<P>Similarly, to install <TT class=3D"docutils literal"><SPAN=20
+class=3Dpre>scipy_distutils</SPAN></TT>, unpack its tar-ball and =
+run:</P><PRE class=3Dliteral-block>python setup.py install
+</PRE></DIV>
+<DIV class=3Dsection>
+<H1><A id=3Dusage class=3Dtoc-backref=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/#id43" =
+name=3Dusage>Usage</A></H1>
+<P>To check if F2PY is installed correctly, run</P><PRE =
+class=3Dliteral-block>f2py
+</PRE>
+<P>without any arguments. This should print out the usage information of =
+the <TT=20
+class=3D"docutils literal"><SPAN class=3Dpre>f2py</SPAN></TT> =
+program.</P>
+<P>Next, try out the following three steps:</P>
+<OL class=3Darabic>
+  <LI>
+  <P class=3Dfirst>Create a Fortran file <A class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/hello.f">hello.f</A> =
+that=20
+  contains:</P><PRE class=3Dliteral-block>C File hello.f
+      subroutine foo (a)
+      integer a
+      print*, "Hello from Fortran!"
+      print*, "a=3D",a
+      end
+</PRE></LI></OL>
+<OL class=3D"arabic simple" start=3D2>
+  <LI>Run </LI></OL>
+<BLOCKQUOTE><PRE class=3Dliteral-block>f2py -c -m hello hello.f
+</PRE>
+  <P>This will build an extension module <TT class=3D"docutils =
+literal"><SPAN=20
+  class=3Dpre>hello.so</SPAN></TT> (or <TT class=3D"docutils =
+literal"><SPAN=20
+  class=3Dpre>hello.sl</SPAN></TT>, or <TT class=3D"docutils =
+literal"><SPAN=20
+  class=3Dpre>hello.pyd</SPAN></TT>, etc. depending on your platform) =
+into the=20
+  current directory.</P></BLOCKQUOTE>
+<OL class=3Darabic start=3D3>
+  <LI>
+  <P class=3Dfirst>Now in Python try:</P><PRE =
+class=3Dliteral-block>&gt;&gt;&gt; import hello
+&gt;&gt;&gt; print hello.__doc__
+&gt;&gt;&gt; print hello.foo.__doc__
+&gt;&gt;&gt; hello.foo(4)
+ Hello from Fortran!
+ a=3D 4
+&gt;&gt;&gt;
+</PRE></LI></OL>
+<P>If the above works, then you can try out more thorough <A =
+class=3Dreference=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/FAQ.html#q-how-to-test-if-f=
+2py-is-working-correctly">F2PY=20
+unit tests</A> and read the <A class=3Dreference=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/index.html">F2PY=
+ Users=20
+Guide and Reference Manual</A>.</P></DIV>
+<DIV class=3Dsection>
+<H1><A id=3Ddocumentation class=3Dtoc-backref=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/#id44"=20
+name=3Ddocumentation>Documentation</A></H1>
+<P>The documentation of the F2PY project is collected in <TT=20
+class=3D"docutils literal"><SPAN class=3Dpre>f2py2e/docs/</SPAN></TT> =
+directory. It=20
+contains the following documents:</P>
+<DL class=3Ddocutils>
+  <DT><A class=3Dreference=20
+  =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/README.html">README.txt</A>=
+ (in <A=20
+  class=3Dreference=20
+  =
+href=3D"http://cens.ioc.ee/cgi-bin/cvsweb/python/f2py2e/docs/README.txt?r=
+ev=3DHEAD&amp;content-type=3Dtext/x-cvsweb-markup">CVS</A>)=20
+
+  <DD>The first thing to read about F2PY -- this document. </DD></DL>
+<DL class=3Ddocutils>
+  <DT><A class=3Dreference=20
+  =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/index.html">user=
+sguide/index.txt</A>,=20
+  <A class=3Dreference=20
+  =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/usersguide/f2py_usersguide.=
+pdf">usersguide/f2py_usersguide.pdf</A>=20
+
+  <DD>F2PY Users Guide and Reference Manual. Contains lots of examples.=20
+  <DT><A class=3Dreference=20
+  href=3D"https://sysbio.ioc.ee/projects/f2py2e/FAQ.html">FAQ.txt</A> =
+(in <A=20
+  class=3Dreference=20
+  =
+href=3D"http://cens.ioc.ee/cgi-bin/cvsweb/python/f2py2e/docs/FAQ.txt?rev=3D=
+HEAD&amp;content-type=3Dtext/x-cvsweb-markup">CVS</A>)=20
+
+  <DD>F2PY Frequently Asked Questions. </DD></DL>
+<DL class=3Ddocutils>
+  <DT><A class=3Dreference=20
+  =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/TESTING.html">TESTING.txt</=
+A> (in=20
+  <A class=3Dreference=20
+  =
+href=3D"http://cens.ioc.ee/cgi-bin/cvsweb/python/f2py2e/docs/TESTING.txt?=
+rev=3DHEAD&amp;content-type=3Dtext/x-cvsweb-markup">CVS</A>)=20
+
+  <DD>About F2PY testing site. What tests are available and how to run =
+them.=20
+  </DD></DL>
+<DL class=3Ddocutils>
+  <DT><A class=3Dreference=20
+  =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/HISTORY.html">HISTORY.txt</=
+A> (in=20
+  <A class=3Dreference=20
+  =
+href=3D"http://cens.ioc.ee/cgi-bin/cvsweb/python/f2py2e/docs/HISTORY.txt?=
+rev=3DHEAD&amp;content-type=3Dtext/x-cvsweb-markup">CVS</A>)=20
+
+  <DD>A list of latest changes in F2PY. This is the most up-to-date =
+document on=20
+  F2PY. </DD></DL>
+<DL class=3Ddocutils>
+  <DT><A class=3Dreference=20
+  =
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/THANKS.html">THANKS.txt</A>=
+=20
+  <DD>Acknowledgments. </DD></DL><!-- `COMPILERS.txt`_=0A=
+Compiler and platform specific notes. --></DIV>
+<DIV class=3Dsection>
+<H1><A id=3Dmailing-list class=3Dtoc-backref=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/#id45" =
+name=3Dmailing-list>Mailing=20
+list</A></H1>
+<P>A mailing list <A class=3Dreference=20
+href=3D"mailto:f2py-users@cens.ioc.ee">f2py-users@cens.ioc.ee</A> is =
+open for F2PY=20
+releated discussion/questions/etc.</P>
+<UL class=3Dsimple>
+  <LI><A class=3Dreference=20
+  =
+href=3D"http://cens.ioc.ee/mailman/listinfo/f2py-users">Subscribe..</A>=20
+  <LI><A class=3Dreference=20
+  href=3D"http://cens.ioc.ee/pipermail/f2py-users">Archives..</A> =
+</LI></UL></DIV>
+<DIV class=3Dsection>
+<H1><A id=3Dcvs class=3Dtoc-backref=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/#id46" =
+name=3Dcvs>CVS</A></H1>
+<P>F2PY is being developed under <A class=3Dreference=20
+href=3D"http://www.cvshome.org/">CVS</A>. The CVS version of F2PY can be =
+obtained=20
+as follows:</P>
+<OL class=3Darabic>
+  <LI>
+  <P class=3Dfirst>First you need to login (the password is <TT=20
+  class=3D"docutils literal"><SPAN =
+class=3Dpre>guest</SPAN></TT>):</P><PRE class=3Dliteral-block>cvs -d =
+:pserver:anonymous@cens.ioc.ee:/home/cvs login
+</PRE>
+  <LI>
+  <P class=3Dfirst>and then do the checkout:</P><PRE =
+class=3Dliteral-block>cvs -z6 -d =
+:pserver:anonymous@cens.ioc.ee:/home/cvs checkout f2py2e
+</PRE>
+  <LI>
+  <P class=3Dfirst>You can update your local F2PY tree <TT=20
+  class=3D"docutils literal"><SPAN class=3Dpre>f2py2e/</SPAN></TT> by =
+executing:</P><PRE class=3Dliteral-block>cvs -z6 update -P -d
+</PRE></LI></OL>
+<P>You can browse the <A class=3Dreference=20
+href=3D"http://cens.ioc.ee/cgi-bin/viewcvs.cgi/python/f2py2e/">F2PY =
+CVS</A>=20
+repository.</P></DIV>
+<DIV class=3Dsection>
+<H1><A id=3Dcontributions class=3Dtoc-backref=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/#id47"=20
+name=3Dcontributions>Contributions</A></H1>
+<UL class=3Dsimple>
+  <LI><A class=3Dreference=20
+  href=3D"http://fubphpc.tu-graz.ac.at/~pierre/f2py_tutorial.tar.gz">A =
+short=20
+  introduction to F2PY</A> by Pierre Schnizer.=20
+  <LI><A class=3Dreference=20
+  =
+href=3D"http://cens.ioc.ee/pipermail/f2py-users/2003-April/000472.html">F=
+2PY=20
+  notes</A> by Fernando Perez.=20
+  <LI><A class=3Dreference =
+href=3D"http://jrfonseca.dyndns.org/debian/">Debian=20
+  packages of F2PY</A> by Jos=C3=A9 Fonseca. [OBSOLETE, Debian Sid ships =
+python-f2py=20
+  package] </LI></UL></DIV>
+<DIV class=3Dsection>
+<H1><A id=3Drelated-sites class=3Dtoc-backref=20
+href=3D"https://sysbio.ioc.ee/projects/f2py2e/#id48" =
+name=3Drelated-sites>Related=20
+sites</A></H1>
+<UL class=3Dsimple>
+  <LI><A class=3Dreference href=3D"http://www.numpy.org/">Numerical =
+Python</A> --=20
+  adds a fast array facility to the Python language.=20
+  <LI><A class=3Dreference =
+href=3D"http://pyfortran.sourceforge.net/">Pyfort</A> --=20
+  A Python-Fortran connection tool.=20
+  <LI><A class=3Dreference href=3D"http://www.scipy.org/">SciPy</A> -- =
+An open=20
+  source library of scientific tools for Python.=20
+  <LI><A class=3Dreference=20
+  =
+href=3D"http://starship.python.net/crew/hinsen/scientific.html">Scientifi=
+c=20
+  Python</A> -- A collection of Python modules that are useful for =
+scientific=20
+  computing.=20
+  <LI><A class=3Dreference href=3D"http://www.fortran.com/fortran/">The =
+Fortran=20
+  Company</A> -- A place to find products, services, and general =
+information=20
+  related to the Fortran programming language.=20
+  <LI><A class=3Dreference=20
+  href=3D"http://www.fortran.com/fortran/F77_std/rjcnf.html">American =
+National=20
+  Standard Programming Language FORTRAN ANSI(R) X3.9-1978</A>=20
+  <LI><A class=3Dreference href=3D"http://www.j3-fortran.org/">J3</A> -- =
+The US=20
+  Fortran standards committee.=20
+  <LI><A class=3Dreference href=3D"http://www.swig.org/">SWIG</A> -- A =
+software=20
+  development tool that connects programs written in C and C++ with a =
+variety of=20
+  high-level programming languages.=20
+  <LI><A class=3Dreference =
+href=3D"http://www.mathtools.net/">Mathtools.net</A> -- A=20
+  technical computing portal for all scientific and engineering needs. =
+</LI></UL><!-- References=0A=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D --><!-- Local Variables:=0A=
+mode: indented-text=0A=
+indent-tabs-mode: nil=0A=
+sentence-end-double-space: t=0A=
+fill-column: 70=0A=
+End: --></DIV></DIV></BODY></HTML>
