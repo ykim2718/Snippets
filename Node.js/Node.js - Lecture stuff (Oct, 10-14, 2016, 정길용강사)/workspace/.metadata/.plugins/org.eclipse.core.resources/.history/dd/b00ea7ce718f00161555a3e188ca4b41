@@ -1,0 +1,17 @@
+console.log(__filename, 'm2 로딩 전')
+module.exports = {name: '김철수', age: 30}
+var m2 = require('./m2')
+console.log(__filename, m2.name, m2.age);
+console.log(__filename, 'm2 로딩 후')
+
+//console.log(__filename, require.main == module);
+//var m2 = require('./m2') // module is not called once the module is in cache
+//var m2 = require('./m2')
+//var m2 = require('./m2')
+
+delete require.cache[require.resolve('./m2')];
+
+//console.log(require.cache);
+for (var attr in require.cache) {
+	console.log('cache', attr)
+}

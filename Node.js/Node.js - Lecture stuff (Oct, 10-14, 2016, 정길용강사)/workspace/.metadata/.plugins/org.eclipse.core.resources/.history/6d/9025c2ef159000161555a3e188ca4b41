@@ -1,0 +1,6 @@
+var childProcess = require('child_process')
+
+//childProcess.spawn('notepad');
+//childProcess.spawn('calc');
+
+var child = childProcess.spawn('node');

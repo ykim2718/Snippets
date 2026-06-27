@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Node.js 게시판</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1><%= title %></h1>
+		<section>
+			<form class="form-horizontal" method="post" action="<%= board._id %>">
+				<input type="hidden" name="_method" value="delete">
+				<div class="form-group">
+					<label for="writer" class="col-sm-1 control-label">작성자</label>
+					<div class="col-sm-3">
+						<input type="text" class="form-control" readonly value="<%= board.writer %>">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="title" class="col-sm-1 control-label">제목</label>
+					<div class="col-sm-11">
+						<input type="text" class="form-control" readonly value="<%= board.title %>">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="content" class="sr-only">내용</label>
+					<div class="col-sm-12">
+						<textarea rows="15" class="form-control" readonly><%= board.content %>
+						</textarea>							
+					</div>
+				</div>
+				<hr>
+				<div class="form-group">
+					<div class="text-center">
+						<a href="/board/" class="btn btn-primary">목록</a>
+						<button type="submit" class="btn btn-default">삭제</button>
+					</div>
+				</div>
+			</form>
+		</section>
+	</div>
+</body>
+</html>

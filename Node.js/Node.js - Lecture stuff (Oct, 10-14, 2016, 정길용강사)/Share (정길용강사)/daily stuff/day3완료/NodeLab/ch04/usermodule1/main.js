@@ -1,0 +1,1 @@
+console.log(__filename, '폴더 형태의 모듈일 경우 package.json에 main 속성이 있으면 해당 파일을 로딩.');

@@ -1,0 +1,8 @@
+console.log(__filename, '로딩 됨');
+console.log(__filename, 'm3 로딩 전');
+require('./m3')();
+console.log(__filename, 'm3 로딩 후');
+//console.log('main', require.main.filename);
+//var m1 = require('./m1');
+//console.log(__filename, m1.name, m1.age);
+//module.exports = {name: '이영희', age: 25}

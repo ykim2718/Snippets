@@ -1,0 +1,9 @@
+// node.exe --harmony processtest.js hello node
+console.log(process.argv);
+console.log(process.execArgv);
+
+process.on('exit', function(code){
+	console.log('print by process exit event', code);
+}); // add event to process
+
+console.log('process end')

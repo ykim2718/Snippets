@@ -1,0 +1,25 @@
+var childProcess = require('child_process'); 
+var child, file;
+
+// node hotdeploy.js net/tcpserver.js
+function runChild(){
+	file = process.argv[2];
+	if (file) {
+		child = childProcess.spawn('node', [file]);
+		console.log(file, '실행.');
+		child.on('close', function(){
+			console.log(file, '종료.');
+		});
+	} else {
+		throw new Error('실행할 파일을 지정해주세요. node hotdploy 파일명');
+	}
+}
+
+var fs = require('fs');
+fs.watchfile(file, function(){
+	child.kill();
+  console.log("the current mtime is: ${curr.mtime}");
+  console.log("the previous mtime was: ${prev.mtime}");
+});
+
+

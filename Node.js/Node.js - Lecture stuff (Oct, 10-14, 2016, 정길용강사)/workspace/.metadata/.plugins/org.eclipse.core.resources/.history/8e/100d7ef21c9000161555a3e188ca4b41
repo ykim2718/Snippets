@@ -1,0 +1,3 @@
+console.log('child2.js 실행');
+
+//process.stdin.resume();

@@ -1,0 +1,47 @@
+var http = require('http');
+var fs = require('fs');
+var url = require('url');
+var path = require('path');
+
+var base = path.join(__dirname, 'public');
+
+var app = function(req, res){
+	if(req.url === '/'){
+		req.url = '/index.html';
+	}
+	var parseUrl = url.parse(req.url);
+	var filepath = path.join(base, parseUrl.pathname);
+	
+	console.log(req.url);
+	console.log(parseUrl);
+	console.log(filepath);
+	
+	fs.exists(filepath, function(exists){
+		if(exists){
+			res.statusCode = 200;
+			res.setHeader('Content-Type', 'text/html;charset=utf-8');
+			var file = fs.createReadStream(filepath);
+			file.on('open', function(){
+				file.pipe(res);
+			});
+			file.on('error', function(err){
+				console.error(err);
+			});
+		}else{
+			res.writeHead(404);
+			res.end(parseUrl.pathname + ' not found');
+		}
+	});
+};
+
+var server = http.createServer(app);
+server.listen(80, function(){
+	console.log('서버 구동. http://localhost');
+});
+
+
+
+
+
+
+

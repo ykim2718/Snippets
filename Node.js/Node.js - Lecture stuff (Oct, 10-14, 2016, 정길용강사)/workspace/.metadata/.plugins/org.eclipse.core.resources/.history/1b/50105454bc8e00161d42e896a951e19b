@@ -1,0 +1,4 @@
+var m1 = require('./module1.js');
+var json = require('../package.json');
+
+console.log(m1.name, m1.age)

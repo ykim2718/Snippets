@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Node.js</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>채팅</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<script src="/socket.io/socket.io.js"></script>
+<script>
+	window.onload = function(){
+		// 웹소켓 서버 접속
+		s = io.connect('ws://localhost')
+		
+		document.querySelector('button').onclick = sendMsg;
+		document.querySelector('input').onkeydown = function(e){
+			if (e.keycode == 13) { // enter key
+			  sendMsg();
+			}
+		};
+	};
+	
+	function sendMsg() {
+		var msg = document.querySelector('input');
+		// 서버에 메세지 전송
+		s.emit('chat', msg.value)
+		msg.value = '';
+		msg.focus();
+	}
+</script>
+</head>
+<body class="well">
+	<h1><%= title %></h1>
+	<form method="post" action="/logout">
+	  	<div class="form-group">	  		
+			<textarea id="panel" rows="20" cols="70"  class="form-control" disabled></textarea>
+		</div>
+		<div class="form-inline">
+			<output><%= nickname %></output>
+			<input class="form-control" type="text" size="80" autofocus>
+			<button type="button" class="btn btn-success">메세지 전송</button>
+			<button type="submit" class="btn btn-danger">로그아웃</button>
+		</div>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+function Score(kor, eng){
+	
+}
+
+module.exports = Score;

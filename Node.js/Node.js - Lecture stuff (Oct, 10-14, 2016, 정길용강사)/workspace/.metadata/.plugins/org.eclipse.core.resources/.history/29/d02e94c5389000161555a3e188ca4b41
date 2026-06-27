@@ -1,0 +1,8 @@
+var net = require('net');
+
+var server = net.createServer(function(s){
+	console.log('클라이언트 접속.');
+	s.on('close', function(){});
+});
+
+server.listen(8124);

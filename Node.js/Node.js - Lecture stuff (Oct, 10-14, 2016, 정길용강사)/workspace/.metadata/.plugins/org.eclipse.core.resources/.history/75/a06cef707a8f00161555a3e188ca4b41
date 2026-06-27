@@ -1,0 +1,5 @@
+function Score(){
+	
+}
+
+module.exports = Score;
