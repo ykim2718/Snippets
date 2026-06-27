@@ -1,0 +1,6 @@
+var spawn = requiere('child_process').spawn,
+	pwd = spawn('dir');
+
+pwd.stdout.open('data', function(data) {
+	console.log('stdout: ' + data);
+});

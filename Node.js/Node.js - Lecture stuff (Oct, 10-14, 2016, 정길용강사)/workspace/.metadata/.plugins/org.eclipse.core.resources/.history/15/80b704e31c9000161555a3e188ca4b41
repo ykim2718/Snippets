@@ -1,0 +1,11 @@
+var childProcess = require('child_process');
+
+// var child = childProcess.spawn('node', ['child1.js', 'child', 'process'], {})
+// fork uses stdio: 'inherit' as default
+var child = childProcess.fork('child2.js', ['child', 'process']);
+
+child.on('message', function(msg){
+	console.log(msg);
+})
+
+//process.stdin.resume();

@@ -1,0 +1,24 @@
+// 2016.10.10
+// load http core module
+var http = require('http');
+// load file system core module
+var fs = require('fs');
+
+// create http server
+http.createServer(function(req, res){
+  // read helloNoe.js, Asynchronous way
+	fs.readFile('helloNode.js', function(err, data){
+		if (err) {
+			console.error(err);
+		} else {
+			// 1 of 3 step, response header
+			res.writeHead(200, {'Content-type': 'text/plain;charset=utf-8'});
+			// 2 of 3 step, send response message
+			res.write(data);
+		}
+	 	// 3 of 3 step, end response
+		res.end();
+	});
+}).listen(8124, function(){ // listen() calls only callback for the case of success
+	console.log('Server running on http://localhost:8124');
+});

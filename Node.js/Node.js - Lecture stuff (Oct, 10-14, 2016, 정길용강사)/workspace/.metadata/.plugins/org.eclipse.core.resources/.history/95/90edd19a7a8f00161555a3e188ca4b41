@@ -1,0 +1,6 @@
+function Score(kor, eng){
+	this.kor = kor
+	this.eng = eng;
+}
+
+module.exports = Score;

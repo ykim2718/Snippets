@@ -1,0 +1,3 @@
+console.log(__filename, 'before loading m2')
+var m2 = require('./m2')
+console.log(__filename, 'after loading m2')

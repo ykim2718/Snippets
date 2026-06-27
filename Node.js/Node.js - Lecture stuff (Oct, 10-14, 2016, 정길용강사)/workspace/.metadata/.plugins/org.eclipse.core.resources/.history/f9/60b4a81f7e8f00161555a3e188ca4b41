@@ -1,0 +1,7 @@
+var EventEmitter = require('events');
+var event = new EventEmitter();
+
+// Add event methods
+event.on();
+event.once();
+event.addListner();

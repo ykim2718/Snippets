@@ -1,0 +1,10 @@
+var assert = require('assert');
+
+// test suite
+describe('# suite test sync-way', function(){ 
+	// unit test
+	it('#1 hello == hello', function(){
+		assert.equal('hello', 'hello');
+	});
+});
+describe('# suite test async-way', function(){ });

@@ -1,0 +1,9 @@
+var childProcess = require('child_process');
+
+var child, file;
+
+// node hotdeploy.js net/tcpserver.js
+function runChild(){
+	file = process.argv[2];
+}
+

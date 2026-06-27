@@ -1,0 +1,10 @@
+a = 10;		// global variable
+global.b = 20; // global variable
+var c = 30;  		// module variable
+
+function d(){\
+	console.log(a, b, c);
+  console.log(global.a, global.b, global.c);  
+	
+}
+d();

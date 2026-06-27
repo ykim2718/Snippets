@@ -1,0 +1,5 @@
+console.log(__filename, 'module loaded');
+var user = {
+		name: 'Kim',
+		age: 30
+};

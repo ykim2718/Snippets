@@ -1,0 +1,8 @@
+console.log('child1.js 실행');
+console.log(process.argv);
+
+process.on('exit', function(code) {
+	console.log('child1 종료', code);
+});
+
+a();

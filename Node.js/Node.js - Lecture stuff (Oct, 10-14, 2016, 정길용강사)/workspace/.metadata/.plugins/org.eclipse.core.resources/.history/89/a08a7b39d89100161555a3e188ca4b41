@@ -1,0 +1,4 @@
+var assert = require('assert');
+
+var a = 10;
+assert(a == 10);

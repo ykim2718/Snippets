@@ -1,0 +1,18 @@
+var net = require('net');
+var fs = require('fs');
+//var base = 
+
+var server = net.createServer(function(s){
+	console.log('클라이언트 접속.');
+	s.on('error', function(){});
+	s.on('close', function(){
+		console.log('클라이언트 접속 종료.');
+	});
+	s.on('data', function(msg){
+		var url = msg.toString().split('\r\n')[0].split(' ')[1];
+		console.log(url);
+		fs.readFile();
+	});
+});
+
+server.listen(8124);

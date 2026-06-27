@@ -1,0 +1,14 @@
+var net = require('net');
+
+var server = net.createServer(function(s){
+	console.log('클라이언트 접속.');
+	s.on('close', function(){
+		console.log('클라이언트 접속 종료.');
+	});
+	s.on('data', function(msg){
+		reqData = msg.toString();
+		console.log(reqData) ;
+	})
+});
+
+server.listen(8124);

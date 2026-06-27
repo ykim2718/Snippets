@@ -1,0 +1,26 @@
+// 게시물 목록 조회
+module.exports.list = function(req, res) {
+	res.render('board/list');
+}
+
+// 게시물 상세조회
+module.exports.show = function(req, res) {
+	var no = req.params.no;
+	console.log(no);
+	res.render('board/view');
+}
+
+// 게시물 등록 홈 출력
+module.exports.form = function(req, res) {
+	res.render('board/write');
+}
+
+// 게시물 등록
+module.exports.create = function(req, res) {
+	res.render('board/result');
+}
+
+// 게시물 삭제
+module.exports.remove = function(req, res) {
+	res.redirect('/board/');
+}

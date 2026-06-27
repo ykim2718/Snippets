@@ -1,0 +1,1 @@
+console.log(__filename, '폴더 형태의 모듈일 경우 index.js 파일을 로딩.');

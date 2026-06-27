@@ -1,0 +1,3 @@
+// 사용자 행위 테스트, 사용자 관점에서의 테스트
+
+var Browser = require('zombie');

@@ -1,0 +1,8 @@
+// 2016.10.12 
+var d = new Date();
+var n = d.toLocaleTimeString(); 
+
+a = {
+		name: 'kim';
+}
+console.log(a.name);

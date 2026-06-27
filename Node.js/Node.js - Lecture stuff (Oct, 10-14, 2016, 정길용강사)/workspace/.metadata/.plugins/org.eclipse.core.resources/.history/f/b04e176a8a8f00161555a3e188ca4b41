@@ -1,0 +1,30 @@
+var tcp = require('net');
+
+var server = tcp.createServer(function(s){
+	console.log('server log: 클라이언트 접속', s.remoteAddress, s.remotePort);
+	s.on('error', function(err){
+		console.error(err);
+	});
+	s.on('close', function(){
+	  console.log('server log: 클라이언트 접속종료');
+	});
+	s.on('data', function(msg){
+		console.log('server:' + msg.toString());
+		 var c = new tcp.Socket();
+		 c.connect(s.remotePort, s.remoteAddress, function(){
+			 c.write(msg);
+		 });
+	});
+});
+
+// 포트가 정상적으로 오픈 퇼 경우
+server.on('listening', function() {
+		console.log('listening on port 8124');
+});
+
+// 포트 오픈이 실패할 경우
+server.on('error', function(e){
+	console.error(e);
+});
+
+server.listen(8124);

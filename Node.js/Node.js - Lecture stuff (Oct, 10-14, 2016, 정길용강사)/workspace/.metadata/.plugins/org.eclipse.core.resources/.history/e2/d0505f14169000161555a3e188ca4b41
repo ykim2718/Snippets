@@ -1,0 +1,6 @@
+function test(arg) {
+	console.log(arg);
+}
+
+test('i love u');
+test.call('explicit is better than implicit');

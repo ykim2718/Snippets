@@ -1,0 +1,23 @@
+var assert = require('assert');
+
+// test suite
+describe('# suite test sync-way', function(){ 
+	// unit test
+	it('#1 hello == hello', function(){
+		assert.equal('hello', 'hello');
+	});
+	it('#2 10 === "10"', function(){
+		assert(10 === '10');
+	});
+	it('#3 10 == "10"', function(){
+		assert(10 == '10');
+	});
+});
+
+describe('# suite test async-way', function(){
+	it('# 1 == 1', function(done){
+		setTimeout(function(){
+			assert(1==1);
+		}, 1000);
+	});
+});

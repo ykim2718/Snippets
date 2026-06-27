@@ -1,0 +1,25 @@
+var url = require('url')
+var path = require('path')
+var fs = require('fs')
+
+var base = require('path').join('c:', 'node', 'workspace', 'nodeLab', 'ch03', 'net');
+var logger = fs.createWriteStream('./log.txt', {flags: 'a'});	
+
+function mylogger(req, res, next) {
+  var parseUrl = url.parse(req.url);
+  var filepath = path.join(base, parseUrl.pathname);
+
+  var statusCode = 200;
+  fs.stat(filepath, function(err, stats){
+  	if (err) {
+  		statusCode = 404;
+  	} else if (stats.isFile()) {
+  		statusCode = 200;
+  	} else {
+  		statusCode = 403;
+  	}
+    logger.write(Date()+ ' ' + statusCode + ' ' + parseUrl.pathname + '\n');
+  });
+}
+
+module.exports = mylogger;

@@ -1,0 +1,4 @@
+// 사용자 행위 테스트, 사용자 관점에서의 테스트
+// zombie는 내부적으로 mocha를 사용하기에 local로 설치함.
+
+var Browser = require('zombie');

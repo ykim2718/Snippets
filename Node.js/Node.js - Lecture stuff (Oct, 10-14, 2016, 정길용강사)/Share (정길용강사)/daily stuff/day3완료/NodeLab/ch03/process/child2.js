@@ -1,0 +1,13 @@
+console.log(__filename, 'child2.js 실행.');
+
+process.on('message', function(msg){
+	console.log(__filename, msg);
+});
+process.send('from child');
+
+setInterval(function(){
+	process.send(process.hrtime());
+}, 1000);
+
+
+//process.stdin.resume();

@@ -1,0 +1,11 @@
+var app = require('../app');
+var http = require('http');
+
+// http 서버 구동
+var server = http.createServer(app);
+server.listen(80, function(){
+	console.log('서버 구동. http://localhost');
+});
+
+// websocket 구동
+var socketio = require('socket.io').listen(8000);

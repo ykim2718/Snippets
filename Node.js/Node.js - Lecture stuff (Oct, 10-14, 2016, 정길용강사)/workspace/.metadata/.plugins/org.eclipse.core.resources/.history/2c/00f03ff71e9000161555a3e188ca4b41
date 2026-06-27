@@ -1,0 +1,22 @@
+var childProcess = require('child_process')
+
+//childProcess.spawn('notepad');
+//childProcess.spawn('calc');
+
+var child = childProcess.spawn('node', ['child1.js', 'child', 'process'], {
+//	stdio: 'pipe' // 기본값, default
+//	stdio: 'inherit' // 부모 프로세스의 표준 입출력 장치 사용
+//	stdio: 'ignore' // 자식 프로세스의 표준 입출력 장치를 사용 안함
+//	stdio: ['inherit', 'pipe', 'ignore']  // stdin, stdout, stderr
+	stdio: ['inherit', require('fs').openSync('./log.txt', 'a'), 'ignore']
+});
+
+// Below is working only when stdout is set to 'pipe' in parent
+child.stdout.on('data', function(msg){
+	console.log(msg.toString());
+});
+
+child.on('close', function(code){
+	console.log('자식 프로세스 종료', code);
+});
+

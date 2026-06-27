@@ -1,0 +1,11 @@
+var childProcess = require('child_process')
+
+//childProcess.spawn('notepad');
+//childProcess.spawn('calc');
+
+var child = childProcess.spawn('node', ['child1.js', 'child', 'process']);
+
+child.stdout.on('data', function(msg){
+	console.log(msg.toString());
+	console.log(msg.toString()[2]);
+});

@@ -1,0 +1,61 @@
+// 2016.10.10
+// load http core module
+var http = require('http');
+// load file system core module
+var fs = require('fs');
+
+// create http server
+var server = http.createServer(function(req, res){
+  // read helloNoe.js, Asynchronous way
+	fs.readFile('helloNode2.js', function(err, data){
+		if (err && err.code == 'ENOENT') { // no file in hardware
+			console.error(err);
+			// 1 of 3 step, response header
+			res.writeHead(404, {'Content-type': 'text/html;charset=utf-8'});
+			// 2 of 3 step, send response message
+			res.write('<h1>file not found</h1>');
+		} else {
+			// 1 of 3 step, response header
+			res.writeHead(200, {'Content-type': 'text/plain;charset=utf-8'});
+			// 2 of 3 step, send response message
+			res.write(data);
+		}
+	 	// 3 of 3 step, end response
+		res.end();
+	});
+});
+
+
+//a || b -> a if a is true else b
+//false criteria in JavaScript
+//- boolean: false
+//- number: 0
+//- string: ''
+//- object: null, undefined
+var port = process.argv[2] || 8124;
+
+server.on('error', function(err){
+	if (err.code == 'EADDRINUSE') {
+		console.log(port, 'used.');
+		server.listen(++port)
+	} else {
+		console.error(err);
+	}
+});
+
+server.on('listening', function(){
+	console.log('listening event');
+	console.log('Server running on http://localhost:' + port);
+});
+
+server.emit('listening')
+  
+// listen calls callback only at success.
+// listen (async func) cannot be coded with try-catch.
+// listen adds 2nd argument as an event to server; server.on()
+// function listen(port, cb) {
+//   if (cb) { server.on('listening', cb); }
+//   open port
+server.listen(port, function(){ 
+	console.log('Server running on http://localhost:' + port);
+});

@@ -1,0 +1,6 @@
+var assert = require('assert');
+
+// test suite
+describe('# suite test synch', function(){
+	
+});

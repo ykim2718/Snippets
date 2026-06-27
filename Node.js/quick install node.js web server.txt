@@ -1,0 +1,18 @@
+1. install node.js (https://nodejs.org/en/)
+  >> node-v8.12.0-x64.msi
+  >> node
+2. install express-generator
+  >> npm install -g express-generator
+3.change folder
+4.create project using generator (view engine: ejs)
+  >> express <project_folder> --view=ejs
+5.change <project_folder>
+6.install package reading package.json
+  >> npm install
+  >> npm install nodemon -g
+7.execute node.js server
+  >> node ./bin/www
+  >> nodemon ./bin/www
+8.open web brower
+  >> http://127.0.0.1:3000
+  >> http://localhost:3000

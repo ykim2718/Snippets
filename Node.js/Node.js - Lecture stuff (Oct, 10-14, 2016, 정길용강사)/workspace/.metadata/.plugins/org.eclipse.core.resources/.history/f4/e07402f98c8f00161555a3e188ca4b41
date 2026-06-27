@@ -1,0 +1,2 @@
+var s = new require('net').Socket();
+process.stdin.resume();

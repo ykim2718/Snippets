@@ -1,0 +1,54 @@
+var http = require('http');
+var fs = require('fs');
+var url = require('url');
+var path = require('path');
+
+var base = path.join(__dirname, 'public');
+
+// 로깅 파일
+var logger = fs.createWriteStream('./log.txt', {flags: 'a'});
+
+var app = function(req, res){
+	if(req.url === '/'){
+		req.url = '/index.html';
+	}
+	var parseUrl = url.parse(req.url);
+	var filepath = path.join(base, parseUrl.pathname);
+	
+	console.log(parseUrl);
+	
+	fs.stat(filepath, function(err, stats){
+		if(err){
+			res.writeHead(404);
+			res.end(parseUrl.pathname + ' not found');
+		}else if(stats.isFile()){
+			res.statusCode = 200;
+			res.setHeader('Content-Type', 'text/html;charset=utf-8');
+			var file = fs.createReadStream(filepath);
+			file.on('open', function(){
+				file.pipe(res);
+			});
+			file.on('error', function(err){
+				console.error(err);
+			});
+		}else{
+			res.writeHead(403);
+			res.end('directory access is forbidden');
+		}
+		
+		// 로깅(파일시스템에 기록)
+		logger.write(Date() + ' ' + res.statusCode + ' ' + parseUrl.pathname + '\n');
+	});
+};
+
+var server = http.createServer(app);
+server.listen(80, function(){
+	console.log('서버 구동. http://localhost');
+});
+
+
+
+
+
+
+

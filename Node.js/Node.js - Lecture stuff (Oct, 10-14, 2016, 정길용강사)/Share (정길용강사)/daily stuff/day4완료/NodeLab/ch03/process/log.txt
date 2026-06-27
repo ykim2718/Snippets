@@ -1,0 +1,48 @@
+child1.js 실행.
+[ 'C:\\node\\nodejs\\node.exe',
+  'C:\\node\\workspace\\NodeLab\\ch03\\process\\child1.js',
+  'child',
+  'process' ]
+child1 종료. 0
+child1.js 실행.
+[ 'C:\\node\\nodejs\\node.exe',
+  'C:\\node\\workspace\\NodeLab\\ch03\\process\\child1.js',
+  'child',
+  'process' ]
+child1 종료. 0
+child1.js 실행.
+[ 'C:\\node\\nodejs\\node.exe',
+  'C:\\node\\workspace\\NodeLab\\ch03\\process\\child1.js',
+  'child',
+  'process' ]
+child1 종료. 0
+child1.js 실행.
+[ 'C:\\node\\nodejs\\node.exe',
+  'C:\\node\\workspace\\NodeLab\\ch03\\process\\child1.js',
+  'child',
+  'process' ]
+child1 종료. 0
+child1.js 실행.
+[ 'C:\\node\\nodejs\\node.exe',
+  'C:\\node\\workspace\\NodeLab\\ch03\\process\\child1.js',
+  'child',
+  'process' ]
+child1 종료. 0
+child1.js 실행.
+[ 'C:\\node\\nodejs\\node.exe',
+  'C:\\node\\workspace\\NodeLab\\ch03\\process\\child1.js',
+  'child',
+  'process' ]
+child1 종료. 0
+child1.js 실행.
+[ 'C:\\node\\nodejs\\node.exe',
+  'C:\\node\\workspace\\NodeLab\\ch03\\process\\child1.js',
+  'child',
+  'process' ]
+child1 종료. 0
+child1.js 실행.
+[ 'C:\\node\\nodejs\\node.exe',
+  'C:\\node\\workspace\\NodeLab\\ch03\\process\\child1.js',
+  'child',
+  'process' ]
+child1 종료. 0

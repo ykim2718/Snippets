@@ -1,0 +1,14 @@
+// 생성자 함수
+// Creator function: new Score()
+function Score(kor, eng){
+	// this = new Object();
+	this.kor = kor
+	this.eng = eng;
+	// return this;
+}
+
+Score.prototype.sum = function(){
+	return this.kor + this.eng;
+}
+
+module.exports = Score;

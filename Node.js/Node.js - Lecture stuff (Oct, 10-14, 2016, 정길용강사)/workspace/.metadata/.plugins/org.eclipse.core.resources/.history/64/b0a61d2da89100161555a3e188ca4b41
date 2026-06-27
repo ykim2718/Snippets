@@ -1,0 +1,8 @@
+module.exports = {
+	list: function(cb){
+		// 비동기 함수 호출 후 작업 완료되면 cb 호출
+	},
+	show: function(no, cb){},
+	create: function(board, cb){},
+	remove: function(no){}
+};

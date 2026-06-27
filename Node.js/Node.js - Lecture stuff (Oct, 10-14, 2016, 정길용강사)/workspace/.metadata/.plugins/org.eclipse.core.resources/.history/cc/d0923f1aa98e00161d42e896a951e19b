@@ -1,0 +1,4 @@
+concolde.log('console.log()')
+concolde.info('console.info()')
+concolde.warn('console.warn()')
+concolde.error('console.error()')

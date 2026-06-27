@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Node.js 게시판</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1><%= title %></h1>
+		<section>
+			<p>등록되었습니다.</p>				
+			<hr>
+			<div class="text-center">
+				<a href="3" class="btn btn-default">글확인</a>
+				<a href="/board/" class="btn btn-primary">목록</a>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

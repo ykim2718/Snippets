@@ -1,0 +1,9 @@
+function Score(kor, eng){
+	this.kor = kor
+	this.eng = eng;
+}
+Score.prototype.sum = function(){
+	return this.kor + this.eng
+}
+
+module.exports = Score;

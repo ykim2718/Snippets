@@ -1,0 +1,6 @@
+var logger = fs.createWriteStream('./log.txt', {flags: 'a'});	
+function mylogger(req, res, next) {
+  logger.write(Date()+ ' ' + res.statusCode + ' ' + parseUrl.pathname + '\n');
+}
+
+module.exports = mylogger;

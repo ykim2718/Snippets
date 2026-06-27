@@ -1,0 +1,4 @@
+console.log('child2.js 실행');
+
+process.send('from child');
+//process.stdin.resume();

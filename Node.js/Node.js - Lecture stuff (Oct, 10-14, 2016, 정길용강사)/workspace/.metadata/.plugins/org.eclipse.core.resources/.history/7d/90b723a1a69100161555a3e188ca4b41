@@ -1,0 +1,6 @@
+module.exports = {
+	list: function(){};
+	show: function(){};
+	create: function(){};
+	remove: function(){};
+};

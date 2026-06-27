@@ -1,0 +1,35 @@
+var express = require('express');
+var router = express.Router();
+var board = require('../controllers/board');
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.redirect('/board/');
+});
+
+// 목록
+router.get('/board', function(req, res, next) {
+  board.list(req, res);
+});
+
+// 게시물 등록화면
+router.get('/board/new', function(req, res, next) {
+  board.form(req, res);
+});
+
+// 게시물 등록작업
+router.post('/board/new', function(req, res, next) {
+  board.create(req, res);
+});
+
+// 게시물 상세조회,  :no 는 board 뒤에 숫자를 no 변수에 담겠다는 의미임!!!
+router.get('/board/:no', function(req, res, next) {
+  board.show(req, res);
+});
+
+// 게시물 삭제
+router.delete('/board/:no', function(req, res, next) {
+  board.remove(req, res);
+});
+
+module.exports = router;

@@ -1,0 +1,6 @@
+function chat(io) {
+	console.log('Socket.io server start.');
+	io.on('connection', function(s){});
+}
+
+module.exports = chat;

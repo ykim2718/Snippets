@@ -1,0 +1,6 @@
+console.log(__filename, 'module loaded');
+var user = {
+		name: 'Kim',
+		age: 30
+};
+module_exports = user;

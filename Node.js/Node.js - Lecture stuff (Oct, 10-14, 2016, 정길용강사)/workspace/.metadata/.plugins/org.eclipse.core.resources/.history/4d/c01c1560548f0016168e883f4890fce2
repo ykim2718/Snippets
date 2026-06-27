@@ -1,0 +1,11 @@
+console.log('1. start');
+
+var immediate = setImmediate(function(){
+	console.log('3. setImmediate()');
+});
+
+var timer = setTimeout(function(){
+	console.log('2. setTimeout()');
+}, 0);
+
+console.log('4. finish');

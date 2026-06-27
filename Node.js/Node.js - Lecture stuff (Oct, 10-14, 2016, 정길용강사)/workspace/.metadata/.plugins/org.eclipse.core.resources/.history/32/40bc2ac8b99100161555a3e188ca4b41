@@ -1,0 +1,36 @@
+var MongoClient = require('mongodb').MongoClient;
+
+var db
+MongoClient.connect('mongodb://localhost:27017/board', function(err, boardDB){
+	db = boardDB;
+	db.board = db.collection('board');
+	db.seq = db.collection('seq');
+});
+
+
+module.exports = {
+	list: function(cb){
+		// 비동기 함수 호출 후 작업 완료되면 cb 호출
+		db.board.find({}, {content:0}).sort({_id:-1})
+		                              .toArray(function(err, result){
+			cb(result);
+		});
+	},
+	show: function(no, cb){
+		var b3 = db.board.findOneAndUpdate(
+				{_id: parseInt(no)}, {$inc: {view: 1}},
+				function(err, result){
+					cb(result.value);
+				});
+	},
+	create: function(board, cb){
+		board.regdate = require('date-format').asString('MM.dd hh:mm', new Date());
+		board.view = 0
+		db.seq.findOneAndUpdate({}, {$inc: {seq: 1}}, function(err, result) {}):
+		db.seq.insert(board);
+		cb();
+	},
+	remove: function(no, cb){
+		db.board.remove({_id:parseInt(no)}, cb)
+	}
+};

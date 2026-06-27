@@ -1,0 +1,18 @@
+var EventEmitter = require('events');
+var event = new EventEmitter();
+
+// Add event methods
+event.on('timed', function(data){
+	console.log('on() timed event raised.', data);
+});
+event.once('timed', function(data){
+	console.log('once() timed event raised.', data);
+});
+event.addListener('timed', function(data){
+	console.log('addListener() timed event raised.', data);
+});
+
+// Create event
+var count = 0;
+event.emit('timed', ++count);
+event.emit('timed', ++count);

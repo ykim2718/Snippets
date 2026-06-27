@@ -1,0 +1,8 @@
+ var tcp = require('net');
+ 
+ var s = new net.Socket();
+
+ 
+ 
+ 
+ s.connect('8124', 'localhost', function(){})

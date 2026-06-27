@@ -1,0 +1,5 @@
+function test(arg) {
+	console.log(arg)
+}
+
+test('i love u')

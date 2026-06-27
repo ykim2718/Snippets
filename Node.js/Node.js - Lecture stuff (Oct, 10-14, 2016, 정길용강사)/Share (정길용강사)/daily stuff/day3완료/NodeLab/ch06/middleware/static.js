@@ -1,0 +1,51 @@
+// 정적인 자원에 대해서 브라우저에 응답한다.
+var fs = require('fs');
+var url = require('url');
+var path = require('path');
+
+var base = '';
+
+function setBase(dir){
+	base = dir;
+	return function(req, res, next){
+		if(req.url === '/'){
+			req.url = '/index.html';
+		}
+		var parseUrl = url.parse(req.url);
+		var filepath = path.join(base, parseUrl.pathname);
+		
+		console.log(parseUrl);
+		
+		fs.stat(filepath, function(err, stats){
+			if(err){
+				next();
+			}else if(stats.isFile()){
+				res.statusCode = 200;
+				res.setHeader('Content-Type', 'text/html;charset=utf-8');
+				var file = fs.createReadStream(filepath);
+				file.on('open', function(){
+					file.pipe(res);
+				});
+				file.on('error', function(err){
+					console.error(err);
+				});
+			}else{
+				res.writeHead(403);
+				res.end('directory access is forbidden');
+			}
+		});
+	};
+}
+
+module.exports = setBase;
+
+
+
+
+
+
+
+
+
+
+

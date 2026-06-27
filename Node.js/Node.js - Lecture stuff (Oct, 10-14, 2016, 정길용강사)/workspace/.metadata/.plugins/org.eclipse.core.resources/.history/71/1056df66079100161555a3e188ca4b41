@@ -1,0 +1,5 @@
+function chat(io) {
+	console.log('');
+}
+
+module.exports = chat;

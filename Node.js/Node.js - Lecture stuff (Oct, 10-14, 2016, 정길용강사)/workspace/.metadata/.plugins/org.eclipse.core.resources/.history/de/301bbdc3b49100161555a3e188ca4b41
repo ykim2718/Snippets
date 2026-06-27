@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Node.js 게시판</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1><%= title %></h1>
+		<section>
+			<div>				
+				<table class="table">
+					<colgroup>
+						<col width="50">
+						<col>
+						<col width="100">
+						<col width="70">
+						<col width="160">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>번호</th>
+							<th>제목</th>
+							<th>글쓴이</th>
+							<th>조회</th>
+							<th>작성일</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% list.forEach(function(board){ %>
+					
+						<tr>
+							<td><%= board._id %></td>
+							<td><a href="1">mongoDB 가이드</a></td>
+							<td>김철수</td>
+							<td>123</td>
+							<td>2016-07-20 11:25</td>
+						</tr>	
+
+						<% }); %>
+					</tbody>
+				</table>
+			</div>
+			<hr>
+			<div>
+				<a href="new" class="btn btn-default btn-sm">글쓰기</a>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

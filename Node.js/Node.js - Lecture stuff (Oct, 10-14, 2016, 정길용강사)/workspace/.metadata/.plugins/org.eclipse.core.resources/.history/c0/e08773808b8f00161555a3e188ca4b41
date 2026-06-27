@@ -1,0 +1,34 @@
+ var tcp = require('net');
+ 
+ var socket = new tcp.Socket();
+ 
+ socket.connect('8124', 'localhost', function(){
+	 console.log('client log: 서버에 접속함');
+	 // s.write('hello');
+	 // 표준 입력 장치의 입력 스트림을 재개한다
+	 process.stdin.resume();
+	 process.stdin.on('data', function(msg){
+		 if (msg.toString().trim() == 'exit') {
+			 process.exit();
+			 }
+		 socket.write(msg);
+	 });
+ });
+ 
+ var server = tcp.createServer(function(s){
+		console.log('server log: 클라이언트 접속', s.remoteAddress, s.remotePort);
+		s.on('error', function(err){
+			console.error(err);
+		});
+		s.on('close', function(){
+		  console.log('server log: 클라이언트 접속종료');
+		});
+		s.on('data', function(msg){
+			console.log('Server:' + msg.toString());
+			var t = new tcp.Socket();
+			t.connect(s.remotePort, s.remoteAddress, function(){
+				t.write(msg);
+			});
+		});
+	});
+ 

@@ -1,0 +1,5 @@
+function chat(io) {
+	console.log('socket.io server start.');
+}
+
+module.exports = chat;

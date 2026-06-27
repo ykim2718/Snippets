@@ -1,0 +1,3 @@
+var tcp = require('net');
+
+var server = tcp.createServer(function(){});

@@ -1,0 +1,3 @@
+console.log(__filename, 'loaded m2, in m2.js')
+console.log('main', require.main);  // 모르겠음
+console.log(__filename, require.main == module); // 모르겠음.

@@ -1,0 +1,12 @@
+console.log('console.log()');
+console.info('console.info()');
+console.warn('console.warn()');
+console.error('console.error()');
+
+var clog = require('clog')
+clog.configure({'log level': 3})
+clog.debug('clog.debug()')
+clog.error('clog.error()')
+clog.warn('clog.warn()')
+clog.info('clog.info()')
+clog.log('clog.log()')

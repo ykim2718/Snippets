@@ -1,0 +1,5 @@
+var s = new require('net').Socket();
+process.stdin.resume();
+process.stdin.pipe(s);
+s.pipe(process.stdout);
+s.connect('8124', 'localhost');

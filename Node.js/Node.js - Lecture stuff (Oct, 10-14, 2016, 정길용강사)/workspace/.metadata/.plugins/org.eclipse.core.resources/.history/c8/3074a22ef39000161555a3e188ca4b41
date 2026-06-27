@@ -1,0 +1,137 @@
+// 웹 서버 개발시 해야할 작업들...
+// 1. Logging
+// 2. DB handling
+// 3. Security (user authentication)
+// 4. URL encoding
+// 5. Cookie
+// 6. Session (keep log in status)
+// 7. File up-load
+// 8. Static resource and dynamic resource
+// 9. POST body parsing
+// 10. favicon handling
+// ....
+// http module does not provide functions for the list above
+// Coder should realize them by himself if he stuck to http
+// Let's use extended module instead of developing by oneself
+// connect@2 is the middle ware, handling with those in the list.
+// connect@3 does not have middle ware, but is framework that connects many middle wares
+// npm install connect@3 -S
+
+var http = require('http');
+var path = require('path');
+var fs = require('fs');
+var connect = require('connect');
+//var logger = require('./middleware/logger') // instead, use morgan
+var logger = require('morgan');
+//var static = require('./middleware/static') // instead, use serve-static
+var static = require('serve-static');
+var favicon = require('serve-favicon');
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
+var ejs = require('ejs');
+
+var app = connect();
+
+// favicon .. ctrl + refresh button
+app.use(favicon(path.join(__dirname, 'public', 'img', 'favicon.ico')));
+
+// 로깅 미들웨어
+//app.use(logger(path.join(__dirname, 'mylog.log'))); // instead, use morgan
+app.use(logger('dev'));
+
+// 쿠키 파싱  .. header를 parsing해서 request cookies에 등록 하는 기능임
+app.use(cookieParser());
+
+// 세션 파싱
+app.use(session({
+	cookie: {maxAge: 1000*5}, // 세션 ID를 저장할 쿠키 정보 지정, 5초동안 유지
+	secret: 'keyboard cat', // 세션 ID를 만드는 키 값
+	rolling: true  // 모든 요청에 대해 세션 ID를 가지는 쿠키를 갱신
+}));
+
+//미들웨어 등록 (요청 헤더정보 출력)
+app.use(function(req, res, next){
+	//console.log(req.headers);
+	console.log(req.cookies);
+	console.log(req.session);
+	next();
+});
+
+
+// 정적인 자원을 처리하는 미들웨어
+app.use(static(path.join(__dirname, 'public')));
+
+// 동적인 자원을 처리하는 미들웨어
+app.use('/login', login);
+app.use('/logout', logout);
+app.use('/chat', loginCheck);
+
+// 에러 처리하는 미들 웨어 (404)
+app.use(function(req, res, next){
+	var err = new Error(req.url + ' Not Found');
+	err.status = 404;
+	next(err);
+//	res.writeHead(404);
+//	res.end(err.toString());
+});
+
+// 404 이외의 에러 처리
+app.use(function(err, req, res, next){
+	res.status = err.status = err.status || 500;
+	console.log(res.status);
+	ejs.renderFile(path.join(__dirname, 'public', 'error.ejs'),
+			{message: err.message, error: err},
+			function(err, data){
+				res.end(data);
+			});
+});
+
+var server = http.createServer(app);
+server.listen(80, function(){
+	console.log('서버 구동. http://localhost');
+});
+
+//cookie .. information from server saved in client site
+//session .. session id of client saved in server site
+
+function login(req, res, next) {
+	// parse(url, queryString 파싱여부)
+	var username = require('url').parse(req.url, true).query.username;
+	console.log(username, '로그인 함');
+	
+	// 세션에 대화명을 저장한다
+	req.session.nickname = username;
+
+	// redirect
+	res.writeHead(303, {'Location': '/chat'});
+	res.end();
+}
+
+
+function logout(req, res, next) {
+	// 세션을 삭제한다
+	req.session.destroy();
+  //redirect
+	res.writeHead(303, {'Location': '/'});
+	res.end();
+}
+
+function loginCheck(req, res, next) { 
+	if (req.session.nickname) {
+		var filename = path.join(__dirname, 'public', 'chat.ejs');
+//		fs.readFile(filename, function(err, data){
+//			res.writeHead(200, {'Content-Type': 'text/html;chartset=utf-8'});
+//			res.end(data);
+//		});
+		// instead of above, use ejs
+		ejs.renderFile(filename,
+				{nickname: req.session.nickname, title: 'chat'},
+				function(err, data){
+					console.log(data);
+					res.end(data);
+				});
+	} else {
+		res.writeHead(303, {'Location': '/'});
+		res.end();
+	}
+}

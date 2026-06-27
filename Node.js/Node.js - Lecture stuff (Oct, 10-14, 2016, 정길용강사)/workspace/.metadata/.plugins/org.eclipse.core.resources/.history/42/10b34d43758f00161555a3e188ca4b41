@@ -1,0 +1,5 @@
+console.log(__filename, 'm2 로딩 됨')
+console.log(__filename, require.main.file_name);
+//var m1 = require('./m1');
+//console.log(__filename, m1.name, m1.age);
+//module.exports = {name: '이영희', age: 25}

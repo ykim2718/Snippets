@@ -1,0 +1,2 @@
+console.log(__filename, 'loaded m1, in m1.js')
+console.log('main', require.main);

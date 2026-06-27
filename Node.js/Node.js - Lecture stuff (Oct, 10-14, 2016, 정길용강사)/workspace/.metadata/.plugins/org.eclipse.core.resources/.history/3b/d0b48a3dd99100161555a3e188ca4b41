@@ -1,0 +1,8 @@
+var assert = require('assert');
+
+// test suite
+describe('# suite test sync-way', function(){ 
+	// unit test
+	it();
+});
+describe('# suite test async-way', function(){ });

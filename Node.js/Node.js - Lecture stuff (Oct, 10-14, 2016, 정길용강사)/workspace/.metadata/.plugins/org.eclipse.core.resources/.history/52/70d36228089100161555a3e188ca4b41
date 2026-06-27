@@ -1,0 +1,8 @@
+function chat(io) {
+	console.log('Socket.io server start.');
+	io.on('connection', function(s){
+		console.log('클라이언트 접속', s.client.conn.remoteAddress);
+	});
+}
+
+module.exports = chat;

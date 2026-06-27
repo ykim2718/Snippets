@@ -1,0 +1,5 @@
+function mylogger(req,res, next) {
+	var logger = fs.createWriteStream('./log.txt', {flags: 'a'});	
+}
+
+module.exports = mylogger;

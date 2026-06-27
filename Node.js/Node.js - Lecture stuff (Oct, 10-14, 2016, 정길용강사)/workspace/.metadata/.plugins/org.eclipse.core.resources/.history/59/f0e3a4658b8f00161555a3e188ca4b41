@@ -1,0 +1,20 @@
+ var tcp = require('net');
+ 
+ var s = new tcp.Socket();
+
+ 
+ 
+ 
+ s.connect('8124', 'localhost', function(){
+	 console.log('client log: 서버에 접속함');
+	 // s.write('hello');
+	 // 표준 입력 장치의 입력 스트림을 재개한다
+	 process.stdin.resume();
+	 process.stdin.on('data', function(msg){
+		 if (msg.toString().trim() == 'exit') {
+			 process.exit();
+			 }
+		 s.write(msg);
+	 });
+ });
+ 

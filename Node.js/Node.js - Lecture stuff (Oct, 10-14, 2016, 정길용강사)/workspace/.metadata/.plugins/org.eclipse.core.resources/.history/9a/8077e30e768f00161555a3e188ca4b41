@@ -1,0 +1,2 @@
+module.exports = function(){};
+console.log(__filename, '로딩 됨')

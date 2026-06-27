@@ -1,0 +1,14 @@
+//////////////////////////////
+function test(arg) {
+	console.log(arg);
+}
+
+test('i love u');
+
+//////////////////////////////
+var unikys = { 
+    say: function (something) {
+        console.log(something);
+    }
+}
+unikys.say("hello");
